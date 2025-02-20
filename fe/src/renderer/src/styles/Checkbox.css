@@ -1,0 +1,64 @@
+.checkbox-container {
+  display: inline-block; 
+  position: relative;
+  padding-left: 20px; 
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0; /* Hide default checkbox */
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px; /* Height of the checkbox */
+  width: 20px; /* Width of the checkbox */
+  background-color: #003833; /* Unchecked background color */
+  border: 1px solid #00FFE7; /* Teal border */
+}
+
+/* When the checkbox is checked */
+.custom-checkbox:checked + .checkmark {
+  background-color: #003833; /* Change background color when checked */
+}
+
+/* Checkmark (tick) style */
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show checkmark when checked */
+.custom-checkbox:checked + .checkmark::after {
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); /* Creates the checkmark */
+}
+
+/* Specific style for select all checkbox */
+.custom-checkbox.select-all:checked + .checkmark::after {
+  content: ''; /* Reset content to ensure the tick is not displayed */
+  display: block;
+  left: 6px;
+  top: 9px;
+  width: 8px;
+  height: 2px;
+  background-color: #ffff;
+  border: none; /* Remove border styles */
+  transform: none; /* No rotation for minus sign */
+}

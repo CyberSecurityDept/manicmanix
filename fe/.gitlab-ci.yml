@@ -1,0 +1,17 @@
+# .gitlab-ci.yml
+
+image: node:18  # Menggunakan image node versi 18
+
+stages:
+  - install
+
+# Tahap untuk menginstall dependensi
+install_dependencies:
+  stage: install
+  script:
+    - npm ci  # Menggunakan npm ci untuk install dependensi dari package-lock.json
+  artifacts:
+    paths:
+      - node_modules/  # Menyimpan node_modules sebagai artifacts agar bisa digunakan kembali
+    expire_in: 1 day   # Mengatur masa aktif artifacts selama 1 hari
+

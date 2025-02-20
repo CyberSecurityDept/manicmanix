@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes progressAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-progress {
+    animation: progressAnimation 2s linear infinite;
+  }
+  
+.gradient-1 {
+  background-image: linear-gradient(to left, rgba(5, 199, 180, 0.25),rgba(255,0,0,0));
+}
+
+.gradient-custom {
+  background: linear-gradient(270deg, rgba(5, 199, 180, 0.5) 0%, rgba(1, 92, 84, 0.05) 28%);
+}
+
+.box-gradient {
+  box-shadow: 2px 0px 20px 2px rgba(25,67,60,0.62) inset,-2px 0px 20px 2px rgba(25,67,60,0.62) inset;
+  /* -webkit-box-shadow: 15px 1px 20px 21px rgba(25,67,60,0.62) inset;
+  -moz-box-shadow: 15px 1px 20px 21px rgba(25,67,60,0.62) inset; */
+}
