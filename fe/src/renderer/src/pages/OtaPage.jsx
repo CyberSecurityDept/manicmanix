@@ -84,7 +84,7 @@ const OTA = () => {
         // Pengecekan FE melalui IPC untuk APP
         window.electron.ipcRenderer.send('start-fe-update')
         window.electron.ipcRenderer.on('fe-update-status', (feStatus) => {
-          if (data.current_tag !== data.latest_remote_tag || feStatus.updateAvailable) {
+          if (data.updated_version !== data.latest_version_tag || feStatus.updateAvailable) {
             setIsNewVersionModalOpen(true)
           } else {
           }
