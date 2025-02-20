@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 import os
 from typing import List, Dict
 import logging
@@ -10,6 +11,18 @@ logger = logging.getLogger(__name__)
 
 # test gitlab
 class RiskRepository:
+    def get_latest_scan_directory(base_path: Path) -> Path:
+        try:
+            directories = [d for d in base_path.iterdir() if d.is_dir()]
+            if not directories:
+                raise FileNotFoundError(f"Tidak ada direktori scan ditemukan di {base_path}")
+            latest_directory = max(directories, key=lambda x: x.stat().st_mtime)
+            logger.info(f"Direktori scan terbaru ditemukan: {latest_directory}")
+            return latest_directory
+        except Exception as e:
+            logger.error(f"Error saat mencari direktori terbaru: {e}")
+            raise
+    
     @staticmethod
     def read_task_results(task_result_dir: str) -> List[Dict]:
         task_results = []
