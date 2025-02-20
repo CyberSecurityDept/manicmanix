@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 # Import service yang sudah kamu buat (pastikan path impor sudah benar)
 from app.services.device_overview_service import DeviceOverviewService
-from app.repositories.risk_repository import RiskRepository
+
 
 router = APIRouter()    
 
