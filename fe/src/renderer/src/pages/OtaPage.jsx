@@ -84,16 +84,15 @@ const OTA = () => {
         // Pengecekan FE melalui IPC untuk APP
         window.electron.ipcRenderer.send('start-fe-update')
         window.electron.ipcRenderer.on('fe-update-status', (feStatus) => {
+          // Jika versi backend berbeda atau FE update tersedia, tampilkan modal new version
           if (data.updated_version !== data.latest_version_tag || feStatus.updateAvailable) {
             setIsNewVersionModalOpen(true)
-          } else {
           }
         })
       } else {
         // Untuk CYBER, cek properti update_available
         if (data.update_available) {
           setIsNewVersionModalOpen(true)
-        } else {
         }
       }
     } catch (error) {
@@ -107,12 +106,12 @@ const OTA = () => {
   const handleUpdate = async () => {
     setIsNewVersionModalOpen(false)
     setIsUpdateProgressModalOpen(true)
-  
+
     const url =
       updateType === 'app'
         ? `${BASE_URL}${UPDATE_APP_URL}`
         : `${BASE_URL}${UPDATE_Cyber_URL}`
-  
+
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -122,31 +121,37 @@ const OTA = () => {
         },
         body: JSON.stringify({})
       })
-  
+
       if (!response.ok) {
         throw new Error(`Network response was not ok. Status: ${response.status}`)
       }
-  
+
       const data = await response.json()
-  
+
       if (updateType === 'app') {
-        // Lakukan pengecekan terhadap response yang diharapkan
-        console.log("ini typpe update yang dilakukan: ".updateType)
+        // Perbaiki penulisan console.log dan lakukan pengecekan response yang diharapkan
+        console.log("ini tipe update yang dilakukan: " + updateType)
         if (
           data.message === 'updated app successfully.' &&
           data.download_output === 'Checked out to latest tag.'
         ) {
-          // Hanya trigger update jika respon sesuai
+          // Jika respon sesuai, trigger update FE
           window.electron.ipcRenderer.send('start-fe-update')
           setIsUpdateProgressModalOpen(false)
           alert('Update aplikasi berhasil.')
-          window.electron.ipcRenderer.once('fe-update-downloaded', () => {
+
+          // Mendengarkan event 'fe-update-downloaded' menggunakan on() dan removeListener() agar hanya dipanggil sekali
+          window.electron.ipcRenderer.on('fe-update-downloaded', handleDownloaded)
+
+          function handleDownloaded() {
             // Tanyakan ke user apakah ingin langsung install update
             const userConfirmed = window.confirm('Update telah selesai di-download. Install sekarang?')
             if (userConfirmed) {
               window.electron.ipcRenderer.send('quit-and-install')
             }
-          })
+            // Hapus listener setelah event diproses
+            window.electron.ipcRenderer.removeListener('fe-update-downloaded', handleDownloaded)
+          }
         } else {
           throw new Error(data.message || 'Update gagal')
         }
@@ -163,7 +168,6 @@ const OTA = () => {
       alert(`Failed to update ${updateType} version. Error: ${error.message}`)
     }
   }
-  
 
   return (
     <div

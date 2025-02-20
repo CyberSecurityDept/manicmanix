@@ -11,14 +11,14 @@ function createWindow() {
     width: 900,
     height: 670,
     show: true,
+    frame: true,
     fullscreen: true,
-    frame: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: true,
-      webviewTag: true, // izinkan penggunaan webview
+      webviewTag: true,
       webSecurity: false,
     }
   })
@@ -56,26 +56,37 @@ function createWindow() {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
 
-  // --- Integrasi electron-updater ---
-  // Mulai update FE (electron-updater) ketika renderer mengirim pesan
+  // --- Integrasi electron-updater untuk FE ---
   ipcMain.on('start-fe-update', async () => {
     try {
-      const result = await autoUpdater.checkForUpdates()
-      // Misal, jika update tersedia:
-      const updateAvailable = result.updateInfo && result.updateInfo.version !== app.getVersion()
+      console.log('Memeriksa pembaruan...');
+      const result = await autoUpdater.checkForUpdates();
+      console.log('Hasil pengecekan update:', result);
+      
+      if (!result || !result.updateInfo) {
+        console.log('Tidak ada update yang ditemukan atau pengecekan diabaikan.');
+        mainWindow.webContents.send('fe-update-status', { updateAvailable: false });
+        return;
+      }
+      
+      const updateAvailable = result.updateInfo.version !== app.getVersion();
+      console.log('Update tersedia:', updateAvailable, 'Versi terbaru:', result.updateInfo.version);
+      
       mainWindow.webContents.send('fe-update-status', {
         updateAvailable,
-        version: result.updateInfo.version
-      })
+        version: result.updateInfo.version,
+      });
     } catch (error) {
+      console.error('Error saat mengecek update FE:', error);
       mainWindow.webContents.send('fe-update-status', {
         updateAvailable: false,
-        error: error.message
-      })
+        error: error.message,
+      });
     }
-  })
+  });
+  
 
-  // Kirim progress download FE ke renderer
+  // Kirim progress download update FE ke renderer
   autoUpdater.on('download-progress', (progressObj) => {
     mainWindow.webContents.send('fe-update-progress', progressObj)
   })
@@ -83,7 +94,7 @@ function createWindow() {
   // Setelah update FE selesai didownload, kirim notifikasi ke renderer
   autoUpdater.on('update-downloaded', () => {
     mainWindow.webContents.send('fe-update-downloaded')
-    // Jangan langsung quit; tunggu BE update selesai
+    // Jangan langsung quit; restart dan instal update setelah delay di renderer
   })
 
   // Ketika renderer mengirim pesan untuk quit dan install update FE
@@ -93,15 +104,12 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
-  // Set App User Model ID (untuk Windows)
   electronApp.setAppUserModelId('com.electron')
-
   app.on('browser-window-created', (_, window) => {
     optimizer.watchWindowShortcuts(window)
   })
 
   ipcMain.on('ping', () => console.log('pong'))
-
   createWindow()
 
   app.on('activate', () => {
