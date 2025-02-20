@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-jose
+python-dotenv
+flake8
+python-multipart
+sqlalchemy
+pytest
+httpx
+pyinstaller
+pymongo
+certifi
+aiohttp
+async_lru

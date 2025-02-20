@@ -1,0 +1,374 @@
+{
+    "brand": "Panasonic",
+    "models": [
+        {
+            "model_name": "Panasonic Eluga I7 (2019)"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray 800"
+        },
+        {
+            "model_name": "Panasonic P85 Nxt"
+        },
+        {
+            "model_name": "Panasonic Eluga Z1 Pro"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray 530"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray 600"
+        },
+        {
+            "model_name": "Panasonic Eluga X1 Pro"
+        },
+        {
+            "model_name": "Panasonic P90"
+        },
+        {
+            "model_name": "Panasonic P95"
+        },
+        {
+            "model_name": "Panasonic Eluga I7"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray 550"
+        },
+        {
+            "model_name": "Panasonic P101"
+        },
+        {
+            "model_name": "Panasonic P100"
+        },
+        {
+            "model_name": "Panasonic Eluga I9"
+        },
+        {
+            "model_name": "Panasonic Eluga C"
+        },
+        {
+            "model_name": "Panasonic P91"
+        },
+        {
+            "model_name": "Panasonic Eluga I5"
+        },
+        {
+            "model_name": "Panasonic Eluga A4"
+        },
+        {
+            "model_name": "Panasonic P99"
+        },
+        {
+            "model_name": "Panasonic Eluga I4"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray 500"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray 700"
+        },
+        {
+            "model_name": "Panasonic P9"
+        },
+        {
+            "model_name": "Panasonic Eluga I2 Activ"
+        },
+        {
+            "model_name": "Panasonic Eluga A3 Pro"
+        },
+        {
+            "model_name": "Panasonic Eluga A3"
+        },
+        {
+            "model_name": "Panasonic P55 Max"
+        },
+        {
+            "model_name": "Panasonic Eluga I3 Mega"
+        },
+        {
+            "model_name": "Panasonic P85"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray"
+        },
+        {
+            "model_name": "Panasonic Eluga Mark 2"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray X"
+        },
+        {
+            "model_name": "Panasonic Eluga Ray Max"
+        },
+        {
+            "model_name": "Panasonic Eluga Pulse X"
+        },
+        {
+            "model_name": "Panasonic Eluga Pulse"
+        },
+        {
+            "model_name": "Panasonic P88"
+        },
+        {
+            "model_name": "Panasonic P55 Novo"
+        },
+        {
+            "model_name": "Panasonic P77"
+        },
+        {
+            "model_name": "Panasonic Eluga Tapp"
+        },
+        {
+            "model_name": "Panasonic Eluga Arc 2"
+        },
+        {
+            "model_name": "Panasonic Eluga Note"
+        },
+        {
+            "model_name": "Panasonic Eluga A2"
+        },
+        {
+            "model_name": "Panasonic Eluga I3"
+        },
+        {
+            "model_name": "Panasonic Eluga I2 (2016)"
+        },
+        {
+            "model_name": "Panasonic Eluga Arc"
+        },
+        {
+            "model_name": "Panasonic P66"
+        },
+        {
+            "model_name": "Panasonic Eluga Turbo"
+        },
+        {
+            "model_name": "Panasonic T50"
+        },
+        {
+            "model_name": "Panasonic Eluga Mark"
+        },
+        {
+            "model_name": "Panasonic Eluga Switch"
+        },
+        {
+            "model_name": "Panasonic Eluga L2"
+        },
+        {
+            "model_name": "Panasonic Eluga I2"
+        },
+        {
+            "model_name": "Panasonic T45"
+        },
+        {
+            "model_name": "Panasonic Eluga Icon"
+        },
+        {
+            "model_name": "Panasonic Eluga Z"
+        },
+        {
+            "model_name": "Panasonic Eluga L 4G"
+        },
+        {
+            "model_name": "Panasonic Eluga S Mini"
+        },
+        {
+            "model_name": "Panasonic Eluga U2"
+        },
+        {
+            "model_name": "Panasonic Eluga S"
+        },
+        {
+            "model_name": "Panasonic P61"
+        },
+        {
+            "model_name": "Panasonic T41"
+        },
+        {
+            "model_name": "Panasonic T40"
+        },
+        {
+            "model_name": "Panasonic P55"
+        },
+        {
+            "model_name": "Panasonic Eluga I"
+        },
+        {
+            "model_name": "Panasonic Lumix Smart Camera Cm1"
+        },
+        {
+            "model_name": "Panasonic Eluga A"
+        },
+        {
+            "model_name": "Panasonic Eluga U"
+        },
+        {
+            "model_name": "Panasonic P81"
+        },
+        {
+            "model_name": "Panasonic T31"
+        },
+        {
+            "model_name": "Panasonic T21"
+        },
+        {
+            "model_name": "Panasonic P11"
+        },
+        {
+            "model_name": "Panasonic T11"
+        },
+        {
+            "model_name": "Panasonic P51"
+        },
+        {
+            "model_name": "Panasonic P41"
+        },
+        {
+            "model_name": "Panasonic Eluga Power"
+        },
+        {
+            "model_name": "Panasonic Eluga Dl1"
+        },
+        {
+            "model_name": "Panasonic Toughpad Fz A1"
+        },
+        {
+            "model_name": "Panasonic Toughpad Jt B1"
+        },
+        {
+            "model_name": "Panasonic Kx Tu311"
+        },
+        {
+            "model_name": "Panasonic Kx Tu301"
+        },
+        {
+            "model_name": "Panasonic Vs7"
+        },
+        {
+            "model_name": "Panasonic Vs6"
+        },
+        {
+            "model_name": "Panasonic Vs3"
+        },
+        {
+            "model_name": "Panasonic Vs2"
+        },
+        {
+            "model_name": "Panasonic Mx7"
+        },
+        {
+            "model_name": "Panasonic Mx6"
+        },
+        {
+            "model_name": "Panasonic Sa7"
+        },
+        {
+            "model_name": "Panasonic Sa6"
+        },
+        {
+            "model_name": "Panasonic Sc3"
+        },
+        {
+            "model_name": "Panasonic A210"
+        },
+        {
+            "model_name": "Panasonic X800"
+        },
+        {
+            "model_name": "Panasonic Z800"
+        },
+        {
+            "model_name": "Panasonic X700"
+        },
+        {
+            "model_name": "Panasonic X500"
+        },
+        {
+            "model_name": "Panasonic X400"
+        },
+        {
+            "model_name": "Panasonic X300"
+        },
+        {
+            "model_name": "Panasonic X200"
+        },
+        {
+            "model_name": "Panasonic X100"
+        },
+        {
+            "model_name": "Panasonic A500"
+        },
+        {
+            "model_name": "Panasonic A200"
+        },
+        {
+            "model_name": "Panasonic A100 Series"
+        },
+        {
+            "model_name": "Panasonic P341I"
+        },
+        {
+            "model_name": "Panasonic X68 X77"
+        },
+        {
+            "model_name": "Panasonic X11"
+        },
+        {
+            "model_name": "Panasonic G70"
+        },
+        {
+            "model_name": "Panasonic G51"
+        },
+        {
+            "model_name": "Panasonic X88"
+        },
+        {
+            "model_name": "Panasonic X66"
+        },
+        {
+            "model_name": "Panasonic X70"
+        },
+        {
+            "model_name": "Panasonic G60"
+        },
+        {
+            "model_name": "Panasonic G50"
+        },
+        {
+            "model_name": "Panasonic Gd55"
+        },
+        {
+            "model_name": "Panasonic Gd87"
+        },
+        {
+            "model_name": "Panasonic Gd67"
+        },
+        {
+            "model_name": "Panasonic Gd95"
+        },
+        {
+            "model_name": "Panasonic Gd75"
+        },
+        {
+            "model_name": "Panasonic Gd35"
+        },
+        {
+            "model_name": "Panasonic Gd93"
+        },
+        {
+            "model_name": "Panasonic Gd92"
+        },
+        {
+            "model_name": "Panasonic Gd90"
+        },
+        {
+            "model_name": "Panasonic Gd70"
+        },
+        {
+            "model_name": "Panasonic Gd30"
+        },
+        {
+            "model_name": "Panasonic G600"
+        }
+    ]
+}

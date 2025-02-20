@@ -1,0 +1,50 @@
+def calculate_realistic_progress(log_file_path):
+    milestones = [
+        "The analysis of the Android device produced",
+        "Parsing STIX2 indicators file",
+        "Loaded a total of 9979 unique indicators",
+        "Running module ChromeHistory",
+        "Running module SMS",
+        "Running module Processes",
+        "Running module Settings",
+        "Running module DumpsysReceivers",
+        "Running module DumpsysDBInfo",
+        "Running module Files",
+        "Please disable Developer Options and ADB",
+        
+    ]
+
+    total_milestones = len(milestones) + 1
+    current_milestone = 1
+    seen_milestones = set()
+
+    scan_complete = False
+    logs = []
+
+    with open(log_file_path, "r") as log_file:
+        for line in log_file:
+            log_data = line.strip().split(" - ")
+            log_message = log_data[-1]
+
+            for milestone in milestones:
+                if milestone in log_message and milestone not in seen_milestones:
+                    current_milestone += 1
+                    seen_milestones.add(milestone)
+
+            if "Please disable Developer Options and ADB" in line:
+                scan_complete = True
+
+            logs.append({"log": log_message, "datetime": log_data[0]})
+
+    scan_percentage = (current_milestone / total_milestones) * 100
+    scan_percentage = min(100, max(0, scan_percentage))
+
+    return {
+        "status": 200,
+        "message": "Get Scan Progress successfully",
+        "data": {
+            "scan_percentage": str(int(scan_percentage)),
+            "scan_complete": scan_complete,
+            "log_process": logs,
+        },
+    }

@@ -1,0 +1,2006 @@
+{
+    "brand": "Lg",
+    "models": [
+        {
+            "model_name": "Lg Ultra Tab"
+        },
+        {
+            "model_name": "Lg W41 Pro"
+        },
+        {
+            "model_name": "Lg W41 Plus"
+        },
+        {
+            "model_name": "Lg W41"
+        },
+        {
+            "model_name": "Lg W31 Plus"
+        },
+        {
+            "model_name": "Lg W31"
+        },
+        {
+            "model_name": "Lg W11"
+        },
+        {
+            "model_name": "Lg K92 5G"
+        },
+        {
+            "model_name": "Lg K62"
+        },
+        {
+            "model_name": "Lg Q52"
+        },
+        {
+            "model_name": "Lg K52"
+        },
+        {
+            "model_name": "Lg K42"
+        },
+        {
+            "model_name": "Lg K71"
+        },
+        {
+            "model_name": "Lg Wing 5G"
+        },
+        {
+            "model_name": "Lg K22"
+        },
+        {
+            "model_name": "Lg Q92 5G"
+        },
+        {
+            "model_name": "Lg Q31"
+        },
+        {
+            "model_name": "Lg K31"
+        },
+        {
+            "model_name": "Lg Velvet 5G Uw"
+        },
+        {
+            "model_name": "Lg Q61"
+        },
+        {
+            "model_name": "Lg Stylo 6"
+        },
+        {
+            "model_name": "Lg Velvet"
+        },
+        {
+            "model_name": "Lg Velvet 5G"
+        },
+        {
+            "model_name": "Lg Folder 2"
+        },
+        {
+            "model_name": "Lg V60 Thinq 5G Uw"
+        },
+        {
+            "model_name": "Lg V60 Thinq 5G"
+        },
+        {
+            "model_name": "Lg Q51"
+        },
+        {
+            "model_name": "Lg W10 Alpha"
+        },
+        {
+            "model_name": "Lg K61"
+        },
+        {
+            "model_name": "Lg K51S"
+        },
+        {
+            "model_name": "Lg K41S"
+        },
+        {
+            "model_name": "Lg G Pad 5 10 1"
+        },
+        {
+            "model_name": "Lg V50S Thinq 5G"
+        },
+        {
+            "model_name": "Lg G8X Thinq"
+        },
+        {
+            "model_name": "Lg Q70"
+        },
+        {
+            "model_name": "Lg K30 (2019)"
+        },
+        {
+            "model_name": "Lg K20 (2019)"
+        },
+        {
+            "model_name": "Lg K40S"
+        },
+        {
+            "model_name": "Lg K50S"
+        },
+        {
+            "model_name": "Lg W30 Pro"
+        },
+        {
+            "model_name": "Lg W30"
+        },
+        {
+            "model_name": "Lg W10"
+        },
+        {
+            "model_name": "Lg Stylo 5"
+        },
+        {
+            "model_name": "Lg V50 Thinq 5G"
+        },
+        {
+            "model_name": "Lg G8S Thinq"
+        },
+        {
+            "model_name": "Lg G8 Thinq"
+        },
+        {
+            "model_name": "Lg Q60"
+        },
+        {
+            "model_name": "Lg K50"
+        },
+        {
+            "model_name": "Lg K40"
+        },
+        {
+            "model_name": "Lg Q9"
+        },
+        {
+            "model_name": "Lg V40 Thinq"
+        },
+        {
+            "model_name": "Lg Watch W7"
+        },
+        {
+            "model_name": "Lg Tribute Empire"
+        },
+        {
+            "model_name": "Lg Candy"
+        },
+        {
+            "model_name": "Lg G7 Fit"
+        },
+        {
+            "model_name": "Lg G7 One"
+        },
+        {
+            "model_name": "Lg Q8 (2018)"
+        },
+        {
+            "model_name": "Lg K11 Plus"
+        },
+        {
+            "model_name": "Lg Q Stylo 4"
+        },
+        {
+            "model_name": "Lg Q Stylus"
+        },
+        {
+            "model_name": "Lg V35 Thinq"
+        },
+        {
+            "model_name": "Lg Q7"
+        },
+        {
+            "model_name": "Lg G7 Thinq"
+        },
+        {
+            "model_name": "Lg V30S Thinq"
+        },
+        {
+            "model_name": "Lg Zone 4"
+        },
+        {
+            "model_name": "Lg X Power 3"
+        },
+        {
+            "model_name": "Lg K30"
+        },
+        {
+            "model_name": "Lg K10 (2018)"
+        },
+        {
+            "model_name": "Lg K8 (2018)"
+        },
+        {
+            "model_name": "Lg Aristo 2"
+        },
+        {
+            "model_name": "Lg X4 Plus"
+        },
+        {
+            "model_name": "Lg V30"
+        },
+        {
+            "model_name": "Lg Q8 (2017)"
+        },
+        {
+            "model_name": "Lg Q6"
+        },
+        {
+            "model_name": "Lg G Pad Iv 8 0 Fhd"
+        },
+        {
+            "model_name": "Lg X Venture"
+        },
+        {
+            "model_name": "Lg G6"
+        },
+        {
+            "model_name": "Lg X Power2"
+        },
+        {
+            "model_name": "Lg Watch Sport"
+        },
+        {
+            "model_name": "Lg Watch Style"
+        },
+        {
+            "model_name": "Lg Stylo 3 Plus"
+        },
+        {
+            "model_name": "Lg Stylus 3"
+        },
+        {
+            "model_name": "Lg Harmony"
+        },
+        {
+            "model_name": "Lg K20 Plus"
+        },
+        {
+            "model_name": "Lg K10 (2017)"
+        },
+        {
+            "model_name": "Lg K8 (2017)"
+        },
+        {
+            "model_name": "Lg K7 (2017)"
+        },
+        {
+            "model_name": "Lg K4 (2017)"
+        },
+        {
+            "model_name": "Lg K3 (2017)"
+        },
+        {
+            "model_name": "Lg G Pad Iii 10 1 Fhd"
+        },
+        {
+            "model_name": "Lg U"
+        },
+        {
+            "model_name": "Lg V20"
+        },
+        {
+            "model_name": "Lg X Skin"
+        },
+        {
+            "model_name": "Lg X5"
+        },
+        {
+            "model_name": "Lg X Max"
+        },
+        {
+            "model_name": "Lg X Mach"
+        },
+        {
+            "model_name": "Lg G Pad Iii 8 0 Fhd"
+        },
+        {
+            "model_name": "Lg G Pad X 8 0"
+        },
+        {
+            "model_name": "Lg X Power"
+        },
+        {
+            "model_name": "Lg X Style"
+        },
+        {
+            "model_name": "Lg Stylus 2 Plus"
+        },
+        {
+            "model_name": "Lg Stylo 2"
+        },
+        {
+            "model_name": "Lg K5"
+        },
+        {
+            "model_name": "Lg K3"
+        },
+        {
+            "model_name": "Lg G5 Se"
+        },
+        {
+            "model_name": "Lg G5"
+        },
+        {
+            "model_name": "Lg X Cam"
+        },
+        {
+            "model_name": "Lg X Screen"
+        },
+        {
+            "model_name": "Lg K8"
+        },
+        {
+            "model_name": "Lg Stylus 2"
+        },
+        {
+            "model_name": "Lg K10"
+        },
+        {
+            "model_name": "Lg K7"
+        },
+        {
+            "model_name": "Lg K4"
+        },
+        {
+            "model_name": "Lg G Pad Ii 8 3 Lte"
+        },
+        {
+            "model_name": "Lg Ray"
+        },
+        {
+            "model_name": "Lg G Vista 2"
+        },
+        {
+            "model_name": "Lg G Watch R W110"
+        },
+        {
+            "model_name": "Lg Watch Urbane W150"
+        },
+        {
+            "model_name": "Lg Watch Urbane 2Nd Edition Lte"
+        },
+        {
+            "model_name": "Lg V10"
+        },
+        {
+            "model_name": "Lg Nexus 5X"
+        },
+        {
+            "model_name": "Lg Zero"
+        },
+        {
+            "model_name": "Lg G Pad Ii 10 1"
+        },
+        {
+            "model_name": "Lg G Pad Ii 8 0 Lte"
+        },
+        {
+            "model_name": "Lg Wine Smart"
+        },
+        {
+            "model_name": "Lg Tribute 2"
+        },
+        {
+            "model_name": "Lg Bello Ii"
+        },
+        {
+            "model_name": "Lg G4 Beat"
+        },
+        {
+            "model_name": "Lg G360"
+        },
+        {
+            "model_name": "Lg G350"
+        },
+        {
+            "model_name": "Lg G4C"
+        },
+        {
+            "model_name": "Lg G4 Dual"
+        },
+        {
+            "model_name": "Lg G4"
+        },
+        {
+            "model_name": "Lg G Stylo"
+        },
+        {
+            "model_name": "Lg G4 Stylus"
+        },
+        {
+            "model_name": "Lg Aka"
+        },
+        {
+            "model_name": "Lg Watch Urbane Lte"
+        },
+        {
+            "model_name": "Lg G Watch W100"
+        },
+        {
+            "model_name": "Lg Magna"
+        },
+        {
+            "model_name": "Lg Spirit"
+        },
+        {
+            "model_name": "Lg Leon"
+        },
+        {
+            "model_name": "Lg Joy"
+        },
+        {
+            "model_name": "Lg G Flex2"
+        },
+        {
+            "model_name": "Lg Tribute"
+        },
+        {
+            "model_name": "Lg L Prime"
+        },
+        {
+            "model_name": "Lg G2 Lite"
+        },
+        {
+            "model_name": "Lg G3 Dual Lte"
+        },
+        {
+            "model_name": "Lg G3 Screen"
+        },
+        {
+            "model_name": "Lg F60"
+        },
+        {
+            "model_name": "Lg L60"
+        },
+        {
+            "model_name": "Lg L60 Dual"
+        },
+        {
+            "model_name": "Lg G3 Stylus"
+        },
+        {
+            "model_name": "Lg L Bello"
+        },
+        {
+            "model_name": "Lg L Fino"
+        },
+        {
+            "model_name": "Lg G Pad 8 0 Lte"
+        },
+        {
+            "model_name": "Lg G Vista"
+        },
+        {
+            "model_name": "Lg G3 A"
+        },
+        {
+            "model_name": "Lg G Pad 7 0 Lte"
+        },
+        {
+            "model_name": "Lg L50"
+        },
+        {
+            "model_name": "Lg L30"
+        },
+        {
+            "model_name": "Lg L20"
+        },
+        {
+            "model_name": "Lg G Vista (Cdma)"
+        },
+        {
+            "model_name": "Lg G3 Lte A"
+        },
+        {
+            "model_name": "Lg G3 S Dual"
+        },
+        {
+            "model_name": "Lg G3 S"
+        },
+        {
+            "model_name": "Lg L65 D280"
+        },
+        {
+            "model_name": "Lg G3 (Cdma)"
+        },
+        {
+            "model_name": "Lg G3"
+        },
+        {
+            "model_name": "Lg 450"
+        },
+        {
+            "model_name": "Lg L35"
+        },
+        {
+            "model_name": "Lg Volt"
+        },
+        {
+            "model_name": "Lg G Pad 10 1 Lte"
+        },
+        {
+            "model_name": "Lg G Pad 10 1"
+        },
+        {
+            "model_name": "Lg G Pad 8 0"
+        },
+        {
+            "model_name": "Lg G Pad 7 0"
+        },
+        {
+            "model_name": "Lg L80"
+        },
+        {
+            "model_name": "Lg L80 Dual"
+        },
+        {
+            "model_name": "Lg Lucid 3 Vs876"
+        },
+        {
+            "model_name": "Lg L65 Dual D285"
+        },
+        {
+            "model_name": "Lg G Pad 8 3 Lte"
+        },
+        {
+            "model_name": "Lg F70 D315"
+        },
+        {
+            "model_name": "Lg G2 Mini Lte (Tegra)"
+        },
+        {
+            "model_name": "Lg G2 Mini Lte"
+        },
+        {
+            "model_name": "Lg G2 Mini"
+        },
+        {
+            "model_name": "Lg L90 Dual D410"
+        },
+        {
+            "model_name": "Lg L90 D405"
+        },
+        {
+            "model_name": "Lg L70 D320N"
+        },
+        {
+            "model_name": "Lg L70 Dual D325"
+        },
+        {
+            "model_name": "Lg L45 Dual X132"
+        },
+        {
+            "model_name": "Lg L40 D160"
+        },
+        {
+            "model_name": "Lg L40 Dual D170"
+        },
+        {
+            "model_name": "Lg G Pro 2"
+        },
+        {
+            "model_name": "Lg Optimus L4 Ii Tri E470"
+        },
+        {
+            "model_name": "Lg Optimus L1 Ii Tri E475"
+        },
+        {
+            "model_name": "Lg Optimus F3Q"
+        },
+        {
+            "model_name": "Lg Gx F310L"
+        },
+        {
+            "model_name": "Lg Nexus 5"
+        },
+        {
+            "model_name": "Lg G Flex"
+        },
+        {
+            "model_name": "Lg Fireweb"
+        },
+        {
+            "model_name": "Lg G Pro Lite"
+        },
+        {
+            "model_name": "Lg G Pro Lite Dual"
+        },
+        {
+            "model_name": "Lg Optimus L2 Ii E435"
+        },
+        {
+            "model_name": "Lg Vu 3 F300L"
+        },
+        {
+            "model_name": "Lg G Pad 8 3"
+        },
+        {
+            "model_name": "Lg G2"
+        },
+        {
+            "model_name": "Lg Optimus L9 Ii"
+        },
+        {
+            "model_name": "Lg Enact Vs890"
+        },
+        {
+            "model_name": "Lg Optimus Gj E975W"
+        },
+        {
+            "model_name": "Lg Optimus L4 Ii Dual E445"
+        },
+        {
+            "model_name": "Lg Optimus L4 Ii E440"
+        },
+        {
+            "model_name": "Lg Optimus Zone Vs410"
+        },
+        {
+            "model_name": "Lg Optimus F3"
+        },
+        {
+            "model_name": "Lg Lucid2 Vs870"
+        },
+        {
+            "model_name": "Lg Optimus F7"
+        },
+        {
+            "model_name": "Lg Optimus F6"
+        },
+        {
+            "model_name": "Lg Optimus F5"
+        },
+        {
+            "model_name": "Lg Optimus G Pro E985"
+        },
+        {
+            "model_name": "Lg Optimus L7 Ii Dual P715"
+        },
+        {
+            "model_name": "Lg Optimus L7 Ii P710"
+        },
+        {
+            "model_name": "Lg Optimus L5 Ii Dual E455"
+        },
+        {
+            "model_name": "Lg Optimus L5 Ii E460"
+        },
+        {
+            "model_name": "Lg Optimus L3 Ii Dual E435"
+        },
+        {
+            "model_name": "Lg Optimus L3 Ii E430"
+        },
+        {
+            "model_name": "Lg Optimus L1 Ii E410"
+        },
+        {
+            "model_name": "Lg Nexus 4 E960"
+        },
+        {
+            "model_name": "Lg A390"
+        },
+        {
+            "model_name": "Lg A395"
+        },
+        {
+            "model_name": "Lg C299"
+        },
+        {
+            "model_name": "Lg Tri Chip C333"
+        },
+        {
+            "model_name": "Lg Spectrum Ii 4G Vs930"
+        },
+        {
+            "model_name": "Lg Mach Ls860"
+        },
+        {
+            "model_name": "Lg Optimus L9 P769"
+        },
+        {
+            "model_name": "Lg Optimus Vu Ii"
+        },
+        {
+            "model_name": "Lg Optimus Vu Ii F200"
+        },
+        {
+            "model_name": "Lg Optimus G E970"
+        },
+        {
+            "model_name": "Lg Optimus G Ls970"
+        },
+        {
+            "model_name": "Lg Optimus G E975"
+        },
+        {
+            "model_name": "Lg Intuition Vs950"
+        },
+        {
+            "model_name": "Lg Splendor Us730"
+        },
+        {
+            "model_name": "Lg Escape P870"
+        },
+        {
+            "model_name": "Lg Optimus L5 Dual E615"
+        },
+        {
+            "model_name": "Lg Optimus L9 P760"
+        },
+        {
+            "model_name": "Lg Motion 4G Ms770"
+        },
+        {
+            "model_name": "Lg Optimus Vu P895"
+        },
+        {
+            "model_name": "Lg Optimus L3 E405"
+        },
+        {
+            "model_name": "Lg C199"
+        },
+        {
+            "model_name": "Lg T385"
+        },
+        {
+            "model_name": "Lg T375 Cookie Smart"
+        },
+        {
+            "model_name": "Lg Optimus Elite Ls696"
+        },
+        {
+            "model_name": "Lg T370 Cookie Smart"
+        },
+        {
+            "model_name": "Lg Optimus Lte2"
+        },
+        {
+            "model_name": "Lg Optimus True Hd Lte P936"
+        },
+        {
+            "model_name": "Lg Xpression C395"
+        },
+        {
+            "model_name": "Lg Lucid 4G Vs840"
+        },
+        {
+            "model_name": "Lg Optimus M Plus Ms695"
+        },
+        {
+            "model_name": "Lg Optimus 4X Hd P880"
+        },
+        {
+            "model_name": "Lg Optimus 3D Max P720"
+        },
+        {
+            "model_name": "Lg Optimus 3D Cube Su870"
+        },
+        {
+            "model_name": "Lg Optimus L7 P700"
+        },
+        {
+            "model_name": "Lg Optimus L5 E610"
+        },
+        {
+            "model_name": "Lg Optimus Vu F100S"
+        },
+        {
+            "model_name": "Lg Optimus Lte Tag"
+        },
+        {
+            "model_name": "Lg Optimus L3 E400"
+        },
+        {
+            "model_name": "Lg Optimus Pad Lte"
+        },
+        {
+            "model_name": "Lg Rumor Reflex  Ln272"
+        },
+        {
+            "model_name": "Lg Connect 4G Ms840"
+        },
+        {
+            "model_name": "Lg Viper 4G Lte Ls840"
+        },
+        {
+            "model_name": "Lg Spectrum Vs920"
+        },
+        {
+            "model_name": "Lg X350"
+        },
+        {
+            "model_name": "Lg Prada 3 0"
+        },
+        {
+            "model_name": "Lg Nitro Hd"
+        },
+        {
+            "model_name": "Lg Optimus 4G Lte P935"
+        },
+        {
+            "model_name": "Lg Optimus 2 As680"
+        },
+        {
+            "model_name": "Lg Extravert Vn271"
+        },
+        {
+            "model_name": "Lg Doubleplay"
+        },
+        {
+            "model_name": "Lg Enlighten Vs700"
+        },
+        {
+            "model_name": "Lg S367"
+        },
+        {
+            "model_name": "Lg Jil Sander Mobile"
+        },
+        {
+            "model_name": "Lg Optimus Slider"
+        },
+        {
+            "model_name": "Lg Optimus Lte Su640"
+        },
+        {
+            "model_name": "Lg Optimus Lte Lu6200"
+        },
+        {
+            "model_name": "Lg Optimus Ex Su880"
+        },
+        {
+            "model_name": "Lg Optimus Q2 Lu6500"
+        },
+        {
+            "model_name": "Lg Optimus Hub E510"
+        },
+        {
+            "model_name": "Lg Optimus Sol E730"
+        },
+        {
+            "model_name": "Lg Optimus Net Dual"
+        },
+        {
+            "model_name": "Lg Optimus Net"
+        },
+        {
+            "model_name": "Lg Esteem Ms910"
+        },
+        {
+            "model_name": "Lg Marquee Ls855"
+        },
+        {
+            "model_name": "Lg Optimus Black (White Version)"
+        },
+        {
+            "model_name": "Lg Optimus Pro C660"
+        },
+        {
+            "model_name": "Lg S365"
+        },
+        {
+            "model_name": "Lg A350"
+        },
+        {
+            "model_name": "Lg A258"
+        },
+        {
+            "model_name": "Lg A250"
+        },
+        {
+            "model_name": "Lg A270"
+        },
+        {
+            "model_name": "Lg A290"
+        },
+        {
+            "model_name": "Lg A230"
+        },
+        {
+            "model_name": "Lg A190"
+        },
+        {
+            "model_name": "Lg A200"
+        },
+        {
+            "model_name": "Lg T515 Cookie Duo"
+        },
+        {
+            "model_name": "Lg T510"
+        },
+        {
+            "model_name": "Lg T505"
+        },
+        {
+            "model_name": "Lg Ego T500"
+        },
+        {
+            "model_name": "Lg Ego Wi Fi"
+        },
+        {
+            "model_name": "Lg C375 Cookie Tweet"
+        },
+        {
+            "model_name": "Lg C365"
+        },
+        {
+            "model_name": "Lg C360"
+        },
+        {
+            "model_name": "Lg A100"
+        },
+        {
+            "model_name": "Lg Optimus Big Lu6800"
+        },
+        {
+            "model_name": "Lg Cosmos 2"
+        },
+        {
+            "model_name": "Lg Us760 Genesis"
+        },
+        {
+            "model_name": "Lg Phoenix P505"
+        },
+        {
+            "model_name": "Lg Thrive P506"
+        },
+        {
+            "model_name": "Lg Thrill 4G P925"
+        },
+        {
+            "model_name": "Lg T315"
+        },
+        {
+            "model_name": "Lg Optimus 3D P920"
+        },
+        {
+            "model_name": "Lg Optimus Pad V900"
+        },
+        {
+            "model_name": "Lg A180"
+        },
+        {
+            "model_name": "Lg A165"
+        },
+        {
+            "model_name": "Lg A160"
+        },
+        {
+            "model_name": "Lg Optimus Chat C550"
+        },
+        {
+            "model_name": "Lg A140"
+        },
+        {
+            "model_name": "Lg Optimus Me P350"
+        },
+        {
+            "model_name": "Lg Optimus Black P970"
+        },
+        {
+            "model_name": "Lg Optimus 2X Su660"
+        },
+        {
+            "model_name": "Lg Optimus 2X"
+        },
+        {
+            "model_name": "Lg Optimus Mach Lu3000"
+        },
+        {
+            "model_name": "Lg Revolution"
+        },
+        {
+            "model_name": "Lg X335"
+        },
+        {
+            "model_name": "Lg C310"
+        },
+        {
+            "model_name": "Lg Cookie Wifi T310I"
+        },
+        {
+            "model_name": "Lg Gu200"
+        },
+        {
+            "model_name": "Lg A120"
+        },
+        {
+            "model_name": "Lg A155"
+        },
+        {
+            "model_name": "Lg S310"
+        },
+        {
+            "model_name": "Lg P525"
+        },
+        {
+            "model_name": "Lg P520"
+        },
+        {
+            "model_name": "Lg Axis"
+        },
+        {
+            "model_name": "Lg Apex"
+        },
+        {
+            "model_name": "Lg Cosmos Touch Vn270"
+        },
+        {
+            "model_name": "Lg Vortex Vs660"
+        },
+        {
+            "model_name": "Lg C320 Intouch Lady"
+        },
+        {
+            "model_name": "Lg Gt550 Encore"
+        },
+        {
+            "model_name": "Lg Gs390 Prime"
+        },
+        {
+            "model_name": "Lg Quantum"
+        },
+        {
+            "model_name": "Lg C900 Optimus 7Q"
+        },
+        {
+            "model_name": "Lg E900 Optimus 7"
+        },
+        {
+            "model_name": "Lg Town C300"
+        },
+        {
+            "model_name": "Lg Optimus Chic E720"
+        },
+        {
+            "model_name": "Lg Optimus M"
+        },
+        {
+            "model_name": "Lg Octane"
+        },
+        {
+            "model_name": "Lg Optimus S"
+        },
+        {
+            "model_name": "Lg Optimus T"
+        },
+        {
+            "model_name": "Lg Optimus One P500"
+        },
+        {
+            "model_name": "Lg Gw910"
+        },
+        {
+            "model_name": "Lg A130"
+        },
+        {
+            "model_name": "Lg Gw370 Rumour Plus"
+        },
+        {
+            "model_name": "Lg Gd550 Pure"
+        },
+        {
+            "model_name": "Lg Ks365"
+        },
+        {
+            "model_name": "Lg Gm650S"
+        },
+        {
+            "model_name": "Lg Scarlet Ii Tv"
+        },
+        {
+            "model_name": "Lg Flick T320"
+        },
+        {
+            "model_name": "Lg Cookie 3G T320"
+        },
+        {
+            "model_name": "Lg Wink 3G T320"
+        },
+        {
+            "model_name": "Lg C710 Aloha"
+        },
+        {
+            "model_name": "Lg Cookie Style T310"
+        },
+        {
+            "model_name": "Lg Wink Style T310"
+        },
+        {
+            "model_name": "Lg Cookie Lite T300"
+        },
+        {
+            "model_name": "Lg C105"
+        },
+        {
+            "model_name": "Lg Gx300"
+        },
+        {
+            "model_name": "Lg Gu292"
+        },
+        {
+            "model_name": "Lg Gm360 Viewty Snap"
+        },
+        {
+            "model_name": "Lg Fathom Vs750"
+        },
+        {
+            "model_name": "Lg Vu Plus"
+        },
+        {
+            "model_name": "Lg Gt400 Viewty Smile"
+        },
+        {
+            "model_name": "Lg Su420 Cafe"
+        },
+        {
+            "model_name": "Lg Optimus Z"
+        },
+        {
+            "model_name": "Lg Su920"
+        },
+        {
+            "model_name": "Lg Km570 Cookie Gig"
+        },
+        {
+            "model_name": "Lg Optimus Q Lu2300"
+        },
+        {
+            "model_name": "Lg Gx500"
+        },
+        {
+            "model_name": "Lg Kh3900 Joypop"
+        },
+        {
+            "model_name": "Lg Gt950 Arena"
+        },
+        {
+            "model_name": "Lg Gb280"
+        },
+        {
+            "model_name": "Lg Gs155"
+        },
+        {
+            "model_name": "Lg Gs107"
+        },
+        {
+            "model_name": "Lg Gs106"
+        },
+        {
+            "model_name": "Lg Kp108"
+        },
+        {
+            "model_name": "Lg Gd350"
+        },
+        {
+            "model_name": "Lg Kh5200 Andro 1"
+        },
+        {
+            "model_name": "Lg Gt540 Optimus"
+        },
+        {
+            "model_name": "Lg Gt405"
+        },
+        {
+            "model_name": "Lg Gs290 Cookie Fresh"
+        },
+        {
+            "model_name": "Lg Gw990"
+        },
+        {
+            "model_name": "Lg Gs500 Cookie Plus"
+        },
+        {
+            "model_name": "Lg Gx200"
+        },
+        {
+            "model_name": "Lg Kf305"
+        },
+        {
+            "model_name": "Lg Gw880"
+        },
+        {
+            "model_name": "Lg Gd880 Mini"
+        },
+        {
+            "model_name": "Lg Etna C330"
+        },
+        {
+            "model_name": "Lg Wink Plus Gt350I"
+        },
+        {
+            "model_name": "Lg Town Gt350"
+        },
+        {
+            "model_name": "Lg Ku2100"
+        },
+        {
+            "model_name": "Lg Gd580 Lollipop"
+        },
+        {
+            "model_name": "Lg Gs200"
+        },
+        {
+            "model_name": "Lg Gs190"
+        },
+        {
+            "model_name": "Lg Gw820 Expo"
+        },
+        {
+            "model_name": "Lg Gu230 Dimsun"
+        },
+        {
+            "model_name": "Lg Gd710 Shine Ii"
+        },
+        {
+            "model_name": "Lg Gb160"
+        },
+        {
+            "model_name": "Lg Gu285"
+        },
+        {
+            "model_name": "Lg 8575 Samba"
+        },
+        {
+            "model_name": "Lg Km555E"
+        },
+        {
+            "model_name": "Lg Gd310"
+        },
+        {
+            "model_name": "Lg Gd510 Pop"
+        },
+        {
+            "model_name": "Lg Bl20 New Chocolate"
+        },
+        {
+            "model_name": "Lg Cf360"
+        },
+        {
+            "model_name": "Lg Gw620"
+        },
+        {
+            "model_name": "Lg Gm750"
+        },
+        {
+            "model_name": "Lg Bl40 New Chocolate"
+        },
+        {
+            "model_name": "Lg Gw300"
+        },
+        {
+            "model_name": "Lg Gb270"
+        },
+        {
+            "model_name": "Lg Gb190"
+        },
+        {
+            "model_name": "Lg Gb109"
+        },
+        {
+            "model_name": "Lg Gb170"
+        },
+        {
+            "model_name": "Lg Gw550"
+        },
+        {
+            "model_name": "Lg Kb775 Scarlet"
+        },
+        {
+            "model_name": "Lg Gt500 Puccini"
+        },
+        {
+            "model_name": "Lg Gt505"
+        },
+        {
+            "model_name": "Lg Gw520"
+        },
+        {
+            "model_name": "Lg Gd900 Crystal"
+        },
+        {
+            "model_name": "Lg Gc900 Viewty Smart"
+        },
+        {
+            "model_name": "Lg Gb230 Julia"
+        },
+        {
+            "model_name": "Lg Gd330"
+        },
+        {
+            "model_name": "Lg Ks660"
+        },
+        {
+            "model_name": "Lg Gb125"
+        },
+        {
+            "model_name": "Lg Xenon Gr500"
+        },
+        {
+            "model_name": "Lg Gb210"
+        },
+        {
+            "model_name": "Lg Gm200 Brio"
+        },
+        {
+            "model_name": "Lg Kc560"
+        },
+        {
+            "model_name": "Lg Km900 Arena"
+        },
+        {
+            "model_name": "Lg Gm730 Eigen"
+        },
+        {
+            "model_name": "Lg Kc910I Renoir"
+        },
+        {
+            "model_name": "Lg Gb250"
+        },
+        {
+            "model_name": "Lg Gb220"
+        },
+        {
+            "model_name": "Lg Gb102"
+        },
+        {
+            "model_name": "Lg Kt770"
+        },
+        {
+            "model_name": "Lg Gb130"
+        },
+        {
+            "model_name": "Lg Gm310"
+        },
+        {
+            "model_name": "Lg Gm210"
+        },
+        {
+            "model_name": "Lg Km330"
+        },
+        {
+            "model_name": "Lg Gb110"
+        },
+        {
+            "model_name": "Lg Gb106"
+        },
+        {
+            "model_name": "Lg Gd910"
+        },
+        {
+            "model_name": "Lg Ct810 Incite"
+        },
+        {
+            "model_name": "Lg Kp152"
+        },
+        {
+            "model_name": "Lg Ks500"
+        },
+        {
+            "model_name": "Lg Kf900 Prada"
+        },
+        {
+            "model_name": "Lg Kc780"
+        },
+        {
+            "model_name": "Lg Kp500 Cookie"
+        },
+        {
+            "model_name": "Lg Kp501 Cookie"
+        },
+        {
+            "model_name": "Lg Kp502 Cookie"
+        },
+        {
+            "model_name": "Lg Kb770"
+        },
+        {
+            "model_name": "Lg Kc910 Renoir"
+        },
+        {
+            "model_name": "Lg Kp270"
+        },
+        {
+            "model_name": "Lg Cb630 Invision"
+        },
+        {
+            "model_name": "Lg Kf311"
+        },
+        {
+            "model_name": "Lg Cp150"
+        },
+        {
+            "model_name": "Lg Kp265"
+        },
+        {
+            "model_name": "Lg Kp260"
+        },
+        {
+            "model_name": "Lg Kp199"
+        },
+        {
+            "model_name": "Lg Kp170"
+        },
+        {
+            "model_name": "Lg Gt365 Neon"
+        },
+        {
+            "model_name": "Lg Univa E510"
+        },
+        {
+            "model_name": "Lg Ks360"
+        },
+        {
+            "model_name": "Lg Kf390"
+        },
+        {
+            "model_name": "Lg Kf350"
+        },
+        {
+            "model_name": "Lg Kf245"
+        },
+        {
+            "model_name": "Lg Kf240"
+        },
+        {
+            "model_name": "Lg U370"
+        },
+        {
+            "model_name": "Lg Hb620T"
+        },
+        {
+            "model_name": "Lg Kc550"
+        },
+        {
+            "model_name": "Lg Kf757 Secret"
+        },
+        {
+            "model_name": "Lg Kf750 Secret"
+        },
+        {
+            "model_name": "Lg Kf755 Secret"
+        },
+        {
+            "model_name": "Lg Cu915 Vu"
+        },
+        {
+            "model_name": "Lg Kf700"
+        },
+        {
+            "model_name": "Lg Kf600"
+        },
+        {
+            "model_name": "Lg Kf510"
+        },
+        {
+            "model_name": "Lg Kp320"
+        },
+        {
+            "model_name": "Lg Kt610"
+        },
+        {
+            "model_name": "Lg Kt520"
+        },
+        {
+            "model_name": "Lg Km710"
+        },
+        {
+            "model_name": "Lg Mg295"
+        },
+        {
+            "model_name": "Lg Kf310"
+        },
+        {
+            "model_name": "Lg Kf300"
+        },
+        {
+            "model_name": "Lg Km500"
+        },
+        {
+            "model_name": "Lg Km386"
+        },
+        {
+            "model_name": "Lg Km380"
+        },
+        {
+            "model_name": "Lg Km338"
+        },
+        {
+            "model_name": "Lg Kg375"
+        },
+        {
+            "model_name": "Lg Kp235"
+        },
+        {
+            "model_name": "Lg Kp220"
+        },
+        {
+            "model_name": "Lg Kp215"
+        },
+        {
+            "model_name": "Lg Kp210"
+        },
+        {
+            "model_name": "Lg Kp130"
+        },
+        {
+            "model_name": "Lg Kp110"
+        },
+        {
+            "model_name": "Lg Kp105"
+        },
+        {
+            "model_name": "Lg Kp100"
+        },
+        {
+            "model_name": "Lg Ku385"
+        },
+        {
+            "model_name": "Lg Ku380"
+        },
+        {
+            "model_name": "Lg U960"
+        },
+        {
+            "model_name": "Lg Kg290"
+        },
+        {
+            "model_name": "Lg Kg288"
+        },
+        {
+            "model_name": "Lg Ks20"
+        },
+        {
+            "model_name": "Lg Ku990 Viewty"
+        },
+        {
+            "model_name": "Lg Ke990 Viewty"
+        },
+        {
+            "model_name": "Lg Ke590"
+        },
+        {
+            "model_name": "Lg Ke500"
+        },
+        {
+            "model_name": "Lg Kg280"
+        },
+        {
+            "model_name": "Lg Kg275"
+        },
+        {
+            "model_name": "Lg Mg160"
+        },
+        {
+            "model_name": "Lg Ku580"
+        },
+        {
+            "model_name": "Lg Ke850 Prada"
+        },
+        {
+            "model_name": "Lg Ke970 Shine"
+        },
+        {
+            "model_name": "Lg Ku970 Shine"
+        },
+        {
+            "model_name": "Lg Ke770 Shine"
+        },
+        {
+            "model_name": "Lg Cu720 Shine"
+        },
+        {
+            "model_name": "Lg Ku950"
+        },
+        {
+            "model_name": "Lg Ks10"
+        },
+        {
+            "model_name": "Lg Ku311"
+        },
+        {
+            "model_name": "Lg Trax Cu575"
+        },
+        {
+            "model_name": "Lg Cu500V"
+        },
+        {
+            "model_name": "Lg Cu515"
+        },
+        {
+            "model_name": "Lg Ce110"
+        },
+        {
+            "model_name": "Lg Ku250"
+        },
+        {
+            "model_name": "Lg Ke260"
+        },
+        {
+            "model_name": "Lg Ke800"
+        },
+        {
+            "model_name": "Lg Ke820"
+        },
+        {
+            "model_name": "Lg Ku800"
+        },
+        {
+            "model_name": "Lg L343I"
+        },
+        {
+            "model_name": "Lg U830"
+        },
+        {
+            "model_name": "Lg Kp200"
+        },
+        {
+            "model_name": "Lg L600V"
+        },
+        {
+            "model_name": "Lg Kp202"
+        },
+        {
+            "model_name": "Lg Cu500"
+        },
+        {
+            "model_name": "Lg U400"
+        },
+        {
+            "model_name": "Lg U310"
+        },
+        {
+            "model_name": "Lg U300"
+        },
+        {
+            "model_name": "Lg Kg800"
+        },
+        {
+            "model_name": "Lg Kg810"
+        },
+        {
+            "model_name": "Lg Ke600"
+        },
+        {
+            "model_name": "Lg Kg330"
+        },
+        {
+            "model_name": "Lg Kg320"
+        },
+        {
+            "model_name": "Lg Cg180"
+        },
+        {
+            "model_name": "Lg Kg300"
+        },
+        {
+            "model_name": "Lg Kg270"
+        },
+        {
+            "model_name": "Lg Kg200"
+        },
+        {
+            "model_name": "Lg Kg195"
+        },
+        {
+            "model_name": "Lg Kg920"
+        },
+        {
+            "model_name": "Lg Ku730"
+        },
+        {
+            "model_name": "Lg U900"
+        },
+        {
+            "model_name": "Lg V9000"
+        },
+        {
+            "model_name": "Lg Kg245"
+        },
+        {
+            "model_name": "Lg Kg240"
+        },
+        {
+            "model_name": "Lg Kg225"
+        },
+        {
+            "model_name": "Lg Kg220"
+        },
+        {
+            "model_name": "Lg Kg210"
+        },
+        {
+            "model_name": "Lg Kg190"
+        },
+        {
+            "model_name": "Lg Kg130"
+        },
+        {
+            "model_name": "Lg Kg120"
+        },
+        {
+            "model_name": "Lg Kg110"
+        },
+        {
+            "model_name": "Lg C2600"
+        },
+        {
+            "model_name": "Lg U890"
+        },
+        {
+            "model_name": "Lg U8550"
+        },
+        {
+            "model_name": "Lg M6100"
+        },
+        {
+            "model_name": "Lg C2500"
+        },
+        {
+            "model_name": "Lg C1150"
+        },
+        {
+            "model_name": "Lg S5300"
+        },
+        {
+            "model_name": "Lg S5200"
+        },
+        {
+            "model_name": "Lg S5100"
+        },
+        {
+            "model_name": "Lg S5000"
+        },
+        {
+            "model_name": "Lg U880"
+        },
+        {
+            "model_name": "Lg P7200"
+        },
+        {
+            "model_name": "Lg B2250"
+        },
+        {
+            "model_name": "Lg B2070"
+        },
+        {
+            "model_name": "Lg B2050"
+        },
+        {
+            "model_name": "Lg M4410"
+        },
+        {
+            "model_name": "Lg M4330"
+        },
+        {
+            "model_name": "Lg M4300"
+        },
+        {
+            "model_name": "Lg F3000"
+        },
+        {
+            "model_name": "Lg F2410"
+        },
+        {
+            "model_name": "Lg F2250"
+        },
+        {
+            "model_name": "Lg L342I"
+        },
+        {
+            "model_name": "Lg L341I"
+        },
+        {
+            "model_name": "Lg C3400"
+        },
+        {
+            "model_name": "Lg C3380"
+        },
+        {
+            "model_name": "Lg C3320"
+        },
+        {
+            "model_name": "Lg C3310"
+        },
+        {
+            "model_name": "Lg C3300"
+        },
+        {
+            "model_name": "Lg U8380"
+        },
+        {
+            "model_name": "Lg U8360"
+        },
+        {
+            "model_name": "Lg U8330"
+        },
+        {
+            "model_name": "Lg U8290"
+        },
+        {
+            "model_name": "Lg U8210"
+        },
+        {
+            "model_name": "Lg U8200"
+        },
+        {
+            "model_name": "Lg U8180"
+        },
+        {
+            "model_name": "Lg B2150"
+        },
+        {
+            "model_name": "Lg B2100"
+        },
+        {
+            "model_name": "Lg B2000"
+        },
+        {
+            "model_name": "Lg F2400"
+        },
+        {
+            "model_name": "Lg F1200"
+        },
+        {
+            "model_name": "Lg F7250"
+        },
+        {
+            "model_name": "Lg A7150"
+        },
+        {
+            "model_name": "Lg L5100"
+        },
+        {
+            "model_name": "Lg C2200"
+        },
+        {
+            "model_name": "Lg C2100"
+        },
+        {
+            "model_name": "Lg G1800"
+        },
+        {
+            "model_name": "Lg G1610"
+        },
+        {
+            "model_name": "Lg G1700"
+        },
+        {
+            "model_name": "Lg F2300"
+        },
+        {
+            "model_name": "Lg F2100"
+        },
+        {
+            "model_name": "Lg L3100"
+        },
+        {
+            "model_name": "Lg C3100"
+        },
+        {
+            "model_name": "Lg G3100"
+        },
+        {
+            "model_name": "Lg L1100"
+        },
+        {
+            "model_name": "Lg C1400"
+        },
+        {
+            "model_name": "Lg C1200"
+        },
+        {
+            "model_name": "Lg C1100"
+        },
+        {
+            "model_name": "Lg G1600"
+        },
+        {
+            "model_name": "Lg T5100"
+        },
+        {
+            "model_name": "Lg G7200"
+        },
+        {
+            "model_name": "Lg G7120"
+        },
+        {
+            "model_name": "Lg U8150"
+        },
+        {
+            "model_name": "Lg U8138"
+        },
+        {
+            "model_name": "Lg U8120"
+        },
+        {
+            "model_name": "Lg U8110"
+        },
+        {
+            "model_name": "Lg U8100"
+        },
+        {
+            "model_name": "Lg G7100"
+        },
+        {
+            "model_name": "Lg G7070"
+        },
+        {
+            "model_name": "Lg G7050"
+        },
+        {
+            "model_name": "Lg G7030"
+        },
+        {
+            "model_name": "Lg G1500"
+        },
+        {
+            "model_name": "Lg G5500"
+        },
+        {
+            "model_name": "Lg G5400"
+        },
+        {
+            "model_name": "Lg G5310"
+        },
+        {
+            "model_name": "Lg G5300"
+        },
+        {
+            "model_name": "Lg G8000"
+        },
+        {
+            "model_name": "Lg G7020"
+        },
+        {
+            "model_name": "Lg W7020"
+        },
+        {
+            "model_name": "Lg G7000"
+        },
+        {
+            "model_name": "Lg W7000"
+        },
+        {
+            "model_name": "Lg G5200"
+        },
+        {
+            "model_name": "Lg W5200"
+        },
+        {
+            "model_name": "Lg G3000"
+        },
+        {
+            "model_name": "Lg W3000"
+        },
+        {
+            "model_name": "Lg B1200"
+        },
+        {
+            "model_name": "Lg Lg 510W"
+        },
+        {
+            "model_name": "Lg Lg 600"
+        },
+        {
+            "model_name": "Lg Lg 500"
+        },
+        {
+            "model_name": "Lg Lg 200"
+        },
+        {
+            "model_name": "Lg G4 Pro"
+        },
+        {
+            "model_name": "Lg Optimus Lte"
+        },
+        {
+            "model_name": "Lg X3"
+        },
+        {
+            "model_name": "Lg E2"
+        },
+        {
+            "model_name": "Lg Fantasy E740"
+        }
+    ]
+}

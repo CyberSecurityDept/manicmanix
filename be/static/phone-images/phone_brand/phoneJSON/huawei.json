@@ -1,0 +1,1385 @@
+{
+    "brand": "Huawei",
+    "models": [
+        {
+            "model_name": "Huawei Watch Gt 5 Pro"
+        },
+        {
+            "model_name": "Huawei Watch Gt 5"
+        },
+        {
+            "model_name": "Huawei Watch D2"
+        },
+        {
+            "model_name": "Huawei Matepad 12 X"
+        },
+        {
+            "model_name": "Huawei Mate Xt Ultimate"
+        },
+        {
+            "model_name": "Huawei Matepad Air (2024)"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 12 2 (2024)"
+        },
+        {
+            "model_name": "Huawei Nova Flip"
+        },
+        {
+            "model_name": "Huawei Matepad Se 11"
+        },
+        {
+            "model_name": "Huawei Matepad 11 5 S"
+        },
+        {
+            "model_name": "Huawei Pura 70 Ultra"
+        },
+        {
+            "model_name": "Huawei Pura 70 Pro Plus"
+        },
+        {
+            "model_name": "Huawei Pura 70 Pro"
+        },
+        {
+            "model_name": "Huawei Pura 70"
+        },
+        {
+            "model_name": "Huawei Nova 12I"
+        },
+        {
+            "model_name": "Huawei Nova 12 Se"
+        },
+        {
+            "model_name": "Huawei Nova 12S"
+        },
+        {
+            "model_name": "Huawei Pocket 2"
+        },
+        {
+            "model_name": "Huawei Enjoy 70Z"
+        },
+        {
+            "model_name": "Huawei Nova Y72"
+        },
+        {
+            "model_name": "Huawei Nova 12 Ultra"
+        },
+        {
+            "model_name": "Huawei Nova 12 Pro"
+        },
+        {
+            "model_name": "Huawei Nova 12"
+        },
+        {
+            "model_name": "Huawei Nova 12 Lite"
+        },
+        {
+            "model_name": "Huawei Enjoy 70"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 11 (2024)"
+        },
+        {
+            "model_name": "Huawei Nova 11 Se"
+        },
+        {
+            "model_name": "Huawei Watch Ultimate Design"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 13 2"
+        },
+        {
+            "model_name": "Huawei Mate 60 Rs Ultimate"
+        },
+        {
+            "model_name": "Huawei Watch Gt 4"
+        },
+        {
+            "model_name": "Huawei Mate 60 Pro Plus"
+        },
+        {
+            "model_name": "Huawei Mate X5"
+        },
+        {
+            "model_name": "Huawei Mate 60 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 60"
+        },
+        {
+            "model_name": "Huawei Matepad 11 5"
+        },
+        {
+            "model_name": "Huawei Matepad Air"
+        },
+        {
+            "model_name": "Huawei Nova Y91"
+        },
+        {
+            "model_name": "Huawei Watch 4 Pro"
+        },
+        {
+            "model_name": "Huawei Watch 4"
+        },
+        {
+            "model_name": "Huawei Nova 11I"
+        },
+        {
+            "model_name": "Huawei Nova Y71"
+        },
+        {
+            "model_name": "Huawei Enjoy 60X"
+        },
+        {
+            "model_name": "Huawei Nova 11 Ultra"
+        },
+        {
+            "model_name": "Huawei Nova 11 Pro"
+        },
+        {
+            "model_name": "Huawei Nova 11"
+        },
+        {
+            "model_name": "Huawei Mate X3"
+        },
+        {
+            "model_name": "Huawei P60 Pro"
+        },
+        {
+            "model_name": "Huawei P60"
+        },
+        {
+            "model_name": "Huawei P60 Art"
+        },
+        {
+            "model_name": "Huawei Enjoy 60"
+        },
+        {
+            "model_name": "Huawei Watch Ultimate"
+        },
+        {
+            "model_name": "Huawei Matepad 11 (2023)"
+        },
+        {
+            "model_name": "Huawei Nova 10 Youth"
+        },
+        {
+            "model_name": "Huawei Watch Buds"
+        },
+        {
+            "model_name": "Huawei Enjoy 50Z"
+        },
+        {
+            "model_name": "Huawei Watch Gt 3 Se"
+        },
+        {
+            "model_name": "Huawei Pocket S"
+        },
+        {
+            "model_name": "Huawei Watch Gt Cyber"
+        },
+        {
+            "model_name": "Huawei Nova Y61"
+        },
+        {
+            "model_name": "Huawei Matepad C5E"
+        },
+        {
+            "model_name": "Huawei Nova 10 Se"
+        },
+        {
+            "model_name": "Huawei Mate 50 Rs Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 50 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 50E"
+        },
+        {
+            "model_name": "Huawei Mate 50"
+        },
+        {
+            "model_name": "Huawei Nova 10Z"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 11 (2022)"
+        },
+        {
+            "model_name": "Huawei Nova 10 Pro"
+        },
+        {
+            "model_name": "Huawei Nova 10"
+        },
+        {
+            "model_name": "Huawei Nova Y90"
+        },
+        {
+            "model_name": "Huawei Matepad 10 4 (2022)"
+        },
+        {
+            "model_name": "Huawei Mate Xs 2"
+        },
+        {
+            "model_name": "Huawei Watch Gt 3 Porsche Design"
+        },
+        {
+            "model_name": "Huawei Watch Gt 3 Pro"
+        },
+        {
+            "model_name": "Huawei Watch D"
+        },
+        {
+            "model_name": "Huawei Matepad Se"
+        },
+        {
+            "model_name": "Huawei Nova 9 Se 5G"
+        },
+        {
+            "model_name": "Huawei Nova Y70 Plus"
+        },
+        {
+            "model_name": "Huawei P50E"
+        },
+        {
+            "model_name": "Huawei Nova 9 Se"
+        },
+        {
+            "model_name": "Huawei P50 Pocket"
+        },
+        {
+            "model_name": "Huawei Nova 8 Se 4G"
+        },
+        {
+            "model_name": "Huawei Nova Y60"
+        },
+        {
+            "model_name": "Huawei Enjoy 20E"
+        },
+        {
+            "model_name": "Huawei Watch Gt Runner"
+        },
+        {
+            "model_name": "Huawei Watch Fit Mini"
+        },
+        {
+            "model_name": "Huawei Watch Gt 3"
+        },
+        {
+            "model_name": "Huawei Nova 9 Pro"
+        },
+        {
+            "model_name": "Huawei Nova 9"
+        },
+        {
+            "model_name": "Huawei Nova 8"
+        },
+        {
+            "model_name": "Huawei P50 Pro"
+        },
+        {
+            "model_name": "Huawei P50"
+        },
+        {
+            "model_name": "Huawei Nova 8 Se Youth"
+        },
+        {
+            "model_name": "Huawei Nova 8I"
+        },
+        {
+            "model_name": "Huawei Mate 40 Pro 4G"
+        },
+        {
+            "model_name": "Huawei Mate 40E 4G"
+        },
+        {
+            "model_name": "Huawei Mate X2 4G"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 12 6 (2021)"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 10 8 (2021)"
+        },
+        {
+            "model_name": "Huawei Matepad 11 (2021)"
+        },
+        {
+            "model_name": "Huawei Watch 3 Pro"
+        },
+        {
+            "model_name": "Huawei Watch 3"
+        },
+        {
+            "model_name": "Huawei Nova 8 Pro 4G"
+        },
+        {
+            "model_name": "Huawei Matepad T 10"
+        },
+        {
+            "model_name": "Huawei Watch Fit Elegant"
+        },
+        {
+            "model_name": "Huawei Mate 40E"
+        },
+        {
+            "model_name": "Huawei P40 4G"
+        },
+        {
+            "model_name": "Huawei Mate X2"
+        },
+        {
+            "model_name": "Huawei Nova 8 Pro 5G"
+        },
+        {
+            "model_name": "Huawei Nova 8 5G"
+        },
+        {
+            "model_name": "Huawei Enjoy 20 Se"
+        },
+        {
+            "model_name": "Huawei Nova 8 Se"
+        },
+        {
+            "model_name": "Huawei Mate 40 Rs Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 40 Pro Plus"
+        },
+        {
+            "model_name": "Huawei Mate 40 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 40"
+        },
+        {
+            "model_name": "Huawei Watch Gt 2 Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 30E Pro 5G"
+        },
+        {
+            "model_name": "Huawei Nova 7 Se 5G Youth"
+        },
+        {
+            "model_name": "Huawei Y7A"
+        },
+        {
+            "model_name": "Huawei P Smart 2021"
+        },
+        {
+            "model_name": "Huawei Matepad 5G"
+        },
+        {
+            "model_name": "Huawei Watch Gt 2 Pro"
+        },
+        {
+            "model_name": "Huawei Y9A"
+        },
+        {
+            "model_name": "Huawei Enjoy 20 Plus 5G"
+        },
+        {
+            "model_name": "Huawei Enjoy 20 5G"
+        },
+        {
+            "model_name": "Huawei Watch Fit"
+        },
+        {
+            "model_name": "Huawei Matepad 10 8"
+        },
+        {
+            "model_name": "Huawei Matepad T 10S"
+        },
+        {
+            "model_name": "Huawei Enjoy Tablet 2"
+        },
+        {
+            "model_name": "Huawei Children S Watch 4X"
+        },
+        {
+            "model_name": "Huawei Enjoy 20 Pro"
+        },
+        {
+            "model_name": "Huawei Enjoy Z 5G"
+        },
+        {
+            "model_name": "Huawei P Smart S"
+        },
+        {
+            "model_name": "Huawei Y8P"
+        },
+        {
+            "model_name": "Huawei P40 Lite 5G"
+        },
+        {
+            "model_name": "Huawei P30 Pro New Edition"
+        },
+        {
+            "model_name": "Huawei Matepad T8"
+        },
+        {
+            "model_name": "Huawei Y8S"
+        },
+        {
+            "model_name": "Huawei Y6P"
+        },
+        {
+            "model_name": "Huawei Y5P"
+        },
+        {
+            "model_name": "Huawei P Smart 2020"
+        },
+        {
+            "model_name": "Huawei Nova 7 Pro 5G"
+        },
+        {
+            "model_name": "Huawei Nova 7 5G"
+        },
+        {
+            "model_name": "Huawei Nova 7 Se"
+        },
+        {
+            "model_name": "Huawei Matepad 10 4"
+        },
+        {
+            "model_name": "Huawei Watch Gt 2E"
+        },
+        {
+            "model_name": "Huawei Enjoy 10E"
+        },
+        {
+            "model_name": "Huawei P40 Pro Plus"
+        },
+        {
+            "model_name": "Huawei P40 Pro"
+        },
+        {
+            "model_name": "Huawei P40"
+        },
+        {
+            "model_name": "Huawei P40 Lite E"
+        },
+        {
+            "model_name": "Huawei P40 Lite"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 10 8 5G (2019)"
+        },
+        {
+            "model_name": "Huawei Mate Xs"
+        },
+        {
+            "model_name": "Huawei P30 Lite New Edition"
+        },
+        {
+            "model_name": "Huawei Y7P"
+        },
+        {
+            "model_name": "Huawei Nova 7I"
+        },
+        {
+            "model_name": "Huawei Y6S (2019)"
+        },
+        {
+            "model_name": "Huawei P Smart Pro 2019"
+        },
+        {
+            "model_name": "Huawei Nova 6 5G"
+        },
+        {
+            "model_name": "Huawei Nova 6"
+        },
+        {
+            "model_name": "Huawei Nova 6 Se"
+        },
+        {
+            "model_name": "Huawei Matepad Pro 10 8 (2019)"
+        },
+        {
+            "model_name": "Huawei Mate X"
+        },
+        {
+            "model_name": "Huawei Y9S"
+        },
+        {
+            "model_name": "Huawei Nova 5Z"
+        },
+        {
+            "model_name": "Huawei Enjoy 10S"
+        },
+        {
+            "model_name": "Huawei Enjoy 10"
+        },
+        {
+            "model_name": "Huawei Mate 30 Rs Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 30 Pro 5G"
+        },
+        {
+            "model_name": "Huawei Mate 30 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 30 5G"
+        },
+        {
+            "model_name": "Huawei Mate 30"
+        },
+        {
+            "model_name": "Huawei Watch Gt 2"
+        },
+        {
+            "model_name": "Huawei Nova 5I Pro"
+        },
+        {
+            "model_name": "Huawei Enjoy 10 Plus"
+        },
+        {
+            "model_name": "Huawei Nova 5T"
+        },
+        {
+            "model_name": "Huawei Mediapad M6 10 8"
+        },
+        {
+            "model_name": "Huawei Mediapad M6 Turbo 8 4"
+        },
+        {
+            "model_name": "Huawei Mediapad M6 8 4"
+        },
+        {
+            "model_name": "Huawei Nova 5 Pro"
+        },
+        {
+            "model_name": "Huawei Nova 5"
+        },
+        {
+            "model_name": "Huawei Nova 5I"
+        },
+        {
+            "model_name": "Huawei Y9 Prime (2019)"
+        },
+        {
+            "model_name": "Huawei P20 Lite (2019)"
+        },
+        {
+            "model_name": "Huawei P Smart Z"
+        },
+        {
+            "model_name": "Huawei Mate 20 X (5G)"
+        },
+        {
+            "model_name": "Huawei P30 Pro"
+        },
+        {
+            "model_name": "Huawei P30"
+        },
+        {
+            "model_name": "Huawei P30 Lite"
+        },
+        {
+            "model_name": "Huawei Nova 4E"
+        },
+        {
+            "model_name": "Huawei Y5 (2019)"
+        },
+        {
+            "model_name": "Huawei Enjoy 9E"
+        },
+        {
+            "model_name": "Huawei Enjoy 9S"
+        },
+        {
+            "model_name": "Huawei Y Max"
+        },
+        {
+            "model_name": "Huawei Mediapad M5 Lite 8"
+        },
+        {
+            "model_name": "Huawei Y6 Pro (2019)"
+        },
+        {
+            "model_name": "Huawei Y6 (2019)"
+        },
+        {
+            "model_name": "Huawei Y7 (2019)"
+        },
+        {
+            "model_name": "Huawei Y7 Prime (2019)"
+        },
+        {
+            "model_name": "Huawei Y7 Pro (2019)"
+        },
+        {
+            "model_name": "Huawei Y5 Lite (2018)"
+        },
+        {
+            "model_name": "Huawei Nova 4"
+        },
+        {
+            "model_name": "Huawei P Smart 2019"
+        },
+        {
+            "model_name": "Huawei Enjoy 9"
+        },
+        {
+            "model_name": "Huawei Watch Magic"
+        },
+        {
+            "model_name": "Huawei Watch Gt"
+        },
+        {
+            "model_name": "Huawei Mate 20 Rs Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 20 X"
+        },
+        {
+            "model_name": "Huawei Mate 20 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 20"
+        },
+        {
+            "model_name": "Huawei Mediapad T5"
+        },
+        {
+            "model_name": "Huawei Mediapad M5 Lite"
+        },
+        {
+            "model_name": "Huawei Y9 (2019)"
+        },
+        {
+            "model_name": "Huawei Mate 20 Lite"
+        },
+        {
+            "model_name": "Huawei P Smart Plus 2019"
+        },
+        {
+            "model_name": "Huawei Nova 3I"
+        },
+        {
+            "model_name": "Huawei Nova 3"
+        },
+        {
+            "model_name": "Huawei Watch 2 2018"
+        },
+        {
+            "model_name": "Huawei Y5 Prime (2018)"
+        },
+        {
+            "model_name": "Huawei Y3 (2018)"
+        },
+        {
+            "model_name": "Huawei Y6 Prime (2018)"
+        },
+        {
+            "model_name": "Huawei Y6 (2018)"
+        },
+        {
+            "model_name": "Huawei Mate Rs Porsche Design"
+        },
+        {
+            "model_name": "Huawei P20 Pro"
+        },
+        {
+            "model_name": "Huawei P20"
+        },
+        {
+            "model_name": "Huawei P20 Lite"
+        },
+        {
+            "model_name": "Huawei Y7 Pro (2018)"
+        },
+        {
+            "model_name": "Huawei Y7 Prime (2018)"
+        },
+        {
+            "model_name": "Huawei Y7 (2018)"
+        },
+        {
+            "model_name": "Huawei Y9 (2018)"
+        },
+        {
+            "model_name": "Huawei Mediapad M5 10 (Pro)"
+        },
+        {
+            "model_name": "Huawei Mediapad M5 10"
+        },
+        {
+            "model_name": "Huawei Mediapad M5 8"
+        },
+        {
+            "model_name": "Huawei P Smart"
+        },
+        {
+            "model_name": "Huawei Nova 2S"
+        },
+        {
+            "model_name": "Huawei Mate 10 Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 10 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 10"
+        },
+        {
+            "model_name": "Huawei Watch 2 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 10 Lite"
+        },
+        {
+            "model_name": "Huawei P9 Lite Mini"
+        },
+        {
+            "model_name": "Huawei Y7 Prime"
+        },
+        {
+            "model_name": "Huawei Mediapad M3 Lite 8"
+        },
+        {
+            "model_name": "Huawei Mediapad T3 10"
+        },
+        {
+            "model_name": "Huawei Mediapad M3 Lite 10"
+        },
+        {
+            "model_name": "Huawei Nova 2 Plus"
+        },
+        {
+            "model_name": "Huawei Nova 2"
+        },
+        {
+            "model_name": "Huawei Y6Ii Compact"
+        },
+        {
+            "model_name": "Huawei Mediapad T3 8 0"
+        },
+        {
+            "model_name": "Huawei Mediapad T3 7 0"
+        },
+        {
+            "model_name": "Huawei Y7"
+        },
+        {
+            "model_name": "Huawei Y6 (2017)"
+        },
+        {
+            "model_name": "Huawei Y5 (2017)"
+        },
+        {
+            "model_name": "Huawei Y3 (2017)"
+        },
+        {
+            "model_name": "Huawei Watch 2 Classic"
+        },
+        {
+            "model_name": "Huawei Watch 2"
+        },
+        {
+            "model_name": "Huawei P10 Plus"
+        },
+        {
+            "model_name": "Huawei P10"
+        },
+        {
+            "model_name": "Huawei P10 Lite"
+        },
+        {
+            "model_name": "Huawei P8 Lite (2017)"
+        },
+        {
+            "model_name": "Huawei Enjoy 6S"
+        },
+        {
+            "model_name": "Huawei Mate 9 Pro"
+        },
+        {
+            "model_name": "Huawei Mate 9 Porsche Design"
+        },
+        {
+            "model_name": "Huawei Mate 9"
+        },
+        {
+            "model_name": "Huawei Fit"
+        },
+        {
+            "model_name": "Huawei Enjoy 6"
+        },
+        {
+            "model_name": "Huawei Mediapad M3 8 4"
+        },
+        {
+            "model_name": "Huawei Nova Plus"
+        },
+        {
+            "model_name": "Huawei Nova"
+        },
+        {
+            "model_name": "Huawei Mediapad T2 10 0 Pro"
+        },
+        {
+            "model_name": "Huawei Mediapad T2 7 0 Pro"
+        },
+        {
+            "model_name": "Huawei Mediapad T2 7 0"
+        },
+        {
+            "model_name": "Huawei G9 Plus"
+        },
+        {
+            "model_name": "Huawei Mediapad T1 7 0 Plus"
+        },
+        {
+            "model_name": "Huawei Mediapad M2 7 0"
+        },
+        {
+            "model_name": "Huawei Y3Ii"
+        },
+        {
+            "model_name": "Huawei Y5Ii"
+        },
+        {
+            "model_name": "Huawei P9 Lite"
+        },
+        {
+            "model_name": "Huawei P9 Plus"
+        },
+        {
+            "model_name": "Huawei P9"
+        },
+        {
+            "model_name": "Huawei Mediapad M2 10 0"
+        },
+        {
+            "model_name": "Huawei Watch"
+        },
+        {
+            "model_name": "Huawei Enjoy 5S"
+        },
+        {
+            "model_name": "Huawei Mate 8"
+        },
+        {
+            "model_name": "Huawei G7 Plus"
+        },
+        {
+            "model_name": "Huawei Y6 Pro"
+        },
+        {
+            "model_name": "Huawei Nexus 6P"
+        },
+        {
+            "model_name": "Huawei Mate S"
+        },
+        {
+            "model_name": "Huawei Y6"
+        },
+        {
+            "model_name": "Huawei G8"
+        },
+        {
+            "model_name": "Huawei Mediapad M2 8 0"
+        },
+        {
+            "model_name": "Huawei Y560"
+        },
+        {
+            "model_name": "Huawei Y625"
+        },
+        {
+            "model_name": "Huawei P8Lite Ale L04"
+        },
+        {
+            "model_name": "Huawei P8Lite"
+        },
+        {
+            "model_name": "Huawei P8Max"
+        },
+        {
+            "model_name": "Huawei P8"
+        },
+        {
+            "model_name": "Huawei Snapto"
+        },
+        {
+            "model_name": "Huawei Mediapad X2"
+        },
+        {
+            "model_name": "Huawei Y635"
+        },
+        {
+            "model_name": "Huawei Y360"
+        },
+        {
+            "model_name": "Huawei Ascend Y540"
+        },
+        {
+            "model_name": "Huawei Ascend G628"
+        },
+        {
+            "model_name": "Huawei Ascend Y520"
+        },
+        {
+            "model_name": "Huawei Ascend Y221"
+        },
+        {
+            "model_name": "Huawei Ascend Gx1"
+        },
+        {
+            "model_name": "Huawei Ascend Mate7 Monarch"
+        },
+        {
+            "model_name": "Huawei Mediapad T1 10"
+        },
+        {
+            "model_name": "Huawei Mediapad T1 8 0"
+        },
+        {
+            "model_name": "Huawei Mediapad T1 7 0"
+        },
+        {
+            "model_name": "Huawei Ascend G620S"
+        },
+        {
+            "model_name": "Huawei Ascend Y550"
+        },
+        {
+            "model_name": "Huawei Ascend G7"
+        },
+        {
+            "model_name": "Huawei Ascend P7 Sapphire Edition"
+        },
+        {
+            "model_name": "Huawei Ascend Mate7"
+        },
+        {
+            "model_name": "Huawei Ascend G535"
+        },
+        {
+            "model_name": "Huawei Y300Ii"
+        },
+        {
+            "model_name": "Huawei Ascend G630"
+        },
+        {
+            "model_name": "Huawei Ascend Y330"
+        },
+        {
+            "model_name": "Huawei Ascend Plus"
+        },
+        {
+            "model_name": "Huawei Ascend P7"
+        },
+        {
+            "model_name": "Huawei Ascend P7 Mini"
+        },
+        {
+            "model_name": "Huawei Ascend G730"
+        },
+        {
+            "model_name": "Huawei Ascend Y600"
+        },
+        {
+            "model_name": "Huawei Mediapad 10 Link Plus"
+        },
+        {
+            "model_name": "Huawei Ascend G6 4G"
+        },
+        {
+            "model_name": "Huawei Ascend G6"
+        },
+        {
+            "model_name": "Huawei Mediapad M1"
+        },
+        {
+            "model_name": "Huawei Mediapad X1"
+        },
+        {
+            "model_name": "Huawei Ascend Y530"
+        },
+        {
+            "model_name": "Huawei Mediapad 7 Youth2"
+        },
+        {
+            "model_name": "Huawei Ascend P6 S"
+        },
+        {
+            "model_name": "Huawei Ascend Mate2 4G"
+        },
+        {
+            "model_name": "Huawei Ascend Y320"
+        },
+        {
+            "model_name": "Huawei Ascend Y220"
+        },
+        {
+            "model_name": "Huawei Ascend G740"
+        },
+        {
+            "model_name": "Huawei Ascend Y511"
+        },
+        {
+            "model_name": "Huawei Ascend W2"
+        },
+        {
+            "model_name": "Huawei G6153"
+        },
+        {
+            "model_name": "Huawei G3621L"
+        },
+        {
+            "model_name": "Huawei Ascend G700"
+        },
+        {
+            "model_name": "Huawei G610S"
+        },
+        {
+            "model_name": "Huawei U8687 Cronos"
+        },
+        {
+            "model_name": "Huawei Ascend G525"
+        },
+        {
+            "model_name": "Huawei Mediapad 7 Youth"
+        },
+        {
+            "model_name": "Huawei Mediapad 7 Vogue"
+        },
+        {
+            "model_name": "Huawei Ascend P6"
+        },
+        {
+            "model_name": "Huawei Ascend Y300"
+        },
+        {
+            "model_name": "Huawei Premia 4G M931"
+        },
+        {
+            "model_name": "Huawei Ascend Y210D"
+        },
+        {
+            "model_name": "Huawei Ascend P2"
+        },
+        {
+            "model_name": "Huawei Ascend G615"
+        },
+        {
+            "model_name": "Huawei Ascend G526"
+        },
+        {
+            "model_name": "Huawei Ascend G350"
+        },
+        {
+            "model_name": "Huawei Ascend G312"
+        },
+        {
+            "model_name": "Huawei Ascend W1"
+        },
+        {
+            "model_name": "Huawei Ascend Mate"
+        },
+        {
+            "model_name": "Huawei Ascend D2"
+        },
+        {
+            "model_name": "Huawei Ascend G510"
+        },
+        {
+            "model_name": "Huawei Ascend G500"
+        },
+        {
+            "model_name": "Huawei Ascend Y201 Pro"
+        },
+        {
+            "model_name": "Huawei Mediapad 10 Link"
+        },
+        {
+            "model_name": "Huawei Ascend Y"
+        },
+        {
+            "model_name": "Huawei Summit"
+        },
+        {
+            "model_name": "Huawei Ascend P1 Lte"
+        },
+        {
+            "model_name": "Huawei Fusion 2 U8665"
+        },
+        {
+            "model_name": "Huawei Ascend G600"
+        },
+        {
+            "model_name": "Huawei Ascend G330"
+        },
+        {
+            "model_name": "Huawei Mediapad 7 Lite"
+        },
+        {
+            "model_name": "Huawei Ascend Y100"
+        },
+        {
+            "model_name": "Huawei Ascend Y200"
+        },
+        {
+            "model_name": "Huawei Ascend G330D U8825D"
+        },
+        {
+            "model_name": "Huawei Ascend G300"
+        },
+        {
+            "model_name": "Huawei Ascend P1 Xl U9200E"
+        },
+        {
+            "model_name": "Huawei Ascend P1"
+        },
+        {
+            "model_name": "Huawei Ascend Q M5660"
+        },
+        {
+            "model_name": "Huawei G6005"
+        },
+        {
+            "model_name": "Huawei G6800"
+        },
+        {
+            "model_name": "Huawei G6310"
+        },
+        {
+            "model_name": "Huawei G5000"
+        },
+        {
+            "model_name": "Huawei Activa 4G"
+        },
+        {
+            "model_name": "Huawei G5520"
+        },
+        {
+            "model_name": "Huawei G6609"
+        },
+        {
+            "model_name": "Huawei Fusion U8652"
+        },
+        {
+            "model_name": "Huawei Mediapad 10 Fhd"
+        },
+        {
+            "model_name": "Huawei Ascend D1 Xl U9500E"
+        },
+        {
+            "model_name": "Huawei Ascend D1"
+        },
+        {
+            "model_name": "Huawei Ascend D Quad Xl"
+        },
+        {
+            "model_name": "Huawei Ascend D Quad"
+        },
+        {
+            "model_name": "Huawei Ascend P1S"
+        },
+        {
+            "model_name": "Huawei M886 Mercury"
+        },
+        {
+            "model_name": "Huawei G7300"
+        },
+        {
+            "model_name": "Huawei G7005"
+        },
+        {
+            "model_name": "Huawei Mediapad"
+        },
+        {
+            "model_name": "Huawei Mediapad S7 301W"
+        },
+        {
+            "model_name": "Huawei D51 Discovery"
+        },
+        {
+            "model_name": "Huawei U8520 Duplex"
+        },
+        {
+            "model_name": "Huawei T8300"
+        },
+        {
+            "model_name": "Huawei U8350 Boulder"
+        },
+        {
+            "model_name": "Huawei Impulse 4G"
+        },
+        {
+            "model_name": "Huawei Pillar"
+        },
+        {
+            "model_name": "Huawei U8850 Vision"
+        },
+        {
+            "model_name": "Huawei Ascend Ii"
+        },
+        {
+            "model_name": "Huawei U8800 Pro"
+        },
+        {
+            "model_name": "Huawei G7206"
+        },
+        {
+            "model_name": "Huawei U5510"
+        },
+        {
+            "model_name": "Huawei G5500"
+        },
+        {
+            "model_name": "Huawei G6620"
+        },
+        {
+            "model_name": "Huawei U8650 Sonic"
+        },
+        {
+            "model_name": "Huawei U8180 Ideos X1"
+        },
+        {
+            "model_name": "Huawei G6608"
+        },
+        {
+            "model_name": "Huawei G7010"
+        },
+        {
+            "model_name": "Huawei U5900S"
+        },
+        {
+            "model_name": "Huawei Ideos S7 Slim"
+        },
+        {
+            "model_name": "Huawei Ideos S7 Slim Cdma"
+        },
+        {
+            "model_name": "Huawei U9000 Ideos X6"
+        },
+        {
+            "model_name": "Huawei U8800 Ideos X5"
+        },
+        {
+            "model_name": "Huawei U8510 Ideos X3"
+        },
+        {
+            "model_name": "Huawei U8150 Ideos"
+        },
+        {
+            "model_name": "Huawei U8500 Ideos X2"
+        },
+        {
+            "model_name": "Huawei U7520"
+        },
+        {
+            "model_name": "Huawei G6150"
+        },
+        {
+            "model_name": "Huawei G7002"
+        },
+        {
+            "model_name": "Huawei U8300"
+        },
+        {
+            "model_name": "Huawei Ideos S7"
+        },
+        {
+            "model_name": "Huawei C3200"
+        },
+        {
+            "model_name": "Huawei U3100"
+        },
+        {
+            "model_name": "Huawei U8110"
+        },
+        {
+            "model_name": "Huawei U8100"
+        },
+        {
+            "model_name": "Huawei U8230"
+        },
+        {
+            "model_name": "Huawei U8220"
+        },
+        {
+            "model_name": "Huawei U7510"
+        },
+        {
+            "model_name": "Huawei U1270"
+        },
+        {
+            "model_name": "Huawei U9130 Compass"
+        },
+        {
+            "model_name": "Huawei U1250"
+        },
+        {
+            "model_name": "Huawei G6600 Passport"
+        },
+        {
+            "model_name": "Huawei U9150"
+        },
+        {
+            "model_name": "Huawei U7310"
+        },
+        {
+            "model_name": "Huawei U121"
+        },
+        {
+            "model_name": "Huawei U120"
+        },
+        {
+            "model_name": "Huawei U3300"
+        },
+        {
+            "model_name": "Huawei U1310"
+        },
+        {
+            "model_name": "Huawei U1100"
+        },
+        {
+            "model_name": "Huawei U1000"
+        },
+        {
+            "model_name": "Huawei T156"
+        },
+        {
+            "model_name": "Huawei T158"
+        },
+        {
+            "model_name": "Huawei T208"
+        },
+        {
+            "model_name": "Huawei T261L"
+        },
+        {
+            "model_name": "Huawei T211"
+        },
+        {
+            "model_name": "Huawei T161L"
+        },
+        {
+            "model_name": "Huawei T330"
+        },
+        {
+            "model_name": "Huawei T201"
+        },
+        {
+            "model_name": "Huawei T552"
+        },
+        {
+            "model_name": "Huawei Mate 30 Lite"
+        },
+        {
+            "model_name": "Huawei G10"
+        },
+        {
+            "model_name": "Huawei Mulan"
+        },
+        {
+            "model_name": "Huawei Ascend W3"
+        }
+    ]
+}

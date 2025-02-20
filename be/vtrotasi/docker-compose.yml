@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+    container_name: vtmanager-app
+    ports:
+      - "9000:8000"
+    depends_on:
+      - redis
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - /Users/noname/malware-analysis/backend/cundamanix-api/vtrotasi/keys.db:/app/keys.db
+      - /Users/noname/malware-analysis/backend/cundamanix-api/src/isolated:/app/uploaded_files
+
+  redis:
+    image: redis:latest
+    container_name: vtmanager-redis
+    ports:
+      - "6379:6379"
+
+  celery-worker:
+    build:
+      context: .
+    container_name: vtmanager-celery-worker
+    command: celery -A app.tasks worker --loglevel=info
+    depends_on:
+      - redis
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - /Users/noname/malware-analysis/backend/cundamanix-api/vtrotasi/keys.db:/app/keys.db
+      - /Users/noname/malware-analysis/backend/cundamanix-api/src/isolated:/app/uploaded_files

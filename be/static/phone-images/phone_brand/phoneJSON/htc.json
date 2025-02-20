@@ -1,0 +1,875 @@
+{
+    "brand": "Htc",
+    "models": [
+        {
+            "model_name": "Htc U24 Pro"
+        },
+        {
+            "model_name": "Htc A101 Plus"
+        },
+        {
+            "model_name": "Htc A104"
+        },
+        {
+            "model_name": "Htc Wildfire E Star"
+        },
+        {
+            "model_name": "Htc U23"
+        },
+        {
+            "model_name": "Htc U23 Pro"
+        },
+        {
+            "model_name": "Htc A103 Plus"
+        },
+        {
+            "model_name": "Htc A103"
+        },
+        {
+            "model_name": "Htc A102"
+        },
+        {
+            "model_name": "Htc A101"
+        },
+        {
+            "model_name": "Htc Wildfire E2 Play"
+        },
+        {
+            "model_name": "Htc Wildfire E3 Lite"
+        },
+        {
+            "model_name": "Htc Wildfire E Plus"
+        },
+        {
+            "model_name": "Htc Desire 22 Pro"
+        },
+        {
+            "model_name": "Htc Wildfire E2 Plus"
+        },
+        {
+            "model_name": "Htc Wildfire E3"
+        },
+        {
+            "model_name": "Htc Desire 21 Pro 5G"
+        },
+        {
+            "model_name": "Htc Desire 20 Plus"
+        },
+        {
+            "model_name": "Htc Wildfire E1 Lite"
+        },
+        {
+            "model_name": "Htc Wildfire E2"
+        },
+        {
+            "model_name": "Htc Wildfire E1 Plus"
+        },
+        {
+            "model_name": "Htc Wildfire E1"
+        },
+        {
+            "model_name": "Htc Wildfire E"
+        },
+        {
+            "model_name": "Htc U20 5G"
+        },
+        {
+            "model_name": "Htc Desire 20 Pro"
+        },
+        {
+            "model_name": "Htc Desire 19S"
+        },
+        {
+            "model_name": "Htc Exodus 1S"
+        },
+        {
+            "model_name": "Htc Wildfire X"
+        },
+        {
+            "model_name": "Htc U19E"
+        },
+        {
+            "model_name": "Htc Desire 19 Plus"
+        },
+        {
+            "model_name": "Htc Desire 12S"
+        },
+        {
+            "model_name": "Htc Exodus 1"
+        },
+        {
+            "model_name": "Htc U12 Life"
+        },
+        {
+            "model_name": "Htc U12 Plus"
+        },
+        {
+            "model_name": "Htc Desire 12 Plus"
+        },
+        {
+            "model_name": "Htc Desire 12"
+        },
+        {
+            "model_name": "Htc U11 Eyes"
+        },
+        {
+            "model_name": "Htc U11 Plus"
+        },
+        {
+            "model_name": "Htc U11 Life"
+        },
+        {
+            "model_name": "Htc U11"
+        },
+        {
+            "model_name": "Htc One X10"
+        },
+        {
+            "model_name": "Htc U Ultra"
+        },
+        {
+            "model_name": "Htc U Play"
+        },
+        {
+            "model_name": "Htc 10 Evo"
+        },
+        {
+            "model_name": "Htc Desire 650"
+        },
+        {
+            "model_name": "Htc Desire 10 Pro"
+        },
+        {
+            "model_name": "Htc Desire 10 Compact"
+        },
+        {
+            "model_name": "Htc One A9S"
+        },
+        {
+            "model_name": "Htc Desire 10 Lifestyle"
+        },
+        {
+            "model_name": "Htc Desire 728 Ultra"
+        },
+        {
+            "model_name": "Htc Desire 628"
+        },
+        {
+            "model_name": "Htc One M9 Prime Camera"
+        },
+        {
+            "model_name": "Htc Desire 830"
+        },
+        {
+            "model_name": "Htc One S9"
+        },
+        {
+            "model_name": "Htc 10 Lifestyle"
+        },
+        {
+            "model_name": "Htc 10"
+        },
+        {
+            "model_name": "Htc Desire 825"
+        },
+        {
+            "model_name": "Htc Desire 630"
+        },
+        {
+            "model_name": "Htc Desire 530"
+        },
+        {
+            "model_name": "Htc Desire 625"
+        },
+        {
+            "model_name": "Htc One X9"
+        },
+        {
+            "model_name": "Htc One M9S"
+        },
+        {
+            "model_name": "Htc Desire 828 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 728 Dual Sim"
+        },
+        {
+            "model_name": "Htc One E9S Dual Sim"
+        },
+        {
+            "model_name": "Htc Butterfly 3"
+        },
+        {
+            "model_name": "Htc One M9 Plus Supreme Camera"
+        },
+        {
+            "model_name": "Htc One A9"
+        },
+        {
+            "model_name": "Htc Desire 626 (Usa)"
+        },
+        {
+            "model_name": "Htc Desire 626S"
+        },
+        {
+            "model_name": "Htc Desire 526"
+        },
+        {
+            "model_name": "Htc Desire 520"
+        },
+        {
+            "model_name": "Htc One Me"
+        },
+        {
+            "model_name": "Htc Desire 820G Plus Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 326G Dual Sim"
+        },
+        {
+            "model_name": "Htc One M9 Plus"
+        },
+        {
+            "model_name": "Htc One M8S"
+        },
+        {
+            "model_name": "Htc One E9 Plus"
+        },
+        {
+            "model_name": "Htc One E9"
+        },
+        {
+            "model_name": "Htc One M9"
+        },
+        {
+            "model_name": "Htc Desire 820S Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 626G Plus"
+        },
+        {
+            "model_name": "Htc Desire 626"
+        },
+        {
+            "model_name": "Htc Desire 526G Plus Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 826 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 320"
+        },
+        {
+            "model_name": "Htc Desire 620G Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 620"
+        },
+        {
+            "model_name": "Htc Nexus 9"
+        },
+        {
+            "model_name": "Htc Desire 816G Dual Sim"
+        },
+        {
+            "model_name": "Htc One (M8 Eye)"
+        },
+        {
+            "model_name": "Htc Desire Eye"
+        },
+        {
+            "model_name": "Htc Desire 612"
+        },
+        {
+            "model_name": "Htc Desire 820Q Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 820 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 820"
+        },
+        {
+            "model_name": "Htc One (E8) Cdma"
+        },
+        {
+            "model_name": "Htc Desire 510"
+        },
+        {
+            "model_name": "Htc One (M8) For Windows"
+        },
+        {
+            "model_name": "Htc One (M8) For Windows (Cdma)"
+        },
+        {
+            "model_name": "Htc Butterfly 2"
+        },
+        {
+            "model_name": "Htc One Remix"
+        },
+        {
+            "model_name": "Htc One (M8) Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 516 Dual Sim"
+        },
+        {
+            "model_name": "Htc One (E8)"
+        },
+        {
+            "model_name": "Htc One Mini 2"
+        },
+        {
+            "model_name": "Htc Desire 616 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 210 Dual Sim"
+        },
+        {
+            "model_name": "Htc One (M8) Cdma"
+        },
+        {
+            "model_name": "Htc One (M8)"
+        },
+        {
+            "model_name": "Htc Desire 310 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 310"
+        },
+        {
+            "model_name": "Htc Desire 816 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 816"
+        },
+        {
+            "model_name": "Htc Desire 610"
+        },
+        {
+            "model_name": "Htc Desire 501 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 700"
+        },
+        {
+            "model_name": "Htc Desire 700 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 601 Dual Sim"
+        },
+        {
+            "model_name": "Htc Desire 501"
+        },
+        {
+            "model_name": "Htc One Max"
+        },
+        {
+            "model_name": "Htc Desire 300"
+        },
+        {
+            "model_name": "Htc Desire 601"
+        },
+        {
+            "model_name": "Htc Desire 500"
+        },
+        {
+            "model_name": "Htc One Mini"
+        },
+        {
+            "model_name": "Htc Desire L"
+        },
+        {
+            "model_name": "Htc Desire P"
+        },
+        {
+            "model_name": "Htc Desire Q"
+        },
+        {
+            "model_name": "Htc 8Xt"
+        },
+        {
+            "model_name": "Htc Butterfly S"
+        },
+        {
+            "model_name": "Htc Desire 200"
+        },
+        {
+            "model_name": "Htc Desire 600 Dual Sim"
+        },
+        {
+            "model_name": "Htc First"
+        },
+        {
+            "model_name": "Htc One Dual Sim"
+        },
+        {
+            "model_name": "Htc One"
+        },
+        {
+            "model_name": "Htc Desire U"
+        },
+        {
+            "model_name": "Htc Desire 400 Dual Sim"
+        },
+        {
+            "model_name": "Htc Butterfly"
+        },
+        {
+            "model_name": "Htc Droid Dna"
+        },
+        {
+            "model_name": "Htc One Sv Cdma"
+        },
+        {
+            "model_name": "Htc One Sv"
+        },
+        {
+            "model_name": "Htc Desire Sv"
+        },
+        {
+            "model_name": "Htc One Vx"
+        },
+        {
+            "model_name": "Htc One X Plus"
+        },
+        {
+            "model_name": "Htc Windows Phone 8X Cdma"
+        },
+        {
+            "model_name": "Htc Windows Phone 8X"
+        },
+        {
+            "model_name": "Htc Windows Phone 8S"
+        },
+        {
+            "model_name": "Htc One St"
+        },
+        {
+            "model_name": "Htc One Sc"
+        },
+        {
+            "model_name": "Htc Desire X"
+        },
+        {
+            "model_name": "Htc Desire Vt"
+        },
+        {
+            "model_name": "Htc Desire Xc"
+        },
+        {
+            "model_name": "Htc Desire Vc"
+        },
+        {
+            "model_name": "Htc Desire V"
+        },
+        {
+            "model_name": "Htc Desire C"
+        },
+        {
+            "model_name": "Htc J"
+        },
+        {
+            "model_name": "Htc Droid Incredible 4G Lte"
+        },
+        {
+            "model_name": "Htc Evo 4G Lte"
+        },
+        {
+            "model_name": "Htc One Xc"
+        },
+        {
+            "model_name": "Htc One X"
+        },
+        {
+            "model_name": "Htc One X At&T"
+        },
+        {
+            "model_name": "Htc One Xl"
+        },
+        {
+            "model_name": "Htc One S C2"
+        },
+        {
+            "model_name": "Htc One S"
+        },
+        {
+            "model_name": "Htc One V"
+        },
+        {
+            "model_name": "Htc Velocity 4G Vodafone"
+        },
+        {
+            "model_name": "Htc Velocity 4G"
+        },
+        {
+            "model_name": "Htc Titan Ii"
+        },
+        {
+            "model_name": "Htc Rezound"
+        },
+        {
+            "model_name": "Htc Vivid"
+        },
+        {
+            "model_name": "Htc Evo Design 4G"
+        },
+        {
+            "model_name": "Htc Sensation Xl"
+        },
+        {
+            "model_name": "Htc Explorer"
+        },
+        {
+            "model_name": "Htc Amaze 4G"
+        },
+        {
+            "model_name": "Htc Raider 4G"
+        },
+        {
+            "model_name": "Htc Rhyme"
+        },
+        {
+            "model_name": "Htc Hero S"
+        },
+        {
+            "model_name": "Htc Rhyme Cdma"
+        },
+        {
+            "model_name": "Htc Sensation Xe"
+        },
+        {
+            "model_name": "Htc Jetstream"
+        },
+        {
+            "model_name": "Htc Lead"
+        },
+        {
+            "model_name": "Htc Titan"
+        },
+        {
+            "model_name": "Htc Radar"
+        },
+        {
+            "model_name": "Htc Panache"
+        },
+        {
+            "model_name": "Htc Status"
+        },
+        {
+            "model_name": "Htc Glacier"
+        },
+        {
+            "model_name": "Htc Trophy"
+        },
+        {
+            "model_name": "Htc Droid Incredible 2"
+        },
+        {
+            "model_name": "Htc Sensation 4G"
+        },
+        {
+            "model_name": "Htc Evo 3D"
+        },
+        {
+            "model_name": "Htc Sensation"
+        },
+        {
+            "model_name": "Htc Evo 3D Cdma"
+        },
+        {
+            "model_name": "Htc Hd7S"
+        },
+        {
+            "model_name": "Htc Prime"
+        },
+        {
+            "model_name": "Htc Merge"
+        },
+        {
+            "model_name": "Htc Incredible S"
+        },
+        {
+            "model_name": "Htc Desire S"
+        },
+        {
+            "model_name": "Htc Wildfire S"
+        },
+        {
+            "model_name": "Htc Salsa"
+        },
+        {
+            "model_name": "Htc Chacha"
+        },
+        {
+            "model_name": "Htc Flyer"
+        },
+        {
+            "model_name": "Htc Flyer Wi Fi"
+        },
+        {
+            "model_name": "Htc Evo View 4G"
+        },
+        {
+            "model_name": "Htc Inspire 4G"
+        },
+        {
+            "model_name": "Htc Freestyle"
+        },
+        {
+            "model_name": "Htc Thunderbolt 4G"
+        },
+        {
+            "model_name": "Htc Evo Shift 4G"
+        },
+        {
+            "model_name": "Htc Gratia"
+        },
+        {
+            "model_name": "Htc Hd7"
+        },
+        {
+            "model_name": "Htc 7 Pro"
+        },
+        {
+            "model_name": "Htc 7 Surround"
+        },
+        {
+            "model_name": "Htc 7 Mozart"
+        },
+        {
+            "model_name": "Htc 7 Trophy"
+        },
+        {
+            "model_name": "Htc Arrive"
+        },
+        {
+            "model_name": "Htc Desire Hd"
+        },
+        {
+            "model_name": "Htc Desire Z"
+        },
+        {
+            "model_name": "Htc Paradise"
+        },
+        {
+            "model_name": "Htc Evo 4G Plus"
+        },
+        {
+            "model_name": "Htc Aria"
+        },
+        {
+            "model_name": "Htc Wildfire Cdma"
+        },
+        {
+            "model_name": "Htc Wildfire"
+        },
+        {
+            "model_name": "Htc Hd Mini"
+        },
+        {
+            "model_name": "Htc Desire"
+        },
+        {
+            "model_name": "Htc Legend"
+        },
+        {
+            "model_name": "Htc Rider"
+        },
+        {
+            "model_name": "Htc Google Nexus One"
+        },
+        {
+            "model_name": "Htc Smart"
+        },
+        {
+            "model_name": "Htc Hd2"
+        },
+        {
+            "model_name": "Htc Evo 4G"
+        },
+        {
+            "model_name": "Htc Droid Incredible"
+        },
+        {
+            "model_name": "Htc Droid Eris"
+        },
+        {
+            "model_name": "Htc Pure"
+        },
+        {
+            "model_name": "Htc Tattoo"
+        },
+        {
+            "model_name": "Htc Touch2"
+        },
+        {
+            "model_name": "Htc Hero Cdma"
+        },
+        {
+            "model_name": "Htc Hero"
+        },
+        {
+            "model_name": "Htc Ozone"
+        },
+        {
+            "model_name": "Htc Schubert"
+        },
+        {
+            "model_name": "Htc Snap"
+        },
+        {
+            "model_name": "Htc Magic"
+        },
+        {
+            "model_name": "Htc Touch Pro2 Cdma"
+        },
+        {
+            "model_name": "Htc Tilt2"
+        },
+        {
+            "model_name": "Htc Touch Pro2"
+        },
+        {
+            "model_name": "Htc Touch Diamond2 Cdma"
+        },
+        {
+            "model_name": "Htc Touch Diamond2"
+        },
+        {
+            "model_name": "Htc Dream"
+        },
+        {
+            "model_name": "Htc Touch Cruise 09"
+        },
+        {
+            "model_name": "Htc Max 4G"
+        },
+        {
+            "model_name": "Htc Touch Hd T8285"
+        },
+        {
+            "model_name": "Htc Touch Hd"
+        },
+        {
+            "model_name": "Htc Touch 3G"
+        },
+        {
+            "model_name": "Htc Touch Viva"
+        },
+        {
+            "model_name": "Htc S740"
+        },
+        {
+            "model_name": "Htc Touch Pro Cdma"
+        },
+        {
+            "model_name": "Htc Touch Pro"
+        },
+        {
+            "model_name": "Htc Touch Diamond Cdma"
+        },
+        {
+            "model_name": "Htc Touch Diamond"
+        },
+        {
+            "model_name": "Htc Advantage X7510"
+        },
+        {
+            "model_name": "Htc P3470"
+        },
+        {
+            "model_name": "Htc Touch Cruise"
+        },
+        {
+            "model_name": "Htc Touch Dual"
+        },
+        {
+            "model_name": "Htc P6500"
+        },
+        {
+            "model_name": "Htc S730"
+        },
+        {
+            "model_name": "Htc Tytn Ii"
+        },
+        {
+            "model_name": "Htc S630"
+        },
+        {
+            "model_name": "Htc Touch"
+        },
+        {
+            "model_name": "Htc P6300"
+        },
+        {
+            "model_name": "Htc Shift"
+        },
+        {
+            "model_name": "Htc Advantage X7500"
+        },
+        {
+            "model_name": "Htc S710"
+        },
+        {
+            "model_name": "Htc P3350"
+        },
+        {
+            "model_name": "Htc P3400"
+        },
+        {
+            "model_name": "Htc P4350"
+        },
+        {
+            "model_name": "Htc P3600I"
+        },
+        {
+            "model_name": "Htc P3600"
+        },
+        {
+            "model_name": "Htc P3300"
+        },
+        {
+            "model_name": "Htc S620"
+        },
+        {
+            "model_name": "Htc S310"
+        },
+        {
+            "model_name": "Htc Tytn"
+        },
+        {
+            "model_name": "Htc Mteor"
+        },
+        {
+            "model_name": "Htc Wildfire R70"
+        },
+        {
+            "model_name": "Htc One (M8I)"
+        },
+        {
+            "model_name": "Htc One M8 Prime"
+        },
+        {
+            "model_name": "Htc Tiara"
+        },
+        {
+            "model_name": "Htc Primo"
+        },
+        {
+            "model_name": "Htc Zeta"
+        },
+        {
+            "model_name": "Htc Ville"
+        },
+        {
+            "model_name": "Htc Ignite"
+        },
+        {
+            "model_name": "Htc Desire Hd2"
+        },
+        {
+            "model_name": "Htc A12"
+        }
+    ]
+}

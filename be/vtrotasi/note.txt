@@ -1,0 +1,1 @@
+kalau mau pakai scan-files itu path nya harus /app/uploaded_files/{nama-file}.extention

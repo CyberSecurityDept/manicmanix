@@ -1,0 +1,84 @@
+# image: python:3.12-slim
+
+# stages:
+#   - test
+#   - lint
+#   - staging
+
+# variables:
+#   DOCKER_HOST: tcp://docker:2375
+#   DOCKER_TLS_CERTDIR: ""
+#   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+#   DOCKER_DRIVER: overlay2
+#   DATABASE_URL: $DATABASE_URL
+#   SECRET_KEY: $SECRET_KEY
+#   ALGORITHM: $ALGORITHM
+#   ACCESS_TOKEN_EXPIRE_MINUTES: $ACCESS_TOKEN_EXPIRE_MINUTES
+#   API_TITLE: $API_TITLE
+#   API_DESCRIPTION: $API_DESCRIPTION
+#   SSH_PASSWORD: $SSH_PASSWORD
+#   SSH_PORT: 1322
+#   DB_PASS_CICD: $DB_PASS_CICD
+
+# cache:
+#   paths:
+#     - .cache/pip
+
+# before_script:
+#   - python -V
+
+# test:
+#   stage: test
+#   variables:
+#     MONGODB_URI: "mongodb+srv://cundamanix:$DB_PASS_CICD@cluster0.lgcof.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tls=true"
+#   before_script:
+#     - apt-get update
+#     - apt-get install -y --no-install-recommends gcc libc-dev libjpeg-dev zlib1g-dev libffi-dev binutils android-tools-adb openssh-client
+#     - pip install --upgrade pip
+#     - pip install -r requirements.txt
+#     - pip install -r modules_requirements.txt
+#     - pip install -e modules/base/mvt
+#   script:
+#     - pytest -v --disable-warnings
+
+# lint:
+#   stage: lint
+#   script:
+#     - pip install flake8
+#     - flake8
+#   except:
+#     - CI-CD
+
+# staging:
+#   stage: staging
+#   before_script:
+#     - apt-get update
+#     - apt-get install -y --no-install-recommends gcc libc-dev libjpeg-dev zlib1g-dev libffi-dev binutils android-tools-adb openssh-client
+#     - mkdir -p ~/.ssh
+#     - echo "$PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+#     - chmod 600 ~/.ssh/id_rsa
+#     - eval "$(ssh-agent -s)"
+#     - ssh-add ~/.ssh/id_rsa
+#     - ssh-keyscan -H 'gitlab.com' >> ~/.ssh/known_hosts
+#     - cat ~/.ssh/known_hosts
+#     - echo "Creating .env file..."
+#     - |
+#       cat <<EOF > .env
+#       DATABASE_URL=$DATABASE_URL
+#       SECRET_KEY=$SECRET_KEY
+#       ALGORITHM=$ALGORITHM
+#       ACCESS_TOKEN_EXPIRE_MINUTES=$ACCESS_TOKEN_EXPIRE_MINUTES
+#       API_TITLE=$API_TITLE
+#       API_DESCRIPTION=$API_DESCRIPTION
+#       EOF
+#   script:
+#     - echo "Deploying the application to staging..."
+#     - scp -o StrictHostKeyChecking=no -r -P $SSH_PORT .env ubuntu@sesehh.servicesbro.me:/home/ubuntu/app/cundamanix-api/.env
+#     - ssh -o StrictHostKeyChecking=no -p $SSH_PORT ubuntu@sesehh.servicesbro.me "cd /home/ubuntu/app/cundamanix-api && git pull origin main"
+#     - ssh -o StrictHostKeyChecking=no -p $SSH_PORT ubuntu@sesehh.servicesbro.me "cd /home/ubuntu/app/cundamanix-api && docker compose down"
+#     - ssh -o StrictHostKeyChecking=no -p $SSH_PORT ubuntu@sesehh.servicesbro.me "docker rmi -f \$(docker images -q)"
+#     - ssh -o StrictHostKeyChecking=no -p $SSH_PORT ubuntu@sesehh.servicesbro.me "cd /home/ubuntu/app/cundamanix-api && docker compose up -d"
+#     - echo "Cleaning up unused Docker resources..."
+#     - ssh -o StrictHostKeyChecking=no -p $SSH_PORT ubuntu@sesehh.servicesbro.me "docker system prune -f"
+#   only:
+#     - main

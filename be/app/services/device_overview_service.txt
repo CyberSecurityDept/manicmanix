@@ -1,0 +1,187 @@
+import subprocess
+from datetime import datetime
+import requests
+from app.repositories.device_overview_repository import DeviceRepository
+import os
+
+API_BASE_URL = "http://167.71.195.26:8080/api/v1/"
+HEADERS = {
+    "x-token": "a0f59a72b2d513fe1b28db530d2ee36f75d1f3991450cdd4105f6986402267b4"  # noqa
+}
+
+# IMAGE_FOLDER = os.path.join(os.path.dirname(_file_), f'../../phone-images/images/')
+
+
+class DeviceOverviewService:
+
+    @staticmethod
+    def update_device_overview(serial_number: str, data: dict):
+        DeviceRepository.save_device_overview(serial_number, data)
+
+    @staticmethod
+    def run_adb_command(command):
+        result = subprocess.run(command, capture_output=True, text=True)
+        return result.stdout.strip()
+
+    @staticmethod
+    def get_device_model():
+        return DeviceOverviewService.run_adb_command(
+            ["adb", "shell", "getprop", "ro.product.model"]
+        )
+
+    @staticmethod
+    def get_android_version():
+        return DeviceOverviewService.run_adb_command(
+            ["adb", "shell", "getprop", "ro.build.version.release"]
+        )
+
+    @staticmethod
+    def get_security_patch():
+        return DeviceOverviewService.run_adb_command(
+            ["adb", "shell", "getprop", "ro.build.version.security_patch"]
+        )
+
+    @staticmethod
+    def get_serial_number():
+        return DeviceOverviewService.run_adb_command(["adb", "get-serialno"])
+
+    @staticmethod
+    def get_last_scan(serial_number: str):
+        last_scan = DeviceRepository.get_last_scan(serial_number)
+        if last_scan is None:
+            return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return last_scan
+
+    @staticmethod
+    def get_device_name(serial_number: str):
+        return DeviceRepository.get_device_name(serial_number)
+
+    @staticmethod
+    def get_imei(slot: int) -> str:
+        result = subprocess.run(
+            ["bash", "app/utils/bash/get-imei.sh"], capture_output=True, text=True
+        )
+        imei_lines = result.stdout.strip().split("\n")
+
+        if slot == 1:
+            return imei_lines[0].replace("IMEI 1: ", "").strip()
+        elif slot == 2:
+            return imei_lines[1].replace("IMEI 2: ", "").strip()
+        else:
+            return "Tidak valid"
+
+    @staticmethod
+    def get_device_images(device_id: str) -> str:
+        print(f" device apa ini {device_id}")
+        try:
+            image_url = f"{IMAGE_FOLDER}/phone-images/{device_id}"
+            response = requests.get(image_url, headers=HEADERS)
+            response.raise_for_status()
+            image_data = response.json()
+            print( f'image data >>>>>{image_data}')
+            images = image_data.get("images", [])
+            return images[0] if images else "http://image-example"
+        except requests.RequestException as e:
+            print(f"Error saat mengakses API device images: {e}")
+            return "http://image-example"
+    # @staticmethod
+    # def get_device_images(device_id: str) -> str:
+    #     try:
+    #         file_name = f"{device_id}.jpg"
+    #         file_path = os.path.join(DeviceOverviewService.IMAGE_FOLDER, file_name)
+
+    #         if os.path.exists(file_path):
+    #             return file_path  # Kembalikan path gambar lokal
+    #         else:
+    #             print(f"Gambar tidak ditemukan untuk device_id: {device_id}. Menggunakan default.")
+    #             return "http://image-example"  # URL default jika file tidak ditemukan
+    #     except Exception as e:
+    #         print(f"Error saat mengakses folder lokal: {e}")
+    #         return "http://image-example"
+
+    @staticmethod
+    def get_image_from_api() -> str:
+        manufacturer = DeviceOverviewService.get_device_manufacturer()
+        if manufacturer == "unknown":
+            print("Tidak dapat menemukan manufaktur perangkat.")
+            return "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vivo.com%2Fid%2Fproducts%2Fparam%2Fy30i&psig=AOvVaw2ANVQj98MMxG1A7G437uDs&ust=1732613834749000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJim3_OX94kDFQAAAAAdAAAAABAE"
+
+        model = DeviceOverviewService.run_adb_command(
+            ["adb", "shell", "getprop", "ro.product.model"]
+        )
+        trimmed_model = DeviceOverviewService.trim_device_model(model)
+
+        devices = DeviceOverviewService.get_device_list(manufacturer)
+        if not devices:
+            print("Tidak ada perangkat yang ditemukan.")
+            return "http://image-example"
+
+        device_id = DeviceOverviewService.find_matching_device(devices, trimmed_model)
+        if not device_id:
+            print("Tidak ada perangkat yang cocok dengan model yang diberikan.")
+            return "http://image-example"
+
+        return DeviceOverviewService.get_device_images(device_id)
+
+    @staticmethod
+    def get_device_overview():
+        serial_number = DeviceOverviewService.get_serial_number()
+        overview = {
+            "name": DeviceOverviewService.get_device_name(serial_number),
+            "image": DeviceOverviewService.get_image_from_api(),
+            "model": DeviceOverviewService.get_device_model(),
+            "imei1": DeviceOverviewService.get_imei(1),
+            "imei2": DeviceOverviewService.get_imei(2),
+            "android_version": DeviceOverviewService.get_android_version(),
+            "last_scan": DeviceOverviewService.get_last_scan(serial_number),
+            "security_patch": DeviceOverviewService.get_security_patch(),
+            "serial_number": serial_number,
+        }
+
+        DeviceRepository.save_device_overview(serial_number, overview)
+        return overview
+
+    @staticmethod
+    def get_device_manufacturer() -> str:
+        try:
+            result = subprocess.run(
+                ["adb", "shell", "getprop", "ro.product.manufacturer"],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+            manufacturer = result.stdout.decode("utf-8").strip()
+            return manufacturer if manufacturer else "unknown"
+        except Exception as e:
+            print(f"Error saat mengambil manufaktur perangkat: {e}")
+            return "unknown"
+
+    @staticmethod
+    def trim_device_model(model: str) -> str:
+        """
+        Trims the device model to a simplified identifier for matching.
+        For example, 'SM-A055F' becomes 'A05'.
+        """
+        if "-" in model:
+            return model.split("-")[1][:3]
+        return "".join(
+            [char for char in model[:4] if char.isalpha() or char.isdigit()]
+        )[:3].upper()
+
+    @staticmethod
+    def get_device_list(manufacturer: str):
+        try:
+            search_url = f"{API_BASE_URL}/phone-search?q={manufacturer}"
+            response = requests.get(search_url, headers=HEADERS)
+            response.raise_for_status()
+            print(f'>>>>>>> respon api{response.json}')
+            return response.json()
+        except requests.RequestException as e:
+            print(f"Error saat mengakses API device list: {e}")
+            return []
+
+    @staticmethod
+    def find_matching_device(devices: list, trimmed_model: str) -> str:
+        for device in devices:
+            if trimmed_model.lower() in device["name"].lower():
+                return device["id"]
+        return None

@@ -1,0 +1,1760 @@
+{
+    "brand": "Nokia",
+    "models": [
+        {
+            "model_name": "Nokia 105 (2024)"
+        },
+        {
+            "model_name": "Nokia 220 4G (2024)"
+        },
+        {
+            "model_name": "Nokia 3210"
+        },
+        {
+            "model_name": "Nokia 235 4G (2024)"
+        },
+        {
+            "model_name": "Nokia 225 4G (2024)"
+        },
+        {
+            "model_name": "Nokia 215 4G (2024)"
+        },
+        {
+            "model_name": "Nokia 6310 (2024)"
+        },
+        {
+            "model_name": "Nokia 5310 (2024)"
+        },
+        {
+            "model_name": "Nokia 230 (2024)"
+        },
+        {
+            "model_name": "Nokia C210"
+        },
+        {
+            "model_name": "Nokia G310"
+        },
+        {
+            "model_name": "Nokia 150 (2023)"
+        },
+        {
+            "model_name": "Nokia 130 (2023)"
+        },
+        {
+            "model_name": "Nokia G42"
+        },
+        {
+            "model_name": "Nokia C300"
+        },
+        {
+            "model_name": "Nokia C110"
+        },
+        {
+            "model_name": "Nokia 110 4G (2023)"
+        },
+        {
+            "model_name": "Nokia 110 (2023)"
+        },
+        {
+            "model_name": "Nokia 106 4G (2023)"
+        },
+        {
+            "model_name": "Nokia 106 (2023)"
+        },
+        {
+            "model_name": "Nokia 105 4G (2023)"
+        },
+        {
+            "model_name": "Nokia 105 (2023)"
+        },
+        {
+            "model_name": "Nokia Xr21"
+        },
+        {
+            "model_name": "Nokia C12 Plus"
+        },
+        {
+            "model_name": "Nokia C12 Pro"
+        },
+        {
+            "model_name": "Nokia C32"
+        },
+        {
+            "model_name": "Nokia C22"
+        },
+        {
+            "model_name": "Nokia G22"
+        },
+        {
+            "model_name": "Nokia C02"
+        },
+        {
+            "model_name": "Nokia C12"
+        },
+        {
+            "model_name": "Nokia 2780 Flip"
+        },
+        {
+            "model_name": "Nokia X30"
+        },
+        {
+            "model_name": "Nokia G100"
+        },
+        {
+            "model_name": "Nokia G60"
+        },
+        {
+            "model_name": "Nokia C31"
+        },
+        {
+            "model_name": "Nokia T21"
+        },
+        {
+            "model_name": "Nokia G400"
+        },
+        {
+            "model_name": "Nokia 110 (2022)"
+        },
+        {
+            "model_name": "Nokia 8210 4G"
+        },
+        {
+            "model_name": "Nokia 5710 Xpressaudio"
+        },
+        {
+            "model_name": "Nokia 2760 Flip"
+        },
+        {
+            "model_name": "Nokia 2660 Flip"
+        },
+        {
+            "model_name": "Nokia T10"
+        },
+        {
+            "model_name": "Nokia G11 Plus"
+        },
+        {
+            "model_name": "Nokia C200"
+        },
+        {
+            "model_name": "Nokia C100"
+        },
+        {
+            "model_name": "Nokia C21 Plus"
+        },
+        {
+            "model_name": "Nokia C21"
+        },
+        {
+            "model_name": "Nokia 105 Plus (2022)"
+        },
+        {
+            "model_name": "Nokia 105 (2022)"
+        },
+        {
+            "model_name": "Nokia C2 2Nd Edition"
+        },
+        {
+            "model_name": "Nokia G11"
+        },
+        {
+            "model_name": "Nokia G21"
+        },
+        {
+            "model_name": "Nokia X100"
+        },
+        {
+            "model_name": "Nokia G300"
+        },
+        {
+            "model_name": "Nokia T20"
+        },
+        {
+            "model_name": "Nokia G50"
+        },
+        {
+            "model_name": "Nokia Xr20"
+        },
+        {
+            "model_name": "Nokia C30"
+        },
+        {
+            "model_name": "Nokia 6310 (2021)"
+        },
+        {
+            "model_name": "Nokia C1 2Nd Edition"
+        },
+        {
+            "model_name": "Nokia 110 4G"
+        },
+        {
+            "model_name": "Nokia 105 4G"
+        },
+        {
+            "model_name": "Nokia C20 Plus"
+        },
+        {
+            "model_name": "Nokia C01 Plus"
+        },
+        {
+            "model_name": "Nokia X20"
+        },
+        {
+            "model_name": "Nokia X10"
+        },
+        {
+            "model_name": "Nokia G20"
+        },
+        {
+            "model_name": "Nokia G10"
+        },
+        {
+            "model_name": "Nokia C20"
+        },
+        {
+            "model_name": "Nokia C10"
+        },
+        {
+            "model_name": "Nokia 1 4"
+        },
+        {
+            "model_name": "Nokia 5 4"
+        },
+        {
+            "model_name": "Nokia C1 Plus"
+        },
+        {
+            "model_name": "Nokia 8000 4G"
+        },
+        {
+            "model_name": "Nokia 6300 4G"
+        },
+        {
+            "model_name": "Nokia 8 V 5G Uw"
+        },
+        {
+            "model_name": "Nokia 2 V Tella"
+        },
+        {
+            "model_name": "Nokia 225 4G"
+        },
+        {
+            "model_name": "Nokia 215 4G"
+        },
+        {
+            "model_name": "Nokia 3 4"
+        },
+        {
+            "model_name": "Nokia 2 4"
+        },
+        {
+            "model_name": "Nokia C3"
+        },
+        {
+            "model_name": "Nokia C5 Endi"
+        },
+        {
+            "model_name": "Nokia C2 Tennen"
+        },
+        {
+            "model_name": "Nokia C2 Tava"
+        },
+        {
+            "model_name": "Nokia 150 (2020)"
+        },
+        {
+            "model_name": "Nokia 125"
+        },
+        {
+            "model_name": "Nokia 8 3 5G"
+        },
+        {
+            "model_name": "Nokia 5 3"
+        },
+        {
+            "model_name": "Nokia 1 3"
+        },
+        {
+            "model_name": "Nokia 5310 (2020)"
+        },
+        {
+            "model_name": "Nokia C2"
+        },
+        {
+            "model_name": "Nokia C1"
+        },
+        {
+            "model_name": "Nokia 2 3"
+        },
+        {
+            "model_name": "Nokia 7 2"
+        },
+        {
+            "model_name": "Nokia 6 2"
+        },
+        {
+            "model_name": "Nokia 800 Tough"
+        },
+        {
+            "model_name": "Nokia 2720 V Flip"
+        },
+        {
+            "model_name": "Nokia 2720 Flip"
+        },
+        {
+            "model_name": "Nokia 220 4G"
+        },
+        {
+            "model_name": "Nokia 110 (2019)"
+        },
+        {
+            "model_name": "Nokia 105 (2019)"
+        },
+        {
+            "model_name": "Nokia 3 1 C"
+        },
+        {
+            "model_name": "Nokia 3 1 A"
+        },
+        {
+            "model_name": "Nokia 2 2"
+        },
+        {
+            "model_name": "Nokia X71"
+        },
+        {
+            "model_name": "Nokia 9 Pureview"
+        },
+        {
+            "model_name": "Nokia 4 2"
+        },
+        {
+            "model_name": "Nokia 3 V"
+        },
+        {
+            "model_name": "Nokia 3 2"
+        },
+        {
+            "model_name": "Nokia 1 Plus"
+        },
+        {
+            "model_name": "Nokia 210"
+        },
+        {
+            "model_name": "Nokia 8 1 (Nokia X7)"
+        },
+        {
+            "model_name": "Nokia 106 (2018)"
+        },
+        {
+            "model_name": "Nokia 3 1 Plus"
+        },
+        {
+            "model_name": "Nokia 7 1"
+        },
+        {
+            "model_name": "Nokia 6 1 Plus (Nokia X6)"
+        },
+        {
+            "model_name": "Nokia 5 1 Plus (Nokia X5)"
+        },
+        {
+            "model_name": "Nokia 5 1"
+        },
+        {
+            "model_name": "Nokia 3 1"
+        },
+        {
+            "model_name": "Nokia 2 1"
+        },
+        {
+            "model_name": "Nokia 8110 4G"
+        },
+        {
+            "model_name": "Nokia 8 Sirocco"
+        },
+        {
+            "model_name": "Nokia 7 Plus"
+        },
+        {
+            "model_name": "Nokia 6 1"
+        },
+        {
+            "model_name": "Nokia 1"
+        },
+        {
+            "model_name": "Nokia 3310 4G"
+        },
+        {
+            "model_name": "Nokia 2"
+        },
+        {
+            "model_name": "Nokia 7"
+        },
+        {
+            "model_name": "Nokia 3310 3G"
+        },
+        {
+            "model_name": "Nokia 8"
+        },
+        {
+            "model_name": "Nokia 105 (2017)"
+        },
+        {
+            "model_name": "Nokia 130 (2017)"
+        },
+        {
+            "model_name": "Nokia 3"
+        },
+        {
+            "model_name": "Nokia 5"
+        },
+        {
+            "model_name": "Nokia 6"
+        },
+        {
+            "model_name": "Nokia 3310 (2017)"
+        },
+        {
+            "model_name": "Nokia 150"
+        },
+        {
+            "model_name": "Nokia 216"
+        },
+        {
+            "model_name": "Nokia 230 Dual Sim"
+        },
+        {
+            "model_name": "Nokia 230"
+        },
+        {
+            "model_name": "Nokia 222 Dual Sim"
+        },
+        {
+            "model_name": "Nokia 222"
+        },
+        {
+            "model_name": "Nokia 105 Dual Sim (2015)"
+        },
+        {
+            "model_name": "Nokia 105 (2015)"
+        },
+        {
+            "model_name": "Nokia 215"
+        },
+        {
+            "model_name": "Nokia 215 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Lumia 638"
+        },
+        {
+            "model_name": "Nokia N1"
+        },
+        {
+            "model_name": "Nokia Lumia 730 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Lumia 735"
+        },
+        {
+            "model_name": "Nokia Lumia 830"
+        },
+        {
+            "model_name": "Nokia 130 Dual Sim"
+        },
+        {
+            "model_name": "Nokia 130"
+        },
+        {
+            "model_name": "Nokia Lumia 530 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Lumia 530"
+        },
+        {
+            "model_name": "Nokia X2 Dual Sim"
+        },
+        {
+            "model_name": "Nokia 225"
+        },
+        {
+            "model_name": "Nokia 225 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Lumia 930"
+        },
+        {
+            "model_name": "Nokia Lumia 635"
+        },
+        {
+            "model_name": "Nokia Lumia 630 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Lumia 630"
+        },
+        {
+            "model_name": "Nokia Xl"
+        },
+        {
+            "model_name": "Nokia X Plus"
+        },
+        {
+            "model_name": "Nokia X"
+        },
+        {
+            "model_name": "Nokia Asha 230"
+        },
+        {
+            "model_name": "Nokia 220"
+        },
+        {
+            "model_name": "Nokia Lumia Icon"
+        },
+        {
+            "model_name": "Nokia Lumia 525"
+        },
+        {
+            "model_name": "Nokia Lumia 1520"
+        },
+        {
+            "model_name": "Nokia Lumia 1320"
+        },
+        {
+            "model_name": "Nokia Lumia 2520"
+        },
+        {
+            "model_name": "Nokia Asha 503 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Asha 503"
+        },
+        {
+            "model_name": "Nokia Asha 502 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Asha 500 Dual Sim"
+        },
+        {
+            "model_name": "Nokia Asha 500"
+        },
+        {
+            "model_name": "Nokia 108 Dual Sim"
+        },
+        {
+            "model_name": "Nokia 515"
+        },
+        {
+            "model_name": "Nokia 107 Dual Sim"
+        },
+        {
+            "model_name": "Nokia 106"
+        },
+        {
+            "model_name": "Nokia Lumia 625"
+        },
+        {
+            "model_name": "Nokia Lumia 1020"
+        },
+        {
+            "model_name": "Nokia 208"
+        },
+        {
+            "model_name": "Nokia 207"
+        },
+        {
+            "model_name": "Nokia Lumia 925"
+        },
+        {
+            "model_name": "Nokia Lumia 928"
+        },
+        {
+            "model_name": "Nokia Asha 501"
+        },
+        {
+            "model_name": "Nokia Asha 210"
+        },
+        {
+            "model_name": "Nokia Lumia 720"
+        },
+        {
+            "model_name": "Nokia Lumia 520"
+        },
+        {
+            "model_name": "Nokia 301"
+        },
+        {
+            "model_name": "Nokia 105"
+        },
+        {
+            "model_name": "Nokia Asha 310"
+        },
+        {
+            "model_name": "Nokia Lumia 505"
+        },
+        {
+            "model_name": "Nokia Lumia 620"
+        },
+        {
+            "model_name": "Nokia 114"
+        },
+        {
+            "model_name": "Nokia 206"
+        },
+        {
+            "model_name": "Nokia Asha 205"
+        },
+        {
+            "model_name": "Nokia 109"
+        },
+        {
+            "model_name": "Nokia Lumia 822"
+        },
+        {
+            "model_name": "Nokia Lumia 510"
+        },
+        {
+            "model_name": "Nokia Lumia 810"
+        },
+        {
+            "model_name": "Nokia Asha 309"
+        },
+        {
+            "model_name": "Nokia Asha 308"
+        },
+        {
+            "model_name": "Nokia Lumia 920"
+        },
+        {
+            "model_name": "Nokia Lumia 820"
+        },
+        {
+            "model_name": "Nokia Asha 311"
+        },
+        {
+            "model_name": "Nokia Asha 306"
+        },
+        {
+            "model_name": "Nokia Asha 305"
+        },
+        {
+            "model_name": "Nokia 113"
+        },
+        {
+            "model_name": "Nokia 112"
+        },
+        {
+            "model_name": "Nokia 111"
+        },
+        {
+            "model_name": "Nokia 110"
+        },
+        {
+            "model_name": "Nokia Lumia 610 Nfc"
+        },
+        {
+            "model_name": "Nokia 103"
+        },
+        {
+            "model_name": "Nokia 808 Pureview"
+        },
+        {
+            "model_name": "Nokia 800C"
+        },
+        {
+            "model_name": "Nokia Lumia 610"
+        },
+        {
+            "model_name": "Nokia Asha 302"
+        },
+        {
+            "model_name": "Nokia Asha 203"
+        },
+        {
+            "model_name": "Nokia Asha 202"
+        },
+        {
+            "model_name": "Nokia Lumia 900"
+        },
+        {
+            "model_name": "Nokia Lumia 900 At&T"
+        },
+        {
+            "model_name": "Nokia 801T"
+        },
+        {
+            "model_name": "Nokia X2 02"
+        },
+        {
+            "model_name": "Nokia Lumia 800"
+        },
+        {
+            "model_name": "Nokia Lumia 710 T Mobile"
+        },
+        {
+            "model_name": "Nokia Lumia 710"
+        },
+        {
+            "model_name": "Nokia Asha 303"
+        },
+        {
+            "model_name": "Nokia Asha 300"
+        },
+        {
+            "model_name": "Nokia Asha 201"
+        },
+        {
+            "model_name": "Nokia Asha 200"
+        },
+        {
+            "model_name": "Nokia 603"
+        },
+        {
+            "model_name": "Nokia C2 05"
+        },
+        {
+            "model_name": "Nokia X2 05"
+        },
+        {
+            "model_name": "Nokia C5 06"
+        },
+        {
+            "model_name": "Nokia C5 05"
+        },
+        {
+            "model_name": "Nokia C5 04"
+        },
+        {
+            "model_name": "Nokia 101"
+        },
+        {
+            "model_name": "Nokia 100"
+        },
+        {
+            "model_name": "Nokia 701"
+        },
+        {
+            "model_name": "Nokia 700"
+        },
+        {
+            "model_name": "Nokia 600"
+        },
+        {
+            "model_name": "Nokia C3 01 Gold Edition"
+        },
+        {
+            "model_name": "Nokia 500"
+        },
+        {
+            "model_name": "Nokia N9"
+        },
+        {
+            "model_name": "Nokia C5 5Mp"
+        },
+        {
+            "model_name": "Nokia C2 06"
+        },
+        {
+            "model_name": "Nokia C2 03"
+        },
+        {
+            "model_name": "Nokia C2 02"
+        },
+        {
+            "model_name": "Nokia 702T"
+        },
+        {
+            "model_name": "Nokia T7"
+        },
+        {
+            "model_name": "Nokia N950"
+        },
+        {
+            "model_name": "Nokia Oro"
+        },
+        {
+            "model_name": "Nokia X1 01"
+        },
+        {
+            "model_name": "Nokia X7 00"
+        },
+        {
+            "model_name": "Nokia E6"
+        },
+        {
+            "model_name": "Nokia C7 Astound"
+        },
+        {
+            "model_name": "Nokia X1 00"
+        },
+        {
+            "model_name": "Nokia X2 01"
+        },
+        {
+            "model_name": "Nokia C2 01"
+        },
+        {
+            "model_name": "Nokia C5 03"
+        },
+        {
+            "model_name": "Nokia E7"
+        },
+        {
+            "model_name": "Nokia C6 01"
+        },
+        {
+            "model_name": "Nokia C7"
+        },
+        {
+            "model_name": "Nokia C3 01 Touch And Type"
+        },
+        {
+            "model_name": "Nokia 5250"
+        },
+        {
+            "model_name": "Nokia X3 Touch And Type S"
+        },
+        {
+            "model_name": "Nokia X3 02 Touch And Type"
+        },
+        {
+            "model_name": "Nokia X6 8Gb (2010)"
+        },
+        {
+            "model_name": "Nokia X5 01"
+        },
+        {
+            "model_name": "Nokia 5233"
+        },
+        {
+            "model_name": "Nokia E73 Mode"
+        },
+        {
+            "model_name": "Nokia C2 00"
+        },
+        {
+            "model_name": "Nokia C1 02"
+        },
+        {
+            "model_name": "Nokia C1 01"
+        },
+        {
+            "model_name": "Nokia C1 00"
+        },
+        {
+            "model_name": "Nokia N8"
+        },
+        {
+            "model_name": "Nokia X2 00"
+        },
+        {
+            "model_name": "Nokia C6"
+        },
+        {
+            "model_name": "Nokia E5"
+        },
+        {
+            "model_name": "Nokia C3 (2010)"
+        },
+        {
+            "model_name": "Nokia C5"
+        },
+        {
+            "model_name": "Nokia C5 Td Scdma"
+        },
+        {
+            "model_name": "Nokia X5 Td Scdma"
+        },
+        {
+            "model_name": "Nokia 6303I Classic"
+        },
+        {
+            "model_name": "Nokia 5132 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia X6 16Gb (2010)"
+        },
+        {
+            "model_name": "Nokia 2710 Navigation Edition"
+        },
+        {
+            "model_name": "Nokia X6 (2009)"
+        },
+        {
+            "model_name": "Nokia 6700 Slide"
+        },
+        {
+            "model_name": "Nokia 7230"
+        },
+        {
+            "model_name": "Nokia 5330 Mobile Tv Edition"
+        },
+        {
+            "model_name": "Nokia 2690"
+        },
+        {
+            "model_name": "Nokia 2220 Slide"
+        },
+        {
+            "model_name": "Nokia 1800"
+        },
+        {
+            "model_name": "Nokia 1616"
+        },
+        {
+            "model_name": "Nokia 1280"
+        },
+        {
+            "model_name": "Nokia 5235 Comes With Music"
+        },
+        {
+            "model_name": "Nokia 6788"
+        },
+        {
+            "model_name": "Nokia N97 Mini"
+        },
+        {
+            "model_name": "Nokia X3"
+        },
+        {
+            "model_name": "Nokia N900"
+        },
+        {
+            "model_name": "Nokia 5230"
+        },
+        {
+            "model_name": "Nokia 3208C"
+        },
+        {
+            "model_name": "Nokia 5800 Navigation Edition"
+        },
+        {
+            "model_name": "Nokia 6350"
+        },
+        {
+            "model_name": "Nokia Mural"
+        },
+        {
+            "model_name": "Nokia 6760 Slide"
+        },
+        {
+            "model_name": "Nokia 6790 Surge"
+        },
+        {
+            "model_name": "Nokia 3720 Classic"
+        },
+        {
+            "model_name": "Nokia 5530 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia E72"
+        },
+        {
+            "model_name": "Nokia 3710 Fold"
+        },
+        {
+            "model_name": "Nokia 6730 Classic"
+        },
+        {
+            "model_name": "Nokia 6600I Slide"
+        },
+        {
+            "model_name": "Nokia 7020"
+        },
+        {
+            "model_name": "Nokia 2720 Fold"
+        },
+        {
+            "model_name": "Nokia 2730 Classic"
+        },
+        {
+            "model_name": "Nokia E52"
+        },
+        {
+            "model_name": "Nokia 6216 Classic"
+        },
+        {
+            "model_name": "Nokia 5730 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 5330 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 5030 Xpressradio"
+        },
+        {
+            "model_name": "Nokia N86 8Mp"
+        },
+        {
+            "model_name": "Nokia E75"
+        },
+        {
+            "model_name": "Nokia E55"
+        },
+        {
+            "model_name": "Nokia 6720 Classic"
+        },
+        {
+            "model_name": "Nokia 6710 Navigator"
+        },
+        {
+            "model_name": "Nokia 5630 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 6700 Classic"
+        },
+        {
+            "model_name": "Nokia 6303 Classic"
+        },
+        {
+            "model_name": "Nokia 2700 Classic"
+        },
+        {
+            "model_name": "Nokia 6208C"
+        },
+        {
+            "model_name": "Nokia 8800 Gold Arte"
+        },
+        {
+            "model_name": "Nokia N97"
+        },
+        {
+            "model_name": "Nokia 6260 Slide"
+        },
+        {
+            "model_name": "Nokia E63"
+        },
+        {
+            "model_name": "Nokia 7100 Supernova"
+        },
+        {
+            "model_name": "Nokia 5130 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 2330 Classic"
+        },
+        {
+            "model_name": "Nokia 2323 Classic"
+        },
+        {
+            "model_name": "Nokia 1662"
+        },
+        {
+            "model_name": "Nokia 1661"
+        },
+        {
+            "model_name": "Nokia 1202"
+        },
+        {
+            "model_name": "Nokia 5800 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia N85"
+        },
+        {
+            "model_name": "Nokia N79"
+        },
+        {
+            "model_name": "Nokia 8800 Carbon Arte"
+        },
+        {
+            "model_name": "Nokia 3610 Fold"
+        },
+        {
+            "model_name": "Nokia 7610 Supernova"
+        },
+        {
+            "model_name": "Nokia 7510 Supernova"
+        },
+        {
+            "model_name": "Nokia 7310 Supernova"
+        },
+        {
+            "model_name": "Nokia 7210 Supernova"
+        },
+        {
+            "model_name": "Nokia E71"
+        },
+        {
+            "model_name": "Nokia E66"
+        },
+        {
+            "model_name": "Nokia 703"
+        },
+        {
+            "model_name": "Nokia 6600 Fold"
+        },
+        {
+            "model_name": "Nokia 6600 Slide"
+        },
+        {
+            "model_name": "Nokia 3600 Slide"
+        },
+        {
+            "model_name": "Nokia 5320 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 5220 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 6212 Classic"
+        },
+        {
+            "model_name": "Nokia 5000"
+        },
+        {
+            "model_name": "Nokia 7070 Prism"
+        },
+        {
+            "model_name": "Nokia 2680 Slide"
+        },
+        {
+            "model_name": "Nokia 1680 Classic"
+        },
+        {
+            "model_name": "Nokia 6300I"
+        },
+        {
+            "model_name": "Nokia N96"
+        },
+        {
+            "model_name": "Nokia N78"
+        },
+        {
+            "model_name": "Nokia 6220 Classic"
+        },
+        {
+            "model_name": "Nokia 6210 Navigator"
+        },
+        {
+            "model_name": "Nokia 6124 Classic"
+        },
+        {
+            "model_name": "Nokia 6650 Fold"
+        },
+        {
+            "model_name": "Nokia 3555"
+        },
+        {
+            "model_name": "Nokia 3120 Classic"
+        },
+        {
+            "model_name": "Nokia 7900 Crystal Prism"
+        },
+        {
+            "model_name": "Nokia 2600 Classic"
+        },
+        {
+            "model_name": "Nokia 1209"
+        },
+        {
+            "model_name": "Nokia 3110 Evolve"
+        },
+        {
+            "model_name": "Nokia N82"
+        },
+        {
+            "model_name": "Nokia 8800 Sapphire Arte"
+        },
+        {
+            "model_name": "Nokia 8800 Arte"
+        },
+        {
+            "model_name": "Nokia 6301"
+        },
+        {
+            "model_name": "Nokia E51"
+        },
+        {
+            "model_name": "Nokia E51 Camera Free"
+        },
+        {
+            "model_name": "Nokia 6263"
+        },
+        {
+            "model_name": "Nokia N81 8Gb"
+        },
+        {
+            "model_name": "Nokia N81"
+        },
+        {
+            "model_name": "Nokia N95 8Gb"
+        },
+        {
+            "model_name": "Nokia 5610 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 5310 Xpressmusic"
+        },
+        {
+            "model_name": "Nokia 6555"
+        },
+        {
+            "model_name": "Nokia 7900 Prism"
+        },
+        {
+            "model_name": "Nokia 7500 Prism"
+        },
+        {
+            "model_name": "Nokia 8600 Luna"
+        },
+        {
+            "model_name": "Nokia 6500 Slide"
+        },
+        {
+            "model_name": "Nokia 6500 Classic"
+        },
+        {
+            "model_name": "Nokia N810"
+        },
+        {
+            "model_name": "Nokia 3500 Classic"
+        },
+        {
+            "model_name": "Nokia 2630"
+        },
+        {
+            "model_name": "Nokia 6267"
+        },
+        {
+            "model_name": "Nokia 2760"
+        },
+        {
+            "model_name": "Nokia 2660"
+        },
+        {
+            "model_name": "Nokia 1650"
+        },
+        {
+            "model_name": "Nokia 1208"
+        },
+        {
+            "model_name": "Nokia 1200"
+        },
+        {
+            "model_name": "Nokia 6120 Classic"
+        },
+        {
+            "model_name": "Nokia 6121 Classic"
+        },
+        {
+            "model_name": "Nokia 5700"
+        },
+        {
+            "model_name": "Nokia 5070"
+        },
+        {
+            "model_name": "Nokia E90"
+        },
+        {
+            "model_name": "Nokia E65"
+        },
+        {
+            "model_name": "Nokia E61I"
+        },
+        {
+            "model_name": "Nokia N77"
+        },
+        {
+            "model_name": "Nokia 6110 Navigator"
+        },
+        {
+            "model_name": "Nokia N800"
+        },
+        {
+            "model_name": "Nokia 3109 Classic"
+        },
+        {
+            "model_name": "Nokia 3110 Classic"
+        },
+        {
+            "model_name": "Nokia N76"
+        },
+        {
+            "model_name": "Nokia N93I"
+        },
+        {
+            "model_name": "Nokia 6290"
+        },
+        {
+            "model_name": "Nokia 6086"
+        },
+        {
+            "model_name": "Nokia 6300"
+        },
+        {
+            "model_name": "Nokia 2626"
+        },
+        {
+            "model_name": "Nokia N95"
+        },
+        {
+            "model_name": "Nokia N75"
+        },
+        {
+            "model_name": "Nokia 5300"
+        },
+        {
+            "model_name": "Nokia 5200"
+        },
+        {
+            "model_name": "Nokia 6288"
+        },
+        {
+            "model_name": "Nokia 6085"
+        },
+        {
+            "model_name": "Nokia 8800 Sirocco"
+        },
+        {
+            "model_name": "Nokia 7390"
+        },
+        {
+            "model_name": "Nokia 7373"
+        },
+        {
+            "model_name": "Nokia 6151"
+        },
+        {
+            "model_name": "Nokia 6080"
+        },
+        {
+            "model_name": "Nokia 1110I"
+        },
+        {
+            "model_name": "Nokia E50"
+        },
+        {
+            "model_name": "Nokia 5500 Sport"
+        },
+        {
+            "model_name": "Nokia N93"
+        },
+        {
+            "model_name": "Nokia N73"
+        },
+        {
+            "model_name": "Nokia N72"
+        },
+        {
+            "model_name": "Nokia 2610"
+        },
+        {
+            "model_name": "Nokia 2310"
+        },
+        {
+            "model_name": "Nokia 1112"
+        },
+        {
+            "model_name": "Nokia 6136"
+        },
+        {
+            "model_name": "Nokia 6133"
+        },
+        {
+            "model_name": "Nokia 6131 Nfc"
+        },
+        {
+            "model_name": "Nokia 6131"
+        },
+        {
+            "model_name": "Nokia 6126"
+        },
+        {
+            "model_name": "Nokia 6070"
+        },
+        {
+            "model_name": "Nokia 6125"
+        },
+        {
+            "model_name": "Nokia 6103"
+        },
+        {
+            "model_name": "Nokia 6233"
+        },
+        {
+            "model_name": "Nokia 6234"
+        },
+        {
+            "model_name": "Nokia 6282"
+        },
+        {
+            "model_name": "Nokia 9300I"
+        },
+        {
+            "model_name": "Nokia N92"
+        },
+        {
+            "model_name": "Nokia N80"
+        },
+        {
+            "model_name": "Nokia N71"
+        },
+        {
+            "model_name": "Nokia 7380"
+        },
+        {
+            "model_name": "Nokia 7370"
+        },
+        {
+            "model_name": "Nokia 7360"
+        },
+        {
+            "model_name": "Nokia E70"
+        },
+        {
+            "model_name": "Nokia E62"
+        },
+        {
+            "model_name": "Nokia E61"
+        },
+        {
+            "model_name": "Nokia E60"
+        },
+        {
+            "model_name": "Nokia 3250"
+        },
+        {
+            "model_name": "Nokia 6708"
+        },
+        {
+            "model_name": "Nokia 6280"
+        },
+        {
+            "model_name": "Nokia 6270"
+        },
+        {
+            "model_name": "Nokia 6111"
+        },
+        {
+            "model_name": "Nokia 6060"
+        },
+        {
+            "model_name": "Nokia N91"
+        },
+        {
+            "model_name": "Nokia N90"
+        },
+        {
+            "model_name": "Nokia N70"
+        },
+        {
+            "model_name": "Nokia 2652"
+        },
+        {
+            "model_name": "Nokia 1600"
+        },
+        {
+            "model_name": "Nokia 1110"
+        },
+        {
+            "model_name": "Nokia 1101"
+        },
+        {
+            "model_name": "Nokia 5140I"
+        },
+        {
+            "model_name": "Nokia 8800"
+        },
+        {
+            "model_name": "Nokia 6230I"
+        },
+        {
+            "model_name": "Nokia 6021"
+        },
+        {
+            "model_name": "Nokia 6030"
+        },
+        {
+            "model_name": "Nokia 6680"
+        },
+        {
+            "model_name": "Nokia 6681"
+        },
+        {
+            "model_name": "Nokia 6101"
+        },
+        {
+            "model_name": "Nokia 6822"
+        },
+        {
+            "model_name": "Nokia 7710"
+        },
+        {
+            "model_name": "Nokia 6020"
+        },
+        {
+            "model_name": "Nokia 3230"
+        },
+        {
+            "model_name": "Nokia 6670"
+        },
+        {
+            "model_name": "Nokia 7280"
+        },
+        {
+            "model_name": "Nokia 7270"
+        },
+        {
+            "model_name": "Nokia 7260"
+        },
+        {
+            "model_name": "Nokia 9300"
+        },
+        {
+            "model_name": "Nokia 6630"
+        },
+        {
+            "model_name": "Nokia 6260"
+        },
+        {
+            "model_name": "Nokia 6170"
+        },
+        {
+            "model_name": "Nokia 3128"
+        },
+        {
+            "model_name": "Nokia 2650"
+        },
+        {
+            "model_name": "Nokia 2600"
+        },
+        {
+            "model_name": "Nokia 3220"
+        },
+        {
+            "model_name": "Nokia N Gage Qd"
+        },
+        {
+            "model_name": "Nokia 3120"
+        },
+        {
+            "model_name": "Nokia 7610"
+        },
+        {
+            "model_name": "Nokia 9500"
+        },
+        {
+            "model_name": "Nokia 5140"
+        },
+        {
+            "model_name": "Nokia 6610I"
+        },
+        {
+            "model_name": "Nokia 3108"
+        },
+        {
+            "model_name": "Nokia 7700"
+        },
+        {
+            "model_name": "Nokia 7200"
+        },
+        {
+            "model_name": "Nokia 6230"
+        },
+        {
+            "model_name": "Nokia 6820"
+        },
+        {
+            "model_name": "Nokia 6810"
+        },
+        {
+            "model_name": "Nokia 3660"
+        },
+        {
+            "model_name": "Nokia 7600"
+        },
+        {
+            "model_name": "Nokia 3200"
+        },
+        {
+            "model_name": "Nokia 2300"
+        },
+        {
+            "model_name": "Nokia 1100"
+        },
+        {
+            "model_name": "Nokia 6620"
+        },
+        {
+            "model_name": "Nokia 6600"
+        },
+        {
+            "model_name": "Nokia 3100"
+        },
+        {
+            "model_name": "Nokia 7250I"
+        },
+        {
+            "model_name": "Nokia 6108"
+        },
+        {
+            "model_name": "Nokia 6220"
+        },
+        {
+            "model_name": "Nokia 3300"
+        },
+        {
+            "model_name": "Nokia N Gage"
+        },
+        {
+            "model_name": "Nokia 7250"
+        },
+        {
+            "model_name": "Nokia 8910I"
+        },
+        {
+            "model_name": "Nokia 6800"
+        },
+        {
+            "model_name": "Nokia 6100"
+        },
+        {
+            "model_name": "Nokia 5100"
+        },
+        {
+            "model_name": "Nokia 2100"
+        },
+        {
+            "model_name": "Nokia 6650"
+        },
+        {
+            "model_name": "Nokia 3650"
+        },
+        {
+            "model_name": "Nokia 3530"
+        },
+        {
+            "model_name": "Nokia 3510I"
+        },
+        {
+            "model_name": "Nokia 6610"
+        },
+        {
+            "model_name": "Nokia 3610"
+        },
+        {
+            "model_name": "Nokia 9210I Communicator"
+        },
+        {
+            "model_name": "Nokia 7210"
+        },
+        {
+            "model_name": "Nokia 6310I"
+        },
+        {
+            "model_name": "Nokia 3510"
+        },
+        {
+            "model_name": "Nokia 3410"
+        },
+        {
+            "model_name": "Nokia 7650"
+        },
+        {
+            "model_name": "Nokia 8910"
+        },
+        {
+            "model_name": "Nokia 6510"
+        },
+        {
+            "model_name": "Nokia 6500"
+        },
+        {
+            "model_name": "Nokia 8855"
+        },
+        {
+            "model_name": "Nokia 5210"
+        },
+        {
+            "model_name": "Nokia 5510"
+        },
+        {
+            "model_name": "Nokia 8310"
+        },
+        {
+            "model_name": "Nokia 6310"
+        },
+        {
+            "model_name": "Nokia 3350"
+        },
+        {
+            "model_name": "Nokia 3330"
+        },
+        {
+            "model_name": "Nokia 8250"
+        },
+        {
+            "model_name": "Nokia 9210 Communicator"
+        },
+        {
+            "model_name": "Nokia 3310"
+        },
+        {
+            "model_name": "Nokia 8890"
+        },
+        {
+            "model_name": "Nokia 8210"
+        },
+        {
+            "model_name": "Nokia 8850"
+        },
+        {
+            "model_name": "Nokia 8810"
+        },
+        {
+            "model_name": "Nokia 6250"
+        },
+        {
+            "model_name": "Nokia 6210"
+        },
+        {
+            "model_name": "Nokia 7110"
+        },
+        {
+            "model_name": "Nokia 9110I Communicator"
+        },
+        {
+            "model_name": "Nokia 9000 Communicator"
+        },
+        {
+            "model_name": "Nokia 3210 (1999)"
+        },
+        {
+            "model_name": "Nokia 6150"
+        },
+        {
+            "model_name": "Nokia 6130"
+        },
+        {
+            "model_name": "Nokia 6110"
+        },
+        {
+            "model_name": "Nokia 5110"
+        },
+        {
+            "model_name": "Nokia 3110"
+        },
+        {
+            "model_name": "Nokia 8110"
+        },
+        {
+            "model_name": "Nokia 2110"
+        },
+        {
+            "model_name": "Nokia G"
+        },
+        {
+            "model_name": "Nokia 7 3"
+        },
+        {
+            "model_name": "Nokia 9 3 Pureview"
+        },
+        {
+            "model_name": "Nokia 8 1 Plus"
+        },
+        {
+            "model_name": "Nokia N87"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  forensics:
+    build: .
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    container_name: cundamanix-api
+    network_mode: "bridge"
+    devices:
+      - "/dev/bus/usb:/dev/bus/usb"
+    # depends_on:
+    #   - db
+    # environment:
+    #   - DATABASE_URL=mongodb://db:27017/cundamanix
+    # privileged: true
+
+    #   db:
+    #     container_name: cundamanix-db
+    #     image: mongo
+    #     ports:
+    #       - 27017:27017
+    #     command: mongod
+    #     volumes:
+    #       - mongo-data:/data/db
+
+
+    # volumes:
+    #   mongo-data:

@@ -1,0 +1,959 @@
+{
+    "brand": "Oppo",
+    "models": [
+        {
+            "model_name": "Oppo A80"
+        },
+        {
+            "model_name": "Oppo F27"
+        },
+        {
+            "model_name": "Oppo A3 4G"
+        },
+        {
+            "model_name": "Oppo A3X 4G"
+        },
+        {
+            "model_name": "Oppo A3"
+        },
+        {
+            "model_name": "Oppo A3X"
+        },
+        {
+            "model_name": "Oppo A3X (China)"
+        },
+        {
+            "model_name": "Oppo K12X"
+        },
+        {
+            "model_name": "Oppo Reno12 F 4G"
+        },
+        {
+            "model_name": "Oppo A3 (China)"
+        },
+        {
+            "model_name": "Oppo Reno12 F"
+        },
+        {
+            "model_name": "Oppo A3 Pro"
+        },
+        {
+            "model_name": "Oppo Reno12 Pro"
+        },
+        {
+            "model_name": "Oppo Reno12"
+        },
+        {
+            "model_name": "Oppo F27 Pro Plus"
+        },
+        {
+            "model_name": "Oppo Reno12 Pro (China)"
+        },
+        {
+            "model_name": "Oppo Reno12 (China)"
+        },
+        {
+            "model_name": "Oppo K12X (China)"
+        },
+        {
+            "model_name": "Oppo A60"
+        },
+        {
+            "model_name": "Oppo K12"
+        },
+        {
+            "model_name": "Oppo A3 Pro (China)"
+        },
+        {
+            "model_name": "Oppo Watch X"
+        },
+        {
+            "model_name": "Oppo F25 Pro"
+        },
+        {
+            "model_name": "Oppo Reno11 F"
+        },
+        {
+            "model_name": "Oppo Pad Neo"
+        },
+        {
+            "model_name": "Oppo Reno11 Pro"
+        },
+        {
+            "model_name": "Oppo Reno11"
+        },
+        {
+            "model_name": "Oppo Find X7 Ultra"
+        },
+        {
+            "model_name": "Oppo Find X7"
+        },
+        {
+            "model_name": "Oppo A59"
+        },
+        {
+            "model_name": "Oppo Reno11 Pro (China)"
+        },
+        {
+            "model_name": "Oppo Reno11 (China)"
+        },
+        {
+            "model_name": "Oppo Pad Air2"
+        },
+        {
+            "model_name": "Oppo A2"
+        },
+        {
+            "model_name": "Oppo A79"
+        },
+        {
+            "model_name": "Oppo Find N3"
+        },
+        {
+            "model_name": "Oppo A2X"
+        },
+        {
+            "model_name": "Oppo A18"
+        },
+        {
+            "model_name": "Oppo A2 Pro"
+        },
+        {
+            "model_name": "Oppo A38"
+        },
+        {
+            "model_name": "Oppo Watch Se"
+        },
+        {
+            "model_name": "Oppo Watch 4 Pro"
+        },
+        {
+            "model_name": "Oppo Find N3 Flip"
+        },
+        {
+            "model_name": "Oppo A58 4G"
+        },
+        {
+            "model_name": "Oppo K11"
+        },
+        {
+            "model_name": "Oppo Reno10 Pro"
+        },
+        {
+            "model_name": "Oppo Reno10"
+        },
+        {
+            "model_name": "Oppo A78 4G"
+        },
+        {
+            "model_name": "Oppo K11X"
+        },
+        {
+            "model_name": "Oppo Reno10 Pro Plus"
+        },
+        {
+            "model_name": "Oppo Reno10 Pro (China)"
+        },
+        {
+            "model_name": "Oppo Reno10 (China)"
+        },
+        {
+            "model_name": "Oppo F23"
+        },
+        {
+            "model_name": "Oppo A98"
+        },
+        {
+            "model_name": "Oppo A1"
+        },
+        {
+            "model_name": "Oppo A1X"
+        },
+        {
+            "model_name": "Oppo Find X6 Pro"
+        },
+        {
+            "model_name": "Oppo Find X6"
+        },
+        {
+            "model_name": "Oppo Pad 2"
+        },
+        {
+            "model_name": "Oppo Reno8 T"
+        },
+        {
+            "model_name": "Oppo Reno8 T 5G"
+        },
+        {
+            "model_name": "Oppo A78"
+        },
+        {
+            "model_name": "Oppo A56S"
+        },
+        {
+            "model_name": "Oppo Find N2 Flip"
+        },
+        {
+            "model_name": "Oppo Find N2"
+        },
+        {
+            "model_name": "Oppo A58X"
+        },
+        {
+            "model_name": "Oppo Reno9 Pro Plus"
+        },
+        {
+            "model_name": "Oppo Reno9 Pro"
+        },
+        {
+            "model_name": "Oppo Reno9"
+        },
+        {
+            "model_name": "Oppo A1 Pro"
+        },
+        {
+            "model_name": "Oppo A58 (China)"
+        },
+        {
+            "model_name": "Oppo A17K"
+        },
+        {
+            "model_name": "Oppo A77S"
+        },
+        {
+            "model_name": "Oppo A17"
+        },
+        {
+            "model_name": "Oppo K10X"
+        },
+        {
+            "model_name": "Oppo A57E"
+        },
+        {
+            "model_name": "Oppo A57S"
+        },
+        {
+            "model_name": "Oppo Reno8 4G"
+        },
+        {
+            "model_name": "Oppo Watch 3 Pro"
+        },
+        {
+            "model_name": "Oppo Watch 3"
+        },
+        {
+            "model_name": "Oppo Reno8 Z"
+        },
+        {
+            "model_name": "Oppo A77 4G"
+        },
+        {
+            "model_name": "Oppo Reno8 Pro"
+        },
+        {
+            "model_name": "Oppo Reno8"
+        },
+        {
+            "model_name": "Oppo A97"
+        },
+        {
+            "model_name": "Oppo Reno8 Lite"
+        },
+        {
+            "model_name": "Oppo K10 5G"
+        },
+        {
+            "model_name": "Oppo A77"
+        },
+        {
+            "model_name": "Oppo A57 4G"
+        },
+        {
+            "model_name": "Oppo Reno8 Pro Plus"
+        },
+        {
+            "model_name": "Oppo Reno8 Pro (China)"
+        },
+        {
+            "model_name": "Oppo Reno8 (China)"
+        },
+        {
+            "model_name": "Oppo Pad Air"
+        },
+        {
+            "model_name": "Oppo K10 Pro"
+        },
+        {
+            "model_name": "Oppo K10 5G (China)"
+        },
+        {
+            "model_name": "Oppo A55S"
+        },
+        {
+            "model_name": "Oppo A57"
+        },
+        {
+            "model_name": "Oppo Reno7 Lite"
+        },
+        {
+            "model_name": "Oppo F21 Pro 5G"
+        },
+        {
+            "model_name": "Oppo F21 Pro"
+        },
+        {
+            "model_name": "Oppo Reno7"
+        },
+        {
+            "model_name": "Oppo K10"
+        },
+        {
+            "model_name": "Oppo A96"
+        },
+        {
+            "model_name": "Oppo A16E"
+        },
+        {
+            "model_name": "Oppo Reno7 Z 5G"
+        },
+        {
+            "model_name": "Oppo Find X5 Pro"
+        },
+        {
+            "model_name": "Oppo Find X5"
+        },
+        {
+            "model_name": "Oppo Find X5 Lite"
+        },
+        {
+            "model_name": "Oppo Pad"
+        },
+        {
+            "model_name": "Oppo A76"
+        },
+        {
+            "model_name": "Oppo Reno7 5G"
+        },
+        {
+            "model_name": "Oppo Reno6 Lite"
+        },
+        {
+            "model_name": "Oppo A96 (China)"
+        },
+        {
+            "model_name": "Oppo A36"
+        },
+        {
+            "model_name": "Oppo A11S"
+        },
+        {
+            "model_name": "Oppo K9X"
+        },
+        {
+            "model_name": "Oppo Find N"
+        },
+        {
+            "model_name": "Oppo Reno7 Pro 5G"
+        },
+        {
+            "model_name": "Oppo Reno7 5G (China)"
+        },
+        {
+            "model_name": "Oppo Reno7 Se 5G"
+        },
+        {
+            "model_name": "Oppo A95"
+        },
+        {
+            "model_name": "Oppo A16K"
+        },
+        {
+            "model_name": "Oppo A54S"
+        },
+        {
+            "model_name": "Oppo A56 5G"
+        },
+        {
+            "model_name": "Oppo K9S"
+        },
+        {
+            "model_name": "Oppo A55"
+        },
+        {
+            "model_name": "Oppo F19S"
+        },
+        {
+            "model_name": "Oppo K9 Pro"
+        },
+        {
+            "model_name": "Oppo Reno6 Pro 5G (Snapdragon)"
+        },
+        {
+            "model_name": "Oppo Reno6"
+        },
+        {
+            "model_name": "Oppo Watch 2"
+        },
+        {
+            "model_name": "Oppo Reno6 Z"
+        },
+        {
+            "model_name": "Oppo A16S"
+        },
+        {
+            "model_name": "Oppo A16"
+        },
+        {
+            "model_name": "Oppo Reno6 Pro Plus 5G"
+        },
+        {
+            "model_name": "Oppo Reno6 Pro 5G"
+        },
+        {
+            "model_name": "Oppo Reno6 5G"
+        },
+        {
+            "model_name": "Oppo K9"
+        },
+        {
+            "model_name": "Oppo A53S 5G"
+        },
+        {
+            "model_name": "Oppo A95 5G"
+        },
+        {
+            "model_name": "Oppo A94 5G"
+        },
+        {
+            "model_name": "Oppo A35"
+        },
+        {
+            "model_name": "Oppo Reno5 Z"
+        },
+        {
+            "model_name": "Oppo A54 5G"
+        },
+        {
+            "model_name": "Oppo A74 5G"
+        },
+        {
+            "model_name": "Oppo A74"
+        },
+        {
+            "model_name": "Oppo F19"
+        },
+        {
+            "model_name": "Oppo A54"
+        },
+        {
+            "model_name": "Oppo Find X3 Pro"
+        },
+        {
+            "model_name": "Oppo Find X3"
+        },
+        {
+            "model_name": "Oppo Find X3 Neo"
+        },
+        {
+            "model_name": "Oppo Find X3 Lite"
+        },
+        {
+            "model_name": "Oppo F19 Pro Plus 5G"
+        },
+        {
+            "model_name": "Oppo F19 Pro"
+        },
+        {
+            "model_name": "Oppo Reno5 Lite"
+        },
+        {
+            "model_name": "Oppo A94"
+        },
+        {
+            "model_name": "Oppo Reno5 F"
+        },
+        {
+            "model_name": "Oppo Reno5 K"
+        },
+        {
+            "model_name": "Oppo A55 5G"
+        },
+        {
+            "model_name": "Oppo A93S 5G"
+        },
+        {
+            "model_name": "Oppo A93 5G"
+        },
+        {
+            "model_name": "Oppo A15S"
+        },
+        {
+            "model_name": "Oppo Reno5 4G"
+        },
+        {
+            "model_name": "Oppo Reno5 Pro Plus 5G"
+        },
+        {
+            "model_name": "Oppo A53 5G"
+        },
+        {
+            "model_name": "Oppo Reno5 Pro 5G"
+        },
+        {
+            "model_name": "Oppo Reno5 5G"
+        },
+        {
+            "model_name": "Oppo A73 5G"
+        },
+        {
+            "model_name": "Oppo Reno4 F"
+        },
+        {
+            "model_name": "Oppo A15"
+        },
+        {
+            "model_name": "Oppo A53S"
+        },
+        {
+            "model_name": "Oppo A73"
+        },
+        {
+            "model_name": "Oppo A93"
+        },
+        {
+            "model_name": "Oppo Reno4 Z 5G"
+        },
+        {
+            "model_name": "Oppo Reno4 Lite"
+        },
+        {
+            "model_name": "Oppo A33 (2020)"
+        },
+        {
+            "model_name": "Oppo Reno4 Se"
+        },
+        {
+            "model_name": "Oppo F17 Pro"
+        },
+        {
+            "model_name": "Oppo F17"
+        },
+        {
+            "model_name": "Oppo A32"
+        },
+        {
+            "model_name": "Oppo A53"
+        },
+        {
+            "model_name": "Oppo Watch"
+        },
+        {
+            "model_name": "Oppo K7X"
+        },
+        {
+            "model_name": "Oppo Reno4 Pro"
+        },
+        {
+            "model_name": "Oppo Reno4"
+        },
+        {
+            "model_name": "Oppo A72 5G"
+        },
+        {
+            "model_name": "Oppo A12S"
+        },
+        {
+            "model_name": "Oppo Reno4 Pro 5G"
+        },
+        {
+            "model_name": "Oppo Reno4 5G"
+        },
+        {
+            "model_name": "Oppo A92"
+        },
+        {
+            "model_name": "Oppo Find X2 Neo"
+        },
+        {
+            "model_name": "Oppo A92S"
+        },
+        {
+            "model_name": "Oppo A72"
+        },
+        {
+            "model_name": "Oppo A52"
+        },
+        {
+            "model_name": "Oppo A11K"
+        },
+        {
+            "model_name": "Oppo A12"
+        },
+        {
+            "model_name": "Oppo K7 5G"
+        },
+        {
+            "model_name": "Oppo Find X2 Lite"
+        },
+        {
+            "model_name": "Oppo Ace2"
+        },
+        {
+            "model_name": "Oppo A12E"
+        },
+        {
+            "model_name": "Oppo Reno3"
+        },
+        {
+            "model_name": "Oppo Find X2 Pro"
+        },
+        {
+            "model_name": "Oppo Find X2"
+        },
+        {
+            "model_name": "Oppo Reno3 Pro"
+        },
+        {
+            "model_name": "Oppo A31"
+        },
+        {
+            "model_name": "Oppo F15"
+        },
+        {
+            "model_name": "Oppo Reno3 Pro 5G"
+        },
+        {
+            "model_name": "Oppo Reno3 Youth"
+        },
+        {
+            "model_name": "Oppo Reno3 5G"
+        },
+        {
+            "model_name": "Oppo A91"
+        },
+        {
+            "model_name": "Oppo A8"
+        },
+        {
+            "model_name": "Oppo A11"
+        },
+        {
+            "model_name": "Oppo K5"
+        },
+        {
+            "model_name": "Oppo Reno Ace"
+        },
+        {
+            "model_name": "Oppo Reno A"
+        },
+        {
+            "model_name": "Oppo A5 (2020)"
+        },
+        {
+            "model_name": "Oppo A9 (2020)"
+        },
+        {
+            "model_name": "Oppo Reno2"
+        },
+        {
+            "model_name": "Oppo Reno2 F"
+        },
+        {
+            "model_name": "Oppo Reno2 Z"
+        },
+        {
+            "model_name": "Oppo Reno Z"
+        },
+        {
+            "model_name": "Oppo K3"
+        },
+        {
+            "model_name": "Oppo A9X"
+        },
+        {
+            "model_name": "Oppo A9"
+        },
+        {
+            "model_name": "Oppo Reno 5G"
+        },
+        {
+            "model_name": "Oppo Reno 10X Zoom"
+        },
+        {
+            "model_name": "Oppo Reno"
+        },
+        {
+            "model_name": "Oppo A1K"
+        },
+        {
+            "model_name": "Oppo A7N"
+        },
+        {
+            "model_name": "Oppo A5S (Ax5S)"
+        },
+        {
+            "model_name": "Oppo F11"
+        },
+        {
+            "model_name": "Oppo F11 Pro"
+        },
+        {
+            "model_name": "Oppo A7"
+        },
+        {
+            "model_name": "Oppo R15X"
+        },
+        {
+            "model_name": "Oppo Rx17 Neo"
+        },
+        {
+            "model_name": "Oppo K1"
+        },
+        {
+            "model_name": "Oppo A7X"
+        },
+        {
+            "model_name": "Oppo Rx17 Pro"
+        },
+        {
+            "model_name": "Oppo R17"
+        },
+        {
+            "model_name": "Oppo F9 (F9 Pro)"
+        },
+        {
+            "model_name": "Oppo A3S"
+        },
+        {
+            "model_name": "Oppo A5 (Ax5)"
+        },
+        {
+            "model_name": "Oppo Find X Lamborghini"
+        },
+        {
+            "model_name": "Oppo Find X"
+        },
+        {
+            "model_name": "Oppo F7 Youth"
+        },
+        {
+            "model_name": "Oppo A3 (2018)"
+        },
+        {
+            "model_name": "Oppo F7"
+        },
+        {
+            "model_name": "Oppo R15 Pro"
+        },
+        {
+            "model_name": "Oppo R15"
+        },
+        {
+            "model_name": "Oppo A1 (2018)"
+        },
+        {
+            "model_name": "Oppo A71 (2018)"
+        },
+        {
+            "model_name": "Oppo A83"
+        },
+        {
+            "model_name": "Oppo F5 Youth"
+        },
+        {
+            "model_name": "Oppo R11S Plus"
+        },
+        {
+            "model_name": "Oppo F5"
+        },
+        {
+            "model_name": "Oppo R11S"
+        },
+        {
+            "model_name": "Oppo A71"
+        },
+        {
+            "model_name": "Oppo A77 (2017)"
+        },
+        {
+            "model_name": "Oppo R11 Plus"
+        },
+        {
+            "model_name": "Oppo R11"
+        },
+        {
+            "model_name": "Oppo A77 (Mediatek)"
+        },
+        {
+            "model_name": "Oppo A39"
+        },
+        {
+            "model_name": "Oppo F3"
+        },
+        {
+            "model_name": "Oppo F3 Plus"
+        },
+        {
+            "model_name": "Oppo A57 (2016)"
+        },
+        {
+            "model_name": "Oppo F1S"
+        },
+        {
+            "model_name": "Oppo R9S Plus"
+        },
+        {
+            "model_name": "Oppo R9S"
+        },
+        {
+            "model_name": "Oppo A37"
+        },
+        {
+            "model_name": "Oppo A59 (2016)"
+        },
+        {
+            "model_name": "Oppo R9 Plus"
+        },
+        {
+            "model_name": "Oppo F1 Plus"
+        },
+        {
+            "model_name": "Oppo F1"
+        },
+        {
+            "model_name": "Oppo A53 (2015)"
+        },
+        {
+            "model_name": "Oppo A33 (2015)"
+        },
+        {
+            "model_name": "Oppo Neo 7"
+        },
+        {
+            "model_name": "Oppo R7S"
+        },
+        {
+            "model_name": "Oppo R7 Lite"
+        },
+        {
+            "model_name": "Oppo R5S"
+        },
+        {
+            "model_name": "Oppo Mirror 5S"
+        },
+        {
+            "model_name": "Oppo Mirror 5"
+        },
+        {
+            "model_name": "Oppo Joy 3"
+        },
+        {
+            "model_name": "Oppo R7 Plus"
+        },
+        {
+            "model_name": "Oppo R7"
+        },
+        {
+            "model_name": "Oppo Neo 5 (2015)"
+        },
+        {
+            "model_name": "Oppo Neo 5S"
+        },
+        {
+            "model_name": "Oppo Joy Plus"
+        },
+        {
+            "model_name": "Oppo Mirror 3"
+        },
+        {
+            "model_name": "Oppo A31 (2015)"
+        },
+        {
+            "model_name": "Oppo R1X"
+        },
+        {
+            "model_name": "Oppo U3"
+        },
+        {
+            "model_name": "Oppo R5"
+        },
+        {
+            "model_name": "Oppo N3"
+        },
+        {
+            "model_name": "Oppo R1S"
+        },
+        {
+            "model_name": "Oppo Neo 3"
+        },
+        {
+            "model_name": "Oppo Find 5 Mini"
+        },
+        {
+            "model_name": "Oppo R2001 Yoyo"
+        },
+        {
+            "model_name": "Oppo R1001 Joy"
+        },
+        {
+            "model_name": "Oppo Neo 5"
+        },
+        {
+            "model_name": "Oppo R3"
+        },
+        {
+            "model_name": "Oppo N1 Mini"
+        },
+        {
+            "model_name": "Oppo Find 7"
+        },
+        {
+            "model_name": "Oppo Find 7A"
+        },
+        {
+            "model_name": "Oppo Neo"
+        },
+        {
+            "model_name": "Oppo R1 R829T"
+        },
+        {
+            "model_name": "Oppo N1"
+        },
+        {
+            "model_name": "Oppo R819"
+        },
+        {
+            "model_name": "Oppo Find 5"
+        },
+        {
+            "model_name": "Oppo U705T Ulike 2"
+        },
+        {
+            "model_name": "Oppo R601"
+        },
+        {
+            "model_name": "Oppo R821T Find Muse"
+        },
+        {
+            "model_name": "Oppo R811 Real"
+        },
+        {
+            "model_name": "Oppo T29"
+        },
+        {
+            "model_name": "Oppo R817 Real"
+        },
+        {
+            "model_name": "Oppo R815T Clover"
+        },
+        {
+            "model_name": "Oppo Find"
+        },
+        {
+            "model_name": "Oppo U701 Ulike"
+        },
+        {
+            "model_name": "Oppo K10 Energy"
+        }
+    ]
+}

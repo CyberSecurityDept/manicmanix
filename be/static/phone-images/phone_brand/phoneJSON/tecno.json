@@ -1,0 +1,455 @@
+{
+    "brand": "Tecno",
+    "models": [
+        {
+            "model_name": "Tecno Pop 9"
+        },
+        {
+            "model_name": "Tecno Spark 30 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 30"
+        },
+        {
+            "model_name": "Tecno Phantom V Fold2"
+        },
+        {
+            "model_name": "Tecno Phantom V Flip2"
+        },
+        {
+            "model_name": "Tecno Pova 6 Neo 5G"
+        },
+        {
+            "model_name": "Tecno Spark 30C"
+        },
+        {
+            "model_name": "Tecno Spark Go 1"
+        },
+        {
+            "model_name": "Tecno Camon 30S Pro"
+        },
+        {
+            "model_name": "Tecno Spark 20P"
+        },
+        {
+            "model_name": "Tecno Spark 20 Pro 5G"
+        },
+        {
+            "model_name": "Tecno Pova 6 Neo"
+        },
+        {
+            "model_name": "Tecno Pova 6"
+        },
+        {
+            "model_name": "Tecno Camon 30 Premier"
+        },
+        {
+            "model_name": "Tecno Camon 30 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 30 5G"
+        },
+        {
+            "model_name": "Tecno Camon 30"
+        },
+        {
+            "model_name": "Tecno Pova 6 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 20 Pro Plus"
+        },
+        {
+            "model_name": "Tecno Spark 20 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 20"
+        },
+        {
+            "model_name": "Tecno Spark 20C"
+        },
+        {
+            "model_name": "Tecno Spark Go 2024"
+        },
+        {
+            "model_name": "Tecno Pop 8"
+        },
+        {
+            "model_name": "Tecno Camon 20S Pro 5G"
+        },
+        {
+            "model_name": "Tecno Phantom V Flip"
+        },
+        {
+            "model_name": "Tecno Pova 5 Pro"
+        },
+        {
+            "model_name": "Tecno Pova Neo 3"
+        },
+        {
+            "model_name": "Tecno Pova 5"
+        },
+        {
+            "model_name": "Tecno Camon 20 Premier"
+        },
+        {
+            "model_name": "Tecno Camon 20 Pro 5G"
+        },
+        {
+            "model_name": "Tecno Camon 20 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 20"
+        },
+        {
+            "model_name": "Tecno Pop 7"
+        },
+        {
+            "model_name": "Tecno Spark 10 5G"
+        },
+        {
+            "model_name": "Tecno Spark 10C"
+        },
+        {
+            "model_name": "Tecno Spark 10"
+        },
+        {
+            "model_name": "Tecno Spark 10 Pro"
+        },
+        {
+            "model_name": "Tecno Phantom V Fold"
+        },
+        {
+            "model_name": "Tecno Pop 7 Pro"
+        },
+        {
+            "model_name": "Tecno Spark Go 2023"
+        },
+        {
+            "model_name": "Tecno Phantom X2 Pro"
+        },
+        {
+            "model_name": "Tecno Phantom X2"
+        },
+        {
+            "model_name": "Tecno Pova 4"
+        },
+        {
+            "model_name": "Tecno Pova 4 Pro"
+        },
+        {
+            "model_name": "Tecno Pova Neo 2"
+        },
+        {
+            "model_name": "Tecno Pova Neo 5G"
+        },
+        {
+            "model_name": "Tecno Pop 6 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 9T (India)"
+        },
+        {
+            "model_name": "Tecno Spark 9"
+        },
+        {
+            "model_name": "Tecno Spark 9T"
+        },
+        {
+            "model_name": "Tecno Camon 19 Pro 5G"
+        },
+        {
+            "model_name": "Tecno Camon 19 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 19"
+        },
+        {
+            "model_name": "Tecno Camon 19 Neo"
+        },
+        {
+            "model_name": "Tecno Pop 6"
+        },
+        {
+            "model_name": "Tecno Spark 9 Pro"
+        },
+        {
+            "model_name": "Tecno Pova 3"
+        },
+        {
+            "model_name": "Tecno Pop 6 Go"
+        },
+        {
+            "model_name": "Tecno Pop 5S"
+        },
+        {
+            "model_name": "Tecno Spark 8C"
+        },
+        {
+            "model_name": "Tecno Pop 5X"
+        },
+        {
+            "model_name": "Tecno Pop 5 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 8 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 8T"
+        },
+        {
+            "model_name": "Tecno Spark Go 2022"
+        },
+        {
+            "model_name": "Tecno Pova 5G"
+        },
+        {
+            "model_name": "Tecno Pova Neo"
+        },
+        {
+            "model_name": "Tecno Camon 18T"
+        },
+        {
+            "model_name": "Tecno Pop 5 Lte"
+        },
+        {
+            "model_name": "Tecno Pop 5C"
+        },
+        {
+            "model_name": "Tecno Camon 18I"
+        },
+        {
+            "model_name": "Tecno Spark 8P"
+        },
+        {
+            "model_name": "Tecno Camon 18 Premier"
+        },
+        {
+            "model_name": "Tecno Camon 18 P"
+        },
+        {
+            "model_name": "Tecno Camon 18"
+        },
+        {
+            "model_name": "Tecno Spark 8"
+        },
+        {
+            "model_name": "Tecno Pop 5"
+        },
+        {
+            "model_name": "Tecno Spark Go 2021"
+        },
+        {
+            "model_name": "Tecno Spark 7T"
+        },
+        {
+            "model_name": "Tecno Phantom X"
+        },
+        {
+            "model_name": "Tecno Pova 2"
+        },
+        {
+            "model_name": "Tecno Camon 17 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 17P"
+        },
+        {
+            "model_name": "Tecno Camon 17"
+        },
+        {
+            "model_name": "Tecno Spark 7 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 7P"
+        },
+        {
+            "model_name": "Tecno Spark 7"
+        },
+        {
+            "model_name": "Tecno Camon 16 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 16 S"
+        },
+        {
+            "model_name": "Tecno Spark 6 Go"
+        },
+        {
+            "model_name": "Tecno Spark Go 2020"
+        },
+        {
+            "model_name": "Tecno Pova"
+        },
+        {
+            "model_name": "Tecno Camon 16"
+        },
+        {
+            "model_name": "Tecno Spark 6 Air"
+        },
+        {
+            "model_name": "Tecno Spark 6"
+        },
+        {
+            "model_name": "Tecno Camon 16 Premier"
+        },
+        {
+            "model_name": "Tecno Pouvoir 4 Pro"
+        },
+        {
+            "model_name": "Tecno Pop 4"
+        },
+        {
+            "model_name": "Tecno Pouvoir 4"
+        },
+        {
+            "model_name": "Tecno Spark Power 2"
+        },
+        {
+            "model_name": "Tecno Spark 5 Air"
+        },
+        {
+            "model_name": "Tecno Spark 5 Pro"
+        },
+        {
+            "model_name": "Tecno Spark 5"
+        },
+        {
+            "model_name": "Tecno Camon 15 Premier"
+        },
+        {
+            "model_name": "Tecno Camon 15 Air"
+        },
+        {
+            "model_name": "Tecno Camon 15 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 15"
+        },
+        {
+            "model_name": "Tecno Camon 12 Air"
+        },
+        {
+            "model_name": "Tecno Pop 3 Plus"
+        },
+        {
+            "model_name": "Tecno Spark 4 Lite"
+        },
+        {
+            "model_name": "Tecno Spark 4"
+        },
+        {
+            "model_name": "Tecno Camon 12 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 12"
+        },
+        {
+            "model_name": "Tecno Pouvoir 3 Air"
+        },
+        {
+            "model_name": "Tecno Pouvoir 3 Plus"
+        },
+        {
+            "model_name": "Tecno Pouvoir 3"
+        },
+        {
+            "model_name": "Tecno Spark 3"
+        },
+        {
+            "model_name": "Tecno Spark 3 Pro"
+        },
+        {
+            "model_name": "Tecno Spark Go"
+        },
+        {
+            "model_name": "Tecno Pop 2 F"
+        },
+        {
+            "model_name": "Tecno Pop 2 Plus"
+        },
+        {
+            "model_name": "Tecno Phantom 9"
+        },
+        {
+            "model_name": "Tecno Camon Iace2X"
+        },
+        {
+            "model_name": "Tecno Camon I4"
+        },
+        {
+            "model_name": "Tecno Camon Iace2"
+        },
+        {
+            "model_name": "Tecno Camon 11 Pro"
+        },
+        {
+            "model_name": "Tecno Camon 11"
+        },
+        {
+            "model_name": "Tecno Pop 1S"
+        },
+        {
+            "model_name": "Tecno Pop 1 Pro"
+        },
+        {
+            "model_name": "Tecno Pop 1"
+        },
+        {
+            "model_name": "Tecno F2 Lte"
+        },
+        {
+            "model_name": "Tecno F2"
+        },
+        {
+            "model_name": "Tecno Pop 1 Lite"
+        },
+        {
+            "model_name": "Tecno Pouvoir 2 Pro"
+        },
+        {
+            "model_name": "Tecno Pouvoir 2"
+        },
+        {
+            "model_name": "Tecno Pouvoir 1"
+        },
+        {
+            "model_name": "Tecno Spark Pro"
+        },
+        {
+            "model_name": "Tecno Spark Plus"
+        },
+        {
+            "model_name": "Tecno Spark Cm"
+        },
+        {
+            "model_name": "Tecno Spark 2"
+        },
+        {
+            "model_name": "Tecno Spark"
+        },
+        {
+            "model_name": "Tecno Camon X Pro"
+        },
+        {
+            "model_name": "Tecno Camon X"
+        },
+        {
+            "model_name": "Tecno Camon Cx Manchester City Le"
+        },
+        {
+            "model_name": "Tecno Camon Cx Air"
+        },
+        {
+            "model_name": "Tecno Camon Cx"
+        },
+        {
+            "model_name": "Tecno Camon Cm"
+        },
+        {
+            "model_name": "Tecno Phantom 8"
+        },
+        {
+            "model_name": "Tecno Phantom 6 Plus"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "brand": "Google",
+    "models": [
+        {
+            "model_name": "Google Pixel 9 Pro Xl"
+        },
+        {
+            "model_name": "Google Pixel 9 Pro"
+        },
+        {
+            "model_name": "Google Pixel 9"
+        },
+        {
+            "model_name": "Google Pixel 9 Pro Fold"
+        },
+        {
+            "model_name": "Google Pixel Watch 3"
+        },
+        {
+            "model_name": "Google Pixel 8A"
+        },
+        {
+            "model_name": "Google Pixel 8 Pro"
+        },
+        {
+            "model_name": "Google Pixel 8"
+        },
+        {
+            "model_name": "Google Pixel Watch 2"
+        },
+        {
+            "model_name": "Google Pixel Fold"
+        },
+        {
+            "model_name": "Google Pixel Tablet"
+        },
+        {
+            "model_name": "Google Pixel 7A"
+        },
+        {
+            "model_name": "Google Pixel 7 Pro"
+        },
+        {
+            "model_name": "Google Pixel 7"
+        },
+        {
+            "model_name": "Google Pixel Watch"
+        },
+        {
+            "model_name": "Google Pixel 6A"
+        },
+        {
+            "model_name": "Google Pixel 6 Pro"
+        },
+        {
+            "model_name": "Google Pixel 6"
+        },
+        {
+            "model_name": "Google Pixel 5A 5G"
+        },
+        {
+            "model_name": "Google Pixel 5"
+        },
+        {
+            "model_name": "Google Pixel 4A 5G"
+        },
+        {
+            "model_name": "Google Pixel 4A"
+        },
+        {
+            "model_name": "Google Pixel 4 Xl"
+        },
+        {
+            "model_name": "Google Pixel 4"
+        },
+        {
+            "model_name": "Google Pixel 3A Xl"
+        },
+        {
+            "model_name": "Google Pixel 3A"
+        },
+        {
+            "model_name": "Google Pixel 3 Xl"
+        },
+        {
+            "model_name": "Google Pixel 3"
+        },
+        {
+            "model_name": "Google Pixel 2"
+        },
+        {
+            "model_name": "Google Pixel 2 Xl"
+        },
+        {
+            "model_name": "Google Pixel Xl"
+        },
+        {
+            "model_name": "Google Pixel"
+        },
+        {
+            "model_name": "Google Pixel C"
+        }
+    ]
+}

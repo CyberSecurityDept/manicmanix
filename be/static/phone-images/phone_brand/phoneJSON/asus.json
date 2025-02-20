@@ -1,0 +1,605 @@
+{
+    "brand": "Asus",
+    "models": [
+        {
+            "model_name": "Asus Zenfone 11 Ultra"
+        },
+        {
+            "model_name": "Asus Rog Phone 8 Pro"
+        },
+        {
+            "model_name": "Asus Rog Phone 8"
+        },
+        {
+            "model_name": "Asus Zenfone 10"
+        },
+        {
+            "model_name": "Asus Rog Phone 7 Ultimate"
+        },
+        {
+            "model_name": "Asus Rog Phone 7"
+        },
+        {
+            "model_name": "Asus Rog Phone 6D Ultimate"
+        },
+        {
+            "model_name": "Asus Rog Phone 6D"
+        },
+        {
+            "model_name": "Asus Rog Phone 6 Diablo Immortal Edition"
+        },
+        {
+            "model_name": "Asus Rog Phone 6 Batman Edition"
+        },
+        {
+            "model_name": "Asus Zenfone 9"
+        },
+        {
+            "model_name": "Asus Rog Phone 6 Pro"
+        },
+        {
+            "model_name": "Asus Rog Phone 6"
+        },
+        {
+            "model_name": "Asus Rog Phone 5S Pro"
+        },
+        {
+            "model_name": "Asus Rog Phone 5S"
+        },
+        {
+            "model_name": "Asus Smartphone For Snapdragon Insiders"
+        },
+        {
+            "model_name": "Asus Zenfone 8 Flip"
+        },
+        {
+            "model_name": "Asus Zenfone 8"
+        },
+        {
+            "model_name": "Asus Rog Phone 5 Ultimate"
+        },
+        {
+            "model_name": "Asus Rog Phone 5 Pro"
+        },
+        {
+            "model_name": "Asus Rog Phone 5"
+        },
+        {
+            "model_name": "Asus Zenfone 7 Pro"
+        },
+        {
+            "model_name": "Asus Zenfone 7"
+        },
+        {
+            "model_name": "Asus Rog Phone 3"
+        },
+        {
+            "model_name": "Asus Rog Phone 3 Strix"
+        },
+        {
+            "model_name": "Asus Rog Phone Ii Zs660Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 6 Zs630Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Live (L2)"
+        },
+        {
+            "model_name": "Asus Zenfone Max Plus (M2) Zb634Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max Shot Zb634Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max Pro (M2) Zb631Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max (M2) Zb633Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max (M1) Zb556Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Lite (L1) Za551Kl"
+        },
+        {
+            "model_name": "Asus Rog Phone Zs600Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Live (L1) Za550Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max Pro (M1) Zb601Kl Zb602K"
+        },
+        {
+            "model_name": "Asus Zenfone 5Z Zs620Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 5 Ze620Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 5 Lite Zc600Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max (M1) Zb555Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max Plus (M1) Zb570Tl"
+        },
+        {
+            "model_name": "Asus Zenfone V V520Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Pro Zs551Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Ze554Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Selfie Lite Zb553Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Selfie Zb553Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Selfie Pro Zd552Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Selfie Zd553Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Max Zc520Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Max Pro Zc554Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Max Plus Zc554Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 4 Max Zc554Kl"
+        },
+        {
+            "model_name": "Asus Zenpad Z8S Zt582Kl"
+        },
+        {
+            "model_name": "Asus Zenpad 3S 8 0 Z582Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zb552Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Live Zb501Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3S Max Zc521Tl"
+        },
+        {
+            "model_name": "Asus Zenpad 3S 10 Z500Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Ar Zs571Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Zoom Ze553Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zb690Kg"
+        },
+        {
+            "model_name": "Asus Zenpad 3 8 0 Z581Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zb500Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Max Zc553Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Deluxe 5 5 Zs550Kl"
+        },
+        {
+            "model_name": "Asus Zenpad Z10 Zt500Kl"
+        },
+        {
+            "model_name": "Asus Zenwatch 3 Wi503Q"
+        },
+        {
+            "model_name": "Asus Zenpad 3S 10 Z500M"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Max Zc520Tl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Laser Zc551Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Ze520Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Pegasus 3"
+        },
+        {
+            "model_name": "Asus Zenpad Z8"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Ultra Zu680Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Deluxe Zs570Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 3 Ze552Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Max Zc550Kl (2016)"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zb450Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zb452Kg"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zb551Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Go T500"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zc451Tg"
+        },
+        {
+            "model_name": "Asus Live G500Tg"
+        },
+        {
+            "model_name": "Asus Zenwatch 2 Wi501Q"
+        },
+        {
+            "model_name": "Asus Zenwatch 2 Wi502Q"
+        },
+        {
+            "model_name": "Asus Zenwatch Wi500Q"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Laser Ze551Kl"
+        },
+        {
+            "model_name": "Asus Zenfone Zoom Zx551Ml"
+        },
+        {
+            "model_name": "Asus Zenpad 8 0 Z380M"
+        },
+        {
+            "model_name": "Asus Zenpad 10 Z300M"
+        },
+        {
+            "model_name": "Asus Zenpad 10 Z300C"
+        },
+        {
+            "model_name": "Asus Zenfone Go Zc500Tg"
+        },
+        {
+            "model_name": "Asus Zenfone Max Zc550Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Deluxe Ze551Ml"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Laser Ze601Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Laser Ze600Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Laser Ze550Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Laser Ze500Kg"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Laser Ze500Kl"
+        },
+        {
+            "model_name": "Asus Zenpad 7 0 Z370Cg"
+        },
+        {
+            "model_name": "Asus Zenfone 2E"
+        },
+        {
+            "model_name": "Asus Pegasus 2 Plus"
+        },
+        {
+            "model_name": "Asus Zenpad S 8 0 Z580Ca"
+        },
+        {
+            "model_name": "Asus Zenpad S 8 0 Z580C"
+        },
+        {
+            "model_name": "Asus Zenpad 8 0 Z380Kl"
+        },
+        {
+            "model_name": "Asus Zenpad 8 0 Z380C"
+        },
+        {
+            "model_name": "Asus Zenpad C 7 0 Z170Mg"
+        },
+        {
+            "model_name": "Asus Zenpad C 7 0"
+        },
+        {
+            "model_name": "Asus Zenfone Selfie Zd551Kl"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Ze500Cl"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Ze550Ml"
+        },
+        {
+            "model_name": "Asus Zenfone 2 Ze551Ml"
+        },
+        {
+            "model_name": "Asus Fonepad 7 Fe375Cl"
+        },
+        {
+            "model_name": "Asus Zenfone C Zc451Cg"
+        },
+        {
+            "model_name": "Asus Fonepad 7 Fe171Cg"
+        },
+        {
+            "model_name": "Asus Zenfone Zoom Zx550"
+        },
+        {
+            "model_name": "Asus Pegasus"
+        },
+        {
+            "model_name": "Asus Zenfone 5 Lite A502Cg (2014)"
+        },
+        {
+            "model_name": "Asus Memo Pad 10 Me103K"
+        },
+        {
+            "model_name": "Asus Padfone X Mini"
+        },
+        {
+            "model_name": "Asus Memo Pad 7 Me572Cl"
+        },
+        {
+            "model_name": "Asus Memo Pad 7 Me572C"
+        },
+        {
+            "model_name": "Asus Zenfone 5 A500Kl (2014)"
+        },
+        {
+            "model_name": "Asus Zenfone 4 A450Cg (2014)"
+        },
+        {
+            "model_name": "Asus Memo Pad 8 Me581Cl"
+        },
+        {
+            "model_name": "Asus Memo Pad 8 Me181C"
+        },
+        {
+            "model_name": "Asus Memo Pad 7 Me176C"
+        },
+        {
+            "model_name": "Asus Fonepad 8 Fe380Cg"
+        },
+        {
+            "model_name": "Asus Fonepad 7 Fe375Cxg"
+        },
+        {
+            "model_name": "Asus Fonepad 7 Fe375Cg"
+        },
+        {
+            "model_name": "Asus Transformer Pad Tf303Cl"
+        },
+        {
+            "model_name": "Asus Transformer Pad Tf103C"
+        },
+        {
+            "model_name": "Asus Fonepad 7 (2014)"
+        },
+        {
+            "model_name": "Asus Padfone X"
+        },
+        {
+            "model_name": "Asus Padfone S"
+        },
+        {
+            "model_name": "Asus Padfone Infinity Lite"
+        },
+        {
+            "model_name": "Asus Padfone E"
+        },
+        {
+            "model_name": "Asus Zenfone 6 A601Cg (2014)"
+        },
+        {
+            "model_name": "Asus Zenfone 6 A600Cg (2014)"
+        },
+        {
+            "model_name": "Asus Zenfone 5 A501Cg (2015)"
+        },
+        {
+            "model_name": "Asus Zenfone 5 A500Cg (2014)"
+        },
+        {
+            "model_name": "Asus Zenfone 4 (2014)"
+        },
+        {
+            "model_name": "Asus Padfone Mini 4G (Intel)"
+        },
+        {
+            "model_name": "Asus Padfone Mini (Intel)"
+        },
+        {
+            "model_name": "Asus Padfone Mini"
+        },
+        {
+            "model_name": "Asus Transformer Book Trio"
+        },
+        {
+            "model_name": "Asus Padfone Infinity 2"
+        },
+        {
+            "model_name": "Asus Memo Pad 10"
+        },
+        {
+            "model_name": "Asus Memo Pad 8 Me180A"
+        },
+        {
+            "model_name": "Asus Fonepad 7"
+        },
+        {
+            "model_name": "Asus Google Nexus 7 (2013)"
+        },
+        {
+            "model_name": "Asus Fonepad Note Fhd6"
+        },
+        {
+            "model_name": "Asus Transformer Pad Tf701T"
+        },
+        {
+            "model_name": "Asus Memo Pad Fhd10"
+        },
+        {
+            "model_name": "Asus Memo Pad Hd7 8 Gb"
+        },
+        {
+            "model_name": "Asus Memo Pad Hd7 16 Gb"
+        },
+        {
+            "model_name": "Asus Fonepad"
+        },
+        {
+            "model_name": "Asus Padfone Infinity"
+        },
+        {
+            "model_name": "Asus Memo Pad Smart 10"
+        },
+        {
+            "model_name": "Asus Memo Pad Me172V"
+        },
+        {
+            "model_name": "Asus Google Nexus 7 Cellular"
+        },
+        {
+            "model_name": "Asus Vivotab Rt Tf600T"
+        },
+        {
+            "model_name": "Asus Padfone 2"
+        },
+        {
+            "model_name": "Asus Google Nexus 7"
+        },
+        {
+            "model_name": "Asus Transformer Pad Infinity 700 Lte"
+        },
+        {
+            "model_name": "Asus Transformer Pad Infinity 700 3G"
+        },
+        {
+            "model_name": "Asus Transformer Pad Tf300Tg"
+        },
+        {
+            "model_name": "Asus Transformer Pad Tf300T"
+        },
+        {
+            "model_name": "Asus Transformer Pad Infinity 700"
+        },
+        {
+            "model_name": "Asus Memo"
+        },
+        {
+            "model_name": "Asus Transformer Prime Tf700T"
+        },
+        {
+            "model_name": "Asus Transformer Prime Tf201"
+        },
+        {
+            "model_name": "Asus Padfone"
+        },
+        {
+            "model_name": "Asus Transformer Tf101"
+        },
+        {
+            "model_name": "Asus P835"
+        },
+        {
+            "model_name": "Asus E600"
+        },
+        {
+            "model_name": "Asus P565"
+        },
+        {
+            "model_name": "Asus P552W"
+        },
+        {
+            "model_name": "Asus P320"
+        },
+        {
+            "model_name": "Asus M930"
+        },
+        {
+            "model_name": "Asus P550"
+        },
+        {
+            "model_name": "Asus P750"
+        },
+        {
+            "model_name": "Asus P527"
+        },
+        {
+            "model_name": "Asus Z801"
+        },
+        {
+            "model_name": "Asus J502"
+        },
+        {
+            "model_name": "Asus V88I"
+        },
+        {
+            "model_name": "Asus M530W"
+        },
+        {
+            "model_name": "Asus P526"
+        },
+        {
+            "model_name": "Asus J501"
+        },
+        {
+            "model_name": "Asus P735"
+        },
+        {
+            "model_name": "Asus Z810"
+        },
+        {
+            "model_name": "Asus P535"
+        },
+        {
+            "model_name": "Asus P525"
+        },
+        {
+            "model_name": "Asus P505"
+        },
+        {
+            "model_name": "Asus M303"
+        },
+        {
+            "model_name": "Asus M307"
+        },
+        {
+            "model_name": "Asus M310"
+        },
+        {
+            "model_name": "Asus V80"
+        },
+        {
+            "model_name": "Asus V75"
+        }
+    ]
+}

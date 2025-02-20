@@ -1,0 +1,752 @@
+{
+    "brand": "Lenovo",
+    "models": [
+        {
+            "model_name": "Lenovo Legion Tab"
+        },
+        {
+            "model_name": "Lenovo Tab K11 Plus"
+        },
+        {
+            "model_name": "Lenovo Tab Plus"
+        },
+        {
+            "model_name": "Lenovo Tab M11"
+        },
+        {
+            "model_name": "Lenovo Legion Y700 (2023)"
+        },
+        {
+            "model_name": "Lenovo Tab P12"
+        },
+        {
+            "model_name": "Lenovo Tab M10"
+        },
+        {
+            "model_name": "Lenovo Tab Extreme"
+        },
+        {
+            "model_name": "Lenovo Tab M9"
+        },
+        {
+            "model_name": "Lenovo Tab M8 (4Th Gen)"
+        },
+        {
+            "model_name": "Lenovo Tab P11 Gen 2"
+        },
+        {
+            "model_name": "Lenovo Tab P11 Pro Gen 2"
+        },
+        {
+            "model_name": "Lenovo Tab M10 Gen 3"
+        },
+        {
+            "model_name": "Lenovo Pad Pro 2022"
+        },
+        {
+            "model_name": "Lenovo Legion Y70"
+        },
+        {
+            "model_name": "Lenovo Tab M10 Plus (3Rd Gen)"
+        },
+        {
+            "model_name": "Lenovo Legion Y700"
+        },
+        {
+            "model_name": "Lenovo Legion Y90"
+        },
+        {
+            "model_name": "Lenovo K14 Plus"
+        },
+        {
+            "model_name": "Lenovo Tab K10"
+        },
+        {
+            "model_name": "Lenovo Tab P12 Pro"
+        },
+        {
+            "model_name": "Lenovo Tab P11 5G"
+        },
+        {
+            "model_name": "Lenovo K13 Pro"
+        },
+        {
+            "model_name": "Lenovo K13"
+        },
+        {
+            "model_name": "Lenovo Yoga Tab 11"
+        },
+        {
+            "model_name": "Lenovo Tab P11 Plus"
+        },
+        {
+            "model_name": "Lenovo Tab M8 (3Rd Gen)"
+        },
+        {
+            "model_name": "Lenovo Tab M7 (3Rd Gen)"
+        },
+        {
+            "model_name": "Lenovo K13 Note"
+        },
+        {
+            "model_name": "Lenovo Yoga Tab 13"
+        },
+        {
+            "model_name": "Lenovo Pad Pro"
+        },
+        {
+            "model_name": "Lenovo Pad Plus"
+        },
+        {
+            "model_name": "Lenovo Pad"
+        },
+        {
+            "model_name": "Lenovo Legion 2 Pro"
+        },
+        {
+            "model_name": "Lenovo Legion Duel 2"
+        },
+        {
+            "model_name": "Lenovo K12 Pro"
+        },
+        {
+            "model_name": "Lenovo K12 (China)"
+        },
+        {
+            "model_name": "Lenovo A8 2020"
+        },
+        {
+            "model_name": "Lenovo Tab P11 Pro"
+        },
+        {
+            "model_name": "Lenovo Tab P11"
+        },
+        {
+            "model_name": "Lenovo Tab M10 Hd Gen 2"
+        },
+        {
+            "model_name": "Lenovo Legion Duel"
+        },
+        {
+            "model_name": "Lenovo Legion Pro"
+        },
+        {
+            "model_name": "Lenovo A7"
+        },
+        {
+            "model_name": "Lenovo M10 Plus"
+        },
+        {
+            "model_name": "Lenovo M10 Fhd Rel"
+        },
+        {
+            "model_name": "Lenovo Yoga Smart Tab"
+        },
+        {
+            "model_name": "Lenovo K10 Plus"
+        },
+        {
+            "model_name": "Lenovo K10 Note"
+        },
+        {
+            "model_name": "Lenovo A6 Note"
+        },
+        {
+            "model_name": "Lenovo Tab M8 (Fhd)"
+        },
+        {
+            "model_name": "Lenovo Tab M8 (Hd)"
+        },
+        {
+            "model_name": "Lenovo Tab M7"
+        },
+        {
+            "model_name": "Lenovo Z6"
+        },
+        {
+            "model_name": "Lenovo Z6 Pro 5G"
+        },
+        {
+            "model_name": "Lenovo Z6 Youth"
+        },
+        {
+            "model_name": "Lenovo Z6 Pro"
+        },
+        {
+            "model_name": "Lenovo K6 Enjoy"
+        },
+        {
+            "model_name": "Lenovo Tab V7"
+        },
+        {
+            "model_name": "Lenovo S5 Pro Gt"
+        },
+        {
+            "model_name": "Lenovo Z5S"
+        },
+        {
+            "model_name": "Lenovo Z5 Pro Gt"
+        },
+        {
+            "model_name": "Lenovo Z5 Pro"
+        },
+        {
+            "model_name": "Lenovo S5 Pro"
+        },
+        {
+            "model_name": "Lenovo K5 Pro"
+        },
+        {
+            "model_name": "Lenovo K9"
+        },
+        {
+            "model_name": "Lenovo Z5"
+        },
+        {
+            "model_name": "Lenovo K5 Note (2018)"
+        },
+        {
+            "model_name": "Lenovo A5"
+        },
+        {
+            "model_name": "Lenovo K5 Play"
+        },
+        {
+            "model_name": "Lenovo K5"
+        },
+        {
+            "model_name": "Lenovo S5"
+        },
+        {
+            "model_name": "Lenovo K320T"
+        },
+        {
+            "model_name": "Lenovo Moto Tab"
+        },
+        {
+            "model_name": "Lenovo Tab 7 Essential"
+        },
+        {
+            "model_name": "Lenovo Tab 7"
+        },
+        {
+            "model_name": "Lenovo K8 Plus"
+        },
+        {
+            "model_name": "Lenovo K8"
+        },
+        {
+            "model_name": "Lenovo K8 Note"
+        },
+        {
+            "model_name": "Lenovo Tab 4 10 Plus"
+        },
+        {
+            "model_name": "Lenovo Tab 4 10"
+        },
+        {
+            "model_name": "Lenovo Tab 4 8 Plus"
+        },
+        {
+            "model_name": "Lenovo Tab 4 8"
+        },
+        {
+            "model_name": "Lenovo Tab3 8 Plus"
+        },
+        {
+            "model_name": "Lenovo Zuk Edge"
+        },
+        {
+            "model_name": "Lenovo A6600 Plus"
+        },
+        {
+            "model_name": "Lenovo A6600"
+        },
+        {
+            "model_name": "Lenovo B"
+        },
+        {
+            "model_name": "Lenovo A Plus"
+        },
+        {
+            "model_name": "Lenovo P2"
+        },
+        {
+            "model_name": "Lenovo K6 Note"
+        },
+        {
+            "model_name": "Lenovo K6 Power"
+        },
+        {
+            "model_name": "Lenovo K6"
+        },
+        {
+            "model_name": "Lenovo Yoga Tab 3 10"
+        },
+        {
+            "model_name": "Lenovo Yoga Tab 3 Plus"
+        },
+        {
+            "model_name": "Lenovo Vibe A"
+        },
+        {
+            "model_name": "Lenovo C2 Power"
+        },
+        {
+            "model_name": "Lenovo C2"
+        },
+        {
+            "model_name": "Lenovo Phab2 Plus"
+        },
+        {
+            "model_name": "Lenovo Phab2"
+        },
+        {
+            "model_name": "Lenovo Phab2 Pro"
+        },
+        {
+            "model_name": "Lenovo Zuk Z2"
+        },
+        {
+            "model_name": "Lenovo Vibe C"
+        },
+        {
+            "model_name": "Lenovo Zuk Z2 Pro"
+        },
+        {
+            "model_name": "Lenovo Tab3 10"
+        },
+        {
+            "model_name": "Lenovo Tab3 8"
+        },
+        {
+            "model_name": "Lenovo Tab3 7"
+        },
+        {
+            "model_name": "Lenovo Vibe K5 Plus"
+        },
+        {
+            "model_name": "Lenovo Vibe K5"
+        },
+        {
+            "model_name": "Lenovo A7000 Turbo"
+        },
+        {
+            "model_name": "Lenovo Vibe P1 Turbo"
+        },
+        {
+            "model_name": "Lenovo K5 Note"
+        },
+        {
+            "model_name": "Lenovo Lemon 3"
+        },
+        {
+            "model_name": "Lenovo Vibe S1 Lite"
+        },
+        {
+            "model_name": "Lenovo Vibe K4 Note"
+        },
+        {
+            "model_name": "Lenovo Vibe X3 C78"
+        },
+        {
+            "model_name": "Lenovo Vibe X3"
+        },
+        {
+            "model_name": "Lenovo A3690"
+        },
+        {
+            "model_name": "Lenovo Yoga Tab 3 Pro"
+        },
+        {
+            "model_name": "Lenovo Yoga Tab 3 8 0"
+        },
+        {
+            "model_name": "Lenovo A1000"
+        },
+        {
+            "model_name": "Lenovo Phab"
+        },
+        {
+            "model_name": "Lenovo Phab Plus"
+        },
+        {
+            "model_name": "Lenovo Vibe P1"
+        },
+        {
+            "model_name": "Lenovo A6010 Plus"
+        },
+        {
+            "model_name": "Lenovo A6010"
+        },
+        {
+            "model_name": "Lenovo Vibe P1M"
+        },
+        {
+            "model_name": "Lenovo Vibe S1"
+        },
+        {
+            "model_name": "Lenovo Zuk Z1"
+        },
+        {
+            "model_name": "Lenovo A2010"
+        },
+        {
+            "model_name": "Lenovo A616"
+        },
+        {
+            "model_name": "Lenovo A3900"
+        },
+        {
+            "model_name": "Lenovo K80"
+        },
+        {
+            "model_name": "Lenovo S60"
+        },
+        {
+            "model_name": "Lenovo A6000 Plus"
+        },
+        {
+            "model_name": "Lenovo A1900"
+        },
+        {
+            "model_name": "Lenovo K3 Note"
+        },
+        {
+            "model_name": "Lenovo Vibe Shot"
+        },
+        {
+            "model_name": "Lenovo A7000 Plus"
+        },
+        {
+            "model_name": "Lenovo A7000"
+        },
+        {
+            "model_name": "Lenovo A5000"
+        },
+        {
+            "model_name": "Lenovo Tab 2 A10 70"
+        },
+        {
+            "model_name": "Lenovo Tab 2 A8 50"
+        },
+        {
+            "model_name": "Lenovo P70"
+        },
+        {
+            "model_name": "Lenovo Tab 2 A7 30"
+        },
+        {
+            "model_name": "Lenovo Tab 2 A7 20"
+        },
+        {
+            "model_name": "Lenovo Tab 2 A7 10"
+        },
+        {
+            "model_name": "Lenovo A6000"
+        },
+        {
+            "model_name": "Lenovo P90"
+        },
+        {
+            "model_name": "Lenovo Vibe X2 Pro"
+        },
+        {
+            "model_name": "Lenovo K3"
+        },
+        {
+            "model_name": "Lenovo Golden Warrior Note 8"
+        },
+        {
+            "model_name": "Lenovo A916"
+        },
+        {
+            "model_name": "Lenovo A319"
+        },
+        {
+            "model_name": "Lenovo S856"
+        },
+        {
+            "model_name": "Lenovo S580"
+        },
+        {
+            "model_name": "Lenovo S90 Sisley"
+        },
+        {
+            "model_name": "Lenovo A606"
+        },
+        {
+            "model_name": "Lenovo Yoga Tablet 2 Pro"
+        },
+        {
+            "model_name": "Lenovo Yoga Tablet 2 10 1"
+        },
+        {
+            "model_name": "Lenovo Yoga Tablet 2 8 0"
+        },
+        {
+            "model_name": "Lenovo Tab S8"
+        },
+        {
+            "model_name": "Lenovo Vibe X2"
+        },
+        {
+            "model_name": "Lenovo Vibe Z2"
+        },
+        {
+            "model_name": "Lenovo A850 Plus"
+        },
+        {
+            "model_name": "Lenovo Vibe Z2 Pro"
+        },
+        {
+            "model_name": "Lenovo Golden Warrior A8"
+        },
+        {
+            "model_name": "Lenovo Golden Warrior S8"
+        },
+        {
+            "model_name": "Lenovo S939"
+        },
+        {
+            "model_name": "Lenovo S750"
+        },
+        {
+            "model_name": "Lenovo A889"
+        },
+        {
+            "model_name": "Lenovo A680"
+        },
+        {
+            "model_name": "Lenovo A316I"
+        },
+        {
+            "model_name": "Lenovo A328"
+        },
+        {
+            "model_name": "Lenovo A536"
+        },
+        {
+            "model_name": "Lenovo A526"
+        },
+        {
+            "model_name": "Lenovo A10 70 A7600"
+        },
+        {
+            "model_name": "Lenovo A8 50 A5500"
+        },
+        {
+            "model_name": "Lenovo A7 50 A3500"
+        },
+        {
+            "model_name": "Lenovo A7 30 A3300"
+        },
+        {
+            "model_name": "Lenovo Yoga Tablet 10 Hd Plus"
+        },
+        {
+            "model_name": "Lenovo S860"
+        },
+        {
+            "model_name": "Lenovo S850"
+        },
+        {
+            "model_name": "Lenovo S660"
+        },
+        {
+            "model_name": "Lenovo A880"
+        },
+        {
+            "model_name": "Lenovo A859"
+        },
+        {
+            "model_name": "Lenovo S930"
+        },
+        {
+            "model_name": "Lenovo S650"
+        },
+        {
+            "model_name": "Lenovo Vibe Z K910"
+        },
+        {
+            "model_name": "Lenovo Yoga Tablet 10"
+        },
+        {
+            "model_name": "Lenovo Yoga Tablet 8"
+        },
+        {
+            "model_name": "Lenovo A630"
+        },
+        {
+            "model_name": "Lenovo A516"
+        },
+        {
+            "model_name": "Lenovo Vibe X S960"
+        },
+        {
+            "model_name": "Lenovo S5000"
+        },
+        {
+            "model_name": "Lenovo A850"
+        },
+        {
+            "model_name": "Lenovo A706"
+        },
+        {
+            "model_name": "Lenovo P780"
+        },
+        {
+            "model_name": "Lenovo S820"
+        },
+        {
+            "model_name": "Lenovo A390"
+        },
+        {
+            "model_name": "Lenovo A369I"
+        },
+        {
+            "model_name": "Lenovo A269I"
+        },
+        {
+            "model_name": "Lenovo S920"
+        },
+        {
+            "model_name": "Lenovo Ideatab S6000H"
+        },
+        {
+            "model_name": "Lenovo Ideatab S6000F"
+        },
+        {
+            "model_name": "Lenovo Ideatab S6000L"
+        },
+        {
+            "model_name": "Lenovo Ideatab S6000"
+        },
+        {
+            "model_name": "Lenovo Ideatab A3000"
+        },
+        {
+            "model_name": "Lenovo Ideatab A1000"
+        },
+        {
+            "model_name": "Lenovo K900"
+        },
+        {
+            "model_name": "Lenovo S890"
+        },
+        {
+            "model_name": "Lenovo Ideatab A2107"
+        },
+        {
+            "model_name": "Lenovo A830"
+        },
+        {
+            "model_name": "Lenovo A820"
+        },
+        {
+            "model_name": "Lenovo A800"
+        },
+        {
+            "model_name": "Lenovo A789"
+        },
+        {
+            "model_name": "Lenovo A690"
+        },
+        {
+            "model_name": "Lenovo S720"
+        },
+        {
+            "model_name": "Lenovo P770"
+        },
+        {
+            "model_name": "Lenovo A60 Plus"
+        },
+        {
+            "model_name": "Lenovo S560"
+        },
+        {
+            "model_name": "Lenovo S880"
+        },
+        {
+            "model_name": "Lenovo A660"
+        },
+        {
+            "model_name": "Lenovo K860"
+        },
+        {
+            "model_name": "Lenovo P700I"
+        },
+        {
+            "model_name": "Lenovo A65"
+        },
+        {
+            "model_name": "Lenovo A335"
+        },
+        {
+            "model_name": "Lenovo A185"
+        },
+        {
+            "model_name": "Lenovo S800"
+        },
+        {
+            "model_name": "Lenovo Q350"
+        },
+        {
+            "model_name": "Lenovo Q330"
+        },
+        {
+            "model_name": "Lenovo A336"
+        },
+        {
+            "model_name": "Lenovo E156"
+        },
+        {
+            "model_name": "Lenovo Lephone S2"
+        },
+        {
+            "model_name": "Lenovo A60"
+        },
+        {
+            "model_name": "Lenovo K800"
+        },
+        {
+            "model_name": "Lenovo Ideapad S2"
+        },
+        {
+            "model_name": "Lenovo Lepad S2010"
+        },
+        {
+            "model_name": "Lenovo Lepad S2007"
+        },
+        {
+            "model_name": "Lenovo Lepad S2005"
+        },
+        {
+            "model_name": "Lenovo Ideapad A1"
+        },
+        {
+            "model_name": "Lenovo Ideapad K1"
+        },
+        {
+            "model_name": "Lenovo Thinkpad"
+        },
+        {
+            "model_name": "Lenovo K12"
+        },
+        {
+            "model_name": "Lenovo K7"
+        },
+        {
+            "model_name": "Lenovo Zuk Z1 Mini"
+        },
+        {
+            "model_name": "Lenovo A5860"
+        },
+        {
+            "model_name": "Lenovo Ideapad"
+        },
+        {
+            "model_name": "Lenovo Vibe Z3 Pro"
+        }
+    ]
+}

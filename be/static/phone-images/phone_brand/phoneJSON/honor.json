@@ -1,0 +1,686 @@
+{
+    "brand": "Honor",
+    "models": [
+        {
+            "model_name": "Honor 200 Smart"
+        },
+        {
+            "model_name": "Honor Watch 5"
+        },
+        {
+            "model_name": "Honor Pad X8A"
+        },
+        {
+            "model_name": "Honor X60I"
+        },
+        {
+            "model_name": "Honor Magicpad 2 12 3"
+        },
+        {
+            "model_name": "Honor Pad 9 Pro"
+        },
+        {
+            "model_name": "Honor Magic Vs3"
+        },
+        {
+            "model_name": "Honor Magic V3"
+        },
+        {
+            "model_name": "Honor Play 60 Plus"
+        },
+        {
+            "model_name": "Honor X7B 5G (50 Mp)"
+        },
+        {
+            "model_name": "Honor Magic V Flip"
+        },
+        {
+            "model_name": "Honor X6B"
+        },
+        {
+            "model_name": "Honor 200 Pro"
+        },
+        {
+            "model_name": "Honor 200"
+        },
+        {
+            "model_name": "Honor 200 Lite"
+        },
+        {
+            "model_name": "Honor 90 Smart"
+        },
+        {
+            "model_name": "Honor X7B 5G"
+        },
+        {
+            "model_name": "Honor Magic6 Rsr Porsche Design"
+        },
+        {
+            "model_name": "Honor Magic6 Ultimate"
+        },
+        {
+            "model_name": "Honor Watch Gs 4"
+        },
+        {
+            "model_name": "Honor Choice Watch"
+        },
+        {
+            "model_name": "Honor Magic V2 Rsr Porsche Design"
+        },
+        {
+            "model_name": "Honor Magic6 Pro"
+        },
+        {
+            "model_name": "Honor Magic6"
+        },
+        {
+            "model_name": "Honor X50 Gt"
+        },
+        {
+            "model_name": "Honor X50 Pro"
+        },
+        {
+            "model_name": "Honor 90 Gt"
+        },
+        {
+            "model_name": "Honor Pad 9"
+        },
+        {
+            "model_name": "Honor X8B"
+        },
+        {
+            "model_name": "Honor Magic6 Lite"
+        },
+        {
+            "model_name": "Honor X7B"
+        },
+        {
+            "model_name": "Honor 100 Pro"
+        },
+        {
+            "model_name": "Honor 100"
+        },
+        {
+            "model_name": "Honor X50I Plus"
+        },
+        {
+            "model_name": "Honor X5 Plus"
+        },
+        {
+            "model_name": "Honor X9B"
+        },
+        {
+            "model_name": "Honor Play 8T"
+        },
+        {
+            "model_name": "Honor Magic Vs2"
+        },
+        {
+            "model_name": "Honor Watch 4 Pro"
+        },
+        {
+            "model_name": "Honor Play 50 Plus"
+        },
+        {
+            "model_name": "Honor V Purse"
+        },
+        {
+            "model_name": "Honor X40 Gt Racing"
+        },
+        {
+            "model_name": "Honor X6A"
+        },
+        {
+            "model_name": "Honor Magic V2"
+        },
+        {
+            "model_name": "Honor Watch 4"
+        },
+        {
+            "model_name": "Honor Magicpad 13"
+        },
+        {
+            "model_name": "Honor Pad X9"
+        },
+        {
+            "model_name": "Honor Pad X8 Pro"
+        },
+        {
+            "model_name": "Honor X50"
+        },
+        {
+            "model_name": "Honor Play 40"
+        },
+        {
+            "model_name": "Honor X50I"
+        },
+        {
+            "model_name": "Honor 90 Lite"
+        },
+        {
+            "model_name": "Honor 90 Pro"
+        },
+        {
+            "model_name": "Honor 90"
+        },
+        {
+            "model_name": "Honor Pad V8"
+        },
+        {
+            "model_name": "Honor Play7T Pro"
+        },
+        {
+            "model_name": "Honor Play7T"
+        },
+        {
+            "model_name": "Honor 70 Lite"
+        },
+        {
+            "model_name": "Honor Magic5 Ultimate"
+        },
+        {
+            "model_name": "Honor Magic5 Pro"
+        },
+        {
+            "model_name": "Honor Magic5"
+        },
+        {
+            "model_name": "Honor Magic5 Lite"
+        },
+        {
+            "model_name": "Honor X8A"
+        },
+        {
+            "model_name": "Honor X5"
+        },
+        {
+            "model_name": "Honor X9A"
+        },
+        {
+            "model_name": "Honor X7A"
+        },
+        {
+            "model_name": "Honor 80 Pro Flat"
+        },
+        {
+            "model_name": "Honor 80 Gt"
+        },
+        {
+            "model_name": "Honor Pad V8 Pro"
+        },
+        {
+            "model_name": "Honor 80 Pro"
+        },
+        {
+            "model_name": "Honor 80"
+        },
+        {
+            "model_name": "Honor 80 Se"
+        },
+        {
+            "model_name": "Honor Magic Vs Ultimate"
+        },
+        {
+            "model_name": "Honor Magic Vs"
+        },
+        {
+            "model_name": "Honor Play 40 Plus"
+        },
+        {
+            "model_name": "Honor X40 Gt"
+        },
+        {
+            "model_name": "Honor Play6C"
+        },
+        {
+            "model_name": "Honor X6"
+        },
+        {
+            "model_name": "Honor Pad X8"
+        },
+        {
+            "model_name": "Honor Pad X8 Lite"
+        },
+        {
+            "model_name": "Honor X40"
+        },
+        {
+            "model_name": "Honor X8 5G"
+        },
+        {
+            "model_name": "Honor Pad 8"
+        },
+        {
+            "model_name": "Honor X40I"
+        },
+        {
+            "model_name": "Honor 70 Pro Plus"
+        },
+        {
+            "model_name": "Honor 70 Pro"
+        },
+        {
+            "model_name": "Honor 70"
+        },
+        {
+            "model_name": "Honor Play 30"
+        },
+        {
+            "model_name": "Honor Play6T Pro"
+        },
+        {
+            "model_name": "Honor Play6T"
+        },
+        {
+            "model_name": "Honor Magic4 Lite"
+        },
+        {
+            "model_name": "Honor X7"
+        },
+        {
+            "model_name": "Honor X9"
+        },
+        {
+            "model_name": "Honor X9 5G"
+        },
+        {
+            "model_name": "Honor Magic4 Ultimate"
+        },
+        {
+            "model_name": "Honor X8"
+        },
+        {
+            "model_name": "Honor Magic4 Pro"
+        },
+        {
+            "model_name": "Honor Magic4"
+        },
+        {
+            "model_name": "Honor 60 Se"
+        },
+        {
+            "model_name": "Honor Watch Gs 3"
+        },
+        {
+            "model_name": "Honor Magic V"
+        },
+        {
+            "model_name": "Honor X30"
+        },
+        {
+            "model_name": "Honor Play 30 Plus"
+        },
+        {
+            "model_name": "Honor 60 Pro"
+        },
+        {
+            "model_name": "Honor 60"
+        },
+        {
+            "model_name": "Honor X30 Max"
+        },
+        {
+            "model_name": "Honor X30I"
+        },
+        {
+            "model_name": "Honor 50 Lite"
+        },
+        {
+            "model_name": "Honor Play5 Youth"
+        },
+        {
+            "model_name": "Honor Tablet V7"
+        },
+        {
+            "model_name": "Honor Tablet V7 Pro"
+        },
+        {
+            "model_name": "Honor X20"
+        },
+        {
+            "model_name": "Honor Magic3 Pro Plus"
+        },
+        {
+            "model_name": "Honor Magic3 Pro"
+        },
+        {
+            "model_name": "Honor Magic3"
+        },
+        {
+            "model_name": "Honor Play 5T Pro"
+        },
+        {
+            "model_name": "Honor X20 Se"
+        },
+        {
+            "model_name": "Honor 50 Pro"
+        },
+        {
+            "model_name": "Honor 50"
+        },
+        {
+            "model_name": "Honor 50 Se"
+        },
+        {
+            "model_name": "Honor Play5 5G"
+        },
+        {
+            "model_name": "Honor Tablet X7"
+        },
+        {
+            "model_name": "Honor Play 20"
+        },
+        {
+            "model_name": "Honor Play 5T Youth"
+        },
+        {
+            "model_name": "Honor Tab 7"
+        },
+        {
+            "model_name": "Honor V40 Lite"
+        },
+        {
+            "model_name": "Honor View40"
+        },
+        {
+            "model_name": "Honor V40 5G"
+        },
+        {
+            "model_name": "Honor 10X Lite"
+        },
+        {
+            "model_name": "Honor 30I"
+        },
+        {
+            "model_name": "Honor Watch Gs Pro"
+        },
+        {
+            "model_name": "Honor Watch Es"
+        },
+        {
+            "model_name": "Honor Pad 6"
+        },
+        {
+            "model_name": "Honor Pad X6"
+        },
+        {
+            "model_name": "Honor X10 Max 5G"
+        },
+        {
+            "model_name": "Honor 30 Youth"
+        },
+        {
+            "model_name": "Honor 8S 2020"
+        },
+        {
+            "model_name": "Honor Play4"
+        },
+        {
+            "model_name": "Honor Play4 Pro"
+        },
+        {
+            "model_name": "Honor X10 5G"
+        },
+        {
+            "model_name": "Honor V6"
+        },
+        {
+            "model_name": "Honor 9A"
+        },
+        {
+            "model_name": "Honor 9C"
+        },
+        {
+            "model_name": "Honor 9S"
+        },
+        {
+            "model_name": "Honor 9X Lite"
+        },
+        {
+            "model_name": "Honor 30 Pro Plus"
+        },
+        {
+            "model_name": "Honor 30 Pro"
+        },
+        {
+            "model_name": "Honor 30"
+        },
+        {
+            "model_name": "Honor 20E"
+        },
+        {
+            "model_name": "Honor Play 4T Pro"
+        },
+        {
+            "model_name": "Honor Play 4T"
+        },
+        {
+            "model_name": "Honor 8A 2020"
+        },
+        {
+            "model_name": "Honor 8A Prime"
+        },
+        {
+            "model_name": "Honor 30S"
+        },
+        {
+            "model_name": "Honor Play 9A"
+        },
+        {
+            "model_name": "Honor View30 Pro"
+        },
+        {
+            "model_name": "Honor View30"
+        },
+        {
+            "model_name": "Honor V30 Pro"
+        },
+        {
+            "model_name": "Honor V30"
+        },
+        {
+            "model_name": "Honor Magicwatch 2"
+        },
+        {
+            "model_name": "Honor 9X"
+        },
+        {
+            "model_name": "Honor 20 Lite (China)"
+        },
+        {
+            "model_name": "Honor Play 3E"
+        },
+        {
+            "model_name": "Honor Play 3"
+        },
+        {
+            "model_name": "Honor 20S"
+        },
+        {
+            "model_name": "Honor 9X Pro"
+        },
+        {
+            "model_name": "Honor 9X (China)"
+        },
+        {
+            "model_name": "Honor 8S"
+        },
+        {
+            "model_name": "Honor Pad 5 10 1"
+        },
+        {
+            "model_name": "Honor Pad 5 8"
+        },
+        {
+            "model_name": "Honor 20 Pro"
+        },
+        {
+            "model_name": "Honor 20"
+        },
+        {
+            "model_name": "Honor 20 Lite"
+        },
+        {
+            "model_name": "Honor 20I"
+        },
+        {
+            "model_name": "Honor 8A Pro"
+        },
+        {
+            "model_name": "Honor Tab 5"
+        },
+        {
+            "model_name": "Honor View 20"
+        },
+        {
+            "model_name": "Honor Magic 2 3D"
+        },
+        {
+            "model_name": "Honor Magic 2"
+        },
+        {
+            "model_name": "Honor Play 8A"
+        },
+        {
+            "model_name": "Honor 10 Lite"
+        },
+        {
+            "model_name": "Honor 8C"
+        },
+        {
+            "model_name": "Honor 8X"
+        },
+        {
+            "model_name": "Honor 8X Max"
+        },
+        {
+            "model_name": "Honor Note 10"
+        },
+        {
+            "model_name": "Honor 9N (9I)"
+        },
+        {
+            "model_name": "Honor Play"
+        },
+        {
+            "model_name": "Honor 7S"
+        },
+        {
+            "model_name": "Honor 10"
+        },
+        {
+            "model_name": "Honor 7A"
+        },
+        {
+            "model_name": "Honor 7C"
+        },
+        {
+            "model_name": "Honor 9 Lite"
+        },
+        {
+            "model_name": "Honor View 10"
+        },
+        {
+            "model_name": "Honor 7X"
+        },
+        {
+            "model_name": "Honor 6C Pro"
+        },
+        {
+            "model_name": "Honor 9"
+        },
+        {
+            "model_name": "Honor 6A (Pro)"
+        },
+        {
+            "model_name": "Honor 8 Pro"
+        },
+        {
+            "model_name": "Honor Magic"
+        },
+        {
+            "model_name": "Honor V8"
+        },
+        {
+            "model_name": "Honor Pad 2"
+        },
+        {
+            "model_name": "Honor 6X"
+        },
+        {
+            "model_name": "Honor Holly 3"
+        },
+        {
+            "model_name": "Honor Note 8"
+        },
+        {
+            "model_name": "Honor 8"
+        },
+        {
+            "model_name": "Honor 5A"
+        },
+        {
+            "model_name": "Honor 5C"
+        },
+        {
+            "model_name": "Honor Holly 2 Plus"
+        },
+        {
+            "model_name": "Honor 5X"
+        },
+        {
+            "model_name": "Honor 7I"
+        },
+        {
+            "model_name": "Honor 7"
+        },
+        {
+            "model_name": "Honor Bee"
+        },
+        {
+            "model_name": "Honor 4C"
+        },
+        {
+            "model_name": "Honor 6 Plus"
+        },
+        {
+            "model_name": "Honor 4X"
+        },
+        {
+            "model_name": "Honor Holly"
+        },
+        {
+            "model_name": "Honor 4 Play"
+        },
+        {
+            "model_name": "Honor 3C Play"
+        },
+        {
+            "model_name": "Honor 6"
+        },
+        {
+            "model_name": "Honor 3X Pro"
+        },
+        {
+            "model_name": "Honor 3C 4G"
+        },
+        {
+            "model_name": "Honor 3X G750"
+        },
+        {
+            "model_name": "Honor 3C"
+        },
+        {
+            "model_name": "Honor 3"
+        },
+        {
+            "model_name": "Honor 2"
+        },
+        {
+            "model_name": "Honor U8860"
+        },
+        {
+            "model_name": "Honor View"
+        }
+    ]
+}

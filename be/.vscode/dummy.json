@@ -1,0 +1,134 @@
+{
+	"status": 200,
+	"message": "Get Scan Progress successfully",
+	"data": {
+		"scan_percentage": "100",
+		"scan_complete": true,
+		"log_process": [
+			{
+				"log": "No indicators file exists at path modules/indicators/",
+				"datetime": "2024-10-03 16:55:50,409"
+			},
+			{
+				"log": "Extracted 92 indicators for collection with name \"AllTracker\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 5 indicators for collection with name \"NetSpy\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 4 indicators for collection with name \"Spyier\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 4 indicators for collection with name \"CouplerTracker\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 6 indicators for collection with name \"GPSTrackerLoki\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 3 indicators for collection with name \"SpyApp247\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 1 indicators for collection with name \"SpyMug\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 9 indicators for collection with name \"WtSpy\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 8 indicators for collection with name \"Xnore\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 17 indicators for collection with name \"EspiaoAndroid\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 40 indicators for collection with name \"pcTattletale\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 7 indicators for collection with name \"SpyEra\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 3 indicators for collection with name \"AntiFurtoDroid\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 15 indicators for collection with name \"CallSMSTracker\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 12 indicators for collection with name \"AiSpyer\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 9 indicators for collection with name \"SpyToApp\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 6 indicators for collection with name \"BlurSpy\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 7 indicators for collection with name \"AppMia\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 1 indicators for collection with name \"SecretCamRecorder\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 10 indicators for collection with name \"Unisafe\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 69 indicators for collection with name \"TrackView\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 7 indicators for collection with name \"TrackingSmartphone\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 9 indicators for collection with name \"SpyphoneMobileTracker\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 3 indicators for collection with name \"OneLocator\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 22 indicators for collection with name \"EvaSpy\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 5 indicators for collection with name \"RealtimeSpy\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 27 indicators for collection with name \"jjspy\"",
+				"datetime": "2024-10-03 16:55:51,408"
+			},
+			{
+				"log": "Extracted 271 indicators for collection with name \"AndroidSpy\"",
+				"datetime": "2024-10-03 16:55:51,409"
+			},
+			{
+				"log": "Extracted 25 indicators for collection with name \"ShadowSpy\"",
+				"datetime": "2024-10-03 16:56:19,129"
+			},
+			{
+				"log": "Please seek reputable expert help if you have serious concerns about a possible spyware attack. Such support is available to human rights defenders and civil society through Amnesty International's Security Lab.",
+				"datetime": "Please seek reputable expert help if you have serious concerns about a possible spyware attack. Such support is available to human rights defenders and civil society through Amnesty International's Security Lab."
+			}
+		]
+	}
+}

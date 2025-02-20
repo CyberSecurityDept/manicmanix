@@ -1,0 +1,485 @@
+{
+    "brand": "Sony",
+    "models": [
+        {
+            "model_name": "Sony Xperia 1 Vi"
+        },
+        {
+            "model_name": "Sony Xperia 10 Vi"
+        },
+        {
+            "model_name": "Sony Xperia 5 V"
+        },
+        {
+            "model_name": "Sony Xperia 1 V"
+        },
+        {
+            "model_name": "Sony Xperia 10 V"
+        },
+        {
+            "model_name": "Sony Xperia 5 Iv"
+        },
+        {
+            "model_name": "Sony Xperia 1 Iv"
+        },
+        {
+            "model_name": "Sony Xperia 10 Iv"
+        },
+        {
+            "model_name": "Sony Xperia Pro I"
+        },
+        {
+            "model_name": "Sony Xperia 10 Iii Lite"
+        },
+        {
+            "model_name": "Sony Xperia 1 Iii"
+        },
+        {
+            "model_name": "Sony Xperia 5 Iii"
+        },
+        {
+            "model_name": "Sony Xperia 10 Iii"
+        },
+        {
+            "model_name": "Sony Xperia Pro"
+        },
+        {
+            "model_name": "Sony Xperia 5 Ii"
+        },
+        {
+            "model_name": "Sony Xperia 1 Ii"
+        },
+        {
+            "model_name": "Sony Xperia 10 Ii"
+        },
+        {
+            "model_name": "Sony Xperia L4"
+        },
+        {
+            "model_name": "Sony Xperia 5"
+        },
+        {
+            "model_name": "Sony Xperia 1"
+        },
+        {
+            "model_name": "Sony Xperia 10 Plus"
+        },
+        {
+            "model_name": "Sony Xperia 10"
+        },
+        {
+            "model_name": "Sony Xperia L3"
+        },
+        {
+            "model_name": "Sony Xperia Xa2 Plus"
+        },
+        {
+            "model_name": "Sony Xperia Xz3"
+        },
+        {
+            "model_name": "Sony Xperia Xz2 Premium"
+        },
+        {
+            "model_name": "Sony Xperia Xz2"
+        },
+        {
+            "model_name": "Sony Xperia Xz2 Compact"
+        },
+        {
+            "model_name": "Sony Xperia Xa2 Ultra"
+        },
+        {
+            "model_name": "Sony Xperia Xa2"
+        },
+        {
+            "model_name": "Sony Xperia L2"
+        },
+        {
+            "model_name": "Sony Xperia R1 (Plus)"
+        },
+        {
+            "model_name": "Sony Xperia Xz1"
+        },
+        {
+            "model_name": "Sony Xperia Xa1 Plus"
+        },
+        {
+            "model_name": "Sony Xperia Xz1 Compact"
+        },
+        {
+            "model_name": "Sony Xperia L1"
+        },
+        {
+            "model_name": "Sony Xperia Xzs"
+        },
+        {
+            "model_name": "Sony Xperia Xz Premium"
+        },
+        {
+            "model_name": "Sony Xperia Xa1 Ultra"
+        },
+        {
+            "model_name": "Sony Xperia Xa1"
+        },
+        {
+            "model_name": "Sony Xperia X Compact"
+        },
+        {
+            "model_name": "Sony Xperia Xz"
+        },
+        {
+            "model_name": "Sony Xperia E5"
+        },
+        {
+            "model_name": "Sony Xperia Xa Ultra"
+        },
+        {
+            "model_name": "Sony Xperia X Performance"
+        },
+        {
+            "model_name": "Sony Xperia X"
+        },
+        {
+            "model_name": "Sony Xperia Xa Dual"
+        },
+        {
+            "model_name": "Sony Xperia Xa"
+        },
+        {
+            "model_name": "Sony Xperia Z5 Premium Dual"
+        },
+        {
+            "model_name": "Sony Xperia Z5 Premium"
+        },
+        {
+            "model_name": "Sony Xperia Z5 Dual"
+        },
+        {
+            "model_name": "Sony Xperia Z5"
+        },
+        {
+            "model_name": "Sony Xperia Z5 Compact"
+        },
+        {
+            "model_name": "Sony Xperia M5 Dual"
+        },
+        {
+            "model_name": "Sony Xperia M5"
+        },
+        {
+            "model_name": "Sony Xperia C5 Ultra Dual"
+        },
+        {
+            "model_name": "Sony Xperia C5 Ultra"
+        },
+        {
+            "model_name": "Sony Xperia Z4V"
+        },
+        {
+            "model_name": "Sony Xperia Z3 Plus Dual"
+        },
+        {
+            "model_name": "Sony Xperia Z3 Plus"
+        },
+        {
+            "model_name": "Sony Xperia C4 Dual"
+        },
+        {
+            "model_name": "Sony Xperia C4"
+        },
+        {
+            "model_name": "Sony Xperia M4 Aqua Dual"
+        },
+        {
+            "model_name": "Sony Xperia M4 Aqua"
+        },
+        {
+            "model_name": "Sony Xperia Z4 Tablet Wifi"
+        },
+        {
+            "model_name": "Sony Xperia Z4 Tablet Lte"
+        },
+        {
+            "model_name": "Sony Xperia E4G"
+        },
+        {
+            "model_name": "Sony Xperia E4G Dual"
+        },
+        {
+            "model_name": "Sony Xperia E4 Dual"
+        },
+        {
+            "model_name": "Sony Xperia E4"
+        },
+        {
+            "model_name": "Sony Xperia E3 Dual"
+        },
+        {
+            "model_name": "Sony Xperia E3"
+        },
+        {
+            "model_name": "Sony Xperia Z3 Tablet Compact"
+        },
+        {
+            "model_name": "Sony Xperia Z3 Dual"
+        },
+        {
+            "model_name": "Sony Xperia Z3V"
+        },
+        {
+            "model_name": "Sony Xperia Z3"
+        },
+        {
+            "model_name": "Sony Xperia M2 Aqua"
+        },
+        {
+            "model_name": "Sony Xperia Z3 Compact"
+        },
+        {
+            "model_name": "Sony Xperia C3 Dual"
+        },
+        {
+            "model_name": "Sony Xperia C3"
+        },
+        {
+            "model_name": "Sony Xperia Z2A"
+        },
+        {
+            "model_name": "Sony Xperia T3"
+        },
+        {
+            "model_name": "Sony Smartwatch 3 Swr50"
+        },
+        {
+            "model_name": "Sony Smartwatch 2 Sw2"
+        },
+        {
+            "model_name": "Sony Xperia M2"
+        },
+        {
+            "model_name": "Sony Xperia M2 Dual"
+        },
+        {
+            "model_name": "Sony Xperia Z2 Tablet Lte"
+        },
+        {
+            "model_name": "Sony Xperia Z2 Tablet Wi Fi"
+        },
+        {
+            "model_name": "Sony Xperia Z2"
+        },
+        {
+            "model_name": "Sony Xperia E1 Dual"
+        },
+        {
+            "model_name": "Sony Xperia E1"
+        },
+        {
+            "model_name": "Sony Xperia T2 Ultra Dual"
+        },
+        {
+            "model_name": "Sony Xperia T2 Ultra"
+        },
+        {
+            "model_name": "Sony Xperia Z1S"
+        },
+        {
+            "model_name": "Sony Xperia Z1 Compact"
+        },
+        {
+            "model_name": "Sony Xperia Z1"
+        },
+        {
+            "model_name": "Sony Xperia Z Ultra"
+        },
+        {
+            "model_name": "Sony Xperia C"
+        },
+        {
+            "model_name": "Sony Xperia M"
+        },
+        {
+            "model_name": "Sony Xperia Zr"
+        },
+        {
+            "model_name": "Sony Xperia L"
+        },
+        {
+            "model_name": "Sony Xperia Sp"
+        },
+        {
+            "model_name": "Sony Xperia Tablet Z Wi Fi"
+        },
+        {
+            "model_name": "Sony Xperia Tablet Z Lte"
+        },
+        {
+            "model_name": "Sony Xperia Z"
+        },
+        {
+            "model_name": "Sony Xperia Zl"
+        },
+        {
+            "model_name": "Sony Xperia E Dual"
+        },
+        {
+            "model_name": "Sony Xperia E"
+        },
+        {
+            "model_name": "Sony Xperia T Lte"
+        },
+        {
+            "model_name": "Sony Xperia Tablet S 3G"
+        },
+        {
+            "model_name": "Sony Xperia Tablet S"
+        },
+        {
+            "model_name": "Sony Xperia V"
+        },
+        {
+            "model_name": "Sony Xperia J"
+        },
+        {
+            "model_name": "Sony Xperia Tx"
+        },
+        {
+            "model_name": "Sony Xperia T"
+        },
+        {
+            "model_name": "Sony Xperia Sl"
+        },
+        {
+            "model_name": "Sony Xperia Tipo Dual"
+        },
+        {
+            "model_name": "Sony Xperia Tipo"
+        },
+        {
+            "model_name": "Sony Xperia Miro"
+        },
+        {
+            "model_name": "Sony Xperia Go"
+        },
+        {
+            "model_name": "Sony Xperia Acro S"
+        },
+        {
+            "model_name": "Sony Xperia Sx So 05D"
+        },
+        {
+            "model_name": "Sony Xperia Gx So 04D"
+        },
+        {
+            "model_name": "Sony Xperia Acro Hd So 03D"
+        },
+        {
+            "model_name": "Sony Xperia Acro Hd Soi12"
+        },
+        {
+            "model_name": "Sony Xperia Neo L"
+        },
+        {
+            "model_name": "Sony Xperia Sola"
+        },
+        {
+            "model_name": "Sony Xperia U"
+        },
+        {
+            "model_name": "Sony Xperia P"
+        },
+        {
+            "model_name": "Sony Xperia S"
+        },
+        {
+            "model_name": "Sony Xperia Ion Hspa"
+        },
+        {
+            "model_name": "Sony Xperia Ion Lte"
+        },
+        {
+            "model_name": "Sony Tablet P"
+        },
+        {
+            "model_name": "Sony Tablet P 3G"
+        },
+        {
+            "model_name": "Sony Tablet S 3G"
+        },
+        {
+            "model_name": "Sony Tablet S"
+        },
+        {
+            "model_name": "Sony Cmd Z7"
+        },
+        {
+            "model_name": "Sony Xperia Lt29I Hayabusa"
+        },
+        {
+            "model_name": "Sony Cmd J70"
+        },
+        {
+            "model_name": "Sony Cmd J7"
+        },
+        {
+            "model_name": "Sony Cmd Mz5"
+        },
+        {
+            "model_name": "Sony Cmd J6"
+        },
+        {
+            "model_name": "Sony Cmd J5"
+        },
+        {
+            "model_name": "Sony Cmd Z5"
+        },
+        {
+            "model_name": "Sony Cmd Cd5"
+        },
+        {
+            "model_name": "Sony Cmd C1"
+        },
+        {
+            "model_name": "Sony Cmd Z1 Plus"
+        },
+        {
+            "model_name": "Sony Cmd Z1"
+        },
+        {
+            "model_name": "Sony Cm Dx 2000"
+        },
+        {
+            "model_name": "Sony Cm Dx 1000"
+        },
+        {
+            "model_name": "Sony Xperia 5 Plus"
+        },
+        {
+            "model_name": "Sony Xperia X Ultra"
+        },
+        {
+            "model_name": "Sony Xperia H8541"
+        },
+        {
+            "model_name": "Sony Xperia M Ultra"
+        },
+        {
+            "model_name": "Sony Xperia X Premium"
+        },
+        {
+            "model_name": "Sony Xperia E1 Ii"
+        },
+        {
+            "model_name": "Sony Xperia Z4 Ultra"
+        },
+        {
+            "model_name": "Sony Xperia Z4 Compact"
+        },
+        {
+            "model_name": "Sony D 2403"
+        },
+        {
+            "model_name": "Sony Xperia C670X"
+        }
+    ]
+}

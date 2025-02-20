@@ -1,0 +1,4202 @@
+{
+    "brand": "Samsung",
+    "models": [
+        {
+            "model_name": "Samsung Galaxy F05"
+        },
+        {
+            "model_name": "Samsung Galaxy M05"
+        },
+        {
+            "model_name": "Samsung Galaxy A06"
+        },
+        {
+            "model_name": "Samsung Galaxy F14 4G"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Fold6"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Flip6"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch7"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch Fe"
+        },
+        {
+            "model_name": "Samsung Galaxy M35"
+        },
+        {
+            "model_name": "Samsung Galaxy F55"
+        },
+        {
+            "model_name": "Samsung Galaxy C55"
+        },
+        {
+            "model_name": "Samsung Galaxy M55"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S6 Lite (2024)"
+        },
+        {
+            "model_name": "Samsung Galaxy A55"
+        },
+        {
+            "model_name": "Samsung Galaxy A35"
+        },
+        {
+            "model_name": "Samsung Galaxy M15"
+        },
+        {
+            "model_name": "Samsung Galaxy M14 4G"
+        },
+        {
+            "model_name": "Samsung Galaxy F15"
+        },
+        {
+            "model_name": "Samsung Galaxy S24 Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy S24 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S24"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover7"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active5"
+        },
+        {
+            "model_name": "Samsung Galaxy A25"
+        },
+        {
+            "model_name": "Samsung Galaxy A15 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A15"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A9 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A9"
+        },
+        {
+            "model_name": "Samsung Galaxy S23 Fe"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S9 Fe Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S9 Fe"
+        },
+        {
+            "model_name": "Samsung Galaxy A05S"
+        },
+        {
+            "model_name": "Samsung Galaxy A05"
+        },
+        {
+            "model_name": "Samsung Galaxy F34"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Fold5"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Flip5"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S9 Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S9 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S9"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch6 Classic"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch6"
+        },
+        {
+            "model_name": "Samsung Galaxy M34 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy F54"
+        },
+        {
+            "model_name": "Samsung Galaxy A24 4G"
+        },
+        {
+            "model_name": "Samsung Galaxy F14"
+        },
+        {
+            "model_name": "Samsung Galaxy M54"
+        },
+        {
+            "model_name": "Samsung Galaxy A54"
+        },
+        {
+            "model_name": "Samsung Galaxy A34"
+        },
+        {
+            "model_name": "Samsung Galaxy M14"
+        },
+        {
+            "model_name": "Samsung Galaxy S23 Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy S23 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S23"
+        },
+        {
+            "model_name": "Samsung Galaxy A14"
+        },
+        {
+            "model_name": "Samsung Galaxy A14 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy F04"
+        },
+        {
+            "model_name": "Samsung Galaxy M04"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A7 10 4 (2022)"
+        },
+        {
+            "model_name": "Samsung Galaxy A04E"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active4 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy A04S"
+        },
+        {
+            "model_name": "Samsung Galaxy A04"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Fold4"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Flip4"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch5 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch5"
+        },
+        {
+            "model_name": "Samsung Galaxy A23 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M13 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M13 (India)"
+        },
+        {
+            "model_name": "Samsung Galaxy A13 (Sm A137)"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover6 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy F13"
+        },
+        {
+            "model_name": "Samsung Galaxy M13"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S6 Lite (2022)"
+        },
+        {
+            "model_name": "Samsung Galaxy M53"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Fe 2022"
+        },
+        {
+            "model_name": "Samsung Galaxy A73 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A53 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A33 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy F23"
+        },
+        {
+            "model_name": "Samsung Galaxy M33"
+        },
+        {
+            "model_name": "Samsung Galaxy M23"
+        },
+        {
+            "model_name": "Samsung Galaxy A23"
+        },
+        {
+            "model_name": "Samsung Galaxy A13"
+        },
+        {
+            "model_name": "Samsung Galaxy S22 Ultra 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S22 Plus 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S22 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S8 Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S8 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S8"
+        },
+        {
+            "model_name": "Samsung Galaxy S21 Fe 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A8 10 5 (2021)"
+        },
+        {
+            "model_name": "Samsung Galaxy A13 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A03"
+        },
+        {
+            "model_name": "Samsung Galaxy A03 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy F42 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M52 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M22"
+        },
+        {
+            "model_name": "Samsung Galaxy M32 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A03S"
+        },
+        {
+            "model_name": "Samsung Galaxy A52S 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Fold3 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Flip3 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch4 Classic"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch4"
+        },
+        {
+            "model_name": "Samsung Galaxy A12 (India)"
+        },
+        {
+            "model_name": "Samsung Galaxy A12 Nacho"
+        },
+        {
+            "model_name": "Samsung Galaxy M21 2021"
+        },
+        {
+            "model_name": "Samsung Galaxy F22"
+        },
+        {
+            "model_name": "Samsung Galaxy M32"
+        },
+        {
+            "model_name": "Samsung Galaxy A22 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A22"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A7 Lite"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S7 Feq"
+        },
+        {
+            "model_name": "Samsung Galaxy F52 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M42 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M12"
+        },
+        {
+            "model_name": "Samsung Galaxy Quantum 2"
+        },
+        {
+            "model_name": "Samsung Galaxy F12"
+        },
+        {
+            "model_name": "Samsung Galaxy F02S"
+        },
+        {
+            "model_name": "Samsung Galaxy A72"
+        },
+        {
+            "model_name": "Samsung Galaxy A52 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A52"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover 5"
+        },
+        {
+            "model_name": "Samsung Galaxy A32"
+        },
+        {
+            "model_name": "Samsung Galaxy M62"
+        },
+        {
+            "model_name": "Samsung Galaxy F62"
+        },
+        {
+            "model_name": "Samsung Galaxy M12 (India)"
+        },
+        {
+            "model_name": "Samsung Galaxy S21 Ultra 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S21 Plus 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S21 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A32 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M02S"
+        },
+        {
+            "model_name": "Samsung Galaxy A12"
+        },
+        {
+            "model_name": "Samsung Galaxy M02"
+        },
+        {
+            "model_name": "Samsung Galaxy A02"
+        },
+        {
+            "model_name": "Samsung Galaxy A02S"
+        },
+        {
+            "model_name": "Samsung Galaxy M21S"
+        },
+        {
+            "model_name": "Samsung Galaxy M31 Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy F41"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active3"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Fe 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Fe"
+        },
+        {
+            "model_name": "Samsung Galaxy A42 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A7 10 4 (2020)"
+        },
+        {
+            "model_name": "Samsung Galaxy M51"
+        },
+        {
+            "model_name": "Samsung Galaxy A51 5G Uw"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Fold2 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note20 Ultra 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note20 Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy Note20 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note20"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch3"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S7 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S7"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Flip 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy M31S"
+        },
+        {
+            "model_name": "Samsung Galaxy M01S"
+        },
+        {
+            "model_name": "Samsung Galaxy M01 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy A01 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy A71 5G Uw"
+        },
+        {
+            "model_name": "Samsung Galaxy M01"
+        },
+        {
+            "model_name": "Samsung Galaxy A21S"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 Core (2020)"
+        },
+        {
+            "model_name": "Samsung Galaxy A Quantum"
+        },
+        {
+            "model_name": "Samsung Galaxy A71 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A51 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A21"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 4 (2020)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S6 Lite (2020)"
+        },
+        {
+            "model_name": "Samsung Galaxy M11"
+        },
+        {
+            "model_name": "Samsung Galaxy A31"
+        },
+        {
+            "model_name": "Samsung Galaxy A41"
+        },
+        {
+            "model_name": "Samsung Galaxy M21"
+        },
+        {
+            "model_name": "Samsung Galaxy A11"
+        },
+        {
+            "model_name": "Samsung Galaxy M31"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Ultra 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Ultra"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Plus 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 5G Uw"
+        },
+        {
+            "model_name": "Samsung Galaxy S20 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S20"
+        },
+        {
+            "model_name": "Samsung Galaxy Z Flip"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S6 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy Note10 Lite"
+        },
+        {
+            "model_name": "Samsung Galaxy S10 Lite"
+        },
+        {
+            "model_name": "Samsung Galaxy A01"
+        },
+        {
+            "model_name": "Samsung Galaxy A71"
+        },
+        {
+            "model_name": "Samsung Galaxy A51"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover Fieldpro"
+        },
+        {
+            "model_name": "Samsung Galaxy A70S"
+        },
+        {
+            "model_name": "Samsung Galaxy A20S"
+        },
+        {
+            "model_name": "Samsung Galaxy M30S"
+        },
+        {
+            "model_name": "Samsung Galaxy M10S"
+        },
+        {
+            "model_name": "Samsung Galaxy Fold 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Fold"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy A90 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A30S"
+        },
+        {
+            "model_name": "Samsung Galaxy A50S"
+        },
+        {
+            "model_name": "Samsung Galaxy Note10 Plus 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note10 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Note10 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note10"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch Active2"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch Active2 Aluminum"
+        },
+        {
+            "model_name": "Samsung Galaxy A10S"
+        },
+        {
+            "model_name": "Samsung Galaxy A10E"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S6"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 0 (2019)"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover 4S"
+        },
+        {
+            "model_name": "Samsung Galaxy A2 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch Active"
+        },
+        {
+            "model_name": "Samsung Galaxy View2"
+        },
+        {
+            "model_name": "Samsung Galaxy S10 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy S10 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S10"
+        },
+        {
+            "model_name": "Samsung Galaxy S10E"
+        },
+        {
+            "model_name": "Samsung Galaxy M40"
+        },
+        {
+            "model_name": "Samsung Galaxy M30"
+        },
+        {
+            "model_name": "Samsung Galaxy M20"
+        },
+        {
+            "model_name": "Samsung Galaxy M10"
+        },
+        {
+            "model_name": "Samsung Galaxy A80"
+        },
+        {
+            "model_name": "Samsung Galaxy A70"
+        },
+        {
+            "model_name": "Samsung Galaxy A60"
+        },
+        {
+            "model_name": "Samsung Galaxy A50"
+        },
+        {
+            "model_name": "Samsung Galaxy A40"
+        },
+        {
+            "model_name": "Samsung Galaxy A30"
+        },
+        {
+            "model_name": "Samsung Galaxy A20E"
+        },
+        {
+            "model_name": "Samsung Galaxy A20"
+        },
+        {
+            "model_name": "Samsung Galaxy A10"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S5E"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 10 1 (2019)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 0 & S Pen (2019)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Advanced2"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 0 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S4 10 5"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 10 5"
+        },
+        {
+            "model_name": "Samsung Galaxy A8S"
+        },
+        {
+            "model_name": "Samsung Galaxy A6S"
+        },
+        {
+            "model_name": "Samsung Galaxy A9 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy A7 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy Note9"
+        },
+        {
+            "model_name": "Samsung Galaxy Watch"
+        },
+        {
+            "model_name": "Samsung Galaxy J6 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy J4 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy J4 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy On6"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy J3 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy A8 Star (A9 Star)"
+        },
+        {
+            "model_name": "Samsung Galaxy S Light Luxury"
+        },
+        {
+            "model_name": "Samsung Galaxy J8"
+        },
+        {
+            "model_name": "Samsung Galaxy J6"
+        },
+        {
+            "model_name": "Samsung Galaxy J4"
+        },
+        {
+            "model_name": "Samsung Galaxy A6 Plus (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy A6 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 Duo"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 Prime 2"
+        },
+        {
+            "model_name": "Samsung Galaxy S9 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S9"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 Pro (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy A8 Plus (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy A8 (2018)"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active2"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 0 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy C7 (2017)"
+        },
+        {
+            "model_name": "Samsung Gear Sport"
+        },
+        {
+            "model_name": "Samsung Galaxy Note8"
+        },
+        {
+            "model_name": "Samsung Galaxy S8 Active"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 V"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Fe"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 Max"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy J5 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy J3 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy Folder2"
+        },
+        {
+            "model_name": "Samsung Z4"
+        },
+        {
+            "model_name": "Samsung Galaxy S8"
+        },
+        {
+            "model_name": "Samsung Galaxy S8 Plus"
+        },
+        {
+            "model_name": "Samsung Gear S3 Classic Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy C5 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover 4"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S3 9 7"
+        },
+        {
+            "model_name": "Samsung Galaxy J1 Mini Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy J3 Emerge"
+        },
+        {
+            "model_name": "Samsung Galaxy C7 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy A7 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy A5 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy A3 (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand Prime Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy C9 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy A8 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy On8"
+        },
+        {
+            "model_name": "Samsung Galaxy On7 (2016)"
+        },
+        {
+            "model_name": "Samsung Gear S3 Classic"
+        },
+        {
+            "model_name": "Samsung Gear S3 Frontier"
+        },
+        {
+            "model_name": "Samsung Gear S3 Frontier Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy J5 Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 Prime"
+        },
+        {
+            "model_name": "Samsung Z2"
+        },
+        {
+            "model_name": "Samsung Galaxy Note7 (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy Note7"
+        },
+        {
+            "model_name": "Samsung Galaxy On7 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy On5 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab J"
+        },
+        {
+            "model_name": "Samsung Galaxy J Max"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 Pro (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy J2 (2016)"
+        },
+        {
+            "model_name": "Samsung Z3 Corporate"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover 3 G389F"
+        },
+        {
+            "model_name": "Samsung Galaxy S7 Active"
+        },
+        {
+            "model_name": "Samsung Galaxy J3 Pro"
+        },
+        {
+            "model_name": "Samsung Galaxy C7"
+        },
+        {
+            "model_name": "Samsung Galaxy C5"
+        },
+        {
+            "model_name": "Samsung Galaxy A9 Pro (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy J5 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 10 1 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 7 0 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy S7"
+        },
+        {
+            "model_name": "Samsung Galaxy S7 Edge"
+        },
+        {
+            "model_name": "Samsung Galaxy S7 Edge (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy S7 (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy J1 Nxt"
+        },
+        {
+            "model_name": "Samsung Gear S2 Classic 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab E 8 0"
+        },
+        {
+            "model_name": "Samsung Galaxy J1 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy A9 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy A7 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy A5 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy A3 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy Express Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy J3 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy View"
+        },
+        {
+            "model_name": "Samsung Galaxy On7"
+        },
+        {
+            "model_name": "Samsung Galaxy On5"
+        },
+        {
+            "model_name": "Samsung Z3"
+        },
+        {
+            "model_name": "Samsung Galaxy J1 Ace"
+        },
+        {
+            "model_name": "Samsung Gear S2 Classic"
+        },
+        {
+            "model_name": "Samsung Gear S2"
+        },
+        {
+            "model_name": "Samsung Gear S2 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note5 (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy Note5"
+        },
+        {
+            "model_name": "Samsung Galaxy Note5 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Edge Plus (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Edge Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Edge Plus Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Neo"
+        },
+        {
+            "model_name": "Samsung Galaxy S4 Mini I9195I"
+        },
+        {
+            "model_name": "Samsung Galaxy Folder"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S2 9 7"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S2 8 0"
+        },
+        {
+            "model_name": "Samsung Galaxy A8 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy A8"
+        },
+        {
+            "model_name": "Samsung Galaxy V Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy J7 Nxt"
+        },
+        {
+            "model_name": "Samsung Galaxy J7"
+        },
+        {
+            "model_name": "Samsung Galaxy J5"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 10 1 (2015)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab E 9 6"
+        },
+        {
+            "model_name": "Samsung Guru Plus"
+        },
+        {
+            "model_name": "Samsung Metro 360"
+        },
+        {
+            "model_name": "Samsung Xcover 550"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Active"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 V"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 9 7 & S Pen"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 9 7"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 0 & S Pen (2015)"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab A 8 0 (2015)"
+        },
+        {
+            "model_name": "Samsung Galaxy Xcover 3"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Edge (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Edge"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy S6"
+        },
+        {
+            "model_name": "Samsung Galaxy J1 4G"
+        },
+        {
+            "model_name": "Samsung Galaxy J2"
+        },
+        {
+            "model_name": "Samsung Galaxy J1"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 Lite 7 0 Ve"
+        },
+        {
+            "model_name": "Samsung Z1"
+        },
+        {
+            "model_name": "Samsung Galaxy A7 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy A7"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand Max"
+        },
+        {
+            "model_name": "Samsung Galaxy E7"
+        },
+        {
+            "model_name": "Samsung Galaxy E5"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy A5 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy A5"
+        },
+        {
+            "model_name": "Samsung Galaxy A3 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy A3"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Pocket 2"
+        },
+        {
+            "model_name": "Samsung Galaxy V"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand Prime Duos Tv"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand Prime"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Style Lte G357"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Edge"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 4 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 4 (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 4"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Active"
+        },
+        {
+            "model_name": "Samsung Galaxy Mega 2"
+        },
+        {
+            "model_name": "Samsung Gear S"
+        },
+        {
+            "model_name": "Samsung Gear 2 Neo"
+        },
+        {
+            "model_name": "Samsung Gear Live"
+        },
+        {
+            "model_name": "Samsung Gear 2"
+        },
+        {
+            "model_name": "Samsung Galaxy Gear"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Lte A G901F"
+        },
+        {
+            "model_name": "Samsung Galaxy Alpha (S801)"
+        },
+        {
+            "model_name": "Samsung Galaxy Alpha"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Mini Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy Avant"
+        },
+        {
+            "model_name": "Samsung Galaxy S Duos 3"
+        },
+        {
+            "model_name": "Samsung Guru Music 2"
+        },
+        {
+            "model_name": "Samsung Metro 312"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 8 0 (2015)"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Nxt"
+        },
+        {
+            "model_name": "Samsung Galaxy Star 2 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Mini"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace 4 Lte G313"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace 4"
+        },
+        {
+            "model_name": "Samsung Galaxy Young 2"
+        },
+        {
+            "model_name": "Samsung Galaxy Star 2"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Ii"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Sport"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Lte A G906S"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S 8 4 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S 8 4"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S 10 5 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab S 10 5"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Lite Lte"
+        },
+        {
+            "model_name": "Samsung I9301I Galaxy S3 Neo"
+        },
+        {
+            "model_name": "Samsung Galaxy W"
+        },
+        {
+            "model_name": "Samsung Z"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Active"
+        },
+        {
+            "model_name": "Samsung Galaxy K Zoom"
+        },
+        {
+            "model_name": "Samsung Galaxy Beam2"
+        },
+        {
+            "model_name": "Samsung I9300I Galaxy S3 Neo"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Style"
+        },
+        {
+            "model_name": "Samsung Ativ Se"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 7 0"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 7 0 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 7 0 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 8 0"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 8 0 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 8 0 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 10 1"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 10 1 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4 10 1 Lte"
+        },
+        {
+            "model_name": "Samsung G3812B Galaxy S3 Slim"
+        },
+        {
+            "model_name": "Samsung I8200 Galaxy S Iii Mini Ve"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 (Octa Core)"
+        },
+        {
+            "model_name": "Samsung Galaxy S5 (Usa)"
+        },
+        {
+            "model_name": "Samsung Galaxy S5"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Lte G386W"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Lte"
+        },
+        {
+            "model_name": "Samsung S5611"
+        },
+        {
+            "model_name": "Samsung E1272"
+        },
+        {
+            "model_name": "Samsung Galaxy Star Trios S5283"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 3 Neo Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 3 Neo"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 Lite 7 0 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 Lite 7 0"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand Neo"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Pro 12 2 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Pro 12 2 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Pro 12 2"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 12 2 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 12 2 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 12 2"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 10 1 Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 10 1"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 8 4 3G Lte"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Pro 8 4"
+        },
+        {
+            "model_name": "Samsung Galaxy Camera 2 Gc200"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Advance"
+        },
+        {
+            "model_name": "Samsung Galaxy S4 Active Lte A"
+        },
+        {
+            "model_name": "Samsung Galaxy J"
+        },
+        {
+            "model_name": "Samsung Galaxy Win Pro G3812"
+        },
+        {
+            "model_name": "Samsung Galaxy S Duos 2 S7582"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand 2"
+        },
+        {
+            "model_name": "Samsung I9230 Galaxy Golden"
+        },
+        {
+            "model_name": "Samsung C3590"
+        },
+        {
+            "model_name": "Samsung Galaxy Express 2"
+        },
+        {
+            "model_name": "Samsung I9506 Galaxy S4"
+        },
+        {
+            "model_name": "Samsung Galaxy Light"
+        },
+        {
+            "model_name": "Samsung Galaxy Round G910S"
+        },
+        {
+            "model_name": "Samsung Galaxy Fresh S7390"
+        },
+        {
+            "model_name": "Samsung Galaxy Core Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Fame Lite Duos S6792L"
+        },
+        {
+            "model_name": "Samsung Galaxy Fame Lite S6790"
+        },
+        {
+            "model_name": "Samsung Galaxy Star Pro S7260"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 10 1 (2014)"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 3"
+        },
+        {
+            "model_name": "Samsung Ch@T 333"
+        },
+        {
+            "model_name": "Samsung Galaxy Prevail 2"
+        },
+        {
+            "model_name": "Samsung Gravity Q T289"
+        },
+        {
+            "model_name": "Samsung Ativ S Neo"
+        },
+        {
+            "model_name": "Samsung Galaxy S4 Zoom"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Tv"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace 3"
+        },
+        {
+            "model_name": "Samsung I9190 Galaxy S4 Mini"
+        },
+        {
+            "model_name": "Samsung I9295 Galaxy S4 Active"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 8 0"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 10 1 P5220"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 10 1 P5200"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 10 1 P5210"
+        },
+        {
+            "model_name": "Samsung Galaxy Exhibit T599"
+        },
+        {
+            "model_name": "Samsung Galaxy Core I8260"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 7 0 Wifi"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 7 0"
+        },
+        {
+            "model_name": "Samsung Galaxy Mega 6 3 I9200"
+        },
+        {
+            "model_name": "Samsung Galaxy Mega 5 8 I9150"
+        },
+        {
+            "model_name": "Samsung Galaxy Trend Ii Duos S7572"
+        },
+        {
+            "model_name": "Samsung Galaxy Win I8550"
+        },
+        {
+            "model_name": "Samsung Galaxy Pocket Neo S5310"
+        },
+        {
+            "model_name": "Samsung Galaxy Star S5280"
+        },
+        {
+            "model_name": "Samsung I9505 Galaxy S4"
+        },
+        {
+            "model_name": "Samsung I9500 Galaxy S4"
+        },
+        {
+            "model_name": "Samsung I9502 Galaxy S4"
+        },
+        {
+            "model_name": "Samsung Galaxy S4 Cdma"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 8 0"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 8 0 Wi Fi"
+        },
+        {
+            "model_name": "Samsung Galaxy Y Plus S5303"
+        },
+        {
+            "model_name": "Samsung Rex 90 S5292"
+        },
+        {
+            "model_name": "Samsung Rex 80 S5222R"
+        },
+        {
+            "model_name": "Samsung Rex 70 S3802"
+        },
+        {
+            "model_name": "Samsung Rex 60 C3312R"
+        },
+        {
+            "model_name": "Samsung Metro E2202"
+        },
+        {
+            "model_name": "Samsung E1282T"
+        },
+        {
+            "model_name": "Samsung E1207T"
+        },
+        {
+            "model_name": "Samsung Galaxy Young S6310"
+        },
+        {
+            "model_name": "Samsung Galaxy Fame S6810"
+        },
+        {
+            "model_name": "Samsung Galaxy Express I8730"
+        },
+        {
+            "model_name": "Samsung S7710 Galaxy Xcover 2"
+        },
+        {
+            "model_name": "Samsung Ativ Odyssey I930"
+        },
+        {
+            "model_name": "Samsung I9105 Galaxy S Ii Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand I9082"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand I9080"
+        },
+        {
+            "model_name": "Samsung Star Deluxe Duos S5292"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Lte 10 1 N8020"
+        },
+        {
+            "model_name": "Samsung A997 Rugby Iii"
+        },
+        {
+            "model_name": "Samsung Galaxy Axiom R830"
+        },
+        {
+            "model_name": "Samsung Galaxy Stratosphere Ii I415"
+        },
+        {
+            "model_name": "Samsung Galaxy Discover S730M"
+        },
+        {
+            "model_name": "Samsung Galaxy Pop Shv E220"
+        },
+        {
+            "model_name": "Samsung Galaxy Premier I9260"
+        },
+        {
+            "model_name": "Samsung Google Nexus 10 P8110"
+        },
+        {
+            "model_name": "Samsung Ativ Tab P8510"
+        },
+        {
+            "model_name": "Samsung Comment 2 R390C"
+        },
+        {
+            "model_name": "Samsung I8190 Galaxy S Iii Mini"
+        },
+        {
+            "model_name": "Samsung Galaxy Music Duos S6012"
+        },
+        {
+            "model_name": "Samsung Galaxy Music S6010"
+        },
+        {
+            "model_name": "Samsung Galaxy Rugby Pro I547"
+        },
+        {
+            "model_name": "Samsung Galaxy Express I437"
+        },
+        {
+            "model_name": "Samsung Ch@T 357"
+        },
+        {
+            "model_name": "Samsung I9305 Galaxy S Iii"
+        },
+        {
+            "model_name": "Samsung Galaxy Victory 4G Lte L300"
+        },
+        {
+            "model_name": "Samsung Champ Neo Duos C3262"
+        },
+        {
+            "model_name": "Samsung Galaxy S Relay 4G T699"
+        },
+        {
+            "model_name": "Samsung Galaxy Pocket Duos S5302"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Ii N7100"
+        },
+        {
+            "model_name": "Samsung Galaxy Note Ii Cdma"
+        },
+        {
+            "model_name": "Samsung Ativ S I8750"
+        },
+        {
+            "model_name": "Samsung Galaxy Camera Gc100"
+        },
+        {
+            "model_name": "Samsung Galaxy Rush M830"
+        },
+        {
+            "model_name": "Samsung Galaxy Stellar 4G I200"
+        },
+        {
+            "model_name": "Samsung Galaxy Reverb M950"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 2 7 0 I705"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 10 1 N8000"
+        },
+        {
+            "model_name": "Samsung Galaxy Note 10 1 N8010"
+        },
+        {
+            "model_name": "Samsung Array M390"
+        },
+        {
+            "model_name": "Samsung Galaxy S Lightray 4G R940"
+        },
+        {
+            "model_name": "Samsung Galaxy S Duos S7562"
+        },
+        {
+            "model_name": "Samsung Manhattan E3300"
+        },
+        {
+            "model_name": "Samsung E2262"
+        },
+        {
+            "model_name": "Samsung E1260B"
+        },
+        {
+            "model_name": "Samsung E1200 Pusha"
+        },
+        {
+            "model_name": "Samsung E2252"
+        },
+        {
+            "model_name": "Samsung Galaxy Chat B5330"
+        },
+        {
+            "model_name": "Samsung U485 Intensity Iii"
+        },
+        {
+            "model_name": "Samsung Galaxy I8250"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Advance S6800"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Duos S6802"
+        },
+        {
+            "model_name": "Samsung Galaxy Appeal I827"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 8 9 4G P7320T"
+        },
+        {
+            "model_name": "Samsung C3780"
+        },
+        {
+            "model_name": "Samsung C3782 Evan"
+        },
+        {
+            "model_name": "Samsung Galaxy Proclaim S720C"
+        },
+        {
+            "model_name": "Samsung I9500 Fraser"
+        },
+        {
+            "model_name": "Samsung Omnia M S7530"
+        },
+        {
+            "model_name": "Samsung Focus 2 I667"
+        },
+        {
+            "model_name": "Samsung Galaxy S Iii T999"
+        },
+        {
+            "model_name": "Samsung Galaxy S Iii I747"
+        },
+        {
+            "model_name": "Samsung Galaxy S Iii Cdma"
+        },
+        {
+            "model_name": "Samsung I9300 Galaxy S Iii"
+        },
+        {
+            "model_name": "Samsung E2350B"
+        },
+        {
+            "model_name": "Samsung U380 Brightside"
+        },
+        {
+            "model_name": "Samsung Galaxy Player 70 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Pocket Plus S5301"
+        },
+        {
+            "model_name": "Samsung Galaxy Pocket S5300"
+        },
+        {
+            "model_name": "Samsung I8530 Galaxy Beam"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 2 10 1 Cdma"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 2 10 1 P5110"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 2 10 1 P5100"
+        },
+        {
+            "model_name": "Samsung Rugby Smart I847"
+        },
+        {
+            "model_name": "Samsung W999"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Ii X S7560M"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace 2 I8160"
+        },
+        {
+            "model_name": "Samsung Galaxy Mini 2 S6500"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Duos I589"
+        },
+        {
+            "model_name": "Samsung Galaxy Pop Plus S5570I"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 2 7 0 P3110"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 2 7 0 P3100"
+        },
+        {
+            "model_name": "Samsung I9070 Galaxy S Advance"
+        },
+        {
+            "model_name": "Samsung C3312 Duos"
+        },
+        {
+            "model_name": "Samsung Star 3 S5220"
+        },
+        {
+            "model_name": "Samsung Star 3 Duos S5222"
+        },
+        {
+            "model_name": "Samsung Galaxy Nexus I9250M"
+        },
+        {
+            "model_name": "Samsung Galaxy Attain 4G"
+        },
+        {
+            "model_name": "Samsung Galaxy S Blaze 4G T769"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 7 7 Lte I815"
+        },
+        {
+            "model_name": "Samsung Galaxy Nexus Lte L700"
+        },
+        {
+            "model_name": "Samsung Exhilarate I577"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Skyrocket Hd I757"
+        },
+        {
+            "model_name": "Samsung Galaxy Note T879"
+        },
+        {
+            "model_name": "Samsung Galaxy Note I717"
+        },
+        {
+            "model_name": "Samsung Galaxy M Style M340S"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace Plus S7500"
+        },
+        {
+            "model_name": "Samsung I929 Galaxy S Ii Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy Y Duos S6102"
+        },
+        {
+            "model_name": "Samsung Galaxy Y Pro Duos B5512"
+        },
+        {
+            "model_name": "Samsung E2600"
+        },
+        {
+            "model_name": "Samsung M370"
+        },
+        {
+            "model_name": "Samsung R680 Repp"
+        },
+        {
+            "model_name": "Samsung I110 Illusion"
+        },
+        {
+            "model_name": "Samsung E1050"
+        },
+        {
+            "model_name": "Samsung E1232B"
+        },
+        {
+            "model_name": "Samsung E1230"
+        },
+        {
+            "model_name": "Samsung Focus S I937"
+        },
+        {
+            "model_name": "Samsung Focus Flash I677"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Skyrocket I727"
+        },
+        {
+            "model_name": "Samsung C3330 Champ 2"
+        },
+        {
+            "model_name": "Samsung Exhibit Ii 4G T679"
+        },
+        {
+            "model_name": "Samsung C3350"
+        },
+        {
+            "model_name": "Samsung C3520"
+        },
+        {
+            "model_name": "Samsung Galaxy Nexus I515"
+        },
+        {
+            "model_name": "Samsung Galaxy Nexus I9250"
+        },
+        {
+            "model_name": "Samsung I9100G Galaxy S Ii"
+        },
+        {
+            "model_name": "Samsung I405 Stratosphere"
+        },
+        {
+            "model_name": "Samsung R730 Transfix"
+        },
+        {
+            "model_name": "Samsung I927 Captivate Glide"
+        },
+        {
+            "model_name": "Samsung Doubletime I857"
+        },
+        {
+            "model_name": "Samsung M930 Transform Ultra"
+        },
+        {
+            "model_name": "Samsung P6210 Galaxy Tab 7 0 Plus"
+        },
+        {
+            "model_name": "Samsung P6200 Galaxy Tab 7 0 Plus"
+        },
+        {
+            "model_name": "Samsung Omnia W I8350"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Hd Lte"
+        },
+        {
+            "model_name": "Samsung Ch@T 527"
+        },
+        {
+            "model_name": "Samsung P6810 Galaxy Tab 7 7"
+        },
+        {
+            "model_name": "Samsung P6800 Galaxy Tab 7 7"
+        },
+        {
+            "model_name": "Samsung Galaxy Note N7000"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii I777"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii X T989D"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii T989"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Epic 4G Touch"
+        },
+        {
+            "model_name": "Samsung S8600 Wave 3"
+        },
+        {
+            "model_name": "Samsung Wave M S7250"
+        },
+        {
+            "model_name": "Samsung Wave Y S5380"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Lte I727R"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii Lte I9210"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 8 9 Lte I957"
+        },
+        {
+            "model_name": "Samsung Galaxy W I8150"
+        },
+        {
+            "model_name": "Samsung Galaxy M Pro B7800"
+        },
+        {
+            "model_name": "Samsung Galaxy Y Pro B5510"
+        },
+        {
+            "model_name": "Samsung Galaxy Y Tv S5367"
+        },
+        {
+            "model_name": "Samsung Galaxy Y S5360"
+        },
+        {
+            "model_name": "Samsung Gravity Txt T379"
+        },
+        {
+            "model_name": "Samsung Galaxy Q T589R"
+        },
+        {
+            "model_name": "Samsung S5610"
+        },
+        {
+            "model_name": "Samsung S3770"
+        },
+        {
+            "model_name": "Samsung S5690 Galaxy Xcover"
+        },
+        {
+            "model_name": "Samsung Galaxy S Ii 4G I9100M"
+        },
+        {
+            "model_name": "Samsung I9103 Galaxy R"
+        },
+        {
+            "model_name": "Samsung R720 Admire"
+        },
+        {
+            "model_name": "Samsung Convoy 2"
+        },
+        {
+            "model_name": "Samsung Conquer 4G"
+        },
+        {
+            "model_name": "Samsung R640 Character"
+        },
+        {
+            "model_name": "Samsung R380 Freeform Iii"
+        },
+        {
+            "model_name": "Samsung Trender"
+        },
+        {
+            "model_name": "Samsung Gravity Smart"
+        },
+        {
+            "model_name": "Samsung Exhibit 4G"
+        },
+        {
+            "model_name": "Samsung E1195"
+        },
+        {
+            "model_name": "Samsung C414"
+        },
+        {
+            "model_name": "Samsung E1190"
+        },
+        {
+            "model_name": "Samsung C3560"
+        },
+        {
+            "model_name": "Samsung Dart T499"
+        },
+        {
+            "model_name": "Samsung C3322"
+        },
+        {
+            "model_name": "Samsung R260 Chrono"
+        },
+        {
+            "model_name": "Samsung E2232"
+        },
+        {
+            "model_name": "Samsung E1182"
+        },
+        {
+            "model_name": "Samsung I9001 Galaxy S Plus"
+        },
+        {
+            "model_name": "Samsung Duostv I6712"
+        },
+        {
+            "model_name": "Samsung C6712 Star Ii Duos"
+        },
+        {
+            "model_name": "Samsung Ch@T 222"
+        },
+        {
+            "model_name": "Samsung Ch@T 220"
+        },
+        {
+            "model_name": "Samsung M580 Replenish"
+        },
+        {
+            "model_name": "Samsung Galaxy Prevail"
+        },
+        {
+            "model_name": "Samsung M220L Galaxy Neo"
+        },
+        {
+            "model_name": "Samsung Google Nexus S I9020A"
+        },
+        {
+            "model_name": "Samsung Google Nexus S I9023"
+        },
+        {
+            "model_name": "Samsung E2230"
+        },
+        {
+            "model_name": "Samsung P1010 Galaxy Tab Wi Fi"
+        },
+        {
+            "model_name": "Samsung P7500 Galaxy Tab 10 1 3G"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 10 1 Lte I905"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 10 1 P7510"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 8 9 P7300"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 8 9 P7310"
+        },
+        {
+            "model_name": "Samsung Google Nexus S 4G"
+        },
+        {
+            "model_name": "Samsung M260 Factor"
+        },
+        {
+            "model_name": "Samsung S3850 Corby Ii"
+        },
+        {
+            "model_name": "Samsung Galaxy Pro B7510"
+        },
+        {
+            "model_name": "Samsung I9100 Galaxy S Ii"
+        },
+        {
+            "model_name": "Samsung E2652W Champ Duos"
+        },
+        {
+            "model_name": "Samsung E2652 Champ Duos"
+        },
+        {
+            "model_name": "Samsung Galaxy S Wifi 5 0"
+        },
+        {
+            "model_name": "Samsung P7100 Galaxy Tab 10 1V"
+        },
+        {
+            "model_name": "Samsung S5780 Wave 578"
+        },
+        {
+            "model_name": "Samsung Ch@T 350"
+        },
+        {
+            "model_name": "Samsung E3213 Hero"
+        },
+        {
+            "model_name": "Samsung E3210"
+        },
+        {
+            "model_name": "Samsung E2330"
+        },
+        {
+            "model_name": "Samsung I9003 Galaxy Sl"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace S5830I"
+        },
+        {
+            "model_name": "Samsung Galaxy Ace S5830"
+        },
+        {
+            "model_name": "Samsung Galaxy Fit S5670"
+        },
+        {
+            "model_name": "Samsung Galaxy Gio S5660"
+        },
+        {
+            "model_name": "Samsung Galaxy Mini S5570"
+        },
+        {
+            "model_name": "Samsung Galaxy Pop I559"
+        },
+        {
+            "model_name": "Samsung Galaxy S 4G T959"
+        },
+        {
+            "model_name": "Samsung S5260 Star Ii"
+        },
+        {
+            "model_name": "Samsung I997 Infuse 4G"
+        },
+        {
+            "model_name": "Samsung R910 Galaxy Indulge"
+        },
+        {
+            "model_name": "Samsung Droid Charge I510"
+        },
+        {
+            "model_name": "Samsung Google Nexus S"
+        },
+        {
+            "model_name": "Samsung M190S Galaxy S Hoppin"
+        },
+        {
+            "model_name": "Samsung Ch@T 335"
+        },
+        {
+            "model_name": "Samsung C3630"
+        },
+        {
+            "model_name": "Samsung C3530"
+        },
+        {
+            "model_name": "Samsung I9010 Galaxy S Giorgio Armani"
+        },
+        {
+            "model_name": "Samsung A817 Solstice Ii"
+        },
+        {
+            "model_name": "Samsung A667 Evergreen"
+        },
+        {
+            "model_name": "Samsung E2530"
+        },
+        {
+            "model_name": "Samsung I100 Gem"
+        },
+        {
+            "model_name": "Samsung R710 Suede"
+        },
+        {
+            "model_name": "Samsung U750 Zeal"
+        },
+        {
+            "model_name": "Samsung Continuum I400"
+        },
+        {
+            "model_name": "Samsung Ch@T 322 Wi Fi"
+        },
+        {
+            "model_name": "Samsung Ch@T 322"
+        },
+        {
+            "model_name": "Samsung E1252"
+        },
+        {
+            "model_name": "Samsung Breeze B209"
+        },
+        {
+            "model_name": "Samsung Hero Plus B159"
+        },
+        {
+            "model_name": "Samsung W169 Duos"
+        },
+        {
+            "model_name": "Samsung Mpower Muzik 219"
+        },
+        {
+            "model_name": "Samsung Mpower Txt M369"
+        },
+        {
+            "model_name": "Samsung Mpower Tv S239"
+        },
+        {
+            "model_name": "Samsung E1225 Dual Sim Shift"
+        },
+        {
+            "model_name": "Samsung Guru E1081T"
+        },
+        {
+            "model_name": "Samsung Focus"
+        },
+        {
+            "model_name": "Samsung I8700 Omnia 7"
+        },
+        {
+            "model_name": "Samsung S5750 Wave575"
+        },
+        {
+            "model_name": "Samsung S8530 Wave Ii"
+        },
+        {
+            "model_name": "Samsung M210S Wave2"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab T Mobile T849"
+        },
+        {
+            "model_name": "Samsung P1000 Galaxy Tab"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab Cdma P100"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 4G Lte"
+        },
+        {
+            "model_name": "Samsung T249"
+        },
+        {
+            "model_name": "Samsung R580 Profile"
+        },
+        {
+            "model_name": "Samsung R570 Messenger Iii"
+        },
+        {
+            "model_name": "Samsung I909 Galaxy S"
+        },
+        {
+            "model_name": "Samsung A200K Nori F"
+        },
+        {
+            "model_name": "Samsung A220 F Nori"
+        },
+        {
+            "model_name": "Samsung M130K Galaxy K"
+        },
+        {
+            "model_name": "Samsung Mesmerize I500"
+        },
+        {
+            "model_name": "Samsung M920 Transform"
+        },
+        {
+            "model_name": "Samsung R360 Freeform Ii"
+        },
+        {
+            "model_name": "Samsung Galaxy 551"
+        },
+        {
+            "model_name": "Samsung R900 Craft"
+        },
+        {
+            "model_name": "Samsung Xcover 271"
+        },
+        {
+            "model_name": "Samsung C3752"
+        },
+        {
+            "model_name": "Samsung C3750"
+        },
+        {
+            "model_name": "Samsung S7230E Wave 723"
+        },
+        {
+            "model_name": "Samsung M130L Galaxy U"
+        },
+        {
+            "model_name": "Samsung E2152"
+        },
+        {
+            "model_name": "Samsung S5530"
+        },
+        {
+            "model_name": "Samsung U360 Gusto"
+        },
+        {
+            "model_name": "Samsung Fascinate"
+        },
+        {
+            "model_name": "Samsung Vibrant"
+        },
+        {
+            "model_name": "Samsung A927 Flight Ii"
+        },
+        {
+            "model_name": "Samsung T669 Gravity T"
+        },
+        {
+            "model_name": "Samsung T479 Gravity 3"
+        },
+        {
+            "model_name": "Samsung C5010 Squash"
+        },
+        {
+            "model_name": "Samsung I897 Captivate"
+        },
+        {
+            "model_name": "Samsung B7350 Omnia Pro 4"
+        },
+        {
+            "model_name": "Samsung B6520 Omnia Pro 5"
+        },
+        {
+            "model_name": "Samsung U320 Haven"
+        },
+        {
+            "model_name": "Samsung U460 Intensity Ii"
+        },
+        {
+            "model_name": "Samsung M350 Seek"
+        },
+        {
+            "model_name": "Samsung Epic 4G"
+        },
+        {
+            "model_name": "Samsung Acclaim"
+        },
+        {
+            "model_name": "Samsung Intercept"
+        },
+        {
+            "model_name": "Samsung R360 Messenger Touch"
+        },
+        {
+            "model_name": "Samsung I225 Exec"
+        },
+        {
+            "model_name": "Samsung M570 Restore"
+        },
+        {
+            "model_name": "Samsung R351 Freeform"
+        },
+        {
+            "model_name": "Samsung T369"
+        },
+        {
+            "model_name": "Samsung S5330 Wave533"
+        },
+        {
+            "model_name": "Samsung S5250 Wave525"
+        },
+        {
+            "model_name": "Samsung I5500 Galaxy 5"
+        },
+        {
+            "model_name": "Samsung I5801 Galaxy Apollo"
+        },
+        {
+            "model_name": "Samsung I5800 Galaxy 3"
+        },
+        {
+            "model_name": "Samsung B7722"
+        },
+        {
+            "model_name": "Samsung A847 Rugby Ii"
+        },
+        {
+            "model_name": "Samsung C3300K Champ"
+        },
+        {
+            "model_name": "Samsung W960 Amoled 3D"
+        },
+        {
+            "model_name": "Samsung M110S Galaxy S"
+        },
+        {
+            "model_name": "Samsung Galaxy A"
+        },
+        {
+            "model_name": "Samsung I9000 Galaxy S"
+        },
+        {
+            "model_name": "Samsung S3370"
+        },
+        {
+            "model_name": "Samsung I6500U Galaxy"
+        },
+        {
+            "model_name": "Samsung E1170"
+        },
+        {
+            "model_name": "Samsung Metro Tv"
+        },
+        {
+            "model_name": "Samsung Corby Tv F339"
+        },
+        {
+            "model_name": "Samsung S3650W Corby"
+        },
+        {
+            "model_name": "Samsung W9705"
+        },
+        {
+            "model_name": "Samsung A687 Strive"
+        },
+        {
+            "model_name": "Samsung A697 Sunburst"
+        },
+        {
+            "model_name": "Samsung S8500 Wave"
+        },
+        {
+            "model_name": "Samsung I8520 Galaxy Beam"
+        },
+        {
+            "model_name": "Samsung B3410W Ch@T"
+        },
+        {
+            "model_name": "Samsung M3710 Corby Beat"
+        },
+        {
+            "model_name": "Samsung E2370 Xcover"
+        },
+        {
+            "model_name": "Samsung E2550 Monte Slider"
+        },
+        {
+            "model_name": "Samsung C3200 Monte Bar"
+        },
+        {
+            "model_name": "Samsung S5620 Monte"
+        },
+        {
+            "model_name": "Samsung S5550 Shark 2"
+        },
+        {
+            "model_name": "Samsung S3550 Shark 3"
+        },
+        {
+            "model_name": "Samsung E1150"
+        },
+        {
+            "model_name": "Samsung S5350 Shark"
+        },
+        {
+            "model_name": "Samsung C6112"
+        },
+        {
+            "model_name": "Samsung M2520 Beat Techno"
+        },
+        {
+            "model_name": "Samsung C3510 Genoa"
+        },
+        {
+            "model_name": "Samsung M5650 Lindy"
+        },
+        {
+            "model_name": "Samsung S7070 Diva"
+        },
+        {
+            "model_name": "Samsung C3730C"
+        },
+        {
+            "model_name": "Samsung S5150 Diva Folder"
+        },
+        {
+            "model_name": "Samsung C5130"
+        },
+        {
+            "model_name": "Samsung B5722"
+        },
+        {
+            "model_name": "Samsung M3310L"
+        },
+        {
+            "model_name": "Samsung M3310"
+        },
+        {
+            "model_name": "Samsung A897 Mythic"
+        },
+        {
+            "model_name": "Samsung S5500 Eco"
+        },
+        {
+            "model_name": "Samsung T139"
+        },
+        {
+            "model_name": "Samsung A797 Flight"
+        },
+        {
+            "model_name": "Samsung B3410"
+        },
+        {
+            "model_name": "Samsung M715 T*Omnia Ii"
+        },
+        {
+            "model_name": "Samsung A886 Forever"
+        },
+        {
+            "model_name": "Samsung S5560 Marvel"
+        },
+        {
+            "model_name": "Samsung S5630C"
+        },
+        {
+            "model_name": "Samsung I5700 Galaxy Spica"
+        },
+        {
+            "model_name": "Samsung E1390"
+        },
+        {
+            "model_name": "Samsung E1160"
+        },
+        {
+            "model_name": "Samsung E2130"
+        },
+        {
+            "model_name": "Samsung E1130B"
+        },
+        {
+            "model_name": "Samsung T401G"
+        },
+        {
+            "model_name": "Samsung B7620 Giorgio Armani"
+        },
+        {
+            "model_name": "Samsung T939 Behold 2"
+        },
+        {
+            "model_name": "Samsung W880 Amoled 12M"
+        },
+        {
+            "model_name": "Samsung Vodafone 360 H1"
+        },
+        {
+            "model_name": "Samsung Vodafone 360 M1"
+        },
+        {
+            "model_name": "Samsung B5310 Corbypro"
+        },
+        {
+            "model_name": "Samsung B3210 Corbytxt"
+        },
+        {
+            "model_name": "Samsung F480I"
+        },
+        {
+            "model_name": "Samsung B7330 Omniapro"
+        },
+        {
+            "model_name": "Samsung E1085T"
+        },
+        {
+            "model_name": "Samsung E1080T"
+        },
+        {
+            "model_name": "Samsung S5510"
+        },
+        {
+            "model_name": "Samsung S5230W Star Wifi"
+        },
+        {
+            "model_name": "Samsung S7550 Blue Earth"
+        },
+        {
+            "model_name": "Samsung S3650 Corby"
+        },
+        {
+            "model_name": "Samsung T659 Scarlet"
+        },
+        {
+            "model_name": "Samsung B3310"
+        },
+        {
+            "model_name": "Samsung C3212"
+        },
+        {
+            "model_name": "Samsung U450 Doubletake"
+        },
+        {
+            "model_name": "Samsung I220 Code"
+        },
+        {
+            "model_name": "Samsung R860 Caliber"
+        },
+        {
+            "model_name": "Samsung R520 Trill"
+        },
+        {
+            "model_name": "Samsung M900 Moment"
+        },
+        {
+            "model_name": "Samsung I350 Intrepid"
+        },
+        {
+            "model_name": "Samsung M850 Instinct Hd"
+        },
+        {
+            "model_name": "Samsung U450 Intensity"
+        },
+        {
+            "model_name": "Samsung U960 Rogue"
+        },
+        {
+            "model_name": "Samsung S3100"
+        },
+        {
+            "model_name": "Samsung A887 Solstice"
+        },
+        {
+            "model_name": "Samsung E2120"
+        },
+        {
+            "model_name": "Samsung S5233T"
+        },
+        {
+            "model_name": "Samsung I6220 Star Tv"
+        },
+        {
+            "model_name": "Samsung S9110"
+        },
+        {
+            "model_name": "Samsung T469 Gravity 2"
+        },
+        {
+            "model_name": "Samsung T559 Comeback"
+        },
+        {
+            "model_name": "Samsung T746 Impact"
+        },
+        {
+            "model_name": "Samsung S5600V Blade"
+        },
+        {
+            "model_name": "Samsung S6700"
+        },
+        {
+            "model_name": "Samsung C5510"
+        },
+        {
+            "model_name": "Samsung M2510"
+        },
+        {
+            "model_name": "Samsung M2310"
+        },
+        {
+            "model_name": "Samsung W850"
+        },
+        {
+            "model_name": "Samsung S8000 Jet"
+        },
+        {
+            "model_name": "Samsung I8000 Omnia Ii"
+        },
+        {
+            "model_name": "Samsung B7610 Omniapro"
+        },
+        {
+            "model_name": "Samsung B7320 Omniapro"
+        },
+        {
+            "model_name": "Samsung B7300 Omnialite"
+        },
+        {
+            "model_name": "Samsung M8910 Pixon12"
+        },
+        {
+            "model_name": "Samsung E1107 Crest Solar"
+        },
+        {
+            "model_name": "Samsung M2710 Beat Twist"
+        },
+        {
+            "model_name": "Samsung S5050"
+        },
+        {
+            "model_name": "Samsung T349"
+        },
+        {
+            "model_name": "Samsung S5200"
+        },
+        {
+            "model_name": "Samsung I637 Jack"
+        },
+        {
+            "model_name": "Samsung S3310"
+        },
+        {
+            "model_name": "Samsung C3060R"
+        },
+        {
+            "model_name": "Samsung A167"
+        },
+        {
+            "model_name": "Samsung A177"
+        },
+        {
+            "model_name": "Samsung I7500 Galaxy"
+        },
+        {
+            "model_name": "Samsung J165"
+        },
+        {
+            "model_name": "Samsung I6210"
+        },
+        {
+            "model_name": "Samsung E1360"
+        },
+        {
+            "model_name": "Samsung E1210"
+        },
+        {
+            "model_name": "Samsung A657"
+        },
+        {
+            "model_name": "Samsung A877 Impression"
+        },
+        {
+            "model_name": "Samsung A257 Magnet"
+        },
+        {
+            "model_name": "Samsung Propel Pro"
+        },
+        {
+            "model_name": "Samsung B2100 Xplorer"
+        },
+        {
+            "model_name": "Samsung S5230 Star"
+        },
+        {
+            "model_name": "Samsung S5600 Preston"
+        },
+        {
+            "model_name": "Samsung I8910 Omnia Hd"
+        },
+        {
+            "model_name": "Samsung S8300 Ultratouch"
+        },
+        {
+            "model_name": "Samsung M7600 Beat Dj"
+        },
+        {
+            "model_name": "Samsung M6710 Beat Disc"
+        },
+        {
+            "model_name": "Samsung S7350 Ultra S"
+        },
+        {
+            "model_name": "Samsung S7220 Ultra B"
+        },
+        {
+            "model_name": "Samsung C5220"
+        },
+        {
+            "model_name": "Samsung S3500"
+        },
+        {
+            "model_name": "Samsung S3110"
+        },
+        {
+            "model_name": "Samsung P250"
+        },
+        {
+            "model_name": "Samsung I7410"
+        },
+        {
+            "model_name": "Samsung T929 Memoir"
+        },
+        {
+            "model_name": "Samsung C3050 Stratus"
+        },
+        {
+            "model_name": "Samsung C3010"
+        },
+        {
+            "model_name": "Samsung C3110"
+        },
+        {
+            "model_name": "Samsung C6625"
+        },
+        {
+            "model_name": "Samsung E1310"
+        },
+        {
+            "model_name": "Samsung E1120"
+        },
+        {
+            "model_name": "Samsung E1100"
+        },
+        {
+            "model_name": "Samsung E1070"
+        },
+        {
+            "model_name": "Samsung E2210B"
+        },
+        {
+            "model_name": "Samsung E1125"
+        },
+        {
+            "model_name": "Samsung E2100B"
+        },
+        {
+            "model_name": "Samsung B520"
+        },
+        {
+            "model_name": "Samsung B5702"
+        },
+        {
+            "model_name": "Samsung C5212"
+        },
+        {
+            "model_name": "Samsung W259 Duos"
+        },
+        {
+            "model_name": "Samsung Sch W699"
+        },
+        {
+            "model_name": "Samsung W299 Duos"
+        },
+        {
+            "model_name": "Samsung S9402 Ego"
+        },
+        {
+            "model_name": "Samsung S3030 Tobi"
+        },
+        {
+            "model_name": "Samsung U810 Renown"
+        },
+        {
+            "model_name": "Samsung I770 Saga"
+        },
+        {
+            "model_name": "Samsung A867 Eternity"
+        },
+        {
+            "model_name": "Samsung A777"
+        },
+        {
+            "model_name": "Samsung T919 Behold"
+        },
+        {
+            "model_name": "Samsung T459 Gravity"
+        },
+        {
+            "model_name": "Samsung E2510"
+        },
+        {
+            "model_name": "Samsung T219"
+        },
+        {
+            "model_name": "Samsung E1410"
+        },
+        {
+            "model_name": "Samsung T119"
+        },
+        {
+            "model_name": "Samsung E1117"
+        },
+        {
+            "model_name": "Samsung E1110"
+        },
+        {
+            "model_name": "Samsung C6620"
+        },
+        {
+            "model_name": "Samsung I907 Epix"
+        },
+        {
+            "model_name": "Samsung A767 Propel"
+        },
+        {
+            "model_name": "Samsung I7110"
+        },
+        {
+            "model_name": "Samsung F275"
+        },
+        {
+            "model_name": "Samsung F270 Beat"
+        },
+        {
+            "model_name": "Samsung M8800 Pixon"
+        },
+        {
+            "model_name": "Samsung S3600"
+        },
+        {
+            "model_name": "Samsung M7500 Emporio Armani"
+        },
+        {
+            "model_name": "Samsung M3200 Beat S"
+        },
+        {
+            "model_name": "Samsung T339"
+        },
+        {
+            "model_name": "Samsung T229"
+        },
+        {
+            "model_name": "Samsung A637"
+        },
+        {
+            "model_name": "Samsung C510"
+        },
+        {
+            "model_name": "Samsung A837 Rugby"
+        },
+        {
+            "model_name": "Samsung A237"
+        },
+        {
+            "model_name": "Samsung B320"
+        },
+        {
+            "model_name": "Samsung B210"
+        },
+        {
+            "model_name": "Samsung M3510 Beat B"
+        },
+        {
+            "model_name": "Samsung M200"
+        },
+        {
+            "model_name": "Samsung P270"
+        },
+        {
+            "model_name": "Samsung B2700"
+        },
+        {
+            "model_name": "Samsung F268"
+        },
+        {
+            "model_name": "Samsung T109"
+        },
+        {
+            "model_name": "Samsung E200 Eco"
+        },
+        {
+            "model_name": "Samsung D980"
+        },
+        {
+            "model_name": "Samsung B510"
+        },
+        {
+            "model_name": "Samsung E215"
+        },
+        {
+            "model_name": "Samsung B130"
+        },
+        {
+            "model_name": "Samsung I8510 Innov8"
+        },
+        {
+            "model_name": "Samsung S7330"
+        },
+        {
+            "model_name": "Samsung I740"
+        },
+        {
+            "model_name": "Samsung M150"
+        },
+        {
+            "model_name": "Samsung J800 Luxe"
+        },
+        {
+            "model_name": "Samsung M140"
+        },
+        {
+            "model_name": "Samsung M130"
+        },
+        {
+            "model_name": "Samsung L700"
+        },
+        {
+            "model_name": "Samsung I900 Omnia"
+        },
+        {
+            "model_name": "Samsung U800 Soul B"
+        },
+        {
+            "model_name": "Samsung L870"
+        },
+        {
+            "model_name": "Samsung Impact Sf"
+        },
+        {
+            "model_name": "Samsung M620"
+        },
+        {
+            "model_name": "Samsung B300"
+        },
+        {
+            "model_name": "Samsung Impact B"
+        },
+        {
+            "model_name": "Samsung Impact"
+        },
+        {
+            "model_name": "Samsung D780"
+        },
+        {
+            "model_name": "Samsung V820L"
+        },
+        {
+            "model_name": "Samsung F110"
+        },
+        {
+            "model_name": "Samsung G400 Soul"
+        },
+        {
+            "model_name": "Samsung U900 Soul"
+        },
+        {
+            "model_name": "Samsung L810V Steel"
+        },
+        {
+            "model_name": "Samsung F480"
+        },
+        {
+            "model_name": "Samsung G810"
+        },
+        {
+            "model_name": "Samsung M310"
+        },
+        {
+            "model_name": "Samsung B200"
+        },
+        {
+            "model_name": "Samsung B110"
+        },
+        {
+            "model_name": "Samsung A827 Access"
+        },
+        {
+            "model_name": "Samsung P960"
+        },
+        {
+            "model_name": "Samsung P220"
+        },
+        {
+            "model_name": "Samsung P180"
+        },
+        {
+            "model_name": "Samsung I200"
+        },
+        {
+            "model_name": "Samsung F400"
+        },
+        {
+            "model_name": "Samsung J700"
+        },
+        {
+            "model_name": "Samsung J630"
+        },
+        {
+            "model_name": "Samsung J210"
+        },
+        {
+            "model_name": "Samsung J150"
+        },
+        {
+            "model_name": "Samsung E251"
+        },
+        {
+            "model_name": "Samsung L770"
+        },
+        {
+            "model_name": "Samsung A746"
+        },
+        {
+            "model_name": "Samsung A727"
+        },
+        {
+            "model_name": "Samsung A711"
+        },
+        {
+            "model_name": "Samsung A717"
+        },
+        {
+            "model_name": "Samsung A437"
+        },
+        {
+            "model_name": "Samsung A127"
+        },
+        {
+            "model_name": "Samsung A117"
+        },
+        {
+            "model_name": "Samsung Sph I325 Ace"
+        },
+        {
+            "model_name": "Samsung I640"
+        },
+        {
+            "model_name": "Samsung L320"
+        },
+        {
+            "model_name": "Samsung L310"
+        },
+        {
+            "model_name": "Samsung L170"
+        },
+        {
+            "model_name": "Samsung T819"
+        },
+        {
+            "model_name": "Samsung F490"
+        },
+        {
+            "model_name": "Samsung G800"
+        },
+        {
+            "model_name": "Samsung C500"
+        },
+        {
+            "model_name": "Samsung Serenata"
+        },
+        {
+            "model_name": "Samsung D880 Duos"
+        },
+        {
+            "model_name": "Samsung I780"
+        },
+        {
+            "model_name": "Samsung I560"
+        },
+        {
+            "model_name": "Samsung I550"
+        },
+        {
+            "model_name": "Samsung F330"
+        },
+        {
+            "model_name": "Samsung F250"
+        },
+        {
+            "model_name": "Samsung I450"
+        },
+        {
+            "model_name": "Samsung Armani"
+        },
+        {
+            "model_name": "Samsung J610"
+        },
+        {
+            "model_name": "Samsung J400"
+        },
+        {
+            "model_name": "Samsung P260"
+        },
+        {
+            "model_name": "Samsung J750"
+        },
+        {
+            "model_name": "Samsung A737"
+        },
+        {
+            "model_name": "Samsung A517"
+        },
+        {
+            "model_name": "Samsung T639"
+        },
+        {
+            "model_name": "Samsung T509"
+        },
+        {
+            "model_name": "Samsung T439"
+        },
+        {
+            "model_name": "Samsung T429"
+        },
+        {
+            "model_name": "Samsung T409"
+        },
+        {
+            "model_name": "Samsung T739 Katalyst"
+        },
+        {
+            "model_name": "Samsung T729 Blast"
+        },
+        {
+            "model_name": "Samsung T539 Beat"
+        },
+        {
+            "model_name": "Samsung L600"
+        },
+        {
+            "model_name": "Samsung Z630"
+        },
+        {
+            "model_name": "Samsung G600"
+        },
+        {
+            "model_name": "Samsung M610"
+        },
+        {
+            "model_name": "Samsung M600"
+        },
+        {
+            "model_name": "Samsung M110"
+        },
+        {
+            "model_name": "Samsung B500"
+        },
+        {
+            "model_name": "Samsung B100"
+        },
+        {
+            "model_name": "Samsung S730I"
+        },
+        {
+            "model_name": "Samsung S720I"
+        },
+        {
+            "model_name": "Samsung J200"
+        },
+        {
+            "model_name": "Samsung L760"
+        },
+        {
+            "model_name": "Samsung F700"
+        },
+        {
+            "model_name": "Samsung E950"
+        },
+        {
+            "model_name": "Samsung F210"
+        },
+        {
+            "model_name": "Samsung F200"
+        },
+        {
+            "model_name": "Samsung I620"
+        },
+        {
+            "model_name": "Samsung A411"
+        },
+        {
+            "model_name": "Samsung Zv60"
+        },
+        {
+            "model_name": "Samsung Z240"
+        },
+        {
+            "model_name": "Samsung Z170"
+        },
+        {
+            "model_name": "Samsung J600"
+        },
+        {
+            "model_name": "Samsung I400"
+        },
+        {
+            "model_name": "Samsung U700"
+        },
+        {
+            "model_name": "Samsung U600"
+        },
+        {
+            "model_name": "Samsung U300"
+        },
+        {
+            "model_name": "Samsung U100"
+        },
+        {
+            "model_name": "Samsung I710"
+        },
+        {
+            "model_name": "Samsung I520"
+        },
+        {
+            "model_name": "Samsung F520"
+        },
+        {
+            "model_name": "Samsung F510"
+        },
+        {
+            "model_name": "Samsung P110"
+        },
+        {
+            "model_name": "Samsung E840"
+        },
+        {
+            "model_name": "Samsung E830"
+        },
+        {
+            "model_name": "Samsung E740"
+        },
+        {
+            "model_name": "Samsung E590"
+        },
+        {
+            "model_name": "Samsung E230"
+        },
+        {
+            "model_name": "Samsung E210"
+        },
+        {
+            "model_name": "Samsung E200"
+        },
+        {
+            "model_name": "Samsung C520"
+        },
+        {
+            "model_name": "Samsung C450"
+        },
+        {
+            "model_name": "Samsung C275"
+        },
+        {
+            "model_name": "Samsung C270"
+        },
+        {
+            "model_name": "Samsung C260"
+        },
+        {
+            "model_name": "Samsung C250"
+        },
+        {
+            "model_name": "Samsung I600"
+        },
+        {
+            "model_name": "Samsung I617 Blackjack Ii"
+        },
+        {
+            "model_name": "Samsung I607 Blackjack"
+        },
+        {
+            "model_name": "Samsung F500"
+        },
+        {
+            "model_name": "Samsung F300"
+        },
+        {
+            "model_name": "Samsung P940"
+        },
+        {
+            "model_name": "Samsung P930"
+        },
+        {
+            "model_name": "Samsung E790"
+        },
+        {
+            "model_name": "Samsung E490"
+        },
+        {
+            "model_name": "Samsung E480"
+        },
+        {
+            "model_name": "Samsung E390"
+        },
+        {
+            "model_name": "Samsung X550"
+        },
+        {
+            "model_name": "Samsung X540"
+        },
+        {
+            "model_name": "Samsung E250"
+        },
+        {
+            "model_name": "Samsung X520"
+        },
+        {
+            "model_name": "Samsung X530"
+        },
+        {
+            "model_name": "Samsung C300"
+        },
+        {
+            "model_name": "Samsung M300"
+        },
+        {
+            "model_name": "Samsung E690"
+        },
+        {
+            "model_name": "Samsung E570"
+        },
+        {
+            "model_name": "Samsung E420"
+        },
+        {
+            "model_name": "Samsung X830"
+        },
+        {
+            "model_name": "Samsung E890"
+        },
+        {
+            "model_name": "Samsung E898"
+        },
+        {
+            "model_name": "Samsung P310"
+        },
+        {
+            "model_name": "Samsung Z720"
+        },
+        {
+            "model_name": "Samsung Z650I"
+        },
+        {
+            "model_name": "Samsung Z620"
+        },
+        {
+            "model_name": "Samsung Z370"
+        },
+        {
+            "model_name": "Samsung Z360"
+        },
+        {
+            "model_name": "Samsung P200"
+        },
+        {
+            "model_name": "Samsung S501I"
+        },
+        {
+            "model_name": "Samsung S401I"
+        },
+        {
+            "model_name": "Samsung X510"
+        },
+        {
+            "model_name": "Samsung X500"
+        },
+        {
+            "model_name": "Samsung D840"
+        },
+        {
+            "model_name": "Samsung C400"
+        },
+        {
+            "model_name": "Samsung C240"
+        },
+        {
+            "model_name": "Samsung C180"
+        },
+        {
+            "model_name": "Samsung C170"
+        },
+        {
+            "model_name": "Samsung C160"
+        },
+        {
+            "model_name": "Samsung C140"
+        },
+        {
+            "model_name": "Samsung D830"
+        },
+        {
+            "model_name": "Samsung D900I"
+        },
+        {
+            "model_name": "Samsung D900"
+        },
+        {
+            "model_name": "Samsung X820"
+        },
+        {
+            "model_name": "Samsung C130"
+        },
+        {
+            "model_name": "Samsung E500"
+        },
+        {
+            "model_name": "Samsung E380"
+        },
+        {
+            "model_name": "Samsung D870"
+        },
+        {
+            "model_name": "Samsung D780 Flip"
+        },
+        {
+            "model_name": "Samsung E900"
+        },
+        {
+            "model_name": "Samsung Z400"
+        },
+        {
+            "model_name": "Samsung Z550"
+        },
+        {
+            "model_name": "Samsung I320"
+        },
+        {
+            "model_name": "Samsung I310"
+        },
+        {
+            "model_name": "Samsung Zv50"
+        },
+        {
+            "model_name": "Samsung Zv40"
+        },
+        {
+            "model_name": "Samsung Z560"
+        },
+        {
+            "model_name": "Samsung P920"
+        },
+        {
+            "model_name": "Samsung P900"
+        },
+        {
+            "model_name": "Samsung P910"
+        },
+        {
+            "model_name": "Samsung T629"
+        },
+        {
+            "model_name": "Samsung D520"
+        },
+        {
+            "model_name": "Samsung D300"
+        },
+        {
+            "model_name": "Samsung Z710"
+        },
+        {
+            "model_name": "Samsung Z600"
+        },
+        {
+            "model_name": "Samsung Z520"
+        },
+        {
+            "model_name": "Samsung Z350"
+        },
+        {
+            "model_name": "Samsung Z230"
+        },
+        {
+            "model_name": "Samsung Z330"
+        },
+        {
+            "model_name": "Samsung Z310"
+        },
+        {
+            "model_name": "Samsung Z150"
+        },
+        {
+            "model_name": "Samsung X680"
+        },
+        {
+            "model_name": "Samsung X630"
+        },
+        {
+            "model_name": "Samsung X210"
+        },
+        {
+            "model_name": "Samsung X300"
+        },
+        {
+            "model_name": "Samsung X160"
+        },
+        {
+            "model_name": "Samsung E870"
+        },
+        {
+            "model_name": "Samsung E780"
+        },
+        {
+            "model_name": "Samsung I300X"
+        },
+        {
+            "model_name": "Samsung D820"
+        },
+        {
+            "model_name": "Samsung D810"
+        },
+        {
+            "model_name": "Samsung D800"
+        },
+        {
+            "model_name": "Samsung Z540"
+        },
+        {
+            "model_name": "Samsung Z510"
+        },
+        {
+            "model_name": "Samsung P300"
+        },
+        {
+            "model_name": "Samsung E770"
+        },
+        {
+            "model_name": "Samsung E370"
+        },
+        {
+            "model_name": "Samsung E360"
+        },
+        {
+            "model_name": "Samsung Zv30"
+        },
+        {
+            "model_name": "Samsung Zv10"
+        },
+        {
+            "model_name": "Samsung S400I"
+        },
+        {
+            "model_name": "Samsung Z320I"
+        },
+        {
+            "model_name": "Samsung S500I"
+        },
+        {
+            "model_name": "Samsung E860"
+        },
+        {
+            "model_name": "Samsung Serene"
+        },
+        {
+            "model_name": "Samsung D600"
+        },
+        {
+            "model_name": "Samsung P850"
+        },
+        {
+            "model_name": "Samsung E730"
+        },
+        {
+            "model_name": "Samsung D510"
+        },
+        {
+            "model_name": "Samsung X700"
+        },
+        {
+            "model_name": "Samsung X670"
+        },
+        {
+            "model_name": "Samsung X660"
+        },
+        {
+            "model_name": "Samsung X650"
+        },
+        {
+            "model_name": "Samsung X490"
+        },
+        {
+            "model_name": "Samsung X200"
+        },
+        {
+            "model_name": "Samsung X150"
+        },
+        {
+            "model_name": "Samsung Z500"
+        },
+        {
+            "model_name": "Samsung Z300"
+        },
+        {
+            "model_name": "Samsung Z130"
+        },
+        {
+            "model_name": "Samsung Z140"
+        },
+        {
+            "model_name": "Samsung D550"
+        },
+        {
+            "model_name": "Samsung P860"
+        },
+        {
+            "model_name": "Samsung Z700"
+        },
+        {
+            "model_name": "Samsung D730"
+        },
+        {
+            "model_name": "Samsung I750"
+        },
+        {
+            "model_name": "Samsung D720"
+        },
+        {
+            "model_name": "Samsung E760"
+        },
+        {
+            "model_name": "Samsung E750"
+        },
+        {
+            "model_name": "Samsung E720"
+        },
+        {
+            "model_name": "Samsung E880"
+        },
+        {
+            "model_name": "Samsung I300"
+        },
+        {
+            "model_name": "Samsung E350"
+        },
+        {
+            "model_name": "Samsung E640"
+        },
+        {
+            "model_name": "Samsung E620"
+        },
+        {
+            "model_name": "Samsung E530"
+        },
+        {
+            "model_name": "Samsung E340"
+        },
+        {
+            "model_name": "Samsung X810"
+        },
+        {
+            "model_name": "Samsung X800"
+        },
+        {
+            "model_name": "Samsung C120"
+        },
+        {
+            "model_name": "Samsung C230"
+        },
+        {
+            "model_name": "Samsung C210"
+        },
+        {
+            "model_name": "Samsung X640"
+        },
+        {
+            "model_name": "Samsung X480"
+        },
+        {
+            "model_name": "Samsung X620"
+        },
+        {
+            "model_name": "Samsung X140"
+        },
+        {
+            "model_name": "Samsung S410I"
+        },
+        {
+            "model_name": "Samsung S342I"
+        },
+        {
+            "model_name": "Samsung Sch B100"
+        },
+        {
+            "model_name": "Samsung D500"
+        },
+        {
+            "model_name": "Samsung P730"
+        },
+        {
+            "model_name": "Samsung P710"
+        },
+        {
+            "model_name": "Samsung D428"
+        },
+        {
+            "model_name": "Samsung D488"
+        },
+        {
+            "model_name": "Samsung E850"
+        },
+        {
+            "model_name": "Samsung E630"
+        },
+        {
+            "model_name": "Samsung E810"
+        },
+        {
+            "model_name": "Samsung E800"
+        },
+        {
+            "model_name": "Samsung Z110"
+        },
+        {
+            "model_name": "Samsung D710"
+        },
+        {
+            "model_name": "Samsung C200"
+        },
+        {
+            "model_name": "Samsung I530"
+        },
+        {
+            "model_name": "Samsung I505"
+        },
+        {
+            "model_name": "Samsung I500"
+        },
+        {
+            "model_name": "Samsung I250"
+        },
+        {
+            "model_name": "Samsung I700"
+        },
+        {
+            "model_name": "Samsung X910"
+        },
+        {
+            "model_name": "Samsung X900"
+        },
+        {
+            "model_name": "Samsung X610"
+        },
+        {
+            "model_name": "Samsung X460"
+        },
+        {
+            "model_name": "Samsung X120"
+        },
+        {
+            "model_name": "Samsung E330"
+        },
+        {
+            "model_name": "Samsung E310"
+        },
+        {
+            "model_name": "Samsung E300"
+        },
+        {
+            "model_name": "Samsung C110"
+        },
+        {
+            "model_name": "Samsung Z107"
+        },
+        {
+            "model_name": "Samsung Z105"
+        },
+        {
+            "model_name": "Samsung E610"
+        },
+        {
+            "model_name": "Samsung E600"
+        },
+        {
+            "model_name": "Samsung P510"
+        },
+        {
+            "model_name": "Samsung E410"
+        },
+        {
+            "model_name": "Samsung X450"
+        },
+        {
+            "model_name": "Samsung X430"
+        },
+        {
+            "model_name": "Samsung P705"
+        },
+        {
+            "model_name": "Samsung D410"
+        },
+        {
+            "model_name": "Samsung X600"
+        },
+        {
+            "model_name": "Samsung X100"
+        },
+        {
+            "model_name": "Samsung E715"
+        },
+        {
+            "model_name": "Samsung E700"
+        },
+        {
+            "model_name": "Samsung C100"
+        },
+        {
+            "model_name": "Samsung D700"
+        },
+        {
+            "model_name": "Samsung P500"
+        },
+        {
+            "model_name": "Samsung E105"
+        },
+        {
+            "model_name": "Samsung E100"
+        },
+        {
+            "model_name": "Samsung X410"
+        },
+        {
+            "model_name": "Samsung X400"
+        },
+        {
+            "model_name": "Samsung S200"
+        },
+        {
+            "model_name": "Samsung E400"
+        },
+        {
+            "model_name": "Samsung D100"
+        },
+        {
+            "model_name": "Samsung Watch Phone"
+        },
+        {
+            "model_name": "Samsung V200"
+        },
+        {
+            "model_name": "Samsung Z100"
+        },
+        {
+            "model_name": "Samsung P100"
+        },
+        {
+            "model_name": "Samsung P400"
+        },
+        {
+            "model_name": "Samsung T700"
+        },
+        {
+            "model_name": "Samsung S500"
+        },
+        {
+            "model_name": "Samsung T500"
+        },
+        {
+            "model_name": "Samsung S300"
+        },
+        {
+            "model_name": "Samsung T400"
+        },
+        {
+            "model_name": "Samsung T200"
+        },
+        {
+            "model_name": "Samsung V100"
+        },
+        {
+            "model_name": "Samsung S100"
+        },
+        {
+            "model_name": "Samsung Q300"
+        },
+        {
+            "model_name": "Samsung A800"
+        },
+        {
+            "model_name": "Samsung A500"
+        },
+        {
+            "model_name": "Samsung T100"
+        },
+        {
+            "model_name": "Samsung Q200"
+        },
+        {
+            "model_name": "Samsung N620"
+        },
+        {
+            "model_name": "Samsung N500"
+        },
+        {
+            "model_name": "Samsung N400"
+        },
+        {
+            "model_name": "Samsung Q105"
+        },
+        {
+            "model_name": "Samsung N300"
+        },
+        {
+            "model_name": "Samsung A400"
+        },
+        {
+            "model_name": "Samsung A300"
+        },
+        {
+            "model_name": "Samsung R220"
+        },
+        {
+            "model_name": "Samsung R210"
+        },
+        {
+            "model_name": "Samsung R200"
+        },
+        {
+            "model_name": "Samsung A200"
+        },
+        {
+            "model_name": "Samsung Q100"
+        },
+        {
+            "model_name": "Samsung N105"
+        },
+        {
+            "model_name": "Samsung N100"
+        },
+        {
+            "model_name": "Samsung M100"
+        },
+        {
+            "model_name": "Samsung A110"
+        },
+        {
+            "model_name": "Samsung A100"
+        },
+        {
+            "model_name": "Samsung Sgh 2400"
+        },
+        {
+            "model_name": "Samsung Sgh 2200"
+        },
+        {
+            "model_name": "Samsung Sgh 2100"
+        },
+        {
+            "model_name": "Samsung Sgh 810"
+        },
+        {
+            "model_name": "Samsung Sgh 800"
+        },
+        {
+            "model_name": "Samsung Sgh 600"
+        },
+        {
+            "model_name": "Samsung Sgh 500"
+        },
+        {
+            "model_name": "Samsung Sgh 250"
+        },
+        {
+            "model_name": "Samsung Galaxy A04 Core"
+        },
+        {
+            "model_name": "Samsung Galaxy S21"
+        },
+        {
+            "model_name": "Samsung Galaxy A72 5G"
+        },
+        {
+            "model_name": "Samsung Galaxy A91"
+        },
+        {
+            "model_name": "Samsung Galaxy S9 Active"
+        },
+        {
+            "model_name": "Samsung Galaxy On5 (2016)"
+        },
+        {
+            "model_name": "Samsung Galaxy J5 Prime (2017)"
+        },
+        {
+            "model_name": "Samsung Galaxy S7 Mini"
+        },
+        {
+            "model_name": "Samsung Galaxy S6 Plus"
+        },
+        {
+            "model_name": "Samsung Galaxy Grand 3"
+        },
+        {
+            "model_name": "Samsung Galaxy F"
+        },
+        {
+            "model_name": "Samsung Galaxy Tab 3 Plus 10 1 P8220"
+        },
+        {
+            "model_name": "Samsung Galaxy C10"
+        },
+        {
+            "model_name": "Samsung Guru Dual 26"
+        },
+        {
+            "model_name": "Samsung C5030"
+        },
+        {
+            "model_name": "Samsung M8920"
+        }
+    ]
+}

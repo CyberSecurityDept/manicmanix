@@ -1,0 +1,1901 @@
+{
+    "brand": "Motorola",
+    "models": [
+        {
+            "model_name": "Motorola Moto S50"
+        },
+        {
+            "model_name": "Motorola Edge 50 Neo"
+        },
+        {
+            "model_name": "Motorola Moto G55"
+        },
+        {
+            "model_name": "Motorola Moto G35"
+        },
+        {
+            "model_name": "Motorola Moto G45"
+        },
+        {
+            "model_name": "Motorola Edge 50"
+        },
+        {
+            "model_name": "Motorola Razr Plus 2024"
+        },
+        {
+            "model_name": "Motorola Razr 50 Ultra"
+        },
+        {
+            "model_name": "Motorola Razr 2024"
+        },
+        {
+            "model_name": "Motorola Razr 50"
+        },
+        {
+            "model_name": "Motorola Moto G85"
+        },
+        {
+            "model_name": "Motorola S50 Neo"
+        },
+        {
+            "model_name": "Motorola Moto E14"
+        },
+        {
+            "model_name": "Motorola Edge (2024)"
+        },
+        {
+            "model_name": "Motorola Moto X50 Ultra"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus 5G (2024)"
+        },
+        {
+            "model_name": "Motorola Edge 50 Ultra"
+        },
+        {
+            "model_name": "Motorola Edge 50 Fusion"
+        },
+        {
+            "model_name": "Motorola Edge 50 Pro"
+        },
+        {
+            "model_name": "Motorola Moto G64"
+        },
+        {
+            "model_name": "Motorola Moto G04S"
+        },
+        {
+            "model_name": "Motorola Moto G Power (2024)"
+        },
+        {
+            "model_name": "Motorola Moto G (2024)"
+        },
+        {
+            "model_name": "Motorola Moto Watch 40"
+        },
+        {
+            "model_name": "Motorola Moto G24 Power"
+        },
+        {
+            "model_name": "Motorola Moto G24"
+        },
+        {
+            "model_name": "Motorola Moto G04"
+        },
+        {
+            "model_name": "Motorola Moto G Play (2024)"
+        },
+        {
+            "model_name": "Motorola Moto G34"
+        },
+        {
+            "model_name": "Motorola Edge (2023)"
+        },
+        {
+            "model_name": "Motorola Edge 40 Neo"
+        },
+        {
+            "model_name": "Motorola Moto G54"
+        },
+        {
+            "model_name": "Motorola Moto G54 Power"
+        },
+        {
+            "model_name": "Motorola Moto G84"
+        },
+        {
+            "model_name": "Motorola Moto G14"
+        },
+        {
+            "model_name": "Motorola Razr 40 Ultra"
+        },
+        {
+            "model_name": "Motorola Razr 40"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus 5G (2023)"
+        },
+        {
+            "model_name": "Motorola Edge 40"
+        },
+        {
+            "model_name": "Motorola Edge Plus (2023)"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus (2023)"
+        },
+        {
+            "model_name": "Motorola Moto G (2023)"
+        },
+        {
+            "model_name": "Motorola Moto Watch 200"
+        },
+        {
+            "model_name": "Motorola Moto Watch 70"
+        },
+        {
+            "model_name": "Motorola Moto G Power 5G"
+        },
+        {
+            "model_name": "Motorola Edge 40 Pro"
+        },
+        {
+            "model_name": "Motorola Defy 2"
+        },
+        {
+            "model_name": "Motorola Moto G73"
+        },
+        {
+            "model_name": "Motorola Moto G53"
+        },
+        {
+            "model_name": "Motorola Moto G23"
+        },
+        {
+            "model_name": "Motorola Moto G13"
+        },
+        {
+            "model_name": "Motorola Moto E13"
+        },
+        {
+            "model_name": "Motorola Thinkphone"
+        },
+        {
+            "model_name": "Motorola Moto X40"
+        },
+        {
+            "model_name": "Motorola Moto G Play (2023)"
+        },
+        {
+            "model_name": "Motorola Moto E32 (India)"
+        },
+        {
+            "model_name": "Motorola Moto G72"
+        },
+        {
+            "model_name": "Motorola Moto E22I"
+        },
+        {
+            "model_name": "Motorola Moto E22"
+        },
+        {
+            "model_name": "Motorola Edge 30 Ultra"
+        },
+        {
+            "model_name": "Motorola Edge 30 Fusion"
+        },
+        {
+            "model_name": "Motorola Edge 30 Neo"
+        },
+        {
+            "model_name": "Motorola Moto E22S"
+        },
+        {
+            "model_name": "Motorola Edge (2022)"
+        },
+        {
+            "model_name": "Motorola Moto Tab G62"
+        },
+        {
+            "model_name": "Motorola Moto X30 Pro"
+        },
+        {
+            "model_name": "Motorola Moto S30 Pro"
+        },
+        {
+            "model_name": "Motorola Razr 2022"
+        },
+        {
+            "model_name": "Motorola Moto G62 (India)"
+        },
+        {
+            "model_name": "Motorola Moto G32"
+        },
+        {
+            "model_name": "Motorola Moto G62 5G"
+        },
+        {
+            "model_name": "Motorola Moto G42"
+        },
+        {
+            "model_name": "Motorola Moto E32S"
+        },
+        {
+            "model_name": "Motorola Moto G71S"
+        },
+        {
+            "model_name": "Motorola Moto G82"
+        },
+        {
+            "model_name": "Motorola Moto E32"
+        },
+        {
+            "model_name": "Motorola Edge 30"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus 5G (2022)"
+        },
+        {
+            "model_name": "Motorola Moto G (2022)"
+        },
+        {
+            "model_name": "Motorola Moto G52"
+        },
+        {
+            "model_name": "Motorola Moto G22"
+        },
+        {
+            "model_name": "Motorola Edge Plus 5G Uw (2022)"
+        },
+        {
+            "model_name": "Motorola Edge 30 Pro"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus (2022)"
+        },
+        {
+            "model_name": "Motorola Moto Tab G70"
+        },
+        {
+            "model_name": "Motorola Edge X30"
+        },
+        {
+            "model_name": "Motorola Edge S30"
+        },
+        {
+            "model_name": "Motorola Moto G200 5G"
+        },
+        {
+            "model_name": "Motorola Moto G71 5G"
+        },
+        {
+            "model_name": "Motorola Moto G51 5G"
+        },
+        {
+            "model_name": "Motorola Moto G41"
+        },
+        {
+            "model_name": "Motorola Moto G31"
+        },
+        {
+            "model_name": "Motorola Moto G Power (2022)"
+        },
+        {
+            "model_name": "Motorola Moto Watch 100"
+        },
+        {
+            "model_name": "Motorola Moto E30"
+        },
+        {
+            "model_name": "Motorola Edge 5G Uw (2021)"
+        },
+        {
+            "model_name": "Motorola G Pure"
+        },
+        {
+            "model_name": "Motorola Moto E40"
+        },
+        {
+            "model_name": "Motorola Tab G20"
+        },
+        {
+            "model_name": "Motorola Moto G60"
+        },
+        {
+            "model_name": "Motorola Moto E20"
+        },
+        {
+            "model_name": "Motorola Moto G50 5G"
+        },
+        {
+            "model_name": "Motorola Edge (2021)"
+        },
+        {
+            "model_name": "Motorola Edge 20 Fusion"
+        },
+        {
+            "model_name": "Motorola Moto G60S"
+        },
+        {
+            "model_name": "Motorola Edge 20 Pro"
+        },
+        {
+            "model_name": "Motorola Edge 20"
+        },
+        {
+            "model_name": "Motorola Edge 20 Lite"
+        },
+        {
+            "model_name": "Motorola One 5G Uw Ace"
+        },
+        {
+            "model_name": "Motorola Defy (2021)"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus 5G"
+        },
+        {
+            "model_name": "Motorola Moto G20"
+        },
+        {
+            "model_name": "Motorola Moto G40 Fusion"
+        },
+        {
+            "model_name": "Motorola Moto G100"
+        },
+        {
+            "model_name": "Motorola Moto G50"
+        },
+        {
+            "model_name": "Motorola Moto G10 Power"
+        },
+        {
+            "model_name": "Motorola Moto E7I Power"
+        },
+        {
+            "model_name": "Motorola Moto E7 Power"
+        },
+        {
+            "model_name": "Motorola Moto G30"
+        },
+        {
+            "model_name": "Motorola Moto G10"
+        },
+        {
+            "model_name": "Motorola Moto E6I"
+        },
+        {
+            "model_name": "Motorola Edge S"
+        },
+        {
+            "model_name": "Motorola One 5G Ace"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus (2021)"
+        },
+        {
+            "model_name": "Motorola Moto G Power (2021)"
+        },
+        {
+            "model_name": "Motorola Moto G Play (2021)"
+        },
+        {
+            "model_name": "Motorola Moto E7"
+        },
+        {
+            "model_name": "Motorola Moto G 5G"
+        },
+        {
+            "model_name": "Motorola Moto G9 Power"
+        },
+        {
+            "model_name": "Motorola Razr 5G"
+        },
+        {
+            "model_name": "Motorola Moto G9 Plus"
+        },
+        {
+            "model_name": "Motorola Moto E7 Plus"
+        },
+        {
+            "model_name": "Motorola One 5G Uw"
+        },
+        {
+            "model_name": "Motorola One 5G"
+        },
+        {
+            "model_name": "Motorola Moto G9 Play"
+        },
+        {
+            "model_name": "Motorola Moto G9 (India)"
+        },
+        {
+            "model_name": "Motorola Moto G 5G Plus"
+        },
+        {
+            "model_name": "Motorola One Fusion"
+        },
+        {
+            "model_name": "Motorola One Fusion Plus"
+        },
+        {
+            "model_name": "Motorola One Vision Plus"
+        },
+        {
+            "model_name": "Motorola Moto G Fast"
+        },
+        {
+            "model_name": "Motorola Moto E (2020)"
+        },
+        {
+            "model_name": "Motorola Moto G Pro"
+        },
+        {
+            "model_name": "Motorola Edge Plus (2020)"
+        },
+        {
+            "model_name": "Motorola Edge"
+        },
+        {
+            "model_name": "Motorola Moto G8 Power Lite"
+        },
+        {
+            "model_name": "Motorola Moto E6S (2020)"
+        },
+        {
+            "model_name": "Motorola Moto G8"
+        },
+        {
+            "model_name": "Motorola Moto G Stylus"
+        },
+        {
+            "model_name": "Motorola Moto G Power"
+        },
+        {
+            "model_name": "Motorola Moto G8 Power"
+        },
+        {
+            "model_name": "Motorola One Hyper"
+        },
+        {
+            "model_name": "Motorola Razr 2019"
+        },
+        {
+            "model_name": "Motorola Moto G8 Play"
+        },
+        {
+            "model_name": "Motorola Moto E6 Play"
+        },
+        {
+            "model_name": "Motorola Moto G8 Plus"
+        },
+        {
+            "model_name": "Motorola One Macro"
+        },
+        {
+            "model_name": "Motorola Moto E6 Plus"
+        },
+        {
+            "model_name": "Motorola One Zoom"
+        },
+        {
+            "model_name": "Motorola One Action"
+        },
+        {
+            "model_name": "Motorola Moto E6"
+        },
+        {
+            "model_name": "Motorola Moto Z4"
+        },
+        {
+            "model_name": "Motorola One Vision"
+        },
+        {
+            "model_name": "Motorola Moto G7 Plus"
+        },
+        {
+            "model_name": "Motorola Moto G7"
+        },
+        {
+            "model_name": "Motorola Moto G7 Power"
+        },
+        {
+            "model_name": "Motorola Moto G7 Play"
+        },
+        {
+            "model_name": "Motorola One (P30 Play)"
+        },
+        {
+            "model_name": "Motorola One Power (P30 Note)"
+        },
+        {
+            "model_name": "Motorola Moto Z3"
+        },
+        {
+            "model_name": "Motorola Moto Z3 Play"
+        },
+        {
+            "model_name": "Motorola Moto E5 Cruise"
+        },
+        {
+            "model_name": "Motorola Moto E5 Play Go"
+        },
+        {
+            "model_name": "Motorola Moto E5 Play"
+        },
+        {
+            "model_name": "Motorola Moto E5 Plus"
+        },
+        {
+            "model_name": "Motorola Moto E5"
+        },
+        {
+            "model_name": "Motorola P30"
+        },
+        {
+            "model_name": "Motorola Moto G6 Play"
+        },
+        {
+            "model_name": "Motorola Moto G6 Plus"
+        },
+        {
+            "model_name": "Motorola Moto G6"
+        },
+        {
+            "model_name": "Motorola Moto X5"
+        },
+        {
+            "model_name": "Motorola Moto X4"
+        },
+        {
+            "model_name": "Motorola Moto G5S Plus"
+        },
+        {
+            "model_name": "Motorola Moto G5S"
+        },
+        {
+            "model_name": "Motorola Moto Z2 Force"
+        },
+        {
+            "model_name": "Motorola Moto E4 Plus"
+        },
+        {
+            "model_name": "Motorola Moto E4 Plus (Usa)"
+        },
+        {
+            "model_name": "Motorola Moto E4"
+        },
+        {
+            "model_name": "Motorola Moto E4 (Usa)"
+        },
+        {
+            "model_name": "Motorola Moto Z2 Play"
+        },
+        {
+            "model_name": "Motorola Moto C Plus"
+        },
+        {
+            "model_name": "Motorola Moto C"
+        },
+        {
+            "model_name": "Motorola Moto G5 Plus"
+        },
+        {
+            "model_name": "Motorola Moto G5"
+        },
+        {
+            "model_name": "Motorola Moto M"
+        },
+        {
+            "model_name": "Motorola Moto E3 Power"
+        },
+        {
+            "model_name": "Motorola Moto Z Play"
+        },
+        {
+            "model_name": "Motorola Moto E3"
+        },
+        {
+            "model_name": "Motorola Moto Z Force"
+        },
+        {
+            "model_name": "Motorola Moto Z"
+        },
+        {
+            "model_name": "Motorola Moto G4 Plus"
+        },
+        {
+            "model_name": "Motorola Moto G4"
+        },
+        {
+            "model_name": "Motorola Moto G4 Play"
+        },
+        {
+            "model_name": "Motorola Moto G Turbo"
+        },
+        {
+            "model_name": "Motorola Moto X Force"
+        },
+        {
+            "model_name": "Motorola Droid Turbo 2"
+        },
+        {
+            "model_name": "Motorola Droid Maxx 2"
+        },
+        {
+            "model_name": "Motorola Moto X Style"
+        },
+        {
+            "model_name": "Motorola Moto X Play Dual Sim"
+        },
+        {
+            "model_name": "Motorola Moto X Play"
+        },
+        {
+            "model_name": "Motorola Moto G Dual Sim (3Rd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto 360 Sport (1St Gen)"
+        },
+        {
+            "model_name": "Motorola Moto 360 42Mm (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto 360 46Mm (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto 360 (1St Gen)"
+        },
+        {
+            "model_name": "Motorola Moto G (3Rd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto E Dual Sim (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto E (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto G 4G (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto G 4G Dual Sim (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto Maxx"
+        },
+        {
+            "model_name": "Motorola Droid Turbo"
+        },
+        {
+            "model_name": "Motorola Nexus 6"
+        },
+        {
+            "model_name": "Motorola Moto X (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto G Dual Sim (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto G (2Nd Gen)"
+        },
+        {
+            "model_name": "Motorola Moto G 4G"
+        },
+        {
+            "model_name": "Motorola Luge"
+        },
+        {
+            "model_name": "Motorola Moto E"
+        },
+        {
+            "model_name": "Motorola Moto E Dual Sim"
+        },
+        {
+            "model_name": "Motorola Moto G Dual Sim"
+        },
+        {
+            "model_name": "Motorola Moto G"
+        },
+        {
+            "model_name": "Motorola Moto X"
+        },
+        {
+            "model_name": "Motorola Droid Ultra"
+        },
+        {
+            "model_name": "Motorola Droid Maxx"
+        },
+        {
+            "model_name": "Motorola Droid Mini"
+        },
+        {
+            "model_name": "Motorola Razr D3 Xt919"
+        },
+        {
+            "model_name": "Motorola Razr D1"
+        },
+        {
+            "model_name": "Motorola Electrify M Xt905"
+        },
+        {
+            "model_name": "Motorola Razr I Xt890"
+        },
+        {
+            "model_name": "Motorola Droid Razr Maxx Hd"
+        },
+        {
+            "model_name": "Motorola Droid Razr Hd"
+        },
+        {
+            "model_name": "Motorola Razr Hd Xt925"
+        },
+        {
+            "model_name": "Motorola Droid Razr M"
+        },
+        {
+            "model_name": "Motorola Razr M Xt905"
+        },
+        {
+            "model_name": "Motorola Defy Xt Xt556"
+        },
+        {
+            "model_name": "Motorola Electrify 2 Xt881"
+        },
+        {
+            "model_name": "Motorola Photon Q 4G Lte Xt897"
+        },
+        {
+            "model_name": "Motorola Defy Pro Xt560"
+        },
+        {
+            "model_name": "Motorola Atrix Hd Mb886"
+        },
+        {
+            "model_name": "Motorola Xt760"
+        },
+        {
+            "model_name": "Motorola Atrix Tv Xt687"
+        },
+        {
+            "model_name": "Motorola Atrix Tv Xt682"
+        },
+        {
+            "model_name": "Motorola Motogo Tv Ex440"
+        },
+        {
+            "model_name": "Motorola Motosmart Me Xt303"
+        },
+        {
+            "model_name": "Motorola Motokey 3 Chip Ex117"
+        },
+        {
+            "model_name": "Motorola Razr V Xt885"
+        },
+        {
+            "model_name": "Motorola Razr V Xt889"
+        },
+        {
+            "model_name": "Motorola Razr V Mt887"
+        },
+        {
+            "model_name": "Motorola Motosmart Mix Xt550"
+        },
+        {
+            "model_name": "Motorola Motogo Ex430"
+        },
+        {
+            "model_name": "Motorola Motosmart Flip Xt611"
+        },
+        {
+            "model_name": "Motorola Xt390"
+        },
+        {
+            "model_name": "Motorola Razr Maxx"
+        },
+        {
+            "model_name": "Motorola Defy Xt535"
+        },
+        {
+            "model_name": "Motorola Gleam Plus Wx308"
+        },
+        {
+            "model_name": "Motorola Droid 4 Xt894"
+        },
+        {
+            "model_name": "Motorola Droid Razr Maxx"
+        },
+        {
+            "model_name": "Motorola Motoluxe Mt680"
+        },
+        {
+            "model_name": "Motorola Motoluxe Xt389"
+        },
+        {
+            "model_name": "Motorola Motoluxe"
+        },
+        {
+            "model_name": "Motorola Defy Mini Xt321"
+        },
+        {
+            "model_name": "Motorola Defy Mini Xt320"
+        },
+        {
+            "model_name": "Motorola Xt319"
+        },
+        {
+            "model_name": "Motorola Wx306"
+        },
+        {
+            "model_name": "Motorola Fire"
+        },
+        {
+            "model_name": "Motorola Mt917"
+        },
+        {
+            "model_name": "Motorola Xt928"
+        },
+        {
+            "model_name": "Motorola Droid Xyboard 8 2 Mz609"
+        },
+        {
+            "model_name": "Motorola Droid Xyboard 10 1 Mz617"
+        },
+        {
+            "model_name": "Motorola Xt532"
+        },
+        {
+            "model_name": "Motorola Moto Xt615"
+        },
+        {
+            "model_name": "Motorola Ex226"
+        },
+        {
+            "model_name": "Motorola Motokey Social"
+        },
+        {
+            "model_name": "Motorola Xoom 2 Media Edition 3G Mz608"
+        },
+        {
+            "model_name": "Motorola Xoom 2 Media Edition Mz607"
+        },
+        {
+            "model_name": "Motorola Xoom 2 3G Mz616"
+        },
+        {
+            "model_name": "Motorola Xoom 2 Mz615"
+        },
+        {
+            "model_name": "Motorola Xoom Media Edition Mz505"
+        },
+        {
+            "model_name": "Motorola Razr Xt910"
+        },
+        {
+            "model_name": "Motorola Droid Razr Xt912"
+        },
+        {
+            "model_name": "Motorola Atrix 2 Mb865"
+        },
+        {
+            "model_name": "Motorola Admiral Xt603"
+        },
+        {
+            "model_name": "Motorola Me632"
+        },
+        {
+            "model_name": "Motorola Pro Plus"
+        },
+        {
+            "model_name": "Motorola Defy Plus"
+        },
+        {
+            "model_name": "Motorola Ex212"
+        },
+        {
+            "model_name": "Motorola Ex119"
+        },
+        {
+            "model_name": "Motorola Motokey Xt Ex118"
+        },
+        {
+            "model_name": "Motorola Motokey Mini Ex109"
+        },
+        {
+            "model_name": "Motorola Motokey Mini Ex108"
+        },
+        {
+            "model_name": "Motorola Wx294"
+        },
+        {
+            "model_name": "Motorola Fire Xt"
+        },
+        {
+            "model_name": "Motorola Fire Xt311"
+        },
+        {
+            "model_name": "Motorola Spice Key Xt317"
+        },
+        {
+            "model_name": "Motorola Spice Key"
+        },
+        {
+            "model_name": "Motorola Milestone 3 Xt860"
+        },
+        {
+            "model_name": "Motorola Droid 3"
+        },
+        {
+            "model_name": "Motorola Triumph"
+        },
+        {
+            "model_name": "Motorola Photon 4G Mb855"
+        },
+        {
+            "model_name": "Motorola Ex232"
+        },
+        {
+            "model_name": "Motorola Wilder"
+        },
+        {
+            "model_name": "Motorola Moto Mt870"
+        },
+        {
+            "model_name": "Motorola Moto Mt620"
+        },
+        {
+            "model_name": "Motorola Milestone Xt883"
+        },
+        {
+            "model_name": "Motorola Moto Xt882"
+        },
+        {
+            "model_name": "Motorola Moto Xt316"
+        },
+        {
+            "model_name": "Motorola Xprt Mb612"
+        },
+        {
+            "model_name": "Motorola Gleam"
+        },
+        {
+            "model_name": "Motorola Pro"
+        },
+        {
+            "model_name": "Motorola Xoom Mz604"
+        },
+        {
+            "model_name": "Motorola Xoom Mz601"
+        },
+        {
+            "model_name": "Motorola Xoom Mz600"
+        },
+        {
+            "model_name": "Motorola Atrix"
+        },
+        {
+            "model_name": "Motorola Atrix 4G"
+        },
+        {
+            "model_name": "Motorola Cliq 2"
+        },
+        {
+            "model_name": "Motorola Droid Bionic Xt875"
+        },
+        {
+            "model_name": "Motorola Droid Bionic Xt865"
+        },
+        {
+            "model_name": "Motorola Droid X Me811"
+        },
+        {
+            "model_name": "Motorola Moto Me525"
+        },
+        {
+            "model_name": "Motorola Milestone 2 Me722"
+        },
+        {
+            "model_name": "Motorola Droid 2 Global"
+        },
+        {
+            "model_name": "Motorola Ex122"
+        },
+        {
+            "model_name": "Motorola Ex128"
+        },
+        {
+            "model_name": "Motorola Mototv Ex245"
+        },
+        {
+            "model_name": "Motorola Droid Pro Xt610"
+        },
+        {
+            "model_name": "Motorola Xt301"
+        },
+        {
+            "model_name": "Motorola Spice Xt300"
+        },
+        {
+            "model_name": "Motorola Flipside Mb508"
+        },
+        {
+            "model_name": "Motorola Moto Mt716"
+        },
+        {
+            "model_name": "Motorola Bravo Mb520"
+        },
+        {
+            "model_name": "Motorola Citrus Wx445"
+        },
+        {
+            "model_name": "Motorola Ex300"
+        },
+        {
+            "model_name": "Motorola Ex210"
+        },
+        {
+            "model_name": "Motorola Ex201"
+        },
+        {
+            "model_name": "Motorola Ex115"
+        },
+        {
+            "model_name": "Motorola Ex112"
+        },
+        {
+            "model_name": "Motorola Cupe"
+        },
+        {
+            "model_name": "Motorola Defy"
+        },
+        {
+            "model_name": "Motorola Milestone 2"
+        },
+        {
+            "model_name": "Motorola Droid 2"
+        },
+        {
+            "model_name": "Motorola Mt810Lx"
+        },
+        {
+            "model_name": "Motorola Xt810"
+        },
+        {
+            "model_name": "Motorola Xt806"
+        },
+        {
+            "model_name": "Motorola A1260"
+        },
+        {
+            "model_name": "Motorola A1680"
+        },
+        {
+            "model_name": "Motorola Grasp Wx404"
+        },
+        {
+            "model_name": "Motorola Rambler"
+        },
+        {
+            "model_name": "Motorola Charm"
+        },
+        {
+            "model_name": "Motorola Es400"
+        },
+        {
+            "model_name": "Motorola Droid X2"
+        },
+        {
+            "model_name": "Motorola Droid X"
+        },
+        {
+            "model_name": "Motorola Milestone Xt720"
+        },
+        {
+            "model_name": "Motorola Xt720 Motoroi"
+        },
+        {
+            "model_name": "Motorola Quench Xt5 Xt502"
+        },
+        {
+            "model_name": "Motorola Quench Xt3 Xt502"
+        },
+        {
+            "model_name": "Motorola Wx295"
+        },
+        {
+            "model_name": "Motorola Flipout"
+        },
+        {
+            "model_name": "Motorola Wx290"
+        },
+        {
+            "model_name": "Motorola Wx265"
+        },
+        {
+            "model_name": "Motorola Wx260"
+        },
+        {
+            "model_name": "Motorola Wx181"
+        },
+        {
+            "model_name": "Motorola Wx161"
+        },
+        {
+            "model_name": "Motorola Quench"
+        },
+        {
+            "model_name": "Motorola Backflip"
+        },
+        {
+            "model_name": "Motorola Xt800 Zhishang"
+        },
+        {
+            "model_name": "Motorola Xt701"
+        },
+        {
+            "model_name": "Motorola Mt710 Zhiling"
+        },
+        {
+            "model_name": "Motorola Moto Xt702"
+        },
+        {
+            "model_name": "Motorola Milestone"
+        },
+        {
+            "model_name": "Motorola Wx395"
+        },
+        {
+            "model_name": "Motorola Wx390"
+        },
+        {
+            "model_name": "Motorola Wx288"
+        },
+        {
+            "model_name": "Motorola Wx280"
+        },
+        {
+            "model_name": "Motorola Wx180"
+        },
+        {
+            "model_name": "Motorola Wx160"
+        },
+        {
+            "model_name": "Motorola Motocubo A45"
+        },
+        {
+            "model_name": "Motorola Dext Mb220"
+        },
+        {
+            "model_name": "Motorola Rokr Zn50"
+        },
+        {
+            "model_name": "Motorola Karma Qa1"
+        },
+        {
+            "model_name": "Motorola L800T"
+        },
+        {
+            "model_name": "Motorola W7 Active Edition"
+        },
+        {
+            "model_name": "Motorola Rokr W6"
+        },
+        {
+            "model_name": "Motorola Mc55"
+        },
+        {
+            "model_name": "Motorola Zn300"
+        },
+        {
+            "model_name": "Motorola E11"
+        },
+        {
+            "model_name": "Motorola A3100"
+        },
+        {
+            "model_name": "Motorola A3000"
+        },
+        {
+            "model_name": "Motorola Tundra Va76R"
+        },
+        {
+            "model_name": "Motorola W233 Renew"
+        },
+        {
+            "model_name": "Motorola Cocktail Ve70"
+        },
+        {
+            "model_name": "Motorola Ve66"
+        },
+        {
+            "model_name": "Motorola Em35"
+        },
+        {
+            "model_name": "Motorola Aura"
+        },
+        {
+            "model_name": "Motorola Q 11"
+        },
+        {
+            "model_name": "Motorola Ve538"
+        },
+        {
+            "model_name": "Motorola Razr2 V9X"
+        },
+        {
+            "model_name": "Motorola Zn200"
+        },
+        {
+            "model_name": "Motorola W396"
+        },
+        {
+            "model_name": "Motorola W231"
+        },
+        {
+            "model_name": "Motorola Em30"
+        },
+        {
+            "model_name": "Motorola Em28"
+        },
+        {
+            "model_name": "Motorola Em25"
+        },
+        {
+            "model_name": "Motorola Pebl Vu20"
+        },
+        {
+            "model_name": "Motorola Motoactv W450"
+        },
+        {
+            "model_name": "Motorola Ve75"
+        },
+        {
+            "model_name": "Motorola Zn5"
+        },
+        {
+            "model_name": "Motorola A1210"
+        },
+        {
+            "model_name": "Motorola A1600"
+        },
+        {
+            "model_name": "Motorola A1890"
+        },
+        {
+            "model_name": "Motorola A1800"
+        },
+        {
+            "model_name": "Motorola A810"
+        },
+        {
+            "model_name": "Motorola W388"
+        },
+        {
+            "model_name": "Motorola Z9"
+        },
+        {
+            "model_name": "Motorola Z6W"
+        },
+        {
+            "model_name": "Motorola Z6C"
+        },
+        {
+            "model_name": "Motorola W181"
+        },
+        {
+            "model_name": "Motorola W177"
+        },
+        {
+            "model_name": "Motorola W161"
+        },
+        {
+            "model_name": "Motorola W270"
+        },
+        {
+            "model_name": "Motorola W230"
+        },
+        {
+            "model_name": "Motorola Rizr Z10"
+        },
+        {
+            "model_name": "Motorola Rokr E8"
+        },
+        {
+            "model_name": "Motorola W377"
+        },
+        {
+            "model_name": "Motorola W213"
+        },
+        {
+            "model_name": "Motorola W180"
+        },
+        {
+            "model_name": "Motorola W160"
+        },
+        {
+            "model_name": "Motorola U9"
+        },
+        {
+            "model_name": "Motorola V1100"
+        },
+        {
+            "model_name": "Motorola Pebl U3"
+        },
+        {
+            "model_name": "Motorola Razr2 V9"
+        },
+        {
+            "model_name": "Motorola Razr2 V8"
+        },
+        {
+            "model_name": "Motorola Rokr W5"
+        },
+        {
+            "model_name": "Motorola W490"
+        },
+        {
+            "model_name": "Motorola W395"
+        },
+        {
+            "model_name": "Motorola W380"
+        },
+        {
+            "model_name": "Motorola W360"
+        },
+        {
+            "model_name": "Motorola W218"
+        },
+        {
+            "model_name": "Motorola Rizr Z8"
+        },
+        {
+            "model_name": "Motorola Krzr K3"
+        },
+        {
+            "model_name": "Motorola Slvr L9"
+        },
+        {
+            "model_name": "Motorola Q 9H"
+        },
+        {
+            "model_name": "Motorola Q8"
+        },
+        {
+            "model_name": "Motorola W510"
+        },
+        {
+            "model_name": "Motorola W215"
+        },
+        {
+            "model_name": "Motorola W205"
+        },
+        {
+            "model_name": "Motorola Rokr Z6"
+        },
+        {
+            "model_name": "Motorola Rokr E6"
+        },
+        {
+            "model_name": "Motorola Slvr L7E"
+        },
+        {
+            "model_name": "Motorola Razr Maxx V6"
+        },
+        {
+            "model_name": "Motorola Razr V3Xx"
+        },
+        {
+            "model_name": "Motorola Rizr Z3"
+        },
+        {
+            "model_name": "Motorola Krzr K1"
+        },
+        {
+            "model_name": "Motorola W209"
+        },
+        {
+            "model_name": "Motorola W375"
+        },
+        {
+            "model_name": "Motorola W208"
+        },
+        {
+            "model_name": "Motorola Motofone F3"
+        },
+        {
+            "model_name": "Motorola W220"
+        },
+        {
+            "model_name": "Motorola V195"
+        },
+        {
+            "model_name": "Motorola V191"
+        },
+        {
+            "model_name": "Motorola Rokr E2"
+        },
+        {
+            "model_name": "Motorola Razr V3I"
+        },
+        {
+            "model_name": "Motorola Rokr E1"
+        },
+        {
+            "model_name": "Motorola A910"
+        },
+        {
+            "model_name": "Motorola A1200"
+        },
+        {
+            "model_name": "Motorola A728"
+        },
+        {
+            "model_name": "Motorola A732"
+        },
+        {
+            "model_name": "Motorola E895"
+        },
+        {
+            "model_name": "Motorola V3X"
+        },
+        {
+            "model_name": "Motorola E1070"
+        },
+        {
+            "model_name": "Motorola E770"
+        },
+        {
+            "model_name": "Motorola Slvr L7"
+        },
+        {
+            "model_name": "Motorola Pebl U6"
+        },
+        {
+            "model_name": "Motorola A1010"
+        },
+        {
+            "model_name": "Motorola E1060"
+        },
+        {
+            "model_name": "Motorola E1120"
+        },
+        {
+            "model_name": "Motorola V1050"
+        },
+        {
+            "model_name": "Motorola C261"
+        },
+        {
+            "model_name": "Motorola C257"
+        },
+        {
+            "model_name": "Motorola C168"
+        },
+        {
+            "model_name": "Motorola C139"
+        },
+        {
+            "model_name": "Motorola C123"
+        },
+        {
+            "model_name": "Motorola C118"
+        },
+        {
+            "model_name": "Motorola C117"
+        },
+        {
+            "model_name": "Motorola C113A"
+        },
+        {
+            "model_name": "Motorola C113"
+        },
+        {
+            "model_name": "Motorola C390"
+        },
+        {
+            "model_name": "Motorola E680I"
+        },
+        {
+            "model_name": "Motorola V560"
+        },
+        {
+            "model_name": "Motorola V557"
+        },
+        {
+            "model_name": "Motorola V361"
+        },
+        {
+            "model_name": "Motorola V360"
+        },
+        {
+            "model_name": "Motorola L6"
+        },
+        {
+            "model_name": "Motorola L2"
+        },
+        {
+            "model_name": "Motorola V235"
+        },
+        {
+            "model_name": "Motorola V230"
+        },
+        {
+            "model_name": "Motorola V186"
+        },
+        {
+            "model_name": "Motorola V176"
+        },
+        {
+            "model_name": "Motorola E378I"
+        },
+        {
+            "model_name": "Motorola V635"
+        },
+        {
+            "model_name": "Motorola A668"
+        },
+        {
+            "model_name": "Motorola V980"
+        },
+        {
+            "model_name": "Motorola C980"
+        },
+        {
+            "model_name": "Motorola V535"
+        },
+        {
+            "model_name": "Motorola V547"
+        },
+        {
+            "model_name": "Motorola E375"
+        },
+        {
+            "model_name": "Motorola Razr V3"
+        },
+        {
+            "model_name": "Motorola Droid Bionic Targa"
+        },
+        {
+            "model_name": "Motorola Droid Xtreme"
+        },
+        {
+            "model_name": "Motorola A780"
+        },
+        {
+            "model_name": "Motorola V975"
+        },
+        {
+            "model_name": "Motorola C975"
+        },
+        {
+            "model_name": "Motorola V620"
+        },
+        {
+            "model_name": "Motorola V555"
+        },
+        {
+            "model_name": "Motorola A840"
+        },
+        {
+            "model_name": "Motorola E680"
+        },
+        {
+            "model_name": "Motorola E398"
+        },
+        {
+            "model_name": "Motorola C650"
+        },
+        {
+            "model_name": "Motorola V226"
+        },
+        {
+            "model_name": "Motorola V188"
+        },
+        {
+            "model_name": "Motorola V171"
+        },
+        {
+            "model_name": "Motorola C155"
+        },
+        {
+            "model_name": "Motorola C116"
+        },
+        {
+            "model_name": "Motorola C115"
+        },
+        {
+            "model_name": "Motorola Mpx"
+        },
+        {
+            "model_name": "Motorola Mpx220"
+        },
+        {
+            "model_name": "Motorola Mpx100"
+        },
+        {
+            "model_name": "Motorola V872"
+        },
+        {
+            "model_name": "Motorola V1000"
+        },
+        {
+            "model_name": "Motorola E1000"
+        },
+        {
+            "model_name": "Motorola A1000"
+        },
+        {
+            "model_name": "Motorola A768I"
+        },
+        {
+            "model_name": "Motorola A630"
+        },
+        {
+            "model_name": "Motorola C380 C385"
+        },
+        {
+            "model_name": "Motorola V80"
+        },
+        {
+            "model_name": "Motorola C289"
+        },
+        {
+            "model_name": "Motorola C205"
+        },
+        {
+            "model_name": "Motorola V400P"
+        },
+        {
+            "model_name": "Motorola V220"
+        },
+        {
+            "model_name": "Motorola V180"
+        },
+        {
+            "model_name": "Motorola V878"
+        },
+        {
+            "model_name": "Motorola A925"
+        },
+        {
+            "model_name": "Motorola A920"
+        },
+        {
+            "model_name": "Motorola V750"
+        },
+        {
+            "model_name": "Motorola Mpx200"
+        },
+        {
+            "model_name": "Motorola V690"
+        },
+        {
+            "model_name": "Motorola V525"
+        },
+        {
+            "model_name": "Motorola V501"
+        },
+        {
+            "model_name": "Motorola V500"
+        },
+        {
+            "model_name": "Motorola V303"
+        },
+        {
+            "model_name": "Motorola V300"
+        },
+        {
+            "model_name": "Motorola V600"
+        },
+        {
+            "model_name": "Motorola V150"
+        },
+        {
+            "model_name": "Motorola E390"
+        },
+        {
+            "model_name": "Motorola C550"
+        },
+        {
+            "model_name": "Motorola C450"
+        },
+        {
+            "model_name": "Motorola C250"
+        },
+        {
+            "model_name": "Motorola C230"
+        },
+        {
+            "model_name": "Motorola C200"
+        },
+        {
+            "model_name": "Motorola A835"
+        },
+        {
+            "model_name": "Motorola A830"
+        },
+        {
+            "model_name": "Motorola A760"
+        },
+        {
+            "model_name": "Motorola V295"
+        },
+        {
+            "model_name": "Motorola V291"
+        },
+        {
+            "model_name": "Motorola V290"
+        },
+        {
+            "model_name": "Motorola A388C"
+        },
+        {
+            "model_name": "Motorola C350"
+        },
+        {
+            "model_name": "Motorola T725"
+        },
+        {
+            "model_name": "Motorola T720I"
+        },
+        {
+            "model_name": "Motorola T720"
+        },
+        {
+            "model_name": "Motorola T190"
+        },
+        {
+            "model_name": "Motorola E380"
+        },
+        {
+            "model_name": "Motorola E365"
+        },
+        {
+            "model_name": "Motorola E360"
+        },
+        {
+            "model_name": "Motorola V70"
+        },
+        {
+            "model_name": "Motorola C336"
+        },
+        {
+            "model_name": "Motorola C333"
+        },
+        {
+            "model_name": "Motorola C332"
+        },
+        {
+            "model_name": "Motorola C331"
+        },
+        {
+            "model_name": "Motorola C300"
+        },
+        {
+            "model_name": "Motorola V60I"
+        },
+        {
+            "model_name": "Motorola V66I"
+        },
+        {
+            "model_name": "Motorola Accompli 388"
+        },
+        {
+            "model_name": "Motorola V60"
+        },
+        {
+            "model_name": "Motorola Accompli 008"
+        },
+        {
+            "model_name": "Motorola Timeport 280"
+        },
+        {
+            "model_name": "Motorola Timeport 260"
+        },
+        {
+            "model_name": "Motorola Timeport 250"
+        },
+        {
+            "model_name": "Motorola Talkabout T192"
+        },
+        {
+            "model_name": "Motorola Talkabout T191"
+        },
+        {
+            "model_name": "Motorola Accompli 009"
+        },
+        {
+            "model_name": "Motorola V Box(V100)"
+        },
+        {
+            "model_name": "Motorola V66"
+        },
+        {
+            "model_name": "Motorola V50"
+        },
+        {
+            "model_name": "Motorola T180"
+        },
+        {
+            "model_name": "Motorola A6188"
+        },
+        {
+            "model_name": "Motorola V8088"
+        },
+        {
+            "model_name": "Motorola Talkabout T2288"
+        },
+        {
+            "model_name": "Motorola V2288"
+        },
+        {
+            "model_name": "Motorola Timeport P7389"
+        },
+        {
+            "model_name": "Motorola Timeport L7089"
+        },
+        {
+            "model_name": "Motorola V3690"
+        },
+        {
+            "model_name": "Motorola V3688"
+        },
+        {
+            "model_name": "Motorola Startac 130"
+        },
+        {
+            "model_name": "Motorola Startac 85"
+        },
+        {
+            "model_name": "Motorola Startac Rainbow"
+        },
+        {
+            "model_name": "Motorola Startac 75 Plus"
+        },
+        {
+            "model_name": "Motorola Startac 75"
+        },
+        {
+            "model_name": "Motorola Slimlite"
+        },
+        {
+            "model_name": "Motorola Cd930"
+        },
+        {
+            "model_name": "Motorola Cd920"
+        },
+        {
+            "model_name": "Motorola M3188"
+        },
+        {
+            "model_name": "Motorola M3288"
+        },
+        {
+            "model_name": "Motorola M3588"
+        },
+        {
+            "model_name": "Motorola M3688"
+        },
+        {
+            "model_name": "Motorola M3788"
+        },
+        {
+            "model_name": "Motorola M3888"
+        },
+        {
+            "model_name": "Motorola D520"
+        },
+        {
+            "model_name": "Motorola Moto Z4 Force"
+        },
+        {
+            "model_name": "Motorola Moto Z4 Play"
+        },
+        {
+            "model_name": "Motorola P40"
+        },
+        {
+            "model_name": "Motorola Moto Watch 150"
+        }
+    ]
+}
