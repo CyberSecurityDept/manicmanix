@@ -8,6 +8,7 @@ const UpdateProgress = ({ onClose }) => {
   useEffect(() => {
     // Handler untuk update progress FE
     const handleProgress = (progressObj) => {
+      console.log('Renderer received progress:', progressObj)
       if (progressObj && progressObj.percent) {
         setProgress(Math.floor(progressObj.percent))
       }

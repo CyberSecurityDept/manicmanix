@@ -47,6 +47,7 @@ const OTA = () => {
         console.error('Error fetching version list:', error)
       }
     }
+
     fetchVersionList()
   }, [BASE_URL])
 
@@ -57,7 +58,10 @@ const OTA = () => {
     setIsUpdateModalOpen(true)
 
     // Tentukan URL sesuai tipe update
-    const url = type === 'app' ? `${BASE_URL}${CHECK_APP_URL}` : `${BASE_URL}${CHECK_Cyber_URL}`
+    const url =
+      type === 'app'
+        ? `${BASE_URL}${CHECK_APP_URL}`
+        : `${BASE_URL}${CHECK_Cyber_URL}`
 
     try {
       const response = await fetch(url, {
@@ -77,17 +81,14 @@ const OTA = () => {
       setUpdateData(data)
 
       if (type === 'app') {
-        // Kirim pesan ke main process untuk memulai update FE secara manual
-        window.electron.ipcRenderer.send('start-fe-update')
-        // Mendengarkan status update FE untuk memunculkan modal new version jika diperlukan
-        window.electron.ipcRenderer.on('fe-update-status', (feStatus) => {
-          if (data.updated_version !== data.latest_version_tag || feStatus.updateAvailable) {
-            setIsNewVersionModalOpen(true)
-          }
-        })
-      } else {
+        if (data.updated_version !== data.latest_version_tag) {
+          setIsNewVersionModalOpen(true)
+        }
+      }  else {
+        // Untuk CYBER, cek properti update_available
         if (data.update_available) {
           setIsNewVersionModalOpen(true)
+        } else {
         }
       }
     } catch (error) {
@@ -101,9 +102,12 @@ const OTA = () => {
   const handleUpdate = async () => {
     setIsNewVersionModalOpen(false)
     setIsUpdateProgressModalOpen(true)
-
-    const url = updateType === 'app' ? `${BASE_URL}${UPDATE_APP_URL}` : `${BASE_URL}${UPDATE_Cyber_URL}`
-
+  
+    const url =
+      updateType === 'app'
+        ? `${BASE_URL}${UPDATE_APP_URL}`
+        : `${BASE_URL}${UPDATE_Cyber_URL}`
+  
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -113,33 +117,29 @@ const OTA = () => {
         },
         body: JSON.stringify({})
       })
-
+  
       if (!response.ok) {
         throw new Error(`Network response was not ok. Status: ${response.status}`)
       }
-
+  
       const data = await response.json()
-
+  
       if (updateType === 'app') {
-        console.log("ini tipe update yang dilakukan: " + updateType)
+        // Pastikan response update sesuai
         if (
           data.message === 'updated app successfully.' &&
           data.download_output === 'Checked out to latest tag.'
         ) {
-          // Trigger update FE download secara manual
+          // Panggil pengecekan FE hanya setelah update dikonfirmasi
           window.electron.ipcRenderer.send('start-fe-update')
-          setIsUpdateProgressModalOpen(false)
-          alert('Update aplikasi berhasil.')
-
-          // Mendengarkan event 'fe-update-downloaded' agar bisa menginstal update setelah download selesai
-          window.electron.ipcRenderer.on('fe-update-downloaded', handleDownloaded)
-          function handleDownloaded() {
-            const userConfirmed = window.confirm('Update telah selesai di-download. Install sekarang?')
-            if (userConfirmed) {
-              window.electron.ipcRenderer.send('quit-and-install')
+          window.electron.ipcRenderer.once('fe-update-status', (feStatus) => {
+            if (feStatus.updateAvailable) {
+              // Lakukan aksi jika FE update tersedia (misalnya, tampilkan notifikasi atau update UI)
+              console.log('FE update available:', feStatus)
+            } else {
+              console.log('FE sudah up to date.')
             }
-            window.electron.ipcRenderer.removeListener('fe-update-downloaded', handleDownloaded)
-          }
+          })
         } else {
           throw new Error(data.message || 'Update gagal')
         }
@@ -156,6 +156,7 @@ const OTA = () => {
       alert(`Failed to update ${updateType} version. Error: ${error.message}`)
     }
   }
+  
 
   return (
     <div
@@ -183,7 +184,7 @@ const OTA = () => {
             APP {''}
             {versionData && versionData.app_versions.length > 0
               ? versionData.app_versions[0].app_version
-              : '1.1.1.2'}
+              : 'Loading version data...'}
           </h2>
           <button
             onClick={() => checkUpdate('app')}
@@ -211,7 +212,7 @@ const OTA = () => {
             CYBER V.
             {versionData && versionData.cyber_versions.length > 0
               ? versionData.cyber_versions[0].cyber_version
-              : 'V1.2.3.4'}
+              : 'Loading version data...'}
           </h2>
           <button
             onClick={() => checkUpdate('cyber')}
@@ -234,14 +235,17 @@ const OTA = () => {
       {/* UPDATE LOG Section */}
       <div className="w-[1022px] h-[444px] relative border-2 border-y-[#0C9A8D] border-x-[#05564F] bg-gradient-to-b from-[#091817] to-[#0C1612] p-6">
         <img src={plusSign} alt="Plus Sign" className="absolute top-[-14px] left-[-13px] w-6 h-6" />
-        <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-13px] right-[-12px] w-6 h-6" />
+        <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-12px] right-[-12px] w-6 h-6" />
+
         <div className="flex justify-between items-center px-10 py-4 border-b border-[#05564F]">
           <h3 className="text-white text-xl font-semibold">Version Release</h3>
         </div>
+
         <div className="flex justify-between items-center px-10 py-2 bg-[#0C9A8D] text-[#091817] font-semibold">
           <div className="text-center w-1/2">Patch</div>
           <div className="text-center w-1/2">Date</div>
         </div>
+
         <div className="overflow-y-auto h-[320px]">
           {versionData ? (
             <>

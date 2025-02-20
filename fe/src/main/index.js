@@ -60,9 +60,6 @@ function createWindow() {
   ipcMain.on('start-fe-update', async () => {
     try {
       console.log('Memeriksa pembaruan...');
-      // Nonaktifkan auto download
-      autoUpdater.autoDownload = false;
-      
       const result = await autoUpdater.checkForUpdates();
       console.log('Hasil pengecekan update:', result);
       
@@ -79,11 +76,6 @@ function createWindow() {
         updateAvailable,
         version: result.updateInfo.version,
       });
-      
-      // Jika update tersedia, mulai download update secara manual
-      if (updateAvailable) {
-        autoUpdater.downloadUpdate();
-      }
     } catch (error) {
       console.error('Error saat mengecek update FE:', error);
       mainWindow.webContents.send('fe-update-status', {
