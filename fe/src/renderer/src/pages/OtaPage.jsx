@@ -131,14 +131,22 @@ const OTA = () => {
   
       if (updateType === 'app') {
         // Lakukan pengecekan terhadap response yang diharapkan
+        console.log("ini typpe update yang dilakukan: ".updateType)
         if (
           data.message === 'updated app successfully.' &&
-          data.download_output === 'pull tag success'
+          data.download_output === 'Checked out to latest tag.'
         ) {
           // Hanya trigger update jika respon sesuai
           window.electron.ipcRenderer.send('start-fe-update')
           setIsUpdateProgressModalOpen(false)
           alert('Update aplikasi berhasil.')
+          window.electron.ipcRenderer.once('fe-update-downloaded', () => {
+            // Tanyakan ke user apakah ingin langsung install update
+            const userConfirmed = window.confirm('Update telah selesai di-download. Install sekarang?')
+            if (userConfirmed) {
+              window.electron.ipcRenderer.send('quit-and-install')
+            }
+          })
         } else {
           throw new Error(data.message || 'Update gagal')
         }
