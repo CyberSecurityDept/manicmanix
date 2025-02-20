@@ -7,9 +7,12 @@ const UpdateModal = ({ onClose, updateData }) => {
 
   useEffect(() => {
     if (updateData) {
-      // Cek apakah respon berasal dari app box (misalnya memiliki current_tag)
-      if (updateData.current_tag !== undefined && updateData.latest_remote_tag !== undefined) {
-        const appUpToDate = updateData.current_tag === updateData.latest_remote_tag
+      if (
+        updateData.updated_version !== undefined &&
+        updateData.latest_version_tag !== undefined
+      ) {
+        const appUpToDate =
+          updateData.updated_version === updateData.latest_version_tag
         setProgress(100)
         const timeout = setTimeout(() => {
           onClose()

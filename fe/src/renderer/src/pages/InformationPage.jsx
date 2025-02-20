@@ -20,7 +20,7 @@ const InformationPage = () => {
       </button>
 
       <div className="flex flex-col items-center mb-9">
-        <img src={securityLogo} alt="Security Logo" className="w-[400px] mb-8" />
+        <img src={securityLogo} alt="Security Logo" className="w-[600px] mb-8" />
         <h1 className="text-[#029D8C] text-4xl tracking-wider mb-4">SECURITY SCANNING</h1>
         <p className="text-white text-lg tracking-wider">App Version 24.3.2</p>
       </div>
