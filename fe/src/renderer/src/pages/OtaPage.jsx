@@ -107,12 +107,12 @@ const OTA = () => {
   const handleUpdate = async () => {
     setIsNewVersionModalOpen(false)
     setIsUpdateProgressModalOpen(true)
-
+  
     const url =
       updateType === 'app'
         ? `${BASE_URL}${UPDATE_APP_URL}`
         : `${BASE_URL}${UPDATE_Cyber_URL}`
-
+  
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -122,16 +122,20 @@ const OTA = () => {
         },
         body: JSON.stringify({})
       })
-
+  
       if (!response.ok) {
         throw new Error(`Network response was not ok. Status: ${response.status}`)
       }
-
+  
       const data = await response.json()
-
+  
       if (updateType === 'app') {
-        if (data.status === 'success') {
-          // Trigger update FE via IPC
+        // Lakukan pengecekan terhadap response yang diharapkan
+        if (
+          data.message === 'updated app successfully.' &&
+          data.download_output === 'pull tag success'
+        ) {
+          // Hanya trigger update jika respon sesuai
           window.electron.ipcRenderer.send('start-fe-update')
           setIsUpdateProgressModalOpen(false)
           alert('Update aplikasi berhasil.')
@@ -151,6 +155,7 @@ const OTA = () => {
       alert(`Failed to update ${updateType} version. Error: ${error.message}`)
     }
   }
+  
 
   return (
     <div
