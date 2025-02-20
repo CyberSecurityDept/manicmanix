@@ -23,7 +23,7 @@ const NewVersionModal = ({ onClose, onUpdate, updateData }) => {
         <h2 className="text-[#00FFE7] text-[48px] text-center">New Version Detected</h2>
         {updateData && (
           <p className="text-[#00FFE7] text-2xl mt-4">
-            Latest Version: {updateData.latest_remote_tag}
+            Latest Version: {updateData.updated_version}
           </p>
         )}
 
