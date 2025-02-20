@@ -47,7 +47,6 @@ const OTA = () => {
         console.error('Error fetching version list:', error)
       }
     }
-
     fetchVersionList()
   }, [BASE_URL])
 
@@ -58,10 +57,7 @@ const OTA = () => {
     setIsUpdateModalOpen(true)
 
     // Tentukan URL sesuai tipe update
-    const url =
-      type === 'app'
-        ? `${BASE_URL}${CHECK_APP_URL}`
-        : `${BASE_URL}${CHECK_Cyber_URL}`
+    const url = type === 'app' ? `${BASE_URL}${CHECK_APP_URL}` : `${BASE_URL}${CHECK_Cyber_URL}`
 
     try {
       const response = await fetch(url, {
@@ -81,16 +77,15 @@ const OTA = () => {
       setUpdateData(data)
 
       if (type === 'app') {
-        // Pengecekan FE melalui IPC untuk APP
+        // Kirim pesan ke main process untuk memulai update FE secara manual
         window.electron.ipcRenderer.send('start-fe-update')
+        // Mendengarkan status update FE untuk memunculkan modal new version jika diperlukan
         window.electron.ipcRenderer.on('fe-update-status', (feStatus) => {
-          // Jika versi backend berbeda atau FE update tersedia, tampilkan modal new version
           if (data.updated_version !== data.latest_version_tag || feStatus.updateAvailable) {
             setIsNewVersionModalOpen(true)
           }
         })
       } else {
-        // Untuk CYBER, cek properti update_available
         if (data.update_available) {
           setIsNewVersionModalOpen(true)
         }
@@ -107,10 +102,7 @@ const OTA = () => {
     setIsNewVersionModalOpen(false)
     setIsUpdateProgressModalOpen(true)
 
-    const url =
-      updateType === 'app'
-        ? `${BASE_URL}${UPDATE_APP_URL}`
-        : `${BASE_URL}${UPDATE_Cyber_URL}`
+    const url = updateType === 'app' ? `${BASE_URL}${UPDATE_APP_URL}` : `${BASE_URL}${UPDATE_Cyber_URL}`
 
     try {
       const response = await fetch(url, {
@@ -129,27 +121,23 @@ const OTA = () => {
       const data = await response.json()
 
       if (updateType === 'app') {
-        // Perbaiki penulisan console.log dan lakukan pengecekan response yang diharapkan
         console.log("ini tipe update yang dilakukan: " + updateType)
         if (
           data.message === 'updated app successfully.' &&
           data.download_output === 'Checked out to latest tag.'
         ) {
-          // Jika respon sesuai, trigger update FE
+          // Trigger update FE download secara manual
           window.electron.ipcRenderer.send('start-fe-update')
           setIsUpdateProgressModalOpen(false)
           alert('Update aplikasi berhasil.')
 
-          // Mendengarkan event 'fe-update-downloaded' menggunakan on() dan removeListener() agar hanya dipanggil sekali
+          // Mendengarkan event 'fe-update-downloaded' agar bisa menginstal update setelah download selesai
           window.electron.ipcRenderer.on('fe-update-downloaded', handleDownloaded)
-
           function handleDownloaded() {
-            // Tanyakan ke user apakah ingin langsung install update
             const userConfirmed = window.confirm('Update telah selesai di-download. Install sekarang?')
             if (userConfirmed) {
               window.electron.ipcRenderer.send('quit-and-install')
             }
-            // Hapus listener setelah event diproses
             window.electron.ipcRenderer.removeListener('fe-update-downloaded', handleDownloaded)
           }
         } else {
@@ -246,17 +234,14 @@ const OTA = () => {
       {/* UPDATE LOG Section */}
       <div className="w-[1022px] h-[444px] relative border-2 border-y-[#0C9A8D] border-x-[#05564F] bg-gradient-to-b from-[#091817] to-[#0C1612] p-6">
         <img src={plusSign} alt="Plus Sign" className="absolute top-[-14px] left-[-13px] w-6 h-6" />
-        <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-12px] right-[-12px] w-6 h-6" />
-
+        <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-13px] right-[-12px] w-6 h-6" />
         <div className="flex justify-between items-center px-10 py-4 border-b border-[#05564F]">
           <h3 className="text-white text-xl font-semibold">Version Release</h3>
         </div>
-
         <div className="flex justify-between items-center px-10 py-2 bg-[#0C9A8D] text-[#091817] font-semibold">
           <div className="text-center w-1/2">Patch</div>
           <div className="text-center w-1/2">Date</div>
         </div>
-
         <div className="overflow-y-auto h-[320px]">
           {versionData ? (
             <>
