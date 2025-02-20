@@ -81,15 +81,10 @@ const OTA = () => {
       setUpdateData(data)
 
       if (type === 'app') {
-        // Pengecekan FE melalui IPC untuk APP
-        window.electron.ipcRenderer.send('start-fe-update')
-        window.electron.ipcRenderer.on('fe-update-status', (feStatus) => {
-          if (data.updated_version !== data.latest_version_tag || feStatus.updateAvailable) {
-            setIsNewVersionModalOpen(true)
-          } else {
-          }
-        })
-      } else {
+        if (data.updated_version !== data.latest_version_tag) {
+          setIsNewVersionModalOpen(true)
+        }
+      }  else {
         // Untuk CYBER, cek properti update_available
         if (data.update_available) {
           setIsNewVersionModalOpen(true)
@@ -130,15 +125,21 @@ const OTA = () => {
       const data = await response.json()
   
       if (updateType === 'app') {
-        // Lakukan pengecekan terhadap response yang diharapkan
+        // Pastikan response update sesuai
         if (
           data.message === 'updated app successfully.' &&
-          data.download_output === 'pull tag success'
+          data.download_output === 'Checked out to latest tag.'
         ) {
-          // Hanya trigger update jika respon sesuai
+          // Panggil pengecekan FE hanya setelah update dikonfirmasi
           window.electron.ipcRenderer.send('start-fe-update')
-          setIsUpdateProgressModalOpen(false)
-          alert('Update aplikasi berhasil.')
+          window.electron.ipcRenderer.once('fe-update-status', (feStatus) => {
+            if (feStatus.updateAvailable) {
+              // Lakukan aksi jika FE update tersedia (misalnya, tampilkan notifikasi atau update UI)
+              console.log('FE update available:', feStatus)
+            } else {
+              console.log('FE sudah up to date.')
+            }
+          })
         } else {
           throw new Error(data.message || 'Update gagal')
         }
@@ -183,7 +184,7 @@ const OTA = () => {
             APP {''}
             {versionData && versionData.app_versions.length > 0
               ? versionData.app_versions[0].app_version
-              : '1.1.1.2'}
+              : 'Loading version data...'}
           </h2>
           <button
             onClick={() => checkUpdate('app')}
@@ -211,7 +212,7 @@ const OTA = () => {
             CYBER V.
             {versionData && versionData.cyber_versions.length > 0
               ? versionData.cyber_versions[0].cyber_version
-              : 'V1.2.3.4'}
+              : 'Loading version data...'}
           </h2>
           <button
             onClick={() => checkUpdate('cyber')}

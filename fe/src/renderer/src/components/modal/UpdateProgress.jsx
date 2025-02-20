@@ -8,15 +8,14 @@ const UpdateProgress = ({ onClose }) => {
   useEffect(() => {
     // Handler untuk update progress FE
     const handleProgress = (progressObj) => {
+      console.log('Renderer received progress:', progressObj)
       if (progressObj && progressObj.percent) {
         setProgress(Math.floor(progressObj.percent))
       }
     }
 
-    // Handler ketika update FE telah selesai didownload
     const handleDownloaded = () => {
       setProgress(100)
-      // Trigger quit dan install setelah sedikit delay (misal 1 detik)
       setTimeout(() => {
         window.electron.ipcRenderer.send('quit-and-install')
       }, 1000)
