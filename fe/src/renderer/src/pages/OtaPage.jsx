@@ -11,7 +11,7 @@ import backIcon from '../assets/back-Icon.svg'
 
 const OTA = () => {
   const BASE_URL = import.meta.env.VITE_BASE_URL
-  const UPDATE_APP_URL = '/v1/update'
+  const UPDATE_APP_URL = '/v1/update-app'
   const UPDATE_Cyber_URL = '/v1/update-cyber-version'
   const CHECK_APP_URL = '/v1/check-update-app'
   const CHECK_Cyber_URL = '/v1/check-update-cyber'

@@ -349,7 +349,7 @@ const ResultFastPage = () => {
               </div>
 
               {/* List Data */}
-              <div className="space-y-[1px]">
+              <div className="space-y-[1px] max-h-64 overflow-y-auto">
                 {filteredThreats.map((threat, index) => (
                   <div
                     key={index}
