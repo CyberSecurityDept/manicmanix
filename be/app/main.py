@@ -8,6 +8,7 @@ from fastapi.responses import HTMLResponse
 from app.api.v1.device_status import router as device_status_router
 from app.api.v1.device_overview import router as device_overview_router
 from app.api.v1.device_scan import router as device_scan_router
+from app.api.v1.calculate_risk import router as calculate_risk_router
 from app.api.v1.activities import router as activities_router
 from app.api.v1.simplify_device_info import router as simplify_device_router
 from app.api.v1.malware_removal import router as removal_router
@@ -62,7 +63,7 @@ app.include_router(package, prefix="/v1",tags=["device"])
 app.include_router(result_fastscan,prefix="/v1",tags=["device"] )
 app.include_router(check_update_app,prefix="/v1",tags=["ota-update"])
 app.include_router(update_cyber,prefix="/v1",tags=["ota-update"])
-
+app.include_router(calculate_risk_router,prefix="/v1",tags=["device"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", include_in_schema=False)
