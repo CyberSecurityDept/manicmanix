@@ -7,8 +7,7 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
 
   useEffect(() => {
     if (updateType === 'cyber') {
-      // Untuk update cyber, kita tidak menggunakan event IPC.
-      // Jika cyberData sudah tersedia dan pesan sesuai, langsung set progress ke 100.
+      // Untuk update cyber tetap sama.
       if (
         cyberData &&
         cyberData.message === "Cyber version and IOCs updated successfully."
@@ -19,10 +18,9 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
         }, 1000)
         return () => clearTimeout(timeout)
       }
-      // Jika cyberData belum tersedia, kita bisa mensimulasikan progress secara periodik.
       const interval = setInterval(() => {
         setProgress((prevProgress) => {
-          const newProgress = prevProgress + 10
+          const newProgress = prevProgress + 5
           if (newProgress >= 100) {
             clearInterval(interval)
             setTimeout(() => {
@@ -35,26 +33,34 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
       }, 1000)
       return () => clearInterval(interval)
     } else {
-      // Untuk update app, gunakan event IPC untuk mendapatkan progress update.
-      const handleProgressApp = (progressObj) => {
-        console.log('Renderer received progress:', progressObj.percent)
-        if (progressObj && progressObj.percent) {
-          setProgress(Math.floor(progressObj.percent))
-        }
-      }
-
+      // Untuk update app, simulasi progress dengan interval dan tangani event fe-update-downloaded
+      let simulationInterval = setInterval(() => {
+        setProgress((prevProgress) => {
+          const newProgress = prevProgress + 5
+          if (newProgress >= 100) {
+            clearInterval(simulationInterval)
+            setProgress(100)
+            setTimeout(() => {
+              window.electron.ipcRenderer.send('quit-and-install')
+            }, 1000)
+            return 100
+          }
+          return newProgress
+        })
+      }, 500) // Interval tiap 500ms
+  
       const handleDownloaded = () => {
+        clearInterval(simulationInterval) 
         setProgress(100)
         setTimeout(() => {
           window.electron.ipcRenderer.send('quit-and-install')
         }, 1000)
       }
-
-      window.electron.ipcRenderer.on('fe-update-progress', handleProgressApp)
+  
       window.electron.ipcRenderer.on('fe-update-downloaded', handleDownloaded)
-
+  
       return () => {
-        window.electron.ipcRenderer.removeListener('fe-update-progress', handleProgressApp)
+        clearInterval(simulationInterval)
         window.electron.ipcRenderer.removeListener('fe-update-downloaded', handleDownloaded)
       }
     }

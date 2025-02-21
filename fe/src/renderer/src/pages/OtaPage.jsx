@@ -51,141 +51,106 @@ const OTA = () => {
     fetchVersionList()
   }, [BASE_URL])
 
-  // // Fungsi pengecekan update untuk APP dan CYBER
-  // const checkUpdate = async (type) => {
-  //   setUpdateType(type)
-  //   // Tampilkan modal loading update
-  //   setIsUpdateModalOpen(true)
-
-  //   // Tentukan URL sesuai tipe update
-  //   const url = type === 'app' ? `${BASE_URL}${CHECK_APP_URL}` : `${BASE_URL}${CHECK_Cyber_URL}`
-
-  //   try {
-  //     const response = await fetch(url, {
-  //       method: 'POST',
-  //       headers: {
-  //         accept: 'application/json',
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify({})
-  //     })
-
-  //     if (!response.ok) {
-  //       throw new Error(`Status: ${response.status}`)
-  //     }
-
-  //     const data = await response.json()
-  //     setUpdateData(data)
-
-  //     if (type === 'app') {
-  //       if (data.updated_version !== data.latest_version_tag) {
-  //         setIsNewVersionModalOpen(true)
-  //       }
-  //     } else {
-  //       // Untuk CYBER, cek properti update_available
-  //       if (data.update_available) {
-  //         setIsNewVersionModalOpen(true)
-  //       } else {
-  //       }
-  //     }
-  //   } catch (error) {
-  //     console.error(`Error checking ${type} update:`, error)
-  //     setIsUpdateModalOpen(false)
-  //     alert(`Error: ${error.message}`)
-  //   }
-  // }
-
-  // // Fungsi untuk memproses update (untuk APP dan CYBER)
-  // const handleUpdate = async () => {
-  //   setIsNewVersionModalOpen(false)
-  //   setIsUpdateProgressModalOpen(true)
-
-  //   const url =
-  //     updateType === 'app' ? `${BASE_URL}${UPDATE_APP_URL}` : `${BASE_URL}${UPDATE_Cyber_URL}`
-
-  //   try {
-  //     const response = await fetch(url, {
-  //       method: 'POST',
-  //       headers: {
-  //         accept: 'application/json',
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify({})
-  //     })
-
-  //     if (!response.ok) {
-  //       throw new Error(`Network response was not ok. Status: ${response.status}`)
-  //     }
-
-  //     const data = await response.json()
-
-  //     if (updateType === 'app') {
-  //       // Pastikan response update sesuai
-  //       if (
-  //         data.message === 'updated app successfully.' &&
-  //         data.download_output === 'Checked out to latest tag.'
-  //       ) {
-  //         // Panggil pengecekan FE hanya setelah update dikonfirmasi
-  //         window.electron.ipcRenderer.send('start-fe-update')
-  //         window.electron.ipcRenderer.once('fe-update-status', (feStatus) => {
-  //           if (feStatus.updateAvailable) {
-  //             // Lakukan aksi jika FE update tersedia (misalnya, tampilkan notifikasi atau update UI)
-  //             console.log('FE update available:', feStatus)
-  //           } else {
-  //             console.log('FE sudah up to date.')
-  //           }
-  //         })
-  //       } else {
-  //         throw new Error(data.message || 'Update gagal')
-  //       }
-  //     } else {
-  //       if (data.message === 'Cyber version and IOCs updated successfully.') {
-  //         setIsUpdateProgressModalOpen(false)
-  //       } else {
-  //         throw new Error(data.message || 'Cyber update failed')
-  //       }
-  //     }
-  //   } catch (error) {
-  //     console.error(`Error updating ${updateType} version:`, error)
-  //     setIsUpdateProgressModalOpen(false)
-  //     alert(`Failed to update ${updateType} version. Error: ${error.message}`)
-  //   }
-  // }
-
-  const CheckAppUpdate = () => {
-    // Tampilkan modal pengecekan update
+  // Fungsi pengecekan update untuk APP dan CYBER
+  const checkUpdate = async (type) => {
+    setUpdateType(type)
+    // Tampilkan modal loading update
     setIsUpdateModalOpen(true)
-    // Mulai cek update FE melalui IPC
-    window.electron.ipcRenderer.send('start-fe-update')
+
+    // Tentukan URL sesuai tipe update
+    const url = type === 'app' ? `${BASE_URL}${CHECK_APP_URL}` : `${BASE_URL}${CHECK_Cyber_URL}`
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({})
+      })
+
+      if (!response.ok) {
+        throw new Error(`Status: ${response.status}`)
+      }
+
+      const data = await response.json()
+      setUpdateData(data)
+
+      if (type === 'app') {
+        if (data.updated_version !== data.latest_version_tag) {
+          setIsNewVersionModalOpen(true)
+        }
+      } else {
+        // Untuk CYBER, cek properti update_available
+        if (data.update_available) {
+          setIsNewVersionModalOpen(true)
+        } else {
+        }
+      }
+    } catch (error) {
+      console.error(`Error checking ${type} update:`, error)
+      setIsUpdateModalOpen(false)
+      alert(`Error: ${error.message}`)
+    }
   }
 
-  // Dengar status update FE dari main process
-  useEffect(() => {
-    const handleFeUpdateStatus = (feStatus) => {
-      if (feStatus.updateAvailable) {
-        // Simpan data update (misalnya versi terbaru) jika diperlukan
-        setUpdateData(feStatus)
-        setIsUpdateModalOpen(false)
-        setIsNewVersionModalOpen(true)
-      } else {
-        setIsUpdateModalOpen(false)
-        alert('You are using the latest version.')
-      }
-    }
-    window.electron.ipcRenderer.on('fe-update-status', handleFeUpdateStatus)
-
-    return () => {
-      window.electron.ipcRenderer.removeListener('fe-update-status', handleFeUpdateStatus)
-    }
-  }, [])
-
-  const handleUpdate = () => {
-    // Tutup modal New Version dan tampilkan modal progress update FE
+  // Fungsi untuk memproses update (untuk APP dan CYBER)
+  const handleUpdate = async () => {
     setIsNewVersionModalOpen(false)
     setIsUpdateProgressModalOpen(true)
-    // Mulai proses download update FE (jika belum berjalan, main process akan mengirim progress)
-    // Tidak perlu panggil endpoint BE karena fokus hanya update FE
+
+    const url =
+      updateType === 'app' ? `${BASE_URL}${UPDATE_APP_URL}` : `${BASE_URL}${UPDATE_Cyber_URL}`
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({})
+      })
+
+      if (!response.ok) {
+        throw new Error(`Network response was not ok. Status: ${response.status}`)
+      }
+
+      const data = await response.json()
+
+      if (updateType === 'app') {
+        // Pastikan response update sesuai
+        if (
+          data.message === 'updated app successfully.' &&
+          data.download_output === 'Checked out to latest tag.'
+        ) {
+          // Panggil pengecekan FE hanya setelah update dikonfirmasi
+          window.electron.ipcRenderer.send('start-fe-update')
+          window.electron.ipcRenderer.once('fe-update-status', (feStatus) => {
+            if (feStatus.updateAvailable) {
+              console.log('FE update available:', feStatus)
+            } else {
+              console.log('FE sudah up to date.')
+            }
+          })
+        } else {
+          throw new Error(data.message || 'Update gagal')
+        }
+      } else {
+        if (data.message === 'Cyber version and IOCs updated successfully.') {
+          setIsUpdateProgressModalOpen(false)
+        } else {
+          throw new Error(data.message || 'Cyber update failed')
+        }
+      }
+    } catch (error) {
+      console.error(`Error updating ${updateType} version:`, error)
+      setIsUpdateProgressModalOpen(false)
+      alert(`Failed to update ${updateType} version. Error: ${error.message}`)
+    }
   }
+
   return (
     <div
       className="w-full h-screen relative bg-cover flex flex-col items-center justify-center"
@@ -216,10 +181,10 @@ const OTA = () => {
             APP {''}
             {versionData && versionData.app_versions.length > 0
               ? versionData.app_versions[0].app_version
-              : 'Loading version data'}
+              : 'Loading version data...'}
           </h2>
           <button
-            onClick={CheckAppUpdate}
+            onClick={() => checkUpdate('app')}
             className="text-white py-1 px-4"
             style={{
               backgroundImage: `url(${UpdateBorder})`,
