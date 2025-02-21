@@ -216,7 +216,7 @@ const OTA = () => {
             APP {''}
             {versionData && versionData.app_versions.length > 0
               ? versionData.app_versions[0].app_version
-              : 'Loading version data...'}
+              : 'Loading version data'}
           </h2>
           <button
             onClick={CheckAppUpdate}
