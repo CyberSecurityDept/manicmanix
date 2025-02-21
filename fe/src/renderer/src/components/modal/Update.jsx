@@ -7,6 +7,7 @@ const UpdateModal = ({ onClose, updateData }) => {
 
   useEffect(() => {
     if (updateData) {
+      // Kasus update app: gunakan updated_version dan latest_version_tag
       if (
         updateData.updated_version !== undefined &&
         updateData.latest_version_tag !== undefined
@@ -19,7 +20,7 @@ const UpdateModal = ({ onClose, updateData }) => {
         }, appUpToDate ? 1000 : 300)
         return () => clearTimeout(timeout)
       }
-      // Jika respon berasal dari cyber box (menggunakan update_available)
+      // Kasus update cyber: gunakan update_available
       if (updateData.update_available !== undefined) {
         if (updateData.update_available === false) {
           setProgress(100)
@@ -71,13 +72,13 @@ const UpdateModal = ({ onClose, updateData }) => {
           alt="Plus Sign"
           className="absolute bottom-[-13px] right-[-12px] w-6 h-6"
         />
-
         <div className="w-[663px] h-[45px] border border-[#00E6E6] flex items-center justify-center p-2">
           <ArrowPattern progress={progress} />
         </div>
-
         {updateData ? (
-          <p className="text-[#00FFE7] text-3xl mt-10">Checking for updates...</p>
+          <p className="text-[#00FFE7] text-3xl mt-10">
+            Checking for updates...
+          </p>
         ) : (
           <p className="text-[#00FFE7] text-3xl mt-10">Checking</p>
         )}
