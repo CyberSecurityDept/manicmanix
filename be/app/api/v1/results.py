@@ -72,7 +72,7 @@ def count_scanned_and_threats_for_installer(installer_path: Path, dumpsys_data: 
                 logger.info(f"Detected threat in installer: {package_name}")
     return {"scanned": scanned, "threats": threats}
 
-@router.get("/result-fullscan-detail", response_model=Dict)
+@router.get("/result-fullscan", response_model=Dict)
 async def get_result(serial_number: str, scan_type: str = "full-scan"):
     try:
         if scan_type not in ["full-scan", "fast-scan"]:
@@ -89,19 +89,22 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
         if not isinstance(result_data.get("threats", []), list):
             raise ValueError("result_data['threats'] harus berupa list")
 
+        # Proses dan perbaiki data threat
         updated_threats = []
-
         for threat in result_data.get("threats", []):
             package_name = threat.get("package_name", "")
+            # Gantikan variabel 'name' yang tidak didefinisikan dengan nilai yang ada atau fallback ke package_name
+            threat_name = threat.get("name", package_name)
             updated_threat = {
-                "name": name,
+                "name": threat_name,
                 "package_name": package_name,
                 "date_time": threat.get("date_time", ""),
-                "type": threat.get("type", "")  
+                "type": threat.get("type", "")
             }
             logger.info(f"Processed threat: {updated_threat}")
             updated_threats.append(updated_threat)
-        
+
+        # Tambahkan threat dari file dumpsys_activities_detected.json
         activities_detected = read_dumpsys_activities_detected(latest_scan_directory)
         for activity in activities_detected:
             threat = {
@@ -111,41 +114,39 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
                 "type": "Application"
             }
             updated_threats.append(threat)
-        
+
+        # Update data threat dan total threats berdasarkan perhitungan terbaru
         result_data["threats"] = updated_threats
-        print(result_data["threats"])
         result_data["total_threats"] = len(updated_threats)
         logger.info(f"Total threats detected: {result_data['total_threats']}")
-        
+
+        # Buat overview dengan nilai default, lalu update berdasarkan hasil scanning
         scan_overview = {
-            "scan_overview": {
-                "applications": {"scanned": 0, "threats": 0},
-                "documents": {"scanned": 0, "threats": 0},
-                "media": {"scanned": 0, "threats": 0},
-                "installer": {"scanned": 0, "threats": 0}
-            },
-            "total_threats": 0,
-            "threats": updated_threats
+            "applications": {"scanned": 0, "threats": 0},
+            "documents": {"scanned": 0, "threats": 0},
+            "media": {"scanned": 0, "threats": 0},
+            "installer": {"scanned": 0, "threats": 0}
         }
-        result_data["scan_overview"] = scan_overview["scan_overview"]
-        result_data["total_threats"] = scan_overview["total_threats"]
-        result_data["threats"] = scan_overview["threats"]
 
         base_path_media = os.getenv('MEDIA_ISOLATED_PATH')
         installed_apps_path = Path(base_path_media) / f"{serial_number}" / "installed_apps"
         applications_stats = count_scanned_and_threats(installed_apps_path, activities_detected)
-        result_data["scan_overview"]["applications"]["scanned"] += applications_stats["scanned"]
-        result_data["scan_overview"]["applications"]["threats"] += applications_stats["threats"]
+        scan_overview["applications"]["scanned"] += applications_stats["scanned"]
+        scan_overview["applications"]["threats"] += applications_stats["threats"]
+
         installer_path = Path(base_path_media) / f"{serial_number}" / "installer"
         installer_stats = count_scanned_and_threats_for_installer(installer_path, activities_detected)
-        result_data["scan_overview"]["installer"]["scanned"] += installer_stats["scanned"]
-        result_data["scan_overview"]["installer"]["threats"] += installer_stats["threats"]
-        
+        scan_overview["installer"]["scanned"] += installer_stats["scanned"]
+        scan_overview["installer"]["threats"] += installer_stats["threats"]
+
+        # Update scan_overview tanpa mengubah total_threats dan threats yang sudah dihitung
+        result_data["scan_overview"] = scan_overview
+
         output_file_main = latest_scan_directory / f"{scan_type}_result.json"
         with open(output_file_main, "w") as file:
             json.dump(result_data, file, indent=4)
         logger.info(f"Hasil scan utama disimpan ke {output_file_main}")
-        
+
         response = {
             "message": "Get result successfully",
             "status": "success",

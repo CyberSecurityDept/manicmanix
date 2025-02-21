@@ -13,8 +13,8 @@ services:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
     volumes:
-      - /Users/noname/malware-analysis/backend/cundamanix-api/vtrotasi/keys.db:/app/keys.db
-      - /Users/noname/malware-analysis/backend/cundamanix-api/src/isolated:/app/uploaded_files
+      - /home/manic/malware-analysis/manicmanix/be/vtrotasi/keys.db:/app/keys.db
+      - /home/manic/malware-analysis/manicmanix/be/src/isolated:/app/uploaded_files
 
   redis:
     image: redis:latest
@@ -33,5 +33,5 @@ services:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
     volumes:
-      - /Users/noname/malware-analysis/backend/cundamanix-api/vtrotasi/keys.db:/app/keys.db
-      - /Users/noname/malware-analysis/backend/cundamanix-api/src/isolated:/app/uploaded_files
+      - /home/manic/malware-analysis/manicmanix/be/vtrotasi/keys.db:/app/keys.db
+      - /home/manic/malware-analysis/manicmanix/be/src/isolated:/app/uploaded_files
