@@ -35,7 +35,12 @@ def read_dumpsys_activities_detected(scan_directory: Path) -> List[Dict]:
         try:
             with open(dumpsys_file, "r") as file:
                 activities_detected = json.load(file)
-                logger.info(f"Berhasil membaca {dumpsys_file}")
+                # Filter hanya entri dengan matched_indicator.type == "app_ids"
+                activities_detected = [
+                    entry for entry in activities_detected
+                    if entry.get("matched_indicator", {}).get("type") == "app_ids"
+                ]
+                logger.info(f"Berhasil membaca dan memfilter {dumpsys_file}")
         except json.JSONDecodeError as e:
             logger.error(f"File {dumpsys_file} tidak valid: {e}")
         except Exception as e:
@@ -99,7 +104,8 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
                 "name": threat_name,
                 "package_name": package_name,
                 "date_time": threat.get("date_time", ""),
-                "type": threat.get("type", "")
+                "type": threat.get("type", ""),
+                "source_path": threat.get("source_path")
             }
             logger.info(f"Processed threat: {updated_threat}")
             updated_threats.append(updated_threat)
@@ -111,7 +117,8 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
                 "name": activity.get("activity", "unknown"),
                 "package_name": activity.get("package_name", "unknown"),
                 "date_time": datetime.now().isoformat(),
-                "type": "Application"
+                "type": "Application",
+                "source_path": 'tes'
             }
             updated_threats.append(threat)
 
@@ -136,10 +143,18 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
 
         installer_path = Path(base_path_media) / f"{serial_number}" / "installer"
         installer_stats = count_scanned_and_threats_for_installer(installer_path, activities_detected)
-        scan_overview["installer"]["scanned"] += installer_stats["scanned"]
-        scan_overview["installer"]["threats"] += installer_stats["threats"]
+        scan_overview["installer"]["scanned"] = result_data["scan_overview"]["installer"]["scanned"]
+        scan_overview["installer"]["threats"] = result_data["scan_overview"]["installer"]["threats"]
+        
+        scan_overview["documents"]["scanned"] = result_data["scan_overview"]["documents"]["scanned"]
+        scan_overview["documents"]["threats"] = result_data["scan_overview"]["documents"]["threats"]
+        print(result_data["scan_overview"]["documents"]["threats"], 'result nih bos1')
+        
+        scan_overview["media"]["scanned"] = result_data["scan_overview"]["media"]["scanned"]
+        scan_overview["media"]["threats"] = result_data["scan_overview"]["media"]["threats"]
 
         # Update scan_overview tanpa mengubah total_threats dan threats yang sudah dihitung
+        print(result_data["scan_overview"]["documents"], 'result nih bos')
         result_data["scan_overview"] = scan_overview
 
         output_file_main = latest_scan_directory / f"{scan_type}_result.json"
