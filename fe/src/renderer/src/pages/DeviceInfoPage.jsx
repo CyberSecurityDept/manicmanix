@@ -178,6 +178,24 @@ const DeviceInfoPage = () => {
         <img src={backIcon} alt="Back Icon" className="w-10 h-10" />
       </button>
 
+      {/* Tombol History */}
+      <button
+        className="absolute top-6 right-6 flex items-center focus:outline-none group"
+        onClick={() => navigate('/history')}
+      >
+        {/* Lingkaran dengan Ikon */}
+        <div className="relative w-[53px] h-[53px] flex items-center justify-center rounded-full border-2 border-[#4FD1C5] bg-[#0B1E1E] shadow-lg -mr-4 z-10 group-hover:bg-teal-700 transition-all duration-300">
+          <img src={historyIcon} alt="History Icon" className="w-6 h-6" />
+        </div>
+
+        {/* Persegi Panjang dengan Teks */}
+        <div className="w-[134px] h-[40px] bg-[#0B1E1E] rounded-r-lg border-t-2 border-b-2 border-r-2 border-[#4FD1C5] shadow-lg flex items-center justify-center group-hover:bg-teal-700 transition-all duration-300">
+          <span className="text-lg tracking-wide text-white group-hover:text-black font-aldrich">
+            HISTORY
+          </span>
+        </div>
+      </button>
+
       {/* Main Container */}
       {loading ? (
         <Skeleton

@@ -20,6 +20,9 @@ export default defineConfig({
     }
   },
   renderer: {
+    server: {
+      host: '0.0.0.0'  
+    },
     resolve: {
       alias: {
         '@': resolve('src/renderer/src') // Menggunakan alias '@' untuk kemudahan impor

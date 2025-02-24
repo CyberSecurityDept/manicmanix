@@ -218,11 +218,11 @@ const ResultFastPage = () => {
 
   return (
     <div
-      className="h-screen w-screen flex flex-col justify-center items-center relative font-aldrich"
+      className="h-screen w-screen flex flex-col items-center relative font-aldrich"
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover' }}
     >
       {/* Security Percentage Section */}
-      <div className="flex flex-col items-center justify-center space-y-2 relative">
+      <div className="flex flex-col items-center justify-center space-y-2 mt-4 relative">
         <h2 className="text-4xl font-bold text-white">Security Percentage</h2>
         <div
           className="relative flex items-center justify-center"
@@ -281,7 +281,7 @@ const ResultFastPage = () => {
               <p className="font-semibold text-white">Last Scan Percentage</p>
               {lastScanPercentage !== null ? (
                 <p className="mt-1 font-bold" style={{ color: lastPercentageStyle.color }}>
-                  {lastScanPercentage}% {lastPercentageStyle.label}
+                  {lastScanPercentage} {lastPercentageStyle.label}
                 </p>
               ) : (
                 <p className="text-white mt-1 font-bold">-</p>
@@ -291,7 +291,7 @@ const ResultFastPage = () => {
         </div>
 
         {/* View Section */}
-        <div className="w-full h-[450px] p-4 border-2 border-y-[#0C9A8D] border-x-[#05564F] bg-gradient-to-b from-[#091817] to-[#0C1612] text-white relative mt-4">
+        <div className="w-full h-[350px] p-4 border-2 border-y-[#0C9A8D] border-x-[#05564F] bg-gradient-to-b from-[#091817] to-[#0C1612] text-white relative mt-4">
           {loading ? (
             <div className="space-y-1">
               {[...Array(5)].map((_, index) => (
@@ -380,7 +380,7 @@ const ResultFastPage = () => {
           ) : (
             // Jika tidak ada data, tampilkan gambar No Malware Detected
             <div className="relative flex justify-center items-center h-full">
-              <img src={noMalwareImage} alt="No Malware" className="h-[320px]" />
+              <img src={noMalwareImage} alt="No Malware" className="h-[300px]" />
               <div className="absolute inset-0 bg-black opacity-85"></div>
               <p className="absolute text-center text-[#00FFE7] font-bold text-2xl">
                 No Malware Detected

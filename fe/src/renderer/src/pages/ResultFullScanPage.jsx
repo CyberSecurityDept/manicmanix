@@ -275,7 +275,9 @@ const ResultFullScanPage = () => {
 
   // Fungsi untuk delete package berdasarkan threat yang dicentang
   const handleDeleteChecked = async () => {
-    const packagesToDelete = Object.keys(checkedItems).filter((pkgName) => checkedItems[pkgName])
+    const packagesToDelete = Object.keys(checkedItems).filter(
+      (pkgName) => checkedItems[pkgName]
+    )
     if (packagesToDelete.length === 0) {
       alert('No package selected for deletion.')
       return
@@ -283,27 +285,60 @@ const ResultFullScanPage = () => {
     if (!window.confirm('Are you sure you want to delete the selected packages?')) {
       return
     }
-    const total = packagesToDelete.length
-    let completed = 0
-    for (const packageName of packagesToDelete) {
-      const url = `${BASE_URL}/v1/delete-package/${encodeURIComponent(packageName)}`
+  
+    // Jika tipe yang dipilih adalah installer, document/documents, atau application/applications
+    if (
+      selectedView &&
+      ['installer', 'documents', 'media'].includes(
+        selectedView.toLowerCase()
+      )
+    ) {
+      const sourceDataToDelete = selectedThreats.map((threat) => threat.source_path)
+      const url = `${BASE_URL}/v1/delete-files`
       try {
         const response = await fetch(url, {
           method: 'DELETE',
-          headers: { accept: 'application/json' }
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json'
+          },
+          body: JSON.stringify({ source_data: sourceDataToDelete })
         })
         if (!response.ok) {
-          console.error(`Failed to delete ${packageName}: Status ${response.status}`)
+          console.error(`Failed to delete files: Status ${response.status}`)
         } else {
-          console.log(`Package ${packageName} successfully deleted.`)
+          console.log(`Files successfully deleted.`)
         }
+        // Set progress delete ke 100% setelah request selesai
+        setDeleteProgress(100)
       } catch (error) {
-        console.error(`Error deleting package ${packageName}:`, error)
+        console.error('Error deleting files:', error)
       }
-      completed++
-      setDeleteProgress(Math.floor((completed / total) * 100))
+    } else {
+      // Jika bukan salah satu dari tipe di atas, lakukan delete per package
+      const total = packagesToDelete.length
+      let completed = 0
+      for (const packageName of packagesToDelete) {
+        const url = `${BASE_URL}/v1/delete-package/${encodeURIComponent(packageName)}`
+        try {
+          const response = await fetch(url, {
+            method: 'DELETE',
+            headers: { accept: 'application/json' }
+          })
+          if (!response.ok) {
+            console.error(`Failed to delete ${packageName}: Status ${response.status}`)
+          } else {
+            console.log(`Package ${packageName} successfully deleted.`)
+          }
+        } catch (error) {
+          console.error(`Error deleting package ${packageName}:`, error)
+        }
+        completed++
+        setDeleteProgress(Math.floor((completed / total) * 100))
+      }
     }
   }
+  
 
   // Fungsi untuk menangani proses delete (dipanggil ketika modal delete dikonfirmasi)
   const handleRemoveScanning = async () => {
@@ -327,7 +362,7 @@ const ResultFullScanPage = () => {
 
   return (
     <div
-      className={`h-screen w-screen flex flex-col justify-center items-center relative font-aldrich`}
+      className={`h-screen w-screen flex flex-col items-center relative font-aldrich`}
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
@@ -335,14 +370,14 @@ const ResultFullScanPage = () => {
       }}
     >
       {/* Security Percentage Section */}
-      <div className="flex flex-col items-center justify-center space-y-2 mt-2 relative">
+      <div className="flex flex-col items-center justify-center space-y-2 mt-8 relative">
         <h2 className="text-4xl font-bold text-white">Security Percentage</h2>
         <div
           className="relative flex items-center justify-center"
           style={{
             color: percentageStyle.color,
             width: '300px',
-            height: '180px',
+            height: '150px',
             backgroundImage: percentageStyle.backgroundImage,
             backgroundSize: 'contain',
             backgroundPosition: 'center',
@@ -356,7 +391,7 @@ const ResultFullScanPage = () => {
             </p>
             {beforePercentage !== null && (
               <p className="text-[16px]" style={{ color: percentageStyle.color }}>
-                Before: {beforePercentage}%
+                Before: {beforePercentage}
               </p>
             )}
           </div>
@@ -390,7 +425,7 @@ const ResultFullScanPage = () => {
                 className="text-green-400 mt-1 font-bold"
                 style={{ color: lastPercentageStyle.color }}
               >
-                {lastScanPercentage}% {lastPercentageStyle.label}
+                {lastScanPercentage} {lastPercentageStyle.label}
               </p>
             ) : (
               <p className="text-white mt-1 font-bold">-</p>
