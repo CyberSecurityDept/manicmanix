@@ -579,7 +579,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
         logger.info(f"Last scan percentage: {last_scan_percentage}")
 
         logger.info(f"Starting full scan in directory: {output_dir}")
-        run_device_scan(output_dir)  
+        #run_device_scan(output_dir)  
         retrieved_files = retrieve_device_files(serial_number, output_dir)
         logger.info(f"Retrieved {len(retrieved_files)} files")
         
