@@ -5,7 +5,7 @@ import json
 
 # Path dan konfigurasi
 upload = "app/uploaded_files"
-join_root_folder = "/home/christofer/app/cundamanix/vtrotasi/uploaded_files"
+join_root_folder = "/Users/noname/malware-analysis/manicmanix/be/vtrotasi/uploaded_files"
 
 # Dapatkan daftar file paths
 file_paths = [f"/{upload}/{file}" for file in os.listdir(join_root_folder) if os.path.isfile(os.path.join(join_root_folder, file))]

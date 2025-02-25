@@ -579,7 +579,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
         logger.info(f"Last scan percentage: {last_scan_percentage}")
 
         logger.info(f"Starting full scan in directory: {output_dir}")
-        #run_device_scan(output_dir)  
+        run_device_scan(output_dir)  
         retrieved_files = retrieve_device_files(serial_number, output_dir)
         logger.info(f"Retrieved {len(retrieved_files)} files")
         
@@ -798,7 +798,7 @@ def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
             return file_paths
 
         check_isolated = get_all_files(isolated_folder, serial_number)
-        batch_size = 412
+        batch_size = 92
         batches = [check_isolated[i:i + batch_size] for i in range(0, len(check_isolated), batch_size)]
         all_scan_results = {
             "task_ids": []
