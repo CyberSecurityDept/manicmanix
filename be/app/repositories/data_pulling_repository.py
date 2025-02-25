@@ -77,19 +77,22 @@ class Data_Pulling:
             dest_path = os.path.expanduser(f"{str(os.getenv('DESTINATION_FOR_DATA_PULLING'))}/{serial}")
             os.makedirs(dest_path, exist_ok=True)  # Buat folder jika belum ada
 
+            # Path untuk menyimpan file yang diisolasi (APK, dokumen, dll)
+            isolated_path = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial}")
+
+            # Bersihkan folder tujuan sebelum memproses file baru
+            if os.path.exists(isolated_path):
+                shutil.rmtree(isolated_path)
+            os.makedirs(isolated_path, exist_ok=True)
+
             # Path sumber di perangkat Android (misalnya, /storage/emulated/0/)
-            source_path = f"/storage/emulated/"
-            print(f"Source path: {source_path}")
+            source_path = f"/storage/emulated/{user}/"
 
             # Jalankan perintah ADB untuk menarik file dari perangkat Android
             result = subprocess.run(
                 ["adb", "-s", serial, "pull", "-a", source_path, dest_path, "--sync"],
                 capture_output=True, text=True, check=True
             )
-
-            # Path untuk menyimpan file yang diisolasi (APK, dokumen, dll)
-            isolated_path = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial}")
-            os.makedirs(isolated_path, exist_ok=True)  # Buat folder jika belum ada
 
             # Path untuk folder installed_apps (file APK yang sudah di-pull sebelumnya)
             installed_apps_path = os.path.join(isolated_path, "installed_apps")
@@ -130,7 +133,7 @@ class Data_Pulling:
 
                     # Jika file termasuk dalam kategori yang ditentukan
                     if category:
-                        file_path = os.path.join(root, file)   # Path lengkap file sumber
+                        file_path = os.path.join(root, file)  # Path lengkap file sumber
 
                         # Periksa apakah file berada di folder installed_apps
                         if installed_apps_path in root:
@@ -151,13 +154,7 @@ class Data_Pulling:
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
                         # Tentukan local_path di perangkat pengguna
-                        joined_path = os.path.join(root, file)
-                        if joined_path.startswith(dest_path):
-                            local_path = os.path.normpath(joined_path.replace(dest_path, f"/storage/emulated/"))
-                        else:
-                            print(f"Path mismatch: {joined_path} does not start with {dest_path}")
-                            local_path = None  # Atau tangani sesuai kebutuhan
-
+                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         print(f"Local path: {local_path}")
 
                         # Tambahkan informasi file ke dictionary
@@ -188,13 +185,7 @@ class Data_Pulling:
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
                         # Tentukan local_path di perangkat pengguna
-                        joined_path = os.path.join(root, file)
-                        if joined_path.startswith(dest_path):
-                            local_path = os.path.normpath(joined_path.replace(dest_path, f"/storage/emulated/"))
-                        else:
-                            print(f"Path mismatch: {joined_path} does not start with {dest_path}")
-                            local_path = None  # Atau tangani sesuai kebutuhan
-
+                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         print(f"Local path: {local_path}")
 
                         # Tambahkan informasi file ke dictionary
@@ -278,3 +269,12 @@ class Data_Pulling:
         except Exception as e:
             print(f"Terjadi kesalahan dalam fungsi get_base_apk: {e}")
             raise Exception(f"Failed to get base APK: {e}")
+        
+    @staticmethod
+    def get_isolated_data(device):
+        isolated_file_path = f"src/isolated/{device}/isolated.json"
+        if not os.path.exists(isolated_file_path):
+            raise FileNotFoundError(f"File {isolated_file_path} tidak ditemukan.")
+        
+        with open(isolated_file_path, "r") as file:
+            return json.load(file)
