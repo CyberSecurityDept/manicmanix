@@ -79,11 +79,7 @@ class Data_Pulling:
                 capture_output=True, text=True, check=True
             )
 
-            
-            isolated_path = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial}")
-            os.makedirs(isolated_path, exist_ok=True)  
-
-            
+            # Path untuk folder installed_apps (file APK yang sudah di-pull sebelumnya)
             installed_apps_path = os.path.join(isolated_path, "installed_apps")
 
             
@@ -122,7 +118,7 @@ class Data_Pulling:
 
                     
                     if category:
-                        file_path = os.path.join(root, file)   
+                        file_path = os.path.join(root, file)  # Path lengkap file sumber
 
                         
                         if installed_apps_path in root:
@@ -142,8 +138,8 @@ class Data_Pulling:
                         shutil.copy(file_path, destination_folder)
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
-                        
-                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated/{user}/")
+                        # Tentukan local_path di perangkat pengguna
+                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         print(f"Local path: {local_path}")
 
                         
@@ -173,8 +169,8 @@ class Data_Pulling:
                         shutil.copy(file_path, destination_folder)
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
-                        
-                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated/{user}/")
+                        # Tentukan local_path di perangkat pengguna
+                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         print(f"Local path: {local_path}")
 
                         
