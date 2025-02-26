@@ -1,33 +1,60 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import bgDarkmode from '../assets/bg-darkmode.png'
-import plusSign from '../assets/plus-sign.svg'
-import Border from '../assets/border/App-border.svg'
-import UpdateBorder from '../assets/border/update.svg'
-import UpdateModal from '../components/modal/Update'
-import NewVersionModal from '../components/modal/NewVersion'
-import UpdateProgress from '../components/modal/UpdateProgress'
-import backIcon from '../assets/back-Icon.svg'
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import bgDarkmode from '../assets/bg-darkmode.png';
+import plusSign from '../assets/plus-sign.svg';
+import Border from '../assets/border/App-border.svg';
+import UpdateBorder from '../assets/border/update.svg';
+import UpdateModal from '../components/modal/Update';
+import NewVersionModal from '../components/modal/NewVersion';
+import UpdateProgress from '../components/modal/UpdateProgress';
+import backIcon from '../assets/back-Icon.svg';
+
+const UpdateBox = ({ title, version, onCheckUpdate }) => (
+  <div
+    className="w-[403px] h-[123px] bg-cover bg-no-repeat border border-[#05564F] flex flex-col justify-center items-center bg-gradient-to-b from-[#0C1E1B] to-[#0C1612]"
+    style={{ backgroundImage: `url(${Border})` }}
+  >
+    <h2 className="text-white text-lg mb-2">
+      {title} {version || 'Loading version data...'}
+    </h2>
+    <button
+      onClick={onCheckUpdate}
+      className="text-white py-1 px-4"
+      style={{
+        backgroundImage: `url(${UpdateBorder})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        width: '228px',
+        height: '37px',
+        color: '#FFFFFF'
+      }}
+    >
+      CHECK UPDATE
+    </button>
+  </div>
+);
 
 const OTA = () => {
-  const BASE_URL = import.meta.env.VITE_BASE_URL
-  const UPDATE_APP_URL = '/v1/update-app'
-  const UPDATE_Cyber_URL = '/v1/update-cyber-version'
-  const CHECK_APP_URL = '/v1/check-update-app'
-  const CHECK_Cyber_URL = '/v1/check-update-cyber'
-  const LIST_VERSION_URL = '/v1/list-version'
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
+  const UPDATE_APP_URL = '/v1/update-app';
+  const UPDATE_CYBER_URL = '/v1/update-cyber-version';
+  const CHECK_APP_URL = '/v1/check-update-app';
+  const CHECK_CYBER_URL = '/v1/check-update-cyber';
+  const LIST_VERSION_URL = '/v1/list-version';
 
-  const navigate = useNavigate()
-  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false)
-  const [isNewVersionModalOpen, setIsNewVersionModalOpen] = useState(false)
-  const [isUpdateProgressModalOpen, setIsUpdateProgressModalOpen] = useState(false)
-  const [updateData, setUpdateData] = useState(null)
-  const [versionData, setVersionData] = useState(null)
-  // Menyimpan tipe update: 'app' atau 'cyber'
-  const [updateType, setUpdateType] = useState(null)
+  const navigate = useNavigate();
 
-  // Fetch list version ketika komponen mount
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
+  const [isNewVersionModalOpen, setIsNewVersionModalOpen] = useState(false);
+  const [isUpdateProgressModalOpen, setIsUpdateProgressModalOpen] = useState(false);
+  const [updateData, setUpdateData] = useState(null);
+  const [versionData, setVersionData] = useState(null);
+  const [updateType, setUpdateType] = useState(null);
+
+  // Fetch versi saat komponen dimount
   useEffect(() => {
+    let isMounted = true;
     const fetchVersionList = async () => {
       try {
         const response = await fetch(`${BASE_URL}${LIST_VERSION_URL}`, {
@@ -36,29 +63,31 @@ const OTA = () => {
             accept: 'application/json',
             'Content-Type': 'application/json'
           }
-        })
+        });
         if (!response.ok) {
-          throw new Error(`Status: ${response.status}`)
+          throw new Error(`Status: ${response.status}`);
         }
-        const result = await response.json()
-        // result.data berisi app_versions dan cyber_versions
-        setVersionData(result.data)
+        const result = await response.json();
+        if (isMounted) {
+          setVersionData(result.data);
+        }
       } catch (error) {
-        console.error('Error fetching version list:', error)
+        console.error('Error fetching version list:', error);
       }
-    }
+    };
 
-    fetchVersionList()
-  }, [BASE_URL])
+    fetchVersionList();
 
-  // Fungsi pengecekan update untuk APP dan CYBER
+    return () => {
+      isMounted = false;
+    };
+  }, [BASE_URL]);
+
+  // Fungsi untuk mengecek update
   const checkUpdate = async (type) => {
-    setUpdateType(type)
-    // Tampilkan modal loading update
-    setIsUpdateModalOpen(true)
-
-    // Tentukan URL sesuai tipe update
-    const url = type === 'app' ? `${BASE_URL}${CHECK_APP_URL}` : `${BASE_URL}${CHECK_Cyber_URL}`
+    setUpdateType(type);
+    setIsUpdateModalOpen(true);
+    const url = type === 'app' ? `${BASE_URL}${CHECK_APP_URL}` : `${BASE_URL}${CHECK_CYBER_URL}`;
 
     try {
       const response = await fetch(url, {
@@ -68,40 +97,38 @@ const OTA = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({})
-      })
+      });
 
       if (!response.ok) {
-        throw new Error(`Status: ${response.status}`)
+        throw new Error(`Status: ${response.status}`);
       }
 
-      const data = await response.json()
-      setUpdateData(data)
+      const data = await response.json();
+      setUpdateData(data);
 
       if (type === 'app') {
-        if (data.updated_version !== data.latest_version_tag) {
-          setIsNewVersionModalOpen(true)
-        }
-      } else {
-        // Untuk CYBER, cek properti update_available
-        if (data.update_available) {
-          setIsNewVersionModalOpen(true)
-        } else {
-        }
+        // Mengirimkan event dan hanya mendengarkan sekali
+        window.electron.ipcRenderer.send('start-fe-update');
+        window.electron.ipcRenderer.once('fe-update-status', (feStatus) => {
+          if (data.current_tag !== data.latest_remote_tag || feStatus.updateAvailable) {
+            setIsNewVersionModalOpen(true);
+          }
+        });
+      } else if (data.update_available) {
+        setIsNewVersionModalOpen(true);
       }
     } catch (error) {
-      console.error(`Error checking ${type} update:`, error)
-      setIsUpdateModalOpen(false)
-      alert(`Error: ${error.message}`)
+      console.error(`Error checking ${type} update:`, error);
+      setIsUpdateModalOpen(false);
+      alert(`Error: ${error.message}`);
     }
-  }
+  };
 
-  // Fungsi untuk memproses update (untuk APP dan CYBER)
+  // Fungsi untuk memproses update
   const handleUpdate = async () => {
-    setIsNewVersionModalOpen(false)
-    setIsUpdateProgressModalOpen(true)
-
-    const url =
-      updateType === 'app' ? `${BASE_URL}${UPDATE_APP_URL}` : `${BASE_URL}${UPDATE_Cyber_URL}`
+    setIsNewVersionModalOpen(false);
+    setIsUpdateProgressModalOpen(true);
+    const url = updateType === 'app' ? `${BASE_URL}${UPDATE_APP_URL}` : `${BASE_URL}${UPDATE_CYBER_URL}`;
 
     try {
       const response = await fetch(url, {
@@ -111,49 +138,39 @@ const OTA = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({})
-      })
+      });
 
       if (!response.ok) {
-        throw new Error(`Network response was not ok. Status: ${response.status}`)
+        throw new Error(`Network response was not ok. Status: ${response.status}`);
       }
 
-      const data = await response.json()
+      const data = await response.json();
 
       if (updateType === 'app') {
-        // Pastikan response update sesuai
         if (
           data.message === 'updated app successfully.' &&
           data.download_output === 'Checked out to latest tag.'
         ) {
-          // Panggil pengecekan FE hanya setelah update dikonfirmasi
-          window.electron.ipcRenderer.send('start-fe-update')
-          window.electron.ipcRenderer.once('fe-update-status', (feStatus) => {
-            if (feStatus.updateAvailable) {
-              console.log('FE update available:', feStatus)
-            } else {
-              console.log('FE sudah up to date.')
-            }
-          })
+          // Mengirimkan event untuk memulai download update
+          window.electron.ipcRenderer.send('download-update', data);
         } else {
-          throw new Error(data.message || 'Update gagal')
+          throw new Error(data.message || 'Update failed');
         }
+      } else if (data.message === 'Cyber version and IOCs updated successfully.') {
+        setIsUpdateProgressModalOpen(false);
       } else {
-        if (data.message === 'Cyber version and IOCs updated successfully.') {
-          setIsUpdateProgressModalOpen(false)
-        } else {
-          throw new Error(data.message || 'Cyber update failed')
-        }
+        throw new Error(data.message || 'Cyber update failed');
       }
     } catch (error) {
-      console.error(`Error updating ${updateType} version:`, error)
-      setIsUpdateProgressModalOpen(false)
-      alert(`Failed to update ${updateType} version. Error: ${error.message}`)
+      console.error(`Error updating ${updateType} version:`, error);
+      setIsUpdateProgressModalOpen(false);
+      alert(`Failed to update ${updateType} version. Error: ${error.message}`);
     }
-  }
+  };
 
   return (
     <div
-      className="w-full h-screen relative bg-cover flex flex-col items-center justify-center"
+      className="w-full h-screen relative bg-cover flex flex-col items-center "
       style={{ backgroundImage: `url(${bgDarkmode})` }}
     >
       {/* Tombol Back */}
@@ -161,82 +178,37 @@ const OTA = () => {
         <img src={backIcon} alt="Back Icon" className="w-[48px] h-[48px]" />
       </button>
 
-      <h1 className="text-white text-3xl font-semibold mb-10">OTA</h1>
+      <h1 className="text-white text-3xl font-semibold mt-10 mb-10">OTA</h1>
 
-      {/* APP & CYBER Section */}
+      {/* Section APP & CYBER */}
       <div className="w-[1022px] h-[222px] relative border-2 border-y-[#0C9A8D] border-x-[#05564F] bg-gradient-to-b from-[#091817] to-[#0C1612] flex justify-around items-center mb-8">
         <img src={plusSign} alt="Plus Sign" className="absolute top-[-14px] left-[-13px] w-6 h-6" />
-        <img
-          src={plusSign}
-          alt="Plus Sign"
-          className="absolute bottom-[-12px] right-[-12px] w-6 h-6"
-        />
+        <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-12px] right-[-12px] w-6 h-6" />
 
-        {/* APP Box */}
-        <div
-          className="w-[403px] h-[123px] bg-cover bg-no-repeat border border-[#05564F] flex flex-col justify-center items-center bg-gradient-to-b from-[#0C1E1B] to-[#0C1612]"
-          style={{ backgroundImage: `url(${Border})` }}
-        >
-          <h2 className="text-white text-lg mb-2">
-            APP {''}
-            {versionData && versionData.app_versions.length > 0
+        <UpdateBox
+          title="APP"
+          version={
+            versionData && versionData.app_versions.length > 0
               ? versionData.app_versions[0].app_version
-              : 'Loading version data...'}
-          </h2>
-          <button
-            onClick={() => checkUpdate('app')}
-            className="text-white py-1 px-4"
-            style={{
-              backgroundImage: `url(${UpdateBorder})`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              width: '228px',
-              height: '37px',
-              color: '#FFFFFF'
-            }}
-          >
-            CHECK UPDATE
-          </button>
-        </div>
-
-        {/* CYBER Box */}
-        <div
-          className="w-[403px] h-[123px] bg-cover bg-no-repeat border border-[#05564F] flex flex-col justify-center items-center bg-gradient-to-b from-[#0C1E1B] to-[#0C1612]"
-          style={{ backgroundImage: `url(${Border})` }}
-        >
-          <h2 className="text-white text-lg mb-2">
-            CYBER v.
-            {versionData && versionData.cyber_versions.length > 0
+              : null
+          }
+          onCheckUpdate={() => checkUpdate('app')}
+        />
+        <UpdateBox
+          title="CYBER v."
+          version={
+            versionData && versionData.cyber_versions.length > 0
               ? versionData.cyber_versions[0].cyber_version
-              : 'Loading version data...'}
-          </h2>
-          <button
-            onClick={() => checkUpdate('cyber')}
-            className="text-white py-1 px-4"
-            style={{
-              backgroundImage: `url(${UpdateBorder})`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              width: '228px',
-              height: '37px',
-              color: '#FFFFFF'
-            }}
-          >
-            CHECK UPDATE
-          </button>
-        </div>
+              : null
+          }
+          onCheckUpdate={() => checkUpdate('cyber')}
+        />
       </div>
 
-      {/* UPDATE LOG Section */}
+      {/* Section Update Log */}
       <div className="w-[1022px] h-[444px] relative border-2 border-y-[#0C9A8D] border-x-[#05564F] bg-gradient-to-b from-[#091817] to-[#0C1612] p-6">
         <img src={plusSign} alt="Plus Sign" className="absolute top-[-14px] left-[-13px] w-6 h-6" />
-        <img
-          src={plusSign}
-          alt="Plus Sign"
-          className="absolute bottom-[-12px] right-[-12px] w-6 h-6"
-        />
+        <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-12px] right-[-12px] w-6 h-6" />
 
         <div className="flex justify-between items-center px-10 py-4 border-b border-[#05564F]">
           <h3 className="text-white text-xl font-semibold">Version Release</h3>
@@ -275,12 +247,11 @@ const OTA = () => {
         </div>
       </div>
 
-      {/* Modal Update (Loading) */}
+      {/* Modals */}
       {isUpdateModalOpen && (
         <UpdateModal onClose={() => setIsUpdateModalOpen(false)} updateData={updateData} />
       )}
 
-      {/* Modal New Version */}
       {isNewVersionModalOpen && (
         <NewVersionModal
           onClose={() => setIsNewVersionModalOpen(false)}
@@ -289,7 +260,6 @@ const OTA = () => {
         />
       )}
 
-      {/* Modal Update Progress */}
       {isUpdateProgressModalOpen && (
         <UpdateProgress
           onClose={() => setIsUpdateProgressModalOpen(false)}
@@ -306,7 +276,7 @@ const OTA = () => {
         <span className="text-2xl">i</span>
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default OTA
+export default OTA;

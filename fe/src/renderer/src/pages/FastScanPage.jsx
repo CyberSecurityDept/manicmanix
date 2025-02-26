@@ -1,13 +1,32 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import modalBackground from '../assets/border/bawah-scanning.svg'
 import ArrowPattern from '../components/ArrowPattern'
 import CancelModal from '../components/modal/Cancel'
+import ReconnectModel from '../components/modal/Reconnect'
 import bgImage from '../assets/bg-darkmode.png'
 import plusSign from '../assets/plus-sign.svg'
 import buttonViewMore from '../assets/border/view-more.svg'
 import buttonCancel from '../assets/border/cancel.svg'
+
+// Fungsi helper untuk memformat datetime
+const formatDate = (datetimeString) => {
+  if (!datetimeString || !datetimeString.includes(' ')) {
+    return 'Unknown'
+  }
+  const [datePart] = datetimeString.split(' ')
+  const [year, month, day] = datePart.split('-')
+  return `${day}/${month}/${year}`
+}
+
+const formatTime = (datetimeString) => {
+  if (!datetimeString || !datetimeString.includes(' ')) {
+    return 'Unknown'
+  }
+  const [, timePart] = datetimeString.split(' ')
+  const [hours, minutes] = timePart.split(':')
+  return `${hours}:${minutes}`
+}
 
 // Mengambil BASE_URL dari environment variables
 const BASE_URL = import.meta.env.VITE_BASE_URL
@@ -20,28 +39,20 @@ const FastScanPage = () => {
   const [scanComplete, setScanComplete] = useState(false)
   const [showAllLogs, setShowAllLogs] = useState(false)
   const [serialNumber, setSerialNumber] = useState(null)
+  // State untuk modal reconnect
+  const [showReconnectModal, setShowReconnectModal] = useState(false)
+  const [reconnectTriggered, setReconnectTriggered] = useState(false)
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const openModal = () => setIsModalOpen(true)
+  const closeModal = () => setIsModalOpen(false)
 
   const handleCancelScanning = () => {
-    setIsModalOpen(false);
-    navigate('/');
-  };
+    setIsModalOpen(false)
+    navigate('/')
+  }
 
+  // Ambil serial_number dari localStorage sekali
   useEffect(() => {
-    // Mengambil serial_number dari localStorage
-    const savedSerialNumber = localStorage.getItem('serial_number');
-    if (savedSerialNumber) {
-      setSerialNumber(savedSerialNumber);
-    } else {
-      console.error('Serial number not found in localStorage.');
-      navigate('/'); // Pindah ke halaman lain jika serial_number tidak ada
-    }
-  }, [navigate]);
-
-  useEffect(() => {
-    // Mengambil serial_number dari localStorage
     const savedSerialNumber = localStorage.getItem('serial_number')
     if (savedSerialNumber) {
       setSerialNumber(savedSerialNumber)
@@ -51,8 +62,9 @@ const FastScanPage = () => {
     }
   }, [navigate])
 
+  // Interval untuk cek progress fast scan
   useEffect(() => {
-    let interval // Declare interval variable
+    let interval // Simpan reference interval
 
     const fetchScanProgress = async () => {
       if (!serialNumber) return // Tunggu sampai serialNumber tersedia
@@ -65,38 +77,57 @@ const FastScanPage = () => {
           setScanComplete(data.data.scan_complete)
           setLogData(data.data.log_process)
 
-          // Jika progress sudah mencapai 100%, hentikan interval
+          // Jika terdapat error reconnect dan belum pernah dipicu, tampilkan modal reconnect
+          if (
+            !reconnectTriggered &&
+            data.data.log_process.some(
+              (entry) =>
+                entry.log.includes(
+                  'Unable to connect to the device over USB. Try to unplug, plug the device and start again.'
+                ) || entry.log.includes('No device found. Make sure it is connected and unlocked.')
+            )
+          ) {
+            setReconnectTriggered(true)
+            setShowReconnectModal(true)
+            // Setelah 5 detik, tutup modal reconnect dan navigasikan ke halaman device-info
+            setTimeout(() => {
+              setShowReconnectModal(false)
+              navigate('/device-info')
+            }, 5000)
+          }
+
+          // Jika progress sudah 100%, hentikan interval
           if (data.data.scan_percentage === 100) {
             clearInterval(interval)
           }
         } else {
-          console.error('Failed to fetch scan progress');
+          console.error('Failed to fetch scan progress')
         }
       } catch (error) {
-        console.error('Error fetching scan progress:', error);
+        console.error('Error fetching scan progress:', error)
       }
     }
 
-    // Mulai interval jika serial_number sudah ada
+    // Mulai interval jika serialNumber sudah ada
     if (serialNumber) {
       const delay = setTimeout(() => {
         interval = setInterval(fetchScanProgress, 3000) // Panggil API setiap 3 detik
-      }, 2000) // Delay sebelum memulai fetch API
+      }, 2000) // Delay 2 detik sebelum memulai fetch API
 
       return () => {
-        clearInterval(interval) // Clean up interval on component unmount
-        clearTimeout(delay) // Clean up timeout on component unmount
+        clearInterval(interval)
+        clearTimeout(delay)
       }
     }
-  }, [serialNumber]) // Jalankan efek saat serialNumber tersedia
+  }, [serialNumber, reconnectTriggered, navigate])
 
+  // Pindah ke halaman hasil fast scan jika progress 100%
   useEffect(() => {
     if (progress === 100) {
       const delayTimeout = setTimeout(() => {
         navigate('/result-fast')
-      }, 1000) // Delay 1 detik sebelum pindah ke halaman 'result-fast-scan'
-
-      return () => clearTimeout(delayTimeout);
+      }, 1000)
+      return () => clearTimeout(delayTimeout)
     }
   }, [progress, navigate])
 
@@ -111,6 +142,9 @@ const FastScanPage = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
+      {/* Modal Reconnect */}
+      {showReconnectModal && <ReconnectModel onClose={() => setShowReconnectModal(false)} />}
+
       <div className="text-center">
         <h1 className="text-2xl font-bold">
           Please do not unplug your device. This process will take a little time.
@@ -150,8 +184,8 @@ const FastScanPage = () => {
               }`}
               style={{
                 transition: 'max-height 0.1s ease-in-out',
-                overflowY: 'auto', // Allow vertical scrolling
-                overflowX: 'hidden' // Prevent horizontal scrolling
+                overflowY: 'auto',
+                overflowX: 'hidden'
               }}
             >
               {logData.length === 0 ? (
@@ -161,17 +195,24 @@ const FastScanPage = () => {
                   {logData
                     .slice()
                     .reverse()
-                    .map(
-                      (
-                        log,
-                        i // Reverse the order of logs
-                      ) => (
-                        <div key={i} className="flex justify-between py-2 px-4">
-                          <span className="w-1/4 text-left">{log.datetime}</span>
-                          <span className="w-3/4 text-right">{log.log}</span>
+                    .map((log, i) => {
+                      const dateFormatted = formatDate(log.datetime)
+                      const timeFormatted = formatTime(log.datetime)
+                      return (
+                        <div key={i} className="flex py-2 px-4">
+                          {/* Kolom Date */}
+                          <span className="w-[120px] text-left">{dateFormatted}</span>
+                          {/* Kolom Time */}
+                          <span className="w-[60px] text-center whitespace-nowrap">
+                            {timeFormatted}
+                          </span>
+                          {/* Kolom Log */}
+                          <span className="flex-1 text-right whitespace-normal break-words">
+                            {log.log}
+                          </span>
                         </div>
                       )
-                    )}
+                    })}
                 </div>
               )}
             </div>
@@ -209,7 +250,7 @@ const FastScanPage = () => {
 
       {isModalOpen && <CancelModal onClose={closeModal} onConfirm={handleCancelScanning} />}
     </div>
-  );
+  )
 }
 
-export default FastScanPage;
+export default FastScanPage

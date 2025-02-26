@@ -20,6 +20,8 @@ const FullScanPage = () => {
   const [scanComplete, setScanComplete] = useState(false)
   const [showAllLogs, setShowAllLogs] = useState(false)
   const [serialNumber, setSerialNumber] = useState(null)
+  const [showReconnectModal, setShowReconnectModal] = useState(false)
+  const [reconnectTriggered, setReconnectTriggered] = useState(false)
 
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
@@ -27,6 +29,24 @@ const FullScanPage = () => {
   const handleCancelScanning = () => {
     setIsModalOpen(false)
     navigate('/')
+  }
+
+  const formatDate = (datetimeString) => {
+    if (!datetimeString || !datetimeString.includes(' ')) {
+      return 'Unknown'
+    }
+    const [datePart] = datetimeString.split(' ')
+    const [year, month, day] = datePart.split('-')
+    return `${day}/${month}/${year}`
+  }
+
+  const formatTime = (datetimeString) => {
+    if (!datetimeString || !datetimeString.includes(' ')) {
+      return 'Unknown'
+    }
+    const [, timePart] = datetimeString.split(' ')
+    const [hours, minutes] = timePart.split(':')
+    return `${hours}:${minutes}`
   }
 
   useEffect(() => {
@@ -149,6 +169,9 @@ const FullScanPage = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
+      {/* Modal Reconnect */}
+      {showReconnectModal && <ReconnectModel onClose={() => setShowReconnectModal(false)} />}
+
       <div className="text-center">
         <h1 className="text-2xl font-bold">
           Please do not unplug your device. This process will take a little time.
@@ -199,17 +222,23 @@ const FullScanPage = () => {
                   {logData
                     .slice()
                     .reverse()
-                    .map(
-                      (
-                        log,
-                        i // Reverse the order of logs
-                      ) => (
+                    .map((log, i) => {
+                      const dateFormatted = formatDate(log.datetime)
+                      const timeFormatted = formatTime(log.datetime)
+
+                      return (
                         <div key={i} className="flex justify-between py-2 px-4">
-                          <span className="w-1/4 text-left">{log.datetime}</span>
-                          <span className="w-3/4 text-right">{log.log}</span>
+                          {/* Bagian Date */}
+                          <span className="w-[120px] text-left">{dateFormatted}</span>
+
+                          {/* Bagian Time */}
+                          <span className="w-[60px] text-center">{timeFormatted}</span>
+
+                          {/* Bagian Log */}
+                          <span className="flex-1 text-right">{log.log}</span>
                         </div>
                       )
-                    )}
+                    })}
                 </div>
               )}
             </div>

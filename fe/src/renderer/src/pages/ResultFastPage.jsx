@@ -7,7 +7,7 @@ import plusSign from '../assets/plus-sign.svg'
 import RemoveModal from '../components/modal/Delete'
 import CompleteModal from '../components/modal/Complete'
 import DeleteProgressModal from '../components/modal/DeleteProgress'
-import AfterCompleteModal from '../components/modal/AfterCompleteModal'
+import AfterCompleteModal from '../components/modal/AfterComplete'
 import removeButtonImage from '../assets/border/remove-button.svg'
 import bgGood from '../assets/border/percentage-good.svg'
 import bgAverage from '../assets/border/percentage-average.svg'
@@ -249,11 +249,11 @@ const ResultFastPage = () => {
 
   return (
     <div
-      className="h-screen w-screen flex flex-col items-center relative font-aldrich"
+      className="h-screen w-screen flex flex-col items-center justify-center relative font-aldrich"
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover' }}
     >
       {/* Security Percentage Section */}
-      <div className="flex flex-col items-center justify-center space-y-2 mt-2 relative">
+      <div className="flex flex-col items-center justify-center space-y-2 relative">
         <h2 className="text-4xl font-bold text-white">Security Percentage</h2>
         <div
           className="relative flex items-center justify-center"

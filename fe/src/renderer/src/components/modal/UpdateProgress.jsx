@@ -7,7 +7,8 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
 
   useEffect(() => {
     if (updateType === 'cyber') {
-      // Untuk update cyber tetap sama.
+      // Untuk update cyber:
+      // Jika data menunjukkan update berhasil, langsung set progress ke 100% dan tutup modal.
       if (
         cyberData &&
         cyberData.message === "Cyber version and IOCs updated successfully."
@@ -18,6 +19,7 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
         }, 1000)
         return () => clearTimeout(timeout)
       }
+      // Jika belum, simulasikan progress dengan interval 1 detik.
       const interval = setInterval(() => {
         setProgress((prevProgress) => {
           const newProgress = prevProgress + 5
@@ -33,7 +35,8 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
       }, 1000)
       return () => clearInterval(interval)
     } else {
-      // Untuk update app, simulasi progress dengan interval dan tangani event fe-update-downloaded
+      // Untuk update app:
+      // Simulasikan progress dengan interval 500ms.
       let simulationInterval = setInterval(() => {
         setProgress((prevProgress) => {
           const newProgress = prevProgress + 5
@@ -47,10 +50,11 @@ const UpdateProgress = ({ onClose, updateType, cyberData }) => {
           }
           return newProgress
         })
-      }, 500) // Interval tiap 500ms
+      }, 500)
   
+      // Jika event 'fe-update-downloaded' diterima, hentikan simulasi dan trigger quit-and-install.
       const handleDownloaded = () => {
-        clearInterval(simulationInterval) 
+        clearInterval(simulationInterval)
         setProgress(100)
         setTimeout(() => {
           window.electron.ipcRenderer.send('quit-and-install')

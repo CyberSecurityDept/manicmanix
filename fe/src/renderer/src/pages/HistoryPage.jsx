@@ -127,7 +127,7 @@ const HistoryPage = () => {
 
   return (
     <div
-      className="h-screen w-screen flex flex-col justify-center items-center relative text-white font-aldrich"
+      className="h-screen w-screen flex flex-col  items-center relative text-white font-aldrich"
       style={{
         backgroundImage: `url(${bgDarkmode})`,
         backgroundSize: 'cover',
@@ -143,9 +143,9 @@ const HistoryPage = () => {
         <img src={backIcon} alt="Back Icon" className="w-10 h-10" />
       </button>
 
-      <h2 className="text-3xl font-semibold absolute top-[80px]">HISTORY</h2>
+      <h2 className="text-3xl font-semibold absolute top-[50px]">HISTORY</h2>
 
-      <div className="relative mt-[92px] w-[1283px]">
+      <div className="relative mt-36 w-[1283px]">
         {/* Input Search */}
         <div className="absolute top-[-52px] right-[10px]">
           <input

@@ -12,7 +12,7 @@ function createWindow() {
     height: 670,
     show: true,
     fullscreen: true,
-    frame: true,
+    frame: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
@@ -57,6 +57,10 @@ function createWindow() {
   }
 
   // --- Integrasi electron-updater untuk FE ---
+  
+  // Matikan auto download
+  autoUpdater.autoDownload = false;
+
   ipcMain.on('start-fe-update', async () => {
     try {
       console.log('Memeriksa pembaruan...');
@@ -84,8 +88,13 @@ function createWindow() {
       });
     }
   });
-  
 
+  // Listener untuk memulai download update secara manual
+  ipcMain.on('download-update', () => {
+    console.log('Memulai download update...');
+    autoUpdater.downloadUpdate();
+  });
+  
   // Kirim progress download update FE ke renderer
   autoUpdater.on('download-progress', (progressObj) => {
     mainWindow.webContents.send('fe-update-progress', progressObj)
