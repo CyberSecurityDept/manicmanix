@@ -118,7 +118,7 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
                 "package_name": activity.get("package_name", "unknown"),
                 "date_time": datetime.now().isoformat(),
                 "type": "Application",
-                "source_path": 'tes'
+                "source_path": threat.get("source_path")
             }
             updated_threats.append(threat)
 
