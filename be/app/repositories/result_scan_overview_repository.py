@@ -65,6 +65,7 @@ class ResultScanOverviewRepository:
         # Menghitung file media yang ada di direktori media_category
         for file_name in file_in_media:
             file_extension = file_name.split(".")[-1].lower() if "." in file_name else ""
+            print(file_name, 'media masuk')
             if file_extension in FILE_CATEGORIES['media']:
                 scan_overview["scan_overview"]["media"]["scanned"] += 1
         
@@ -96,27 +97,54 @@ class ResultScanOverviewRepository:
                             file_category = 'documents'
                         elif any(file_name.lower().endswith(f".{ext}") for ext in FILE_CATEGORIES['media']):
                             file_category = 'media'
-                    
                     # Menambahkan jumlah file yang discan
                     if file_category:
                         scan_overview["scan_overview"][file_category]["scanned"] += 1
+                        print(file_name, 'sama harusnya')
                     else:
                         logger.error(f"File {file_name} tidak memiliki kategori yang dikenali")
                     
                     # Jika file malicious, tambahkan ke ancaman
+                    
                     if is_malicious:
                         scan_overview["scan_overview"][file_category]["threats"] += 1
-                        # Menentukan source_path
-                        if file_category in ['documents', 'media', 'installer']:
-                            source_path = os.path.join(base_path, file_name)
-                        else:
+                        
+                        # Menentukan source_path dari isolated.json
+                        try:
+                            device_serials = Data_Pulling.get_device_serials()
+                            device = device_serials[0]
+                            isolated_data = Data_Pulling.get_isolated_data(device)
                             source_path = None
+                            
+                            # Cari path berdasarkan file_category atau file_name
+                            if file_category in isolated_data:
+                                category_data = isolated_data[file_category]
+                                for item in category_data:
+                                    # Normalisasi nama file untuk memastikan case-insensitive
+                                    if item["name"].lower() == file_name.lower():
+                                        source_path = item.get("local_path", None)
+                                        print(f"Match found: {file_name} -> {source_path}")
+                                        break
+                            
+                            # Jika tidak ditemukan, gunakan fallback path
+                            if source_path is None:
+                                source_path = "unknown"
+                                print(f"Fallback path used for {file_name}: {source_path}")
+
+                        except FileNotFoundError as e:
+                            print(f"File tidak ditemukan: {e}")
+                        except ValueError as e:
+                            print(f"Error: {e}")
+                        except Exception as e:
+                            print(f"Error tak terduga saat membaca isolated.json: {e}")
+
+                        # Tambahkan ancaman ke daftar threats
                         scan_overview["threats"].append({
                             "name": file_name,
                             "package_name": file_name.split(".")[0] if "." in file_name else "",
                             "date_time": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
                             "type": file_category.capitalize(),
-                            "source_path" : source_path
+                            "source_path": source_path
                         })
             except Exception as e:
                 logger.error(f"Error memproses hasil pemindaian untuk file {names[0] if names else 'unknown'}: {e}")
