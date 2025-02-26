@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import modalBackground from '../assets/border/bawah-scanning.svg'
 import ArrowPattern from '../components/ArrowPattern'
 import CancelModal from '../components/modal/Cancel'
+import ReconnectModel from '../components/modal/Reconnect'
 import bgImage from '../assets/bg-darkmode.png'
 import plusSign from '../assets/plus-sign.svg'
 import buttonViewMore from '../assets/border/view-more.svg'
@@ -73,6 +74,25 @@ const FullScanPage = () => {
           setProgress(parseInt(data.data.scan_percentage))
           setScanComplete(data.data.scan_complete)
           setLogData(data.data.log_process)
+
+           // Jika terdapat error reconnect dan belum pernah dipicu, tampilkan modal reconnect
+           if (
+            !reconnectTriggered &&
+            data.data.log_process.some(
+              (entry) =>
+                entry.log.includes(
+                  'Unable to connect to the device over USB. Try to unplug, plug the device and start again.'
+                ) || entry.log.includes('No device found. Make sure it is connected and unlocked.')
+            )
+          ) {
+            setReconnectTriggered(true)
+            setShowReconnectModal(true)
+            // Setelah 5 detik, tutup modal reconnect dan navigasikan ke halaman device-info
+            setTimeout(() => {
+              setShowReconnectModal(false)
+              navigate('/device-info')
+            }, 5000)
+          }
 
           // Jika progress sudah mencapai 100%, hentikan interval
           if (data.data.scan_percentage === 100) {
