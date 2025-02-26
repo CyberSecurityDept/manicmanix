@@ -420,7 +420,7 @@ const ResultFullScanPage = () => {
           </div>
           <div>
             <p className="font-semibold text-white">Last Scan Percentage</p>
-            {lastScanPercentage !== null ? (
+            {Math.round(lastScanPercentage) !== null ? (
               <p
                 className="text-green-400 mt-1 font-bold"
                 style={{ color: lastPercentageStyle.color }}
