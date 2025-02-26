@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, HTTPException, status
 from typing import List
 from celery.result import AsyncResult
 import sqlite3
@@ -60,9 +60,25 @@ def scan_files(request: ScanFilesRequest):
     return {"task_ids": [task.id for task in tasks]}
 
 
-
-
-
+@app.get("/api-keys/count")
+def get_api_keys_count():
+    try:
+        conn = get_db_connection()
+        data = conn.execute("SELECT COUNT(*) FROM api_keys").fetchone()[0]
+        conn.close()
+        return {"Message": "Jumlah API keys", "status": status.HTTP_200_OK, "data": data}
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Error: {str(e)}")
+    
+@app.get("/api-keys/active-count")
+def get_api_keys_active_count():
+    try:
+        conn = get_db_connection()
+        data = conn.execute("SELECT COUNT(*) FROM api_keys WHERE status = ?", ('active',)).fetchone()[0]
+        conn.close()
+        return {"Message": "Total API keys active", "status": status.HTTP_200_OK, "data": data}
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Error: {str(e)}")
 
 # masalah : 
 # 1. endpoint task-status masih ada di web localhost
