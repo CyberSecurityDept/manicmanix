@@ -6,6 +6,7 @@ import json
 from typing import List, Dict
 from fastapi import HTTPException
 
+
 FILE_CATEGORIES = {
     'archive': [
         'zip', 'rar', '7z', 'tar', 'gz',
