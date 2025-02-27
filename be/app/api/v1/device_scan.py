@@ -11,6 +11,7 @@ import aiohttp
 import httpx
 import subprocess
 
+
 from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException, BackgroundTasks, Query
@@ -348,12 +349,7 @@ async def full_scan(serial_number: str, name: str, background_tasks: BackgroundT
             "scan_type": "full",
             "last_scan": start_time,
         }
-        DeviceOverviewService.update_device_overview(serial_number, device_data)
-        
-        """
-        Menambahkan hasil full-scan ke file output-scan/history_scan.json
-        """
-        
+        DeviceOverviewService.update_device_overview(serial_number, device_data)    
         history_scan_path = BASE_SCAN_PATH / "history_scan.json"
         
         
@@ -517,9 +513,6 @@ async def full_scan(serial_number: str, name: str, background_tasks: BackgroundT
             )
             
 def get_last_scan_percentage(serial_number: str, current_timestamp: str) -> str:
-    """
-    Mendapatkan security_percentage dari scan sebelumnya
-    """
     try:
         # Path ke direktori scan untuk serial number tertentu
         base_scan_dir = BASE_SCAN_PATH / "full-scan" / serial_number
@@ -790,23 +783,23 @@ def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
             file_paths = []
             for root, _, files in os.walk(directory):
                 for file in files:
-                    
                     relative_path = os.path.relpath(os.path.join(root, file), directory)
-                    
                     formatted_path = f"/app/uploaded_files/{serial_number}/{relative_path}"
-                    file_paths.append(formatted_path)
+                    file_paths.append(os.path.join(directory, relative_path))
             return file_paths
 
         check_isolated = get_all_files(isolated_folder, serial_number)
         batch_size = 92
         batches = [check_isolated[i:i + batch_size] for i in range(0, len(check_isolated), batch_size)]
-        all_scan_results = {
-            "task_ids": []
-        }
+        all_scan_results = {"task_ids": []}
 
         for i, batch in enumerate(batches, 1):
+            # Kirim file ke server
+            send_files_to_server(serial_number, batch)
+
+            # Kirim batch ke server vtrotasi
             scan_url = f"{os.getenv('DOCKER_URL')}scan-files"
-            payload = {"file_paths": batch}
+            payload = {"file_paths": [f"/uploaded_files/{os.path.basename(file)}" for file in batch]}
             headers = {
                 "accept": "application/json",
                 "Content-Type": "application/json"
@@ -817,15 +810,11 @@ def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
             if vtrotasi_response.status_code == 200:
                 response_data = vtrotasi_response.json()
                 logger.info(f"Request scan batch ke-{i} berhasil: {response_data}")
-                
-                
-                if "task_ids" in response_data:
-                    all_scan_results["task_ids"].extend(response_data["task_ids"])
+                all_scan_results["task_ids"].extend(response_data["task_ids"])
             else:
                 logger.error(f"Error saat request scan batch ke-{i}: {vtrotasi_response.status_code} - {vtrotasi_response.text}")
                 raise Exception(f"Request scan batch ke-{i} gagal: {vtrotasi_response.status_code} - {vtrotasi_response.text}")
 
-            
             if i < len(batches):
                 logger.info(f"Menunggu 65 detik sebelum mengirim batch berikutnya...")
                 time.sleep(65)
@@ -837,6 +826,22 @@ def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
         logger.error(f"Error dalam perform_deep_scan: {e}")
         raise Exception(f"Gagal melakukan deep scan: {e}")
 
+def send_files_to_server(serial_number: str, file_paths: List[str]):
+    try:
+        upload_url = f"{os.getenv('DOCKER_URL')}upload-files/"
+        files = [("files", open(file_path, "rb")) for file_path in file_paths]
+        payload = {"serial_number": serial_number}
+
+        response = requests.post(upload_url, files=files, data=payload, timeout=60)
+
+        if response.status_code == 200:
+            logger.info(f"File berhasil diunggah ke server: {response.json()}")
+        else:
+            logger.error(f"Gagal mengunggah file ke server: {response.status_code} - {response.text}")
+            raise Exception(f"Request upload gagal: {response.status_code} - {response.text}")
+    except Exception as e:
+        logger.error(f"Error saat mengirim file ke server: {e}")
+        raise Exception(f"Gagal mengirim file ke server: {e}")
 
 def process_scan_result(scan_result_file: str):
     try:
@@ -851,9 +856,7 @@ def process_scan_result(scan_result_file: str):
         
         task_ids = scan_result.get("task_ids", [])
         logger.info(f"Menemukan {len(task_ids)} task_ids: {task_ids}")
-        
-
-        
+                
         result_dir = os.path.join(os.path.dirname(scan_result_file), "task_result")
         os.makedirs(result_dir, exist_ok=True)
         logger.info(f"Menyimpan hasil response /task-result di direktori: {result_dir}")
