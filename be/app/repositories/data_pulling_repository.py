@@ -6,7 +6,6 @@ import json
 from typing import List, Dict
 from fastapi import HTTPException
 
-
 FILE_CATEGORIES = {
     'archive': [
         'zip', 'rar', '7z', 'tar', 'gz',
@@ -65,16 +64,31 @@ class Data_Pulling:
 
     @staticmethod
     def pull_files_from_android(serial: str, user: str) -> str:
+        """
+        Mengambil file dari perangkat Android berdasarkan user dan menyimpannya di folder tujuan.
+        File-file tersebut akan disortir berdasarkan ekstensi dan dipindahkan ke folder yang sesuai.
+
+        :param serial: Serial number perangkat Android.
+        :param user: User ID pada perangkat Android.
+        :return: Pesan sukses atau error.
+        """
         try:
-            
+            # Path tujuan untuk menyimpan file yang di-pull dari perangkat Android
             dest_path = os.path.expanduser(f"{str(os.getenv('DESTINATION_FOR_DATA_PULLING'))}/{serial}")
-            os.makedirs(dest_path, exist_ok=True)  
+            os.makedirs(dest_path, exist_ok=True)  # Buat folder jika belum ada
 
-            
+            # Path untuk menyimpan file yang diisolasi (APK, dokumen, dll)
+            isolated_path = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial}")
+
+            # Bersihkan folder tujuan sebelum memproses file baru
+            if os.path.exists(isolated_path):
+                shutil.rmtree(isolated_path)
+            os.makedirs(isolated_path, exist_ok=True)
+
+            # Path sumber di perangkat Android (misalnya, /storage/emulated/0/)
             source_path = f"/storage/emulated/{user}/"
-            print(f"Source path: {source_path}")
 
-            
+            # Jalankan perintah ADB untuk menarik file dari perangkat Android
             result = subprocess.run(
                 ["adb", "-s", serial, "pull", "-a", source_path, dest_path, "--sync"],
                 capture_output=True, text=True, check=True
@@ -83,19 +97,19 @@ class Data_Pulling:
             # Path untuk folder installed_apps (file APK yang sudah di-pull sebelumnya)
             installed_apps_path = os.path.join(isolated_path, "installed_apps")
 
-            
+            # Daftar kategori folder untuk menyimpan file berdasarkan ekstensi
             categories = {
-                'installer': os.path.join(isolated_path, 'installer'),  
-                'documents': os.path.join(isolated_path, 'documents'),  
-                'archive': os.path.join(isolated_path, 'archive'),      
-                'media': os.path.join(isolated_path, 'media'),           
+                'installer': os.path.join(isolated_path, 'installer'),  # Folder untuk aplikasi (APK, EXE, dll)
+                'documents': os.path.join(isolated_path, 'documents'),  # Folder untuk dokumen (PDF, DOCX, dll)
+                'archive': os.path.join(isolated_path, 'archive'),      # Folder untuk arsip (ZIP, RAR, dll)
+                'media': os.path.join(isolated_path, 'media'),          # Folder untuk media (MP4, JPG, dll)
             }
 
-            
+            # Buat folder untuk setiap kategori jika belum ada
             for folder in categories.values():
                 os.makedirs(folder, exist_ok=True)
 
-            
+            # Dictionary untuk menyimpan informasi file
             file_info = {
                 'archive': [],
                 'documents': [],
@@ -104,38 +118,38 @@ class Data_Pulling:
                 'application': []
             }
 
-            
+            # Loop melalui semua file yang di-pull dari perangkat Android
             for root, _, files in os.walk(dest_path):
                 for file in files:
-                    
-                    file_extension = os.path.splitext(file)[1].lower().strip('.')  
+                    # Gunakan os.path.splitext untuk mendapatkan ekstensi file (misalnya, ".apk")
+                    file_extension = os.path.splitext(file)[1].lower().strip('.')  # Hapus tanda titik dari ekstensi
 
-                    
+                    # Tentukan kategori file berdasarkan ekstensi
                     category = None
                     for cat, extensions in FILE_CATEGORIES.items():
                         if file_extension in extensions:
-                            category = cat  
+                            category = cat  # Set kategori jika ekstensi cocok
                             break
 
-                    
+                    # Jika file termasuk dalam kategori yang ditentukan
                     if category:
                         file_path = os.path.join(root, file)  # Path lengkap file sumber
 
-                        
+                        # Periksa apakah file berada di folder installed_apps
                         if installed_apps_path in root:
                             print(f"File {file} berada di folder installed_apps. Mengabaikan.")
-                            continue  
+                            continue  # Lanjutkan ke file berikutnya jika file berada di installed_apps
 
-                        
-                        destination_folder = categories.get(category, isolated_path)  
-                        destination_file_path = os.path.join(destination_folder, file)  
+                        # Tentukan folder tujuan berdasarkan kategori
+                        destination_folder = categories.get(category, isolated_path)  # Default ke isolated_path jika kategori tidak ditemukan
+                        destination_file_path = os.path.join(destination_folder, file)  # Path lengkap file tujuan
 
-                        
+                        # Periksa apakah file sudah ada di folder tujuan
                         if os.path.exists(destination_file_path):
                             print(f"File {file} sudah ada di {destination_folder}. Mengabaikan duplikat.")
-                            continue  
+                            continue  # Lanjutkan ke file berikutnya jika file sudah ada
 
-                        
+                        # Pindahkan file ke folder tujuan
                         shutil.copy(file_path, destination_folder)
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
@@ -143,47 +157,46 @@ class Data_Pulling:
                         local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         print(f"Local path: {local_path}")
 
-                        
+                        # Tambahkan informasi file ke dictionary
                         file_info[category].append({
                             "name": file,
                             "local_path": local_path
                         })
                     elif category is None and file.endswith('.apk'):
-                        
-                        file_path = os.path.join(root, file)  
+                        # Jika file adalah APK tetapi tidak masuk ke kategori lain
+                        file_path = os.path.join(root, file)  # Path lengkap file sumber
 
-                        
+                        # Periksa apakah file berada di folder installed_apps
                         if installed_apps_path in root:
                             print(f"File {file} berada di folder installed_apps. Mengabaikan.")
-                            continue  
+                            continue  # Lanjutkan ke file berikutnya jika file berada di installed_apps
 
-                        
-                        destination_folder = os.path.join(isolated_path, 'application')  
-                        destination_file_path = os.path.join(destination_folder, file)  
+                        # Tentukan folder tujuan berdasarkan kategori
+                        destination_folder = os.path.join(isolated_path, 'application')  # Default ke folder application
+                        destination_file_path = os.path.join(destination_folder, file)  # Path lengkap file tujuan
 
-                        
+                        # Periksa apakah file sudah ada di folder tujuan
                         if os.path.exists(destination_file_path):
                             print(f"File {file} sudah ada di {destination_folder}. Mengabaikan duplikat.")
-                            continue  
+                            continue  # Lanjutkan ke file berikutnya jika file sudah ada
 
-                        
+                        # Pindahkan file ke folder tujuan
                         shutil.copy(file_path, destination_folder)
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
                         # Tentukan local_path di perangkat pengguna
                         local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
-                        print(f"Local path: {local_path}")
 
-                        
+                        # Tambahkan informasi file ke dictionary
                         file_info['application'].append({
                             "name": file,
                             "local_path": local_path
                         })
 
-            
+            # Print file_info untuk verifikasi
             print(json.dumps(file_info, indent=4))
 
-            
+            # Tulis data JSON ke file isolated.json di base_path
             json_file_path = os.path.join(isolated_path, "isolated.json")
             with open(json_file_path, "w") as json_file:
                 json.dump(file_info, json_file, indent=4)

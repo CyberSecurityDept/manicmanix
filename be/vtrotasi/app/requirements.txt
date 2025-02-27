@@ -5,3 +5,4 @@ redis
 uvicorn
 python-multipart
 flake8
+tenacity
