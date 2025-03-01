@@ -863,13 +863,13 @@ def categorize_files(file_paths: List[str]) -> Dict[str, List[str]]:
         "documents": []
     }
     for file_path in file_paths:
-        if file_path.lower().endswith((".zip", ".rar", ".tar", ".gz")):
+        if file_path.lower().endswith((".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz", ".iso", ".tgz", ".tbz2", ".lzma", ".cab", ".z", ".lz", ".lzo")):
             categories["archive"].append(file_path)
-        elif file_path.lower().endswith((".jpg", ".jpeg", ".png", ".gif", ".mp4", ".avi")):
+        elif file_path.lower().endswith((".mov", ".avi", ".mp4", ".mp3", ".mpeg", ".jpg", ".jpeg", ".png", ".svg", ".gif", ".webp", ".mkv", ".wav", ".ogg", ".wmv")):
             categories["media"].append(file_path)
-        elif file_path.lower().endswith((".apk", ".exe", ".msi")):
+        elif file_path.lower().endswith((".exe", ".msi", ".dmg", ".app", ".apk")):
             categories["installer"].append(file_path)
-        elif file_path.lower().endswith((".pdf", ".docx", ".xlsx", ".txt")):
+        elif file_path.lower().endswith((".pdf", ".doc", ".docx", ".xls", ".xlsx", ".txt")):
             categories["documents"].append(file_path)
         else:
             categories["documents"].append(file_path)
@@ -895,7 +895,7 @@ def process_scan_result(scan_result_file: str):
         
         for task_id in task_ids:
             try:
-                task_result_url = f"{os.getenv('DOCKER_URL')}task-result/{task_id}"
+                task_result_url = f"{os.getenv('DOCKER_URL')}task-status/{task_id}"
                 logger.info(f"Mengirim request ke {task_result_url}...")
                 
                 
@@ -903,10 +903,10 @@ def process_scan_result(scan_result_file: str):
                 
                 if task_response.status_code == 200:
                     response_data = task_response.json()
-                    result_value = response_data.get("response")
+                    result_value = response_data
 
                     
-                    file_path = response_data.get("file_path", "")
+                    file_path = response_data.get("result", {}).get("file_path", "")
                     if not file_path:
                         logger.warning(f"file_path tidak ditemukan untuk task {task_id}")
                         file_path = f"unknown_file_{task_id}"
