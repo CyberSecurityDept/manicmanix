@@ -10,7 +10,7 @@ import requests
 import aiohttp
 import httpx
 import subprocess
-
+import mimetypes
 
 from pathlib import Path
 from dotenv import load_dotenv
@@ -194,12 +194,12 @@ async def fast_scan(serial_number: str, name: str, background_tasks: BackgroundT
         output_dir = BASE_SCAN_PATH / "fast-scan" / serial_number / current_time
         output_dir.mkdir(parents=True, exist_ok=True)
         
-        # Buat file detail_result.json awal dengan menyertakan time_stamp
+        
         fast_scan_result_path = output_dir / "detail_result.json"
         initial_result = {
             "scan_id": scan_id,
             "serial_number": serial_number,
-            "time_stamp": current_time,  # time_stamp sesuai dengan nama folder
+            "time_stamp": current_time,  
             "name": name,
             "model": model,
             "imei1": imei1,
@@ -213,7 +213,7 @@ async def fast_scan(serial_number: str, name: str, background_tasks: BackgroundT
         with open(fast_scan_result_path, "w") as f:
             json.dump(initial_result, f, indent=4)
         
-        # Simpan entry ke history_scan.json (tambahkan juga time_stamp)
+        
         history_scan_path = BASE_SCAN_PATH / "history_scan.json"
         history_entries = []
         if history_scan_path.exists():
@@ -230,7 +230,7 @@ async def fast_scan(serial_number: str, name: str, background_tasks: BackgroundT
         new_entry = {
             "no": entry_no,
             "scan_id": scan_id,      
-            "time_stamp": current_time,  # sertakan time_stamp
+            "time_stamp": current_time,  
             "name": name,
             "model": model,
             "imei1": imei1,
@@ -245,7 +245,7 @@ async def fast_scan(serial_number: str, name: str, background_tasks: BackgroundT
         with open(history_scan_path, "w") as f:
             json.dump(history_entries, f, indent=4)
         
-        # Kirim data new_entry ke background task agar initial_data selalu tersedia
+        
         background_tasks.add_task(background_fast_scan, str(output_dir), serial_number, scan_id, new_entry)
         
         return {
@@ -256,7 +256,7 @@ async def fast_scan(serial_number: str, name: str, background_tasks: BackgroundT
     
     except Exception as e:
         error_message = str(e)
-        # Penanganan error (termasuk restart ADB) seperti sebelumnya...
+        
         if "Unable to connect to the device over USB" in error_message or "Device is busy" in error_message:
             logger.error("Detected connection or busy error. Restarting ADB server...")
             try:
@@ -406,7 +406,7 @@ async def full_scan(serial_number: str, name: str, background_tasks: BackgroundT
         output_dir.mkdir(parents=True, exist_ok=True)
         
         
-        # bagian ini untuk membuat detail_result.json
+        
         full_scan_result_path = output_dir / "detail_result.json"
         with open(full_scan_result_path, "w") as f:
             json.dump({
@@ -514,18 +514,18 @@ async def full_scan(serial_number: str, name: str, background_tasks: BackgroundT
             
 def get_last_scan_percentage(serial_number: str, current_timestamp: str) -> str:
     try:
-        # Path ke direktori scan untuk serial number tertentu
+        
         base_scan_dir = BASE_SCAN_PATH / "full-scan" / serial_number
         
         if not base_scan_dir.exists():
             logger.info(f"No previous scans found for serial number {serial_number}")
             return "0.0%"
         
-        # Dapatkan semua folder timestamp
-        timestamps = [d for d in os.listdir(base_scan_dir) if os.path.isdir(os.path.join(base_scan_dir, d))]
-        timestamps.sort(reverse=True)  # Sort descending
         
-        # Cari timestamp sebelumnya (yang bukan timestamp saat ini)
+        timestamps = [d for d in os.listdir(base_scan_dir) if os.path.isdir(os.path.join(base_scan_dir, d))]
+        timestamps.sort(reverse=True)  
+        
+        
         previous_timestamp = None
         for timestamp in timestamps:
             if timestamp != current_timestamp:
@@ -536,7 +536,7 @@ def get_last_scan_percentage(serial_number: str, current_timestamp: str) -> str:
             logger.info(f"No previous scan found before {current_timestamp}")
             return "0.0%"
         
-        # Baca file detail_result.json dari scan sebelumnya
+        
         previous_result_path = base_scan_dir / previous_timestamp / "detail_result.json"
         if not previous_result_path.exists():
             logger.warning(f"No detail_result.json found in previous scan directory: {previous_result_path}")
@@ -550,8 +550,9 @@ def get_last_scan_percentage(serial_number: str, current_timestamp: str) -> str:
         logger.error(f"Error reading last scan percentage: {e}")
         return "0.0%"
 def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
+    logger.info("output_dir", output_dir)
     try:
-        # Ambil data awal dari history_scan.json
+        
         history_scan_path = BASE_SCAN_PATH / "history_scan.json"
         initial_data = {}
         history_entries = []
@@ -572,10 +573,12 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
         logger.info(f"Last scan percentage: {last_scan_percentage}")
 
         logger.info(f"Starting full scan in directory: {output_dir}")
-        run_device_scan(output_dir)  
+        
+        logger.info(f'serial_number, output_dir ${serial_number, output_dir}')
         retrieved_files = retrieve_device_files(serial_number, output_dir)
         logger.info(f"Retrieved {len(retrieved_files)} files")
         
+        logger.info(f"serial_number, retrieved_files ${serial_number, retrieved_files}")
         scan_result = perform_deep_scan(serial_number, retrieved_files)
         logger.info("Deep scan completed")
         
@@ -593,7 +596,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
             logger.error(f"Error executing get_result: {get_result_error}")
         
         
-        # Hitung security percentage
+        
         task_result_dir = os.path.join(output_dir, "task_result")
         new_security_percentage = "0.0%"
         if os.path.exists(task_result_dir):
@@ -602,7 +605,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
             new_security_percentage = RiskRepository.calculate_security_percentage(task_results)
             logger.info(f"Calculated security percentage: {new_security_percentage}")
         
-        # === AMBIL NILAI scan_overview DARI FILE full-scan_result.json DI FOLDER DENGAN TIMESTAMP TERBARU ===
+        
         default_scan_overview = {
             "applications": {"scanned": 0, "threats": 0},
             "documents": {"scanned": 0, "threats": 0},
@@ -643,7 +646,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
 
         logger.info(f"Scan overview loaded: {scan_overview}")
         
-        # Buat full scan result dengan format yang diinginkan
+        
         full_scan_result_path = os.path.join(output_dir, "detail_result.json")
         logger.info(f"Creating full scan result at: {full_scan_result_path}")
         
@@ -671,7 +674,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
             json.dump(updated_data, f, indent=4)
         logger.info("Full scan result created")
         
-        # Update history scan
+        
         if history_scan_path.exists():
             logger.info("Updating history scan")
             updated = False
@@ -680,7 +683,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
                     entry["security_percentage"] = new_security_percentage
                     entry["last_scan_percentage"] = last_scan_percentage
                     entry["status"] = "completed"
-                    # Opsional: tambahkan overview ke history jika diperlukan
+                    
                     updated = True
                     break
 
@@ -706,58 +709,29 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
         except Exception as write_error:
             logger.error(f"Failed to write error status: {write_error}")
         raise
+
 def retrieve_device_files(serial_number: str, output_dir: str) -> list[str]:
     try:
-        
         os.makedirs(output_dir, exist_ok=True)
-        
-        
         pulling_service = dataPullingService()
-
         
-        if not Data_Pulling.check_adb_connected():
+        if not pulling_service.check_adb_connected():
             raise Exception(f"Device {serial_number} tidak terhubung dengan ADB")
+        device_serial = pulling_service.get_device_serials()
 
-        
-        device_serial = Data_Pulling.get_device_serials()
         if serial_number not in device_serial:
             raise Exception(f"Device dengan serial number {serial_number} tidak ditemukan")
-
-        user_ids = Data_Pulling.user_enum(serial_number)
+        
+        user_ids = pulling_service.user_enum(serial_number)
         if not user_ids:
             raise Exception(f"User tidak ditemukan pada device {serial_number}")
 
-        try:
-            
-            
-            base_apk_paths = Data_Pulling.get_base_apk(serial_number)
-            
-        
-            isolated_path = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial_number}/installed_apps")
-            os.makedirs(isolated_path, exist_ok=True)
-            
-            for package, apk_path in base_apk_paths.items():
-                package_folder = os.path.join(isolated_path, package)
-                os.makedirs(package_folder, exist_ok=True)
-
-                new_apk_name = f"{package}.apk"
-                new_apk_path = os.path.join(package_folder, new_apk_name)
-
-                shutil.move(apk_path, new_apk_path)
-                logger.info(f"berhasil menyimpan apk {package} di folder {new_apk_path}")
-
-        except Exception as e:
-            logger.error(f"ada Error ketika pulling apk : {e}") 
-            
         retrieved_files = []
-
         for user_id in user_ids:
             try:
                 
-                result = Data_Pulling.pull_files_from_android(serial_number, user_id)        
+                result = pulling_service.pull_files_from_android(serial_number, user_id)
                 logger.info(f"File berhasil di-pull untuk user {user_id}: {result}")
-
-                
                 user_path = os.path.join(output_dir, f"user_{user_id}")
                 for root, _, files in os.walk(user_path):
                     for file in files:
@@ -765,90 +739,147 @@ def retrieve_device_files(serial_number: str, output_dir: str) -> list[str]:
 
             except Exception as e:
                 logger.error(f"Error ketika pulling data untuk user {user_id}: {e}")
-                continue           
+                continue
 
         if not retrieved_files:
             logger.warning(f"Tidak ada data yang ter-pull dari device {serial_number}")
 
         return retrieved_files
+
     except Exception as e:
         logger.error(f"Terjadi Error di fungsi retrieve_device_files: {e}")
         raise Exception(f"Failed to retrieve files from device: {e}")
 
 def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
-    try:
-        isolated_folder = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial_number}")
-
-        def get_all_files(directory, serial_number):
-            file_paths = []
-            for root, _, files in os.walk(directory):
-                for file in files:
-                    relative_path = os.path.relpath(os.path.join(root, file), directory)
-                    formatted_path = f"/app/uploaded_files/{serial_number}/{relative_path}"
-                    file_paths.append(os.path.join(directory, relative_path))
-            return file_paths
-
-        check_isolated = get_all_files(isolated_folder, serial_number)
-        batch_size = 92
-        batches = [check_isolated[i:i + batch_size] for i in range(0, len(check_isolated), batch_size)]
-        all_scan_results = {"task_ids": []}
-
+    
+    APP_ISOLATED_DIR = os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL')
+    if not APP_ISOLATED_DIR:
+        raise EnvironmentError("Variabel lingkungan APP_ISOLATED_FOR_VIRUS_TOTAL tidak ditemukan")
+    
+    DOCKER_URL = os.getenv('DOCKER_URL')
+    if not DOCKER_URL:
+        raise EnvironmentError("Variabel lingkungan DOCKER_URL tidak ditemukan")
+    
+    isolated_folder = Path(os.path.expanduser(f"{APP_ISOLATED_DIR}/{serial_number}"))
+    
+    def get_all_files(directory: Path) -> List[Path]:
+        file_paths = []
+        for root, _, files in os.walk(directory):
+            for file in files:
+                file_path = Path(root) / file
+                file_paths.append(file_path)
+        return file_paths
+    
+    check_isolated = get_all_files(isolated_folder)
+    categorized_files = categorize_files([str(file_path) for file_path in check_isolated])
+    
+    batch_size = int(os.getenv('BATCH_SIZE', 412))
+    all_scan_results = {"task_ids": []}
+    batch_delay = int(os.getenv('BATCH_DELAY', 65))
+    request_timeout = int(os.getenv('REQUEST_TIMEOUT', 30))
+    
+    for category, file_paths in categorized_files.items():
+        batches = [file_paths[i:i+batch_size] for i in range(0, len(file_paths), batch_size)]
+        
         for i, batch in enumerate(batches, 1):
-            # Kirim file ke server
-            send_files_to_server(serial_number, batch)
-
-            # Kirim batch ke server vtrotasi
-            scan_url = f"{os.getenv('DOCKER_URL')}scan-files"
-            payload = {"file_paths": [f"/uploaded_files/{os.path.basename(file)}" for file in batch]}
-            headers = {
-                "accept": "application/json",
-                "Content-Type": "application/json"
-            }
-
-            vtrotasi_response = requests.post(scan_url, headers=headers, json=payload, timeout=30)
-
-            if vtrotasi_response.status_code == 200:
-                response_data = vtrotasi_response.json()
-                logger.info(f"Request scan batch ke-{i} berhasil: {response_data}")
-                all_scan_results["task_ids"].extend(response_data["task_ids"])
-            else:
-                logger.error(f"Error saat request scan batch ke-{i}: {vtrotasi_response.status_code} - {vtrotasi_response.text}")
-                raise Exception(f"Request scan batch ke-{i} gagal: {vtrotasi_response.status_code} - {vtrotasi_response.text}")
-
+            batch_paths = [Path(path) for path in batch]
+            send_files_to_server(serial_number, {category: batch_paths})
+            
+            batch_relative_paths = [
+                f"/uploaded_files/{serial_number}/{path.relative_to(isolated_folder)}"
+                for path in batch_paths
+            ]
+            
+            scan_url = f"{DOCKER_URL}scan-files"
+            payload = {"file_paths": batch_relative_paths}
+            
+            try:
+                response = requests.post(
+                    scan_url,
+                    headers={"Content-Type": "application/json"},
+                    json=payload,
+                    timeout=request_timeout
+                )
+                response.raise_for_status()
+                all_scan_results["task_ids"].extend(response.json()["task_ids"])
+                logger.info(f"Batch {i} dari kategori '{category}' berhasil di-scan: {len(response.json()['task_ids'])} task_ids")
+            except requests.exceptions.RequestException as e:
+                logger.error(f"Kesalahan pada batch {i} dari kategori '{category}': {e}")
+                raise
+            
             if i < len(batches):
-                logger.info(f"Menunggu 65 detik sebelum mengirim batch berikutnya...")
-                time.sleep(65)
+                logger.info(f"Menunggu {batch_delay} detik sebelum batch berikutnya...")
+                time.sleep(batch_delay)
+    
+    logger.info(f"Total task_ids: {len(all_scan_results['task_ids'])}")
+    return all_scan_results
 
-        logger.info(f"Semua batch berhasil diproses. Total task_ids: {len(all_scan_results['task_ids'])}")
-        return all_scan_results
-
-    except Exception as e:
-        logger.error(f"Error dalam perform_deep_scan: {e}")
-        raise Exception(f"Gagal melakukan deep scan: {e}")
-
-def send_files_to_server(serial_number: str, file_paths: List[str]):
+def send_files_to_server(serial_number: str, file_paths_by_category: Dict[str, List[Path]]):
     try:
         upload_url = f"{os.getenv('DOCKER_URL')}upload-files/"
-        files = [("files", open(file_path, "rb")) for file_path in file_paths]
-        payload = {"serial_number": serial_number}
-
-        response = requests.post(upload_url, files=files, data=payload, timeout=60)
-
-        if response.status_code == 200:
-            logger.info(f"File berhasil diunggah ke server: {response.json()}")
-        else:
-            logger.error(f"Gagal mengunggah file ke server: {response.status_code} - {response.text}")
-            raise Exception(f"Request upload gagal: {response.status_code} - {response.text}")
+        
+        for category, file_paths in file_paths_by_category.items():
+            files = []
+            for file_path in file_paths:
+                
+                content_type, _ = mimetypes.guess_type(str(file_path))
+                if content_type is None:
+                    content_type = 'application/octet-stream'  
+                
+                
+                try:
+                    file_obj = file_path.open('rb')
+                except Exception as e:
+                    logger.error(f"Gagal membuka file {file_path}: {e}")
+                    continue  
+                
+                files.append(("files", (file_path.name, file_obj, content_type)))
+            
+            payload = {
+                "serial_number": serial_number,
+                "category": category  
+            }
+            
+            response = requests.post(upload_url, files=files, data=payload, timeout=60)
+            
+            
+            for _, (filename, file_obj, content_type) in files:
+                file_obj.close()  
+            
+            if response.status_code == 200:
+                logger.info(f"File untuk kategori '{category}' berhasil diunggah ke server: {response.json()}")
+            else:
+                logger.error(f"Gagal mengunggah file untuk kategori '{category}': {response.status_code} - {response.text}")
+                raise Exception(f"Request upload gagal untuk kategori '{category}': {response.status_code} - {response.text}")
     except Exception as e:
         logger.error(f"Error saat mengirim file ke server: {e}")
         raise Exception(f"Gagal mengirim file ke server: {e}")
+    
+def categorize_files(file_paths: List[str]) -> Dict[str, List[str]]:
+    categories = {
+        "archive": [],
+        "media": [],
+        "installer": [],
+        "documents": []
+    }
+    for file_path in file_paths:
+        if file_path.lower().endswith((".zip", ".rar", ".tar", ".gz")):
+            categories["archive"].append(file_path)
+        elif file_path.lower().endswith((".jpg", ".jpeg", ".png", ".gif", ".mp4", ".avi")):
+            categories["media"].append(file_path)
+        elif file_path.lower().endswith((".apk", ".exe", ".msi")):
+            categories["installer"].append(file_path)
+        elif file_path.lower().endswith((".pdf", ".docx", ".xlsx", ".txt")):
+            categories["documents"].append(file_path)
+        else:
+            categories["documents"].append(file_path)
+    return categories
 
 def process_scan_result(scan_result_file: str):
     try:
         logger.info(f"Memproses file hasil scan: {scan_result_file}")         
         time.sleep(10)
-
-        
+ 
         with open(scan_result_file, "r") as file:
             scan_result = json.load(file)
             logger.info(f"Isi scan_result: {scan_result}")  
@@ -856,7 +887,6 @@ def process_scan_result(scan_result_file: str):
         
         task_ids = scan_result.get("task_ids", [])
         logger.info(f"Menemukan {len(task_ids)} task_ids: {task_ids}")
-                
         result_dir = os.path.join(os.path.dirname(scan_result_file), "task_result")
         os.makedirs(result_dir, exist_ok=True)
         logger.info(f"Menyimpan hasil response /task-result di direktori: {result_dir}")
@@ -887,8 +917,6 @@ def process_scan_result(scan_result_file: str):
                         logger.warning(f"file_path tidak mengandung nama file untuk task {task_id}")
                         file_name_with_extension = f"unknown_file_{task_id}"
                     file_name_without_extension = re.sub(r"\.\w+$", "", file_name_with_extension)  
-
-                    
                     new_file_name = f"{file_name_without_extension}.json"
                     result_file = os.path.join(result_dir, new_file_name)
 
@@ -921,7 +949,6 @@ def process_scan_result(scan_result_file: str):
     except Exception as e:
         logger.error(f"Error saat memproses hasil scan: {e}")
 
-
 def save_scan_result(output_dir: str, scan_result: dict):
     try:
         logger.info(f"Menyimpan hasil scan ke {output_dir}...")
@@ -934,10 +961,8 @@ def save_scan_result(output_dir: str, scan_result: dict):
         logger.error(f"Error saat menyimpan hasil scan: {e}")
         raise RuntimeError(f"Gagal menyimpan hasil scan: {e}")
 
+
 def run_mvt_scan(output_dir: str):
-    """
-    Menjalankan MVT scan dan menyimpan hasilnya ke mvt_report.json.
-    """
     try:
         logger.info("Menjalankan MVT scan...")
         command = [
@@ -967,9 +992,6 @@ def run_mvt_scan(output_dir: str):
         raise
 
 def read_mvt_report(output_dir: str) -> List[Dict]:
-    """
-    Membaca hasil deteksi MVT dari file mvt_report.json.
-    """
     report_file = os.path.join(output_dir, "mvt_report.json")
     if not os.path.exists(report_file):
         logger.warning(f"File mvt_report.json tidak ditemukan di {output_dir}.")
@@ -987,14 +1009,9 @@ def read_mvt_report(output_dir: str) -> List[Dict]:
         return []
 
 def calculate_security_percentage_from_mvt(detections: List[Dict]) -> str:
-    """
-    Menghitung persentase risiko keamanan berdasarkan hasil deteksi MVT.
-    """
     total_detections = len(detections)
     if total_detections == 0:
         return "98.00%"  
-    
-    
     
     security_percentage = max(0, 100 - (total_detections * 1))
     return f"{security_percentage:.2f}%"
