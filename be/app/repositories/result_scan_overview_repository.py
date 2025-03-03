@@ -72,12 +72,13 @@ class ResultScanOverviewRepository:
         # Memproses hasil pemindaian
         for result in task_results:
             try:
-                # Ambil nama file dari atribut "names"
-                names = result.get("data", {}).get("attributes", {}).get("names", [])
+                names = result["result"]["response"]["data"]["attributes"]["names"]
+                print(names, 'masukkkk')
                 if not names:
                     logger.warning("Tidak ada nama file dalam hasil pemindaian.")
                     continue
-                attributes = result.get("data", {}).get("attributes", {})
+                
+                attributes = result.get("result", {}).get("response", {}).get("data", {}).get("attributes", {})
                 stats = attributes.get("last_analysis_stats", {})
                 is_malicious = stats.get("malicious", 0) > 0
                 for file_name in names:
@@ -150,5 +151,4 @@ class ResultScanOverviewRepository:
                 logger.error(f"Error memproses hasil pemindaian untuk file {names[0] if names else 'unknown'}: {e}")
                 continue
         
-        print(scan_overview["scan_overview"], 'last scan')
         return scan_overview
