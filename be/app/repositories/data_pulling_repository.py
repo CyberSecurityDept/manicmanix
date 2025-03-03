@@ -45,7 +45,7 @@ class Data_Pulling:
     def get_device_serials() -> List[str]:
         try:
             result = subprocess.run(["adb", "devices"], capture_output=True, text=True, check=True)
-            lines = result.stdout.strip().split("\n")[1:]  
+            lines = result.stdout.strip().split("\n")[1:]
             return [line.split()[0] for line in lines if line.endswith("\tdevice")]
         except subprocess.CalledProcessError as e:
             raise Exception(f"Failed to get device serials: {e.stderr}")
@@ -54,8 +54,6 @@ class Data_Pulling:
     def user_enum(serial: str) -> List[str]:
         try:
             result = subprocess.run(["adb", "-s", serial, "shell", "pm", "list", "users"], capture_output=True, text=True, check=True)
-
-            
             pattern = r'UserInfo{(\d+):'
             user_ids = re.findall(pattern, result.stdout)
             return user_ids
@@ -96,6 +94,7 @@ class Data_Pulling:
 
             # Path untuk folder installed_apps (file APK yang sudah di-pull sebelumnya)
             installed_apps_path = os.path.join(isolated_path, "installed_apps")
+            os.makedirs(installed_apps_path, exist_ok=True)
 
             # Daftar kategori folder untuk menyimpan file berdasarkan ekstensi
             categories = {
@@ -118,79 +117,70 @@ class Data_Pulling:
                 'application': []
             }
 
+            # Panggil fungsi get_base_apk
+            base_apk_paths = Data_Pulling.get_base_apk(serial)
+            print(f"Base APK paths: {base_apk_paths}")
+
             # Loop melalui semua file yang di-pull dari perangkat Android
             for root, _, files in os.walk(dest_path):
                 for file in files:
-                    # Gunakan os.path.splitext untuk mendapatkan ekstensi file (misalnya, ".apk")
-                    file_extension = os.path.splitext(file)[1].lower().strip('.')  # Hapus tanda titik dari ekstensi
+                    file_extension = os.path.splitext(file)[1].lower().strip('.')
+
+                    # Jika file adalah APK dan berasal dari aplikasi yang sudah terinstal
+                    if file_extension == "apk" and root.startswith(installed_apps_path):
+                        print(f"File {file} adalah APK dari aplikasi terinstal. Mengabaikan.")
+                        continue
 
                     # Tentukan kategori file berdasarkan ekstensi
                     category = None
                     for cat, extensions in FILE_CATEGORIES.items():
                         if file_extension in extensions:
-                            category = cat  # Set kategori jika ekstensi cocok
+                            category = cat
                             break
 
                     # Jika file termasuk dalam kategori yang ditentukan
                     if category:
-                        file_path = os.path.join(root, file)  # Path lengkap file sumber
-
-                        # Periksa apakah file berada di folder installed_apps
-                        if installed_apps_path in root:
-                            print(f"File {file} berada di folder installed_apps. Mengabaikan.")
-                            continue  # Lanjutkan ke file berikutnya jika file berada di installed_apps
+                        file_path = os.path.join(root, file)
 
                         # Tentukan folder tujuan berdasarkan kategori
-                        destination_folder = categories.get(category, isolated_path)  # Default ke isolated_path jika kategori tidak ditemukan
-                        destination_file_path = os.path.join(destination_folder, file)  # Path lengkap file tujuan
+                        destination_folder = categories.get(category, isolated_path)
+                        destination_file_path = os.path.join(destination_folder, file)
 
                         # Periksa apakah file sudah ada di folder tujuan
                         if os.path.exists(destination_file_path):
                             print(f"File {file} sudah ada di {destination_folder}. Mengabaikan duplikat.")
-                            continue  # Lanjutkan ke file berikutnya jika file sudah ada
+                            continue
 
                         # Pindahkan file ke folder tujuan
                         shutil.copy(file_path, destination_folder)
                         print(f"File {file} dipindahkan ke {destination_folder}.")
-
-                        # Tentukan local_path di perangkat pengguna
-                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
-                        print(f"Local path: {local_path}")
 
                         # Tambahkan informasi file ke dictionary
                         file_info[category].append({
                             "name": file,
-                            "local_path": local_path
+                            "local_path": os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         })
-                    elif category is None and file.endswith('.apk'):
+                    elif file_extension == "apk":
                         # Jika file adalah APK tetapi tidak masuk ke kategori lain
-                        file_path = os.path.join(root, file)  # Path lengkap file sumber
+                        file_path = os.path.join(root, file)
 
-                        # Periksa apakah file berada di folder installed_apps
-                        if installed_apps_path in root:
-                            print(f"File {file} berada di folder installed_apps. Mengabaikan.")
-                            continue  # Lanjutkan ke file berikutnya jika file berada di installed_apps
-
-                        # Tentukan folder tujuan berdasarkan kategori
-                        destination_folder = os.path.join(isolated_path, 'application')  # Default ke folder application
-                        destination_file_path = os.path.join(destination_folder, file)  # Path lengkap file tujuan
+                        # Pindahkan file APK ke folder installed_apps
+                        destination_folder = os.path.join(isolated_path, "installed_apps")
+                        destination_file_path = os.path.join(destination_folder, file)
 
                         # Periksa apakah file sudah ada di folder tujuan
                         if os.path.exists(destination_file_path):
                             print(f"File {file} sudah ada di {destination_folder}. Mengabaikan duplikat.")
-                            continue  # Lanjutkan ke file berikutnya jika file sudah ada
+                            continue
 
                         # Pindahkan file ke folder tujuan
                         shutil.copy(file_path, destination_folder)
                         print(f"File {file} dipindahkan ke {destination_folder}.")
 
-                        # Tentukan local_path di perangkat pengguna
-                        local_path = os.path.join(root, file).replace(dest_path, f"/storage/emulated")
-
                         # Tambahkan informasi file ke dictionary
                         file_info['application'].append({
                             "name": file,
-                            "local_path": local_path
+                            "local_path": os.path.join(root, file).replace(dest_path, f"/storage/emulated")
                         })
 
             # Print file_info untuk verifikasi
@@ -215,42 +205,31 @@ class Data_Pulling:
         :return: Dictionary yang berisi nama paket dan path base.apk-nya.
         """
         try:
-            
             packages_output = subprocess.getoutput(f"adb -s {serial} shell pm list packages -3 --user 0")
             packages = packages_output.replace("package:", "").splitlines()
             base_apk_paths = {}
-            isolated_path = os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial}/installed_apps/")
-            os.makedirs(isolated_path, exist_ok=True)
+            installed_apps_path = os.path.join(os.path.expanduser(f"{str(os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL'))}/{serial}"), "installed_apps")
+            os.makedirs(installed_apps_path, exist_ok=True)
 
             for package in packages:
                 try:
-                    
                     path_output = subprocess.getoutput(f"adb -s {serial} shell pm path {package}")
-
-                    
                     paths = path_output.strip().splitlines()
 
-                    
                     for path in paths:
-                        
                         base_apk_path = path.replace("package:", "").strip()
 
-                        
                         if base_apk_path:
-                            
-                            package_folder = os.path.join(isolated_path, package)
+                            package_folder = os.path.join(installed_apps_path, package)
                             os.makedirs(package_folder, exist_ok=True)
 
-                            
                             new_apk_name = f"{package}.apk"
                             new_apk_path = os.path.join(package_folder, new_apk_name)
 
-                            
                             subprocess.run(["adb", "-s", serial, "pull", "-a", base_apk_path, new_apk_path, "--sync"], check=True)
 
-                            
                             base_apk_paths[package] = new_apk_path
-                            break  
+                            break
 
                 except subprocess.CalledProcessError as e:
                     print(f"Gagal menarik base.apk untuk paket {package}: {e.stderr}")
@@ -261,12 +240,12 @@ class Data_Pulling:
         except Exception as e:
             print(f"Terjadi kesalahan dalam fungsi get_base_apk: {e}")
             raise Exception(f"Failed to get base APK: {e}")
-        
+
     @staticmethod
     def get_isolated_data(device):
         isolated_file_path = f"src/isolated/{device}/isolated.json"
         if not os.path.exists(isolated_file_path):
             raise FileNotFoundError(f"File {isolated_file_path} tidak ditemukan.")
-        
+
         with open(isolated_file_path, "r") as file:
             return json.load(file)

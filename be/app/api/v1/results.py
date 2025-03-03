@@ -148,13 +148,11 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
         
         scan_overview["documents"]["scanned"] = result_data["scan_overview"]["documents"]["scanned"]
         scan_overview["documents"]["threats"] = result_data["scan_overview"]["documents"]["threats"]
-        print(result_data["scan_overview"]["documents"]["threats"], 'result nih bos1')
         
         scan_overview["media"]["scanned"] = result_data["scan_overview"]["media"]["scanned"]
         scan_overview["media"]["threats"] = result_data["scan_overview"]["media"]["threats"]
 
         # Update scan_overview tanpa mengubah total_threats dan threats yang sudah dihitung
-        print(result_data["scan_overview"]["documents"], 'result nih bos')
         result_data["scan_overview"] = scan_overview
 
         output_file_main = latest_scan_directory / f"{scan_type}_result.json"
