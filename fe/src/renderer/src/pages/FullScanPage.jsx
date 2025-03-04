@@ -75,14 +75,16 @@ const FullScanPage = () => {
           setScanComplete(data.data.scan_complete)
           setLogData(data.data.log_process)
 
-           // Jika terdapat error reconnect dan belum pernah dipicu, tampilkan modal reconnect
-           if (
+          // Jika terdapat error reconnect dan belum pernah dipicu, tampilkan modal reconnect
+          if (
             !reconnectTriggered &&
             data.data.log_process.some(
               (entry) =>
                 entry.log.includes(
                   'Unable to connect to the device over USB. Try to unplug, plug the device and start again.'
-                ) || entry.log.includes('No device found. Make sure it is connected and unlocked.')
+                ) ||
+                entry.log.includes('No device found. Make sure it is connected and unlocked.') ||
+                entry.log.includes('Device is busy, maybe run `adb kill-server` and try again.')
             )
           ) {
             setReconnectTriggered(true)
