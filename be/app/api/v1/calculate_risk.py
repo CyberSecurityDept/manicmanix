@@ -32,48 +32,37 @@ BASE_SCAN_PATH = Path(os.path.expanduser(f"{str(os.getenv('BASE_SCAN_PATH'))}"))
 os.makedirs(BASE_SCAN_PATH, exist_ok=True)
 
 def get_latest_scan_directory(base_path: Path) -> Path:
-        try:
-            directories = [d for d in base_path.iterdir() if d.is_dir()]
-            if not directories:
-                raise FileNotFoundError(f"Tidak ada direktori scan ditemukan di {base_path}")
-            latest_directory = max(directories, key=lambda x: x.stat().st_mtime)
-            logger.info(f"Direktori scan terbaru ditemukan: {latest_directory}")
-            return latest_directory
-        except Exception as e:
-            logger.error(f"Error saat mencari direktori terbaru: {e}")
-            raise
-    
-    
+    try:
+        directories = [d for d in base_path.iterdir() if d.is_dir()]
+        if not directories:
+            raise FileNotFoundError(f"Tidak ada direktori scan ditemukan di {base_path}")
+        latest_directory = max(directories, key=lambda x: x.stat().st_mtime)
+        logger.info(f"Direktori scan terbaru ditemukan: {latest_directory}")
+        return latest_directory
+    except Exception as e:
+        logger.error(f"Error saat mencari direktori terbaru: {e}")
+        raise
+
+
 @router.get("/calculate-risk/{serial_number}")
 async def calculate_risk(serial_number: str):
     try:
-        
         scan_type = "full-scan"
         base_dir = Path(os.path.expanduser(f"{str(os.getenv('BASE_SCAN_PATH'))}")) / scan_type / serial_number
         latest_scan_directory = get_latest_scan_directory(base_dir)
-        
-        # base_dir = os.path.join("output-scan", "full-scan", serial_number)
+
         logger.info(f"Memeriksa direktori: {latest_scan_directory}")
 
-        
         if not os.path.exists(latest_scan_directory):
             raise FileNotFoundError(f"Direktori {latest_scan_directory} tidak ditemukan")
 
-        
         task_result_dir = os.path.join(latest_scan_directory, "task_result")
         if not os.path.exists(task_result_dir):
             raise HTTPException(status_code=404, detail="Direktori 'task_result' tidak ditemukan")
 
-
-        
-        if task_result_dir is None:
-            raise HTTPException(status_code=404, detail="Direktori 'task_result' tidak ditemukan")
-
-        
         if not os.listdir(task_result_dir):
             raise HTTPException(status_code=404, detail="Direktori 'task_result' kosong")
 
-        
         task_results = RiskRepository.read_task_results(task_result_dir)
 
         if not task_results:
@@ -86,10 +75,10 @@ async def calculate_risk(serial_number: str):
 
         return {
             "serial_number": serial_number,
-            "malware_risks": malware_risks,  
-            "security_percentage": security_percentage,  
-            "apk_metadata": apk_metadata,  
-            "antivirus_results": antivirus_results  
+            "malware_risks": malware_risks,
+            "security_percentage": security_percentage,
+            "apk_metadata": apk_metadata,
+            "antivirus_results": antivirus_results
         }
     except FileNotFoundError as e:
         logger.error(f"FileNotFoundError: {e}")

@@ -118,11 +118,11 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
                 "package_name": activity.get("package_name", "unknown"),
                 "date_time": datetime.now().isoformat(),
                 "type": "Application",
-                "source_path": threat.get("source_path")
+                "source_path": activity.get("source_path", "unknown")  # Perbaikan di sini
             }
+            logger.info(f"Processed additional threat from dumpsys: {threat}")
             updated_threats.append(threat)
-
-        # Update data threat dan total threats berdasarkan perhitungan terbaru
+                # Update data threat dan total threats berdasarkan perhitungan terbaru
         result_data["threats"] = updated_threats
         result_data["total_threats"] = len(updated_threats)
         logger.info(f"Total threats detected: {result_data['total_threats']}")
@@ -151,8 +151,6 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
         
         scan_overview["media"]["scanned"] = result_data["scan_overview"]["media"]["scanned"]
         scan_overview["media"]["threats"] = result_data["scan_overview"]["media"]["threats"]
-
-        # Update scan_overview tanpa mengubah total_threats dan threats yang sudah dihitung
         result_data["scan_overview"] = scan_overview
 
         output_file_main = latest_scan_directory / f"{scan_type}_result.json"

@@ -34,10 +34,10 @@ def calculate_security_percentage_from_activities(activities: List[Dict]) -> str
         1 for activity in activities if activity.get("matched_indicator", {}).get("type") == "app_ids"
     )
     if total_activities == 0:
-        return "98.00%"
+        return "98.00"
     security_percentage = max(0, 100 - (suspicious_activities / total_activities * 100))
     if suspicious_activities == 0:
-        return "98.00%"
+        return "98.00"
     return f"{security_percentage:.2f}%"
 
 def create_fast_scan_detail_result(output_dir: Path, scan_data: dict):

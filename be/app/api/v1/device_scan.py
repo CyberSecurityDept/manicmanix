@@ -18,6 +18,7 @@ from fastapi import APIRouter, HTTPException, BackgroundTasks, Query
 from datetime import datetime
 from pydantic import BaseModel
 from typing import List, Dict, Optional
+from tenacity import retry, stop_after_attempt, wait_fixed
 from app.repositories.data_pulling_repository import Data_Pulling
 from app.services.data_pulling_service import dataPullingService
 from app.services.device_overview_service import DeviceOverviewService
@@ -549,6 +550,7 @@ def get_last_scan_percentage(serial_number: str, current_timestamp: str) -> str:
     except Exception as e:
         logger.error(f"Error reading last scan percentage: {e}")
         return "0.0%"
+    
 def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
     logger.info("output_dir", output_dir)
     try:
@@ -577,7 +579,7 @@ def run_full_scan(output_dir: str, serial_number: str, scan_id: str):
         logger.info(f'serial_number, output_dir ${serial_number, output_dir}')
         
         logger.info(f"Starting full scan in directory: {output_dir}")
-        # run_device_scan(output_dir)  
+        run_device_scan(output_dir)  
         
         retrieved_files = retrieve_device_files(serial_number, output_dir)
         logger.info(f"Retrieved {len(retrieved_files)} files")
@@ -754,110 +756,97 @@ def retrieve_device_files(serial_number: str, output_dir: str) -> list[str]:
         logger.error(f"Terjadi Error di fungsi retrieve_device_files: {e}")
         raise Exception(f"Failed to retrieve files from device: {e}")
 
-def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(5))
+def send_files_with_retry(url, files, payload, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(url, data=payload, files=files)
+            if response.status_code == 200:
+                return response
+            else:
+                logger.warning(f"Attempt {attempt + 1} failed with status code {response.status_code}: {response.text}")
+        except Exception as e:
+            logger.error(f"Attempt {attempt + 1} failed: {e}")
+    raise Exception("Max retries exceeded")
+
+def send_files_to_server(serial_number: str, file_paths_by_category: Dict[str, List[Path]]):
+    try:
+        DOCKER_URL = os.getenv("DOCKER_URL")
+        if not DOCKER_URL:
+            raise EnvironmentError("Variabel lingkungan DOCKER_URL tidak ditemukan")
+        upload_url = f"{DOCKER_URL}/upload-files/"
+
+        for category, file_paths in file_paths_by_category.items():
+            files = []
+            for file_path in file_paths:
+                content_type, _ = mimetypes.guess_type(str(file_path))
+                content_type = content_type or 'application/octet-stream'
+
+                try:
+                    with file_path.open('rb') as file_obj:
+                        files.append(("files", (file_path.name, file_obj, content_type)))
+                except Exception as e:
+                    logger.error(f"Gagal membuka file {file_path}: {e}")
+                    continue
+
+            payload = {
+                "serial_number": serial_number,
+                "category": category
+            }
+
+            try:
+                response = send_files_with_retry(upload_url, files, payload)
+                logger.info(f"File untuk kategori '{category}' berhasil diunggah ke server: {response.json()}")
+            except Exception as e:
+                logger.error(f"Gagal mengunggah file untuk kategori '{category}': {e}")
+                raise Exception(f"Request upload gagal untuk kategori '{category}': {e}")
+
+    except Exception as e:
+        logger.error(f"Error saat mengirim file ke server: {e}")
+        raise Exception(f"Gagal mengirim file ke server: {e}")
     
+def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
     APP_ISOLATED_DIR = os.getenv('APP_ISOLATED_FOR_VIRUS_TOTAL')
     if not APP_ISOLATED_DIR:
         raise EnvironmentError("Variabel lingkungan APP_ISOLATED_FOR_VIRUS_TOTAL tidak ditemukan")
-    
+
     DOCKER_URL = os.getenv('DOCKER_URL')
     if not DOCKER_URL:
         raise EnvironmentError("Variabel lingkungan DOCKER_URL tidak ditemukan")
-    
+
     isolated_folder = Path(os.path.expanduser(f"{APP_ISOLATED_DIR}/{serial_number}"))
-    
+
     def get_all_files(directory: Path) -> List[Path]:
         file_paths = []
         for root, _, files in os.walk(directory):
             for file in files:
-                file_path = Path(root) / file
-                file_paths.append(file_path)
+                file_paths.append(Path(root) / file)
         return file_paths
-    
+
     check_isolated = get_all_files(isolated_folder)
     categorized_files = categorize_files([str(file_path) for file_path in check_isolated])
-    
+
     batch_size = int(os.getenv('BATCH_SIZE', 412))
     all_scan_results = {"task_ids": []}
     batch_delay = int(os.getenv('BATCH_DELAY', 65))
-    request_timeout = int(os.getenv('REQUEST_TIMEOUT', 30))
-    
+
     for category, file_paths in categorized_files.items():
-        batches = [file_paths[i:i+batch_size] for i in range(0, len(file_paths), batch_size)]
-        
+        batches = [file_paths[i:i + batch_size] for i in range(0, len(file_paths), batch_size)]
         for i, batch in enumerate(batches, 1):
-            batch_paths = [Path(path) for path in batch]
-            send_files_to_server(serial_number, {category: batch_paths})
-            
-            batch_relative_paths = [
-                f"/uploaded_files/{serial_number}/{path.relative_to(isolated_folder)}"
-                for path in batch_paths
-            ]
-            
-            scan_url = f"{DOCKER_URL}scan-files"
-            payload = {"file_paths": batch_relative_paths}
-            
             try:
-                response = requests.post(
-                    scan_url,
-                    headers={"Content-Type": "application/json"},
-                    json=payload,
-                    timeout=request_timeout
-                )
-                response.raise_for_status()
-                all_scan_results["task_ids"].extend(response.json()["task_ids"])
-                logger.info(f"Batch {i} dari kategori '{category}' berhasil di-scan: {len(response.json()['task_ids'])} task_ids")
-            except requests.exceptions.RequestException as e:
-                logger.error(f"Kesalahan pada batch {i} dari kategori '{category}': {e}")
-                raise
-            
+                send_files_to_server(serial_number, {category: batch})
+                logger.info(f"Batch {i} dari kategori '{category}' berhasil dikirim.")
+            except Exception as e:
+                logger.error(f"Gagal mengirim batch {i} dari kategori '{category}': {e}")
+                continue  # Lanjutkan ke batch berikutnya
+
             if i < len(batches):
                 logger.info(f"Menunggu {batch_delay} detik sebelum batch berikutnya...")
                 time.sleep(batch_delay)
-    
+
     logger.info(f"Total task_ids: {len(all_scan_results['task_ids'])}")
     return all_scan_results
 
-def send_files_to_server(serial_number: str, file_paths_by_category: Dict[str, List[Path]]):
-    try:
-        upload_url = f"{os.getenv('DOCKER_URL')}upload-files/"
-        
-        for category, file_paths in file_paths_by_category.items():
-            files = []
-            for file_path in file_paths:
-                
-                content_type, _ = mimetypes.guess_type(str(file_path))
-                if content_type is None:
-                    content_type = 'application/octet-stream'  
-                
-                
-                try:
-                    file_obj = file_path.open('rb')
-                except Exception as e:
-                    logger.error(f"Gagal membuka file {file_path}: {e}")
-                    continue  
-                
-                files.append(("files", (file_path.name, file_obj, content_type)))
-            
-            payload = {
-                "serial_number": serial_number,
-                "category": category  
-            }
-            
-            response = requests.post(upload_url, files=files, data=payload, timeout=60)
-            
-            
-            for _, (filename, file_obj, content_type) in files:
-                file_obj.close()  
-            
-            if response.status_code == 200:
-                logger.info(f"File untuk kategori '{category}' berhasil diunggah ke server: {response.json()}")
-            else:
-                logger.error(f"Gagal mengunggah file untuk kategori '{category}': {response.status_code} - {response.text}")
-                raise Exception(f"Request upload gagal untuk kategori '{category}': {response.status_code} - {response.text}")
-    except Exception as e:
-        logger.error(f"Error saat mengirim file ke server: {e}")
-        raise Exception(f"Gagal mengirim file ke server: {e}")
     
 def categorize_files(file_paths: List[str]) -> Dict[str, List[str]]:
     categories = {
