@@ -39,6 +39,9 @@ os.makedirs(BASE_SCAN_PATH, exist_ok=True)
 SCAN_HISTORY_PATH = os.path.expanduser(f"{str(os.getenv('BASE_SCAN_PATH'))}")
 os.makedirs(BASE_SCAN_PATH, exist_ok=True)
 
+BATCH_SIZE_LIMIT_MB = int(os.getenv("BATCH_SIZE_LIMIT", 250))
+BATCH_SIZE_LIMIT_BYTES = BATCH_SIZE_LIMIT_MB * 1024 * 1024
+
 def add_scan_history(
     no: int,
     name: str,
@@ -766,16 +769,7 @@ def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
     
     isolated_folder = Path(os.path.expanduser(f"{APP_ISOLATED_DIR}/{serial_number}"))
     
-    def get_all_files(directory: Path) -> List[Path]:
-        file_paths = []
-        for root, _, files in os.walk(directory):
-            for file in files:
-                file_path = Path(root) / file
-                file_paths.append(file_path)
-        return file_paths
-    
-    check_isolated = get_all_files(isolated_folder)
-    categorized_files = categorize_files([str(file_path) for file_path in check_isolated])
+    categorized_files = categorize_files(isolated_folder)
     
     batch_size = int(os.getenv('BATCH_SIZE', 412))
     all_scan_results = {"task_ids": []}
@@ -821,62 +815,166 @@ def perform_deep_scan(serial_number: str, retrieved_files: List[str]):
 def send_files_to_server(serial_number: str, file_paths_by_category: Dict[str, List[Path]]):
     try:
         upload_url = f"{os.getenv('DOCKER_URL')}upload-files/"
-        
+        logger.info(f"Menggunakan URL upload: {upload_url}")
+
         for category, file_paths in file_paths_by_category.items():
-            files = []
+            logger.info(f"Memulai pengunggahan untuk kategori '{category}'")
+
+            # Pisahkan file besar (> BATCH_SIZE_LIMIT) dan file normal
+            large_files = []
+            normal_files = []
+
             for file_path in file_paths:
-                
-                content_type, _ = mimetypes.guess_type(str(file_path))
-                if content_type is None:
-                    content_type = 'application/octet-stream'  
-                
-                
-                try:
-                    file_obj = file_path.open('rb')
-                except Exception as e:
-                    logger.error(f"Gagal membuka file {file_path}: {e}")
-                    continue  
-                
-                files.append(("files", (file_path.name, file_obj, content_type)))
-            
-            payload = {
-                "serial_number": serial_number,
-                "category": category  
-            }
-            
-            response = requests.post(upload_url, files=files, data=payload, timeout=60)
-            
-            
-            for _, (filename, file_obj, content_type) in files:
-                file_obj.close()  
-            
-            if response.status_code == 200:
-                logger.info(f"File untuk kategori '{category}' berhasil diunggah ke server: {response.json()}")
-            else:
-                logger.error(f"Gagal mengunggah file untuk kategori '{category}': {response.status_code} - {response.text}")
-                raise Exception(f"Request upload gagal untuk kategori '{category}': {response.status_code} - {response.text}")
+                file_size = file_path.stat().st_size
+                if file_size > BATCH_SIZE_LIMIT_BYTES:
+                    large_files.append(file_path)
+                else:
+                    normal_files.append(file_path)
+
+            # Kirim file normal dalam batch
+            send_files_in_batches(upload_url, serial_number, category, normal_files)
+
+            # Kirim file besar satu per satu
+            for large_file in large_files:
+                logger.info(f"Mengunggah file besar: {large_file.name}")
+                upload_single_file(upload_url, serial_number, category, large_file)
+
     except Exception as e:
         logger.error(f"Error saat mengirim file ke server: {e}")
         raise Exception(f"Gagal mengirim file ke server: {e}")
+
+
+def send_files_in_batches(upload_url: str, serial_number: str, category: str, file_paths: List[Path]):
+    """
+    Mengirim file dalam batch berdasarkan ukuran total batch.
+    """
+    current_batch = []
+    current_batch_size = 0
+
+    for file_path in file_paths:
+        file_size = file_path.stat().st_size
+
+        # Jika menambahkan file ini melebihi batas ukuran batch, kirim batch saat ini
+        if current_batch_size + file_size > BATCH_SIZE_LIMIT_BYTES:
+            upload_batch(upload_url, serial_number, category, current_batch)
+            current_batch = []
+            current_batch_size = 0
+
+        # Tambahkan file ke batch saat ini
+        current_batch.append(file_path)
+        current_batch_size += file_size
+
+    # Kirim batch terakhir jika ada file tersisa
+    if current_batch:
+        upload_batch(upload_url, serial_number, category, current_batch)
+
+
+def upload_batch(upload_url: str, serial_number: str, category: str, file_paths: List[Path]):
+    """
+    Mengunggah satu batch file ke server.
+    """
+    files = []
+    payload = {
+        "serial_number": serial_number,
+        "category": category
+    }
+
+    try:
+        for file_path in file_paths:
+            content_type, _ = mimetypes.guess_type(str(file_path))
+            content_type = content_type or 'application/octet-stream'
+
+            file_obj = file_path.open('rb')
+            files.append(("files", (file_path.name, file_obj, content_type)))
+
+        logger.info(f"Mengunggah batch dengan {len(file_paths)} file")
+        response = requests.post(upload_url, files=files, data=payload, timeout=120)
+
+        # Tutup semua file objek setelah selesai
+        for _, (filename, file_obj, content_type) in files:
+            file_obj.close()
+
+        if response.status_code == 200:
+            logger.info(f"Batch berhasil diunggah: {response.json()}")
+        else:
+            logger.error(f"Gagal mengunggah batch: {response.status_code} - {response.text}")
+            raise Exception(f"Request upload gagal untuk batch: {response.status_code} - {response.text}")
+
+    except requests.exceptions.Timeout:
+        logger.error("Timeout terjadi saat mengunggah batch")
+        raise Exception("Timeout terjadi saat mengunggah batch")
+    except requests.exceptions.ConnectionError as e:
+        logger.error(f"Koneksi gagal saat mengunggah batch: {e}")
+        raise Exception(f"Koneksi gagal saat mengunggah batch")
+    except Exception as e:
+        logger.error(f"Error tak terduga saat mengunggah batch: {e}")
+        raise Exception(f"Error tak terduga saat mengunggah batch")
+
+
+def upload_single_file(upload_url: str, serial_number: str, category: str, file_path: Path):
+    """
+    Mengunggah satu file ke server.
+    """
+    content_type, _ = mimetypes.guess_type(str(file_path))
+    content_type = content_type or 'application/octet-stream'
+
+    try:
+        with file_path.open('rb') as file_obj:
+            files = [("files", (file_path.name, file_obj, content_type))]
+            payload = {
+                "serial_number": serial_number,
+                "category": category
+            }
+
+            logger.info(f"Mengunggah file besar: {file_path.name}")
+            response = requests.post(upload_url, files=files, data=payload, timeout=120)
+
+            if response.status_code == 200:
+                logger.info(f"File besar '{file_path.name}' berhasil diunggah: {response.json()}")
+            else:
+                logger.error(f"Gagal mengunggah file besar '{file_path.name}': {response.status_code} - {response.text}")
+                raise Exception(f"Request upload gagal untuk file besar '{file_path.name}': {response.status_code} - {response.text}")
+
+    except requests.exceptions.Timeout:
+        logger.error(f"Timeout terjadi saat mengunggah file besar '{file_path.name}'")
+        raise Exception(f"Timeout terjadi saat mengunggah file besar '{file_path.name}'")
+    except requests.exceptions.ConnectionError as e:
+        logger.error(f"Koneksi gagal saat mengunggah file besar '{file_path.name}': {e}")
+        raise Exception(f"Koneksi gagal saat mengunggah file besar '{file_path.name}'")
+    except Exception as e:
+        logger.error(f"Error tak terduga saat mengunggah file besar '{file_path.name}': {e}")
+        raise Exception(f"Error tak terduga saat mengunggah file besar '{file_path.name}'")
     
-def categorize_files(file_paths: List[str]) -> Dict[str, List[str]]:
+def categorize_files(base_path: str) -> Dict[str, List[Path]]:
+    """
+    Mengiterasi folder `isolated` dan membagi file ke dalam kategori berdasarkan subfolder.
+    """
     categories = {
         "archive": [],
-        "media": [],
+        "documents": [],
+        "installed_apps": [],
         "installer": [],
-        "documents": []
+        "media": [],
     }
-    for file_path in file_paths:
-        if file_path.lower().endswith((".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz", ".iso", ".tgz", ".tbz2", ".lzma", ".cab", ".z", ".lz", ".lzo")):
-            categories["archive"].append(file_path)
-        elif file_path.lower().endswith((".mov", ".avi", ".mp4", ".mp3", ".mpeg", ".jpg", ".jpeg", ".png", ".svg", ".gif", ".webp", ".mkv", ".wav", ".ogg", ".wmv")):
-            categories["media"].append(file_path)
-        elif file_path.lower().endswith((".exe", ".msi", ".dmg", ".app", ".apk")):
-            categories["installer"].append(file_path)
-        elif file_path.lower().endswith((".pdf", ".doc", ".docx", ".xls", ".xlsx", ".txt")):
-            categories["documents"].append(file_path)
-        else:
-            categories["documents"].append(file_path)
+
+    # Iterasi melalui semua subfolder di dalam `isolated`
+    for root, dirs, files in os.walk(base_path):
+        for file in files:
+            file_path = Path(os.path.join(root, file))
+            parent_dir = file_path.parent.name.lower()
+
+            # Masukkan file ke kategori berdasarkan nama subfolder
+            if parent_dir == "archive":
+                categories["archive"].append(file_path)
+            elif parent_dir == "documents":
+                categories["documents"].append(file_path)
+            elif parent_dir == "installed_apps":
+                categories["installed_apps"].append(file_path)
+            elif parent_dir == "installer":
+                categories["installer"].append(file_path)
+            elif parent_dir == "media":
+                categories["media"].append(file_path)
+
     return categories
 
 def process_scan_result(scan_result_file: str):
