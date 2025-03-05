@@ -47,13 +47,15 @@
     "vite-plugin-static-copy": "^2.0.0"
   },
   "build": {
+    "artifactName": "${productName}-Setup-${version}.${ext}",
     "appId": "com.example.forensic",
     "productName": "Malware",
     "publish": [
       {
         "provider": "github",
         "owner": "CyberSecurityDept",
-        "repo": "manicmanix"
+        "repo": "manicmanix",
+        "private": true
       }
     ]
   }

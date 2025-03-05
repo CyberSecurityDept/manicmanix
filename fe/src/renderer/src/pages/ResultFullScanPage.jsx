@@ -423,7 +423,7 @@ const ResultFullScanPage = () => {
             {Math.round(lastScanPercentage) !== null ? (
               <p
                 className="text-green-400 mt-1 font-bold"
-                style={{ color: lastPercentageStyle.color }}
+                style={{ color: getPercentageStyle.color }}
               >
                 {lastScanPercentage} {lastPercentageStyle.label}
               </p>
@@ -457,7 +457,7 @@ const ResultFullScanPage = () => {
                 <img
                   src={deviceImageData.image}
                   alt={deviceImageData.name}
-                  className="w-[259px] h-auto"
+                  className="w-[200px] h-auto p-2"
                 />
               ) : (
                 <p className="text-white">Loading image...</p>

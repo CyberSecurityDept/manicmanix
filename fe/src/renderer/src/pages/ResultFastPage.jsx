@@ -269,7 +269,7 @@ const ResultFastPage = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-[52px] leading-none">
-              {Math.round(securityPercentage) || 0}%
+              {Math.round(securityPercentage) || '-'}%
             </h2>
             <p className="text-[18px]" style={{ color: percentageStyle.color }}>
               {percentageStyle.label}

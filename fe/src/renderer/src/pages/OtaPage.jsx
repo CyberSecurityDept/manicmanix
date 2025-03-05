@@ -186,7 +186,7 @@ const OTA = () => {
         <img src={plusSign} alt="Plus Sign" className="absolute bottom-[-12px] right-[-12px] w-6 h-6" />
 
         <UpdateBox
-          title="APP"
+          title="APP V."
           version={
             versionData && versionData.app_versions.length > 0
               ? versionData.app_versions[0].app_version
@@ -195,7 +195,7 @@ const OTA = () => {
           onCheckUpdate={() => checkUpdate('app')}
         />
         <UpdateBox
-          title="CYBER v."
+          title="CYBER V."
           version={
             versionData && versionData.cyber_versions.length > 0
               ? versionData.cyber_versions[0].cyber_version
