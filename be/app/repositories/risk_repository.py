@@ -4,12 +4,12 @@ import os
 from typing import List, Dict
 import logging
 
-# Setup logging
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-# test gitlab
+
 class RiskRepository:
     def get_latest_scan_directory(base_path: Path) -> Path:
         try:
@@ -40,7 +40,7 @@ class RiskRepository:
                     with open(file_path, "r") as file:
                         data = json.load(file)
                         if isinstance(data, dict):
-                            data["file"] = filename  # Tambahkan nama file ke data
+                            data["file"] = filename  
                             task_results.append(data)
                         else:
                             logger.warning(f"File {filename} tidak berisi dictionary: {data}")
@@ -56,36 +56,36 @@ class RiskRepository:
         
         for result in task_results:
             try:
-                # Validasi struktur dasar input
+                
                 if not isinstance(result, dict) or "data" not in result:
                     logger.error(f"Invalid structure for result: {result}")
                     continue
                 
-                # Ekstraksi data
+                
                 data = result.get("data", {})
                 attributes = data.get("attributes", {})
                 names = attributes.get("names", [])
                 
-                # Jika tidak ada nama file, skip
+                
                 if not names:
                     logger.warning(f"Skipping file due to missing 'names': {result}")
                     continue
                 
-                # Log nama file untuk debugging
+                
                 logger.debug(f"Processing file: {names[0]}")
                 
-                # Ambil statistik analisis
+                
                 stats = attributes.get("last_analysis_stats", {})
                 if not stats:
                     logger.warning(f"Skipping file due to missing 'last_analysis_stats': {names[0]}")
                     continue
                 
-                # Hitung nilai malicious dan suspicious
+                
                 total_malicious = stats.get("malicious", 0)
                 total_suspicious = stats.get("suspicious", 0)
                 logger.debug(f"File: {names[0]}, Malicious: {total_malicious}, Suspicious: {total_suspicious}")
                 
-                # Hitung total mesin analisis
+                
                 total_engines = (
                     stats.get("malicious", 0)
                     + stats.get("suspicious", 0)
@@ -94,13 +94,13 @@ class RiskRepository:
                     + stats.get("type-unsupported", 0)
                 )
                 
-                # Hitung persentase risiko malware
+                
                 malware_risk_percentage = (
                     0.0 if total_engines == 0 
                     else ((total_malicious + total_suspicious) / total_engines) * 100
                 )
                 
-                # Ambil informasi tambahan dari attributes
+                
                 file_size = attributes.get("size", "unknown")
                 file_type = attributes.get("type_tag", "unknown")
                 file_hash = attributes.get("sha256", "unknown")
@@ -108,10 +108,10 @@ class RiskRepository:
                 modification_date = attributes.get("last_modification_date", "unknown")
                 access_date = attributes.get("last_analysis_date", "unknown")
                 
-                # Format ukuran file jika tersedia
+                
                 formatted_file_size = f"{file_size} bytes" if file_size != "unknown" else "unknown"
                 
-                # Tambahkan hasil ke list malware_risks
+                
                 malware_risks.append({
                     "file": names[0],
                     "file_size": formatted_file_size,
@@ -133,27 +133,27 @@ class RiskRepository:
 
     @staticmethod
     def calculate_security_percentage(task_results: List[Dict], k: int = 1) -> str:
-        n = 0  # Jumlah file yang terindikasi malware
+        n = 0  
 
         for result in task_results:
             try:
-                # Ambil data dari last_analysis_stats
-                attributes = result.get("data", {}).get("attributes", {})
+                
+                attributes = result.get("result", {}).get("response", {}).get("data", {}).get("attributes", {})
                 stats = attributes.get("last_analysis_stats", {})
                 malicious = stats.get("malicious", {})
                 print(f"Nilai malicious : {malicious}")
                 
-                # Hitung jumlah file yang terindikasi malware
+                
                 if stats.get("malicious", 0) > 0:
                     n += 1
             except Exception as e:
                 logger.error(f"Error menghitung persentase keamanan untuk file {result.get('file')}: {e}")
-                continue  # Lanjut ke file berikutnya jika terjadi error
+                continue  
 
-        # Hitung persentase keamanan berdasarkan rumus
+        
         security_percentage = 100 / (1 + k * n)
 
-        # Format ke dalam bentuk persentase
+        
         security_percentage_formatted = f"{security_percentage:.2f}%"
 
         logger.info(f"Jumlah file terindikasi malware (n): {n}, Sensitivitas (k): {k}, Security Percentage: {security_percentage_formatted}")
@@ -166,7 +166,7 @@ class RiskRepository:
         
         for result in task_results:
             try:
-                # ambil atribut names dari json
+                
                 names = result.get("data", {}).get("attributes", {}).get("names", [])
                 if not names:
                     continue
@@ -191,7 +191,7 @@ class RiskRepository:
         antivirus_results = []
         for result in task_results:
             try:
-                # ambil atribut names dari json
+                
                 names = result.get("data", {}).get("attributes", {}).get("names", [])
                 if not names:
                     continue

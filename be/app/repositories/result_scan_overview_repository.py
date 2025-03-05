@@ -101,7 +101,6 @@ class ResultScanOverviewRepository:
                     # Menambahkan jumlah file yang discan
                     if file_category:
                         scan_overview["scan_overview"][file_category]["scanned"] += 1
-                        print(file_name, 'sama harusnya')
                     else:
                         logger.error(f"File {file_name} tidak memiliki kategori yang dikenali")
                     
@@ -150,5 +149,4 @@ class ResultScanOverviewRepository:
             except Exception as e:
                 logger.error(f"Error memproses hasil pemindaian untuk file {names[0] if names else 'unknown'}: {e}")
                 continue
-        
         return scan_overview

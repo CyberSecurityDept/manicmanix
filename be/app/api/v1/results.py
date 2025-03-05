@@ -143,7 +143,7 @@ async def get_result(serial_number: str, scan_type: str = "full-scan"):
 
         installer_path = Path(base_path_media) / f"{serial_number}" / "installer"
         installer_stats = count_scanned_and_threats_for_installer(installer_path, activities_detected)
-        scan_overview["installer"]["scanned"] = result_data["scan_overview"]["installer"]["scanned"]
+        scan_overview["installer"]["scanned"] = installer_stats["scanned"]
         scan_overview["installer"]["threats"] = result_data["scan_overview"]["installer"]["threats"]
         
         scan_overview["documents"]["scanned"] = result_data["scan_overview"]["documents"]["scanned"]
