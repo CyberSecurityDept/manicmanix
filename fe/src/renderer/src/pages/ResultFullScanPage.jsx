@@ -275,9 +275,7 @@ const ResultFullScanPage = () => {
 
   // Fungsi untuk delete package berdasarkan threat yang dicentang
   const handleDeleteChecked = async () => {
-    const packagesToDelete = Object.keys(checkedItems).filter(
-      (pkgName) => checkedItems[pkgName]
-    )
+    const packagesToDelete = Object.keys(checkedItems).filter((pkgName) => checkedItems[pkgName])
     if (packagesToDelete.length === 0) {
       alert('No package selected for deletion.')
       return
@@ -285,14 +283,9 @@ const ResultFullScanPage = () => {
     if (!window.confirm('Are you sure you want to delete the selected packages?')) {
       return
     }
-  
+
     // Jika tipe yang dipilih adalah installer, document/documents, atau application/applications
-    if (
-      selectedView &&
-      ['installer', 'documents', 'media'].includes(
-        selectedView.toLowerCase()
-      )
-    ) {
+    if (selectedView && ['installer', 'documents', 'media'].includes(selectedView.toLowerCase())) {
       const sourceDataToDelete = selectedThreats.map((threat) => threat.source_path)
       const url = `${BASE_URL}/v1/delete-files`
       try {
@@ -338,7 +331,6 @@ const ResultFullScanPage = () => {
       }
     }
   }
-  
 
   // Fungsi untuk menangani proses delete (dipanggil ketika modal delete dikonfirmasi)
   const handleRemoveScanning = async () => {
@@ -385,7 +377,13 @@ const ResultFullScanPage = () => {
           }}
         >
           <div className="flex flex-col items-center justify-center">
-            <h2 className="text-[52px] leading-none">{Math.round(securityPercentage) || 0}%</h2>
+            <h2 className="text-[52px] leading-none">
+              {loading || securityPercentage === null ? (
+                <Skeleton width={150} height={52} baseColor="#c0c0c0" highlightColor="#e0e0e0" />
+              ) : (
+                `${Math.round(securityPercentage)}%`
+              )}
+            </h2>
             <p className="text-[18px]" style={{ color: percentageStyle.color }}>
               {percentageStyle.label}
             </p>

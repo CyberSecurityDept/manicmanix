@@ -135,9 +135,7 @@ const ResultFastPage = () => {
 
   // Handle delete confirmation
   const handleDeleteChecked = async () => {
-    const packagesToDelete = Object.keys(checkedItems).filter(
-      (pkgName) => checkedItems[pkgName]
-    )
+    const packagesToDelete = Object.keys(checkedItems).filter((pkgName) => checkedItems[pkgName])
     if (packagesToDelete.length === 0) {
       alert('No package selected for deletion.')
       return
@@ -145,18 +143,14 @@ const ResultFastPage = () => {
     const total = packagesToDelete.length
     let completed = 0
     for (const packageName of packagesToDelete) {
-      const url = `${BASE_URL}/v1/delete-package-fastscan/${encodeURIComponent(
-        packageName
-      )}`
+      const url = `${BASE_URL}/v1/delete-package-fastscan/${encodeURIComponent(packageName)}`
       try {
         const response = await fetch(url, {
           method: 'DELETE',
           headers: { accept: 'application/json' }
         })
         if (!response.ok) {
-          console.error(
-            `Failed to delete ${packageName}: Status ${response.status}`
-          )
+          console.error(`Failed to delete ${packageName}: Status ${response.status}`)
         } else {
           console.log(`Package ${packageName} successfully deleted.`)
         }
@@ -209,9 +203,7 @@ const ResultFastPage = () => {
 
   // Fungsi untuk select all threat secara global
   const handleSelectAllChange = () => {
-    const allSelected = filteredThreats.every(
-      (threat) => checkedItems[threat.package_name]
-    )
+    const allSelected = filteredThreats.every((threat) => checkedItems[threat.package_name])
     const updatedCheckedItems = { ...checkedItems }
     filteredThreats.forEach((threat) => {
       updatedCheckedItems[threat.package_name] = !allSelected
@@ -269,7 +261,11 @@ const ResultFastPage = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-[52px] leading-none">
-              {Math.round(securityPercentage) || '-'}%
+              {loading || securityPercentage === null ? (
+                <Skeleton width={150} height={52} baseColor="#c0c0c0" highlightColor="#e0e0e0" />
+              ) : (
+                `${Math.round(securityPercentage)}%`
+              )}
             </h2>
             <p className="text-[18px]" style={{ color: percentageStyle.color }}>
               {percentageStyle.label}
@@ -313,7 +309,7 @@ const ResultFastPage = () => {
             <div>
               <p className="font-semibold text-white">Last Scan Percentage</p>
               {lastScanPercentage !== null ? (
-                <p className="mt-1 font-bold" style={{ color: lastPercentageStyle.color }}>
+                <p className="mt-1 font-bold" style={{ color: getPercentageStyle.color }}>
                   {lastScanPercentage} {lastPercentageStyle.label}
                 </p>
               ) : (
@@ -389,9 +385,7 @@ const ResultFastPage = () => {
                     className="w-full grid grid-cols-12 p-2 items-center border-b border-[#1A1A1A] text-white"
                   >
                     <div className="col-span-5">
-                      {threat.date_time
-                        ? new Date(threat.date_time).toLocaleString()
-                        : '-'}
+                      {threat.date_time ? new Date(threat.date_time).toLocaleString() : '-'}
                     </div>
                     <div className="flex items-center col-span-7 justify-between">
                       <div className="flex items-center gap-4">
@@ -423,9 +417,7 @@ const ResultFastPage = () => {
             </div>
           )}
 
-          {filteredThreats.length > 0 && (
-            <div className="border-b border-gray-400 mt-7 mb-5"></div>
-          )}
+          {filteredThreats.length > 0 && <div className="border-b border-gray-400 mt-7 mb-5"></div>}
 
           {/* Tombol Remove */}
           {filteredThreats.length > 0 && (
@@ -476,14 +468,9 @@ const ResultFastPage = () => {
           onConfirm={handleCompleteConfirm}
         />
       )}
-      {isAfterCompleteModalOpen && (
-        <AfterCompleteModal onClose={closeAfterCompleteModal} />
-      )}
+      {isAfterCompleteModalOpen && <AfterCompleteModal onClose={closeAfterCompleteModal} />}
       {isRemoveModalOpen && (
-        <RemoveModal
-          onClose={() => setIsRemoveModalOpen(false)}
-          onConfirm={handleRemoveScanning}
-        />
+        <RemoveModal onClose={() => setIsRemoveModalOpen(false)} onConfirm={handleRemoveScanning} />
       )}
     </div>
   )
