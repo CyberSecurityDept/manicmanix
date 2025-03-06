@@ -5,6 +5,7 @@ import modalBackground from '../assets/border/bawah-scanning.svg'
 import ArrowPattern from '../components/ArrowPattern'
 import CancelModal from '../components/modal/Cancel'
 import ReconnectModel from '../components/modal/Reconnect'
+import LoadingModal from '../components/modal/Loading'
 import bgImage from '../assets/bg-darkmode.png'
 import plusSign from '../assets/plus-sign.svg'
 import buttonViewMore from '../assets/border/view-more.svg'
@@ -23,6 +24,7 @@ const FullScanPage = () => {
   const [serialNumber, setSerialNumber] = useState(null)
   const [showReconnectModal, setShowReconnectModal] = useState(false)
   const [reconnectTriggered, setReconnectTriggered] = useState(false)
+  const [showLoadingModal, setShowLoadingModal] = useState(false)
 
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
@@ -123,6 +125,7 @@ const FullScanPage = () => {
 
   useEffect(() => {
     if (progress === 100 && serialNumber) {
+      setShowLoadingModal(true)
       let isMounted = true // Untuk mencegah update state jika komponen sudah unmount
       const pollInterval = 3000 // Interval polling dalam milidetik
 
@@ -152,6 +155,7 @@ const FullScanPage = () => {
 
           if (data.message === 'Get result successfully' && data.status === 'success') {
             // Jika data hasil scan sudah siap, delay 1 detik sebelum navigasi
+            setShowLoadingModal(false)
             setTimeout(() => {
               if (isMounted) {
                 navigate('/result-full-scan')
@@ -193,6 +197,8 @@ const FullScanPage = () => {
     >
       {/* Modal Reconnect */}
       {showReconnectModal && <ReconnectModel onClose={() => setShowReconnectModal(false)} />}
+      {/* Modal Loading */}
+      {showLoadingModal && <LoadingModal />}
 
       <div className="text-center">
         <h1 className="text-2xl font-bold">
