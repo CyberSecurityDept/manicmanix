@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import '../styles/Checkbox.css'
+import Skeleton from 'react-loading-skeleton'
 import bgImage from '../assets/bg-darkmode.png'
 import RemoveModal from '../components/modal/Delete'
 import RiskModal from '../components/modal/Risk'
@@ -47,6 +48,9 @@ const ResultFullScanPage = () => {
   const [lastScanPercentage, setLastScanPercentage] = useState(null)
   const [deviceImageData, setDeviceImageData] = useState(null)
   const [deleteProgress, setDeleteProgress] = useState(0)
+
+  // State untuk loading
+  const [loading, setLoading] = useState(true)
 
   // Ambil serial_number dari localStorage
   useEffect(() => {
@@ -378,11 +382,7 @@ const ResultFullScanPage = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-[52px] leading-none">
-              {loading || securityPercentage === null ? (
-                <Skeleton width={150} height={52} baseColor="#c0c0c0" highlightColor="#e0e0e0" />
-              ) : (
-                `${Math.round(securityPercentage)}%`
-              )}
+            {Math.round(securityPercentage) || '-'}%
             </h2>
             <p className="text-[18px]" style={{ color: percentageStyle.color }}>
               {percentageStyle.label}
@@ -418,12 +418,12 @@ const ResultFullScanPage = () => {
           </div>
           <div>
             <p className="font-semibold text-white">Last Scan Percentage</p>
-            {Math.round(lastScanPercentage) !== null ? (
+            {lastScanPercentage !== null ? (
               <p
                 className="text-green-400 mt-1 font-bold"
-                style={{ color: getPercentageStyle.color }}
+                style={{ color: percentageStyle.color }}
               >
-                {lastScanPercentage} {lastPercentageStyle.label}
+                {parseFloat(lastScanPercentage).toFixed(0)}% {percentageStyle.label}
               </p>
             ) : (
               <p className="text-white mt-1 font-bold">-</p>

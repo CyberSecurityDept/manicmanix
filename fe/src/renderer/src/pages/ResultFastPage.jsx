@@ -309,8 +309,8 @@ const ResultFastPage = () => {
             <div>
               <p className="font-semibold text-white">Last Scan Percentage</p>
               {lastScanPercentage !== null ? (
-                <p className="mt-1 font-bold" style={{ color: getPercentageStyle.color }}>
-                  {lastScanPercentage} {lastPercentageStyle.label}
+                <p className="mt-1 font-bold" style={{ color: percentageStyle.color }}>
+                  {parseFloat(lastScanPercentage).toFixed(0)}% {percentageStyle.label}
                 </p>
               ) : (
                 <p className="text-white mt-1 font-bold">-</p>
